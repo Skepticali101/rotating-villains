@@ -337,53 +337,11 @@
                 };
             });
             
-            // Calculate closest calls - FILTER OUT PROCEDURAL VOTES
-            const isConsequential = (vote) => {
-                const desc = (vote.description || '').toLowerCase();
-                
-                // EXCLUDE procedural/minor votes
-                const excludeKeywords = [
-                    'amendment no.',
-                    'providing for consideration',
-                    'motion to recommit',
-                    'motion to adjourn',
-                    'relating to a national emergency',
-                    'question of the privileges',
-                    'raising a question',
-                    'on agreeing to the resolution',
-                    'on motion to suspend',
-                    'part a amendment',
-                    'part b amendment',
-                    'part c amendment',
-                    'part d amendment'
-                ];
-                
-                if (excludeKeywords.some(keyword => desc.includes(keyword))) {
-                    return false;
-                }
-                
-                // INCLUDE substantive bills
-                const includeKeywords = [
-                    'h.r. ',
-                    's. ',
-                    'act of',
-                    'appropriations',
-                    'authorization',
-                    'defense',
-                    'homeland security',
-                    'tax',
-                    'budget',
-                    'immigration',
-                    'border'
-                ];
-                
-                return includeKeywords.some(keyword => desc.includes(keyword)) || desc.length > 50;
-            };
-            
+            // Calculate closest calls (showing all votes with margin <= 5)
             const closestCalls = fullData.winnable_votes_lost
-                .filter(v => v.margin <= 5 && isConsequential(v))
+                .filter(v => v.margin <= 5)
                 .sort((a, b) => a.margin - b.margin)
-                .slice(0, 20);
+                .slice(0, 50);
             
             // Get unique states for filter
             const states = [...new Set(enrichedVillains.map(v => v.state))].sort();
@@ -949,9 +907,9 @@
                                 <span style="color: #94a3b8; font-size: 0.9rem;"> vote${vote.margin !== 1 ? 's' : ''}</span>
                             </div>
                         </div>
-                        ${vote.description ? `
+                        ${(vote.description || vote.question) ? `
                             <div class="closest-call-description">
-                                ${vote.description}
+                                ${vote.description || vote.question}
                             </div>
                         ` : ''}
                         <div style="margin-top: 10px;">
