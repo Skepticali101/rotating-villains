@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>The Rotating Villains - Congressional Betrayal Tracker</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -10,15 +10,39 @@
         .container { max-width: 1600px; margin: 0 auto; padding: 20px; }
         
         @media (max-width: 768px) {
-            html, body {
-                width: 100vw;
+            * {
+                max-width: 100% !important;
+            }
+            
+            html {
+                width: 100%;
                 overflow-x: hidden;
             }
+            
+            body {
+                width: 100%;
+                max-width: 100%;
+                overflow-x: hidden;
+                margin: 0;
+                padding: 0;
+            }
+            
             .container {
-                max-width: 100vw !important;
-                width: 100vw !important;
-                padding: 8px !important;
-                margin: 0 !important;
+                width: calc(100% - 20px) !important;
+                max-width: calc(100% - 20px) !important;
+                padding: 10px !important;
+                margin: 0 auto !important;
+                box-sizing: border-box !important;
+            }
+            
+            .header,
+            .alert-banner,
+            .section {
+                width: 100% !important;
+                max-width: 100% !important;
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+                box-sizing: border-box !important;
             }
         }
         
