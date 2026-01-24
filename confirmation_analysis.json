@@ -1,0 +1,3287 @@
+{
+  "cabinet_confirmations": [
+    {
+      "vote_id": "s10-119",
+      "vote_date": null,
+      "nominee": "Peter Hegseth, of Tennessee, to be Secretary of Defense",
+      "category": "cabinet",
+      "total_yes": 53,
+      "total_no": 45,
+      "dem_yes": 1,
+      "dem_no": 43,
+      "margin": 8,
+      "dem_supporters": [
+        {
+          "name": "FETTERMAN, John Karl",
+          "state": "PA"
+        }
+      ]
+    },
+    {
+      "vote_id": "s104-119",
+      "vote_date": null,
+      "nominee": "Todd Blanche, of Florida, to be Deputy Attorney General",
+      "category": "cabinet",
+      "total_yes": 51,
+      "total_no": 46,
+      "dem_yes": 0,
+      "dem_no": 44,
+      "margin": 5,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s105-119",
+      "vote_date": null,
+      "nominee": "Todd Blanche, of Florida, to be Deputy Attorney General",
+      "category": "cabinet",
+      "total_yes": 52,
+      "total_no": 46,
+      "dem_yes": 0,
+      "dem_no": 44,
+      "margin": 6,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s107-119",
+      "vote_date": null,
+      "nominee": "Troy Edgar, of California, to be Deputy Secretary of Homeland Security",
+      "category": "cabinet",
+      "total_yes": 53,
+      "total_no": 43,
+      "dem_yes": 1,
+      "dem_no": 41,
+      "margin": 10,
+      "dem_supporters": [
+        {
+          "name": "PETERS, Gary C.",
+          "state": "MI"
+        }
+      ]
+    },
+    {
+      "vote_id": "s108-119",
+      "vote_date": null,
+      "nominee": "Troy Edgar, of California, to be Deputy Secretary of Homeland Security",
+      "category": "cabinet",
+      "total_yes": 53,
+      "total_no": 43,
+      "dem_yes": 1,
+      "dem_no": 42,
+      "margin": 10,
+      "dem_supporters": [
+        {
+          "name": "PETERS, Gary C.",
+          "state": "MI"
+        }
+      ]
+    },
+    {
+      "vote_id": "s112-119",
+      "vote_date": null,
+      "nominee": "Steven Bradbury, of Virginia, to be Deputy Secretary of Transportation",
+      "category": "cabinet",
+      "total_yes": 51,
+      "total_no": 46,
+      "dem_yes": 0,
+      "dem_no": 43,
+      "margin": 5,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s113-119",
+      "vote_date": null,
+      "nominee": "Steven Bradbury, of Virginia, to be Deputy Secretary of Transportation",
+      "category": "cabinet",
+      "total_yes": 51,
+      "total_no": 46,
+      "dem_yes": 0,
+      "dem_no": 43,
+      "margin": 5,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s118-119",
+      "vote_date": null,
+      "nominee": "Keith Sonderling, of Florida, to be Deputy Secretary of Labor",
+      "category": "cabinet",
+      "total_yes": 53,
+      "total_no": 45,
+      "dem_yes": 0,
+      "dem_no": 44,
+      "margin": 8,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s119-119",
+      "vote_date": null,
+      "nominee": "Keith Sonderling, of Florida, to be Deputy Secretary of Labor",
+      "category": "cabinet",
+      "total_yes": 53,
+      "total_no": 46,
+      "dem_yes": 0,
+      "dem_no": 44,
+      "margin": 7,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s122-119",
+      "vote_date": null,
+      "nominee": "Jeffrey Kessler, of Virginia, to be Under Secretary of Commerce for Industry and Security",
+      "category": "cabinet",
+      "total_yes": 54,
+      "total_no": 45,
+      "dem_yes": 1,
+      "dem_no": 43,
+      "margin": 9,
+      "dem_supporters": [
+        {
+          "name": "SLOTKIN, Elissa",
+          "state": "MI"
+        }
+      ]
+    },
+    {
+      "vote_id": "s123-119",
+      "vote_date": null,
+      "nominee": "Jeffrey Kessler, of Virginia, to be Under Secretary of Commerce for Industry and Security",
+      "category": "cabinet",
+      "total_yes": 54,
+      "total_no": 45,
+      "dem_yes": 1,
+      "dem_no": 43,
+      "margin": 9,
+      "dem_supporters": [
+        {
+          "name": "SLOTKIN, Elissa",
+          "state": "MI"
+        }
+      ]
+    },
+    {
+      "vote_id": "s125-119",
+      "vote_date": null,
+      "nominee": "Stephen Feinberg, of New York, to be Deputy Secretary of Defense",
+      "category": "cabinet",
+      "total_yes": 56,
+      "total_no": 39,
+      "dem_yes": 6,
+      "dem_no": 37,
+      "margin": 17,
+      "dem_supporters": [
+        {
+          "name": "FETTERMAN, John Karl",
+          "state": "PA"
+        },
+        {
+          "name": "KAINE, Timothy Michael (Tim)",
+          "state": "VA"
+        },
+        {
+          "name": "REED, John F. (Jack)",
+          "state": "RI"
+        },
+        {
+          "name": "SHAHEEN, Jeanne",
+          "state": "NH"
+        },
+        {
+          "name": "SLOTKIN, Elissa",
+          "state": "MI"
+        },
+        {
+          "name": "WARNER, Mark",
+          "state": "VA"
+        }
+      ]
+    },
+    {
+      "vote_id": "s126-119",
+      "vote_date": null,
+      "nominee": "Stephen Feinberg, of New York, to be Deputy Secretary of Defense",
+      "category": "cabinet",
+      "total_yes": 59,
+      "total_no": 40,
+      "dem_yes": 6,
+      "dem_no": 38,
+      "margin": 19,
+      "dem_supporters": [
+        {
+          "name": "FETTERMAN, John Karl",
+          "state": "PA"
+        },
+        {
+          "name": "KAINE, Timothy Michael (Tim)",
+          "state": "VA"
+        },
+        {
+          "name": "REED, John F. (Jack)",
+          "state": "RI"
+        },
+        {
+          "name": "SHAHEEN, Jeanne",
+          "state": "NH"
+        },
+        {
+          "name": "SLOTKIN, Elissa",
+          "state": "MI"
+        },
+        {
+          "name": "WARNER, Mark",
+          "state": "VA"
+        }
+      ]
+    },
+    {
+      "vote_id": "s134-119",
+      "vote_date": null,
+      "nominee": "John Phelan, of Florida, to be Secretary of the Navy",
+      "category": "cabinet",
+      "total_yes": 64,
+      "total_no": 33,
+      "dem_yes": 11,
+      "dem_no": 33,
+      "margin": 31,
+      "dem_supporters": [
+        {
+          "name": "COONS, Christopher A.",
+          "state": "DE"
+        },
+        {
+          "name": "CORTEZ MASTO, Catherine Marie",
+          "state": "NV"
+        },
+        {
+          "name": "FETTERMAN, John Karl",
+          "state": "PA"
+        },
+        {
+          "name": "GALLEGO, Ruben",
+          "state": "AZ"
+        },
+        {
+          "name": "HASSAN, Margaret (Maggie)",
+          "state": "NH"
+        },
+        {
+          "name": "KAINE, Timothy Michael (Tim)",
+          "state": "VA"
+        },
+        {
+          "name": "KELLY, Mark Edward",
+          "state": "AZ"
+        },
+        {
+          "name": "REED, John F. (Jack)",
+          "state": "RI"
+        },
+        {
+          "name": "ROSEN, Jacklyn Sheryl",
+          "state": "NV"
+        },
+        {
+          "name": "SHAHEEN, Jeanne",
+          "state": "NH"
+        },
+        {
+          "name": "WARNER, Mark",
+          "state": "VA"
+        }
+      ]
+    },
+    {
+      "vote_id": "s135-119",
+      "vote_date": null,
+      "nominee": "Christopher Landau, of Maryland, to be Deputy Secretary of State",
+      "category": "cabinet",
+      "total_yes": 63,
+      "total_no": 32,
+      "dem_yes": 10,
+      "dem_no": 32,
+      "margin": 31,
+      "dem_supporters": [
+        {
+          "name": "BENNET, Michael F.",
+          "state": "CO"
+        },
+        {
+          "name": "COONS, Christopher A.",
+          "state": "DE"
+        },
+        {
+          "name": "CORTEZ MASTO, Catherine Marie",
+          "state": "NV"
+        },
+        {
+          "name": "FETTERMAN, John Karl",
+          "state": "PA"
+        },
+        {
+          "name": "HASSAN, Margaret (Maggie)",
+          "state": "NH"
+        },
+        {
+          "name": "KAINE, Timothy Michael (Tim)",
+          "state": "VA"
+        },
+        {
+          "name": "KLOBUCHAR, Amy",
+          "state": "MN"
+        },
+        {
+          "name": "ROSEN, Jacklyn Sheryl",
+          "state": "NV"
+        },
+        {
+          "name": "SHAHEEN, Jeanne",
+          "state": "NH"
+        },
+        {
+          "name": "WARNER, Mark",
+          "state": "VA"
+        }
+      ]
+    },
+    {
+      "vote_id": "s136-119",
+      "vote_date": null,
+      "nominee": "John Phelan, of Florida, to be Secretary of the Navy",
+      "category": "cabinet",
+      "total_yes": 62,
+      "total_no": 30,
+      "dem_yes": 11,
+      "dem_no": 30,
+      "margin": 32,
+      "dem_supporters": [
+        {
+          "name": "COONS, Christopher A.",
+          "state": "DE"
+        },
+        {
+          "name": "CORTEZ MASTO, Catherine Marie",
+          "state": "NV"
+        },
+        {
+          "name": "GALLEGO, Ruben",
+          "state": "AZ"
+        },
+        {
+          "name": "HASSAN, Margaret (Maggie)",
+          "state": "NH"
+        },
+        {
+          "name": "HICKENLOOPER, John Wright",
+          "state": "CO"
+        },
+        {
+          "name": "KAINE, Timothy Michael (Tim)",
+          "state": "VA"
+        },
+        {
+          "name": "KELLY, Mark Edward",
+          "state": "AZ"
+        },
+        {
+          "name": "REED, John F. (Jack)",
+          "state": "RI"
+        },
+        {
+          "name": "ROSEN, Jacklyn Sheryl",
+          "state": "NV"
+        },
+        {
+          "name": "SHAHEEN, Jeanne",
+          "state": "NH"
+        },
+        {
+          "name": "WARNER, Mark",
+          "state": "VA"
+        }
+      ]
+    },
+    {
+      "vote_id": "s137-119",
+      "vote_date": null,
+      "nominee": "Christopher Landau, of Maryland, to be Deputy Secretary of State",
+      "category": "cabinet",
+      "total_yes": 60,
+      "total_no": 31,
+      "dem_yes": 9,
+      "dem_no": 31,
+      "margin": 29,
+      "dem_supporters": [
+        {
+          "name": "BENNET, Michael F.",
+          "state": "CO"
+        },
+        {
+          "name": "COONS, Christopher A.",
+          "state": "DE"
+        },
+        {
+          "name": "CORTEZ MASTO, Catherine Marie",
+          "state": "NV"
+        },
+        {
+          "name": "HASSAN, Margaret (Maggie)",
+          "state": "NH"
+        },
+        {
+          "name": "HICKENLOOPER, John Wright",
+          "state": "CO"
+        },
+        {
+          "name": "KAINE, Timothy Michael (Tim)",
+          "state": "VA"
+        },
+        {
+          "name": "KLOBUCHAR, Amy",
+          "state": "MN"
+        },
+        {
+          "name": "ROSEN, Jacklyn Sheryl",
+          "state": "NV"
+        },
+        {
+          "name": "SHAHEEN, Jeanne",
+          "state": "NH"
+        }
+      ]
+    },
+    {
+      "vote_id": "s14-119",
+      "vote_date": null,
+      "nominee": "Peter Hegseth, of Tennessee, to be Secretary of Defense",
+      "category": "cabinet",
+      "total_yes": 51,
+      "total_no": 49,
+      "dem_yes": 0,
+      "dem_no": 45,
+      "margin": 2,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s146-119",
+      "vote_date": null,
+      "nominee": "Aaron Reitz, of Texas, to be an Assistant Attorney General vice Hampton Y. Dellinger",
+      "category": "cabinet",
+      "total_yes": 53,
+      "total_no": 45,
+      "dem_yes": 0,
+      "dem_no": 44,
+      "margin": 8,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s147-119",
+      "vote_date": null,
+      "nominee": "Aaron Reitz, of Texas, to be an Assistant Attorney General vice Hampton Y. Dellinger",
+      "category": "cabinet",
+      "total_yes": 52,
+      "total_no": 46,
+      "dem_yes": 0,
+      "dem_no": 44,
+      "margin": 6,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s148-119",
+      "vote_date": null,
+      "nominee": "Michael Faulkender, of Maryland, to be Deputy Secretary of the Treasury",
+      "category": "cabinet",
+      "total_yes": 52,
+      "total_no": 46,
+      "dem_yes": 0,
+      "dem_no": 44,
+      "margin": 6,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s149-119",
+      "vote_date": null,
+      "nominee": "Michael Faulkender, of Maryland, to be Deputy Secretary of the Treasury",
+      "category": "cabinet",
+      "total_yes": 53,
+      "total_no": 43,
+      "dem_yes": 0,
+      "dem_no": 41,
+      "margin": 10,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s154-119",
+      "vote_date": null,
+      "nominee": "Paul Lawrence, of Virginia, to be Deputy Secretary of Veterans Affairs",
+      "category": "cabinet",
+      "total_yes": 53,
+      "total_no": 47,
+      "dem_yes": 0,
+      "dem_no": 45,
+      "margin": 6,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s159-119",
+      "vote_date": null,
+      "nominee": "Harmeet Dhillon, of California, to be an Assistant Attorney General",
+      "category": "cabinet",
+      "total_yes": 52,
+      "total_no": 45,
+      "dem_yes": 0,
+      "dem_no": 43,
+      "margin": 7,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s16-119",
+      "vote_date": null,
+      "nominee": "Kristi Noem, of South Dakota, to be Secretary of Homeland Security",
+      "category": "cabinet",
+      "total_yes": 61,
+      "total_no": 39,
+      "dem_yes": 8,
+      "dem_no": 37,
+      "margin": 22,
+      "dem_supporters": [
+        {
+          "name": "FETTERMAN, John Karl",
+          "state": "PA"
+        },
+        {
+          "name": "HASSAN, Margaret (Maggie)",
+          "state": "NH"
+        },
+        {
+          "name": "KAINE, Timothy Michael (Tim)",
+          "state": "VA"
+        },
+        {
+          "name": "KIM, Andy",
+          "state": "NJ"
+        },
+        {
+          "name": "PETERS, Gary C.",
+          "state": "MI"
+        },
+        {
+          "name": "SHAHEEN, Jeanne",
+          "state": "NH"
+        },
+        {
+          "name": "SLOTKIN, Elissa",
+          "state": "MI"
+        },
+        {
+          "name": "WARNOCK, Raphael Gamaliel",
+          "state": "GA"
+        }
+      ]
+    },
+    {
+      "vote_id": "s168-119",
+      "vote_date": null,
+      "nominee": "Harmeet Dhillon, of California, to be an Assistant Attorney General",
+      "category": "cabinet",
+      "total_yes": 52,
+      "total_no": 45,
+      "dem_yes": 0,
+      "dem_no": 43,
+      "margin": 7,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s17-119",
+      "vote_date": null,
+      "nominee": "Kristi Noem, of South Dakota, to be Secretary of Homeland Security",
+      "category": "cabinet",
+      "total_yes": 59,
+      "total_no": 34,
+      "dem_yes": 7,
+      "dem_no": 33,
+      "margin": 25,
+      "dem_supporters": [
+        {
+          "name": "FETTERMAN, John Karl",
+          "state": "PA"
+        },
+        {
+          "name": "HASSAN, Margaret (Maggie)",
+          "state": "NH"
+        },
+        {
+          "name": "KAINE, Timothy Michael (Tim)",
+          "state": "VA"
+        },
+        {
+          "name": "KIM, Andy",
+          "state": "NJ"
+        },
+        {
+          "name": "PETERS, Gary C.",
+          "state": "MI"
+        },
+        {
+          "name": "SHAHEEN, Jeanne",
+          "state": "NH"
+        },
+        {
+          "name": "SLOTKIN, Elissa",
+          "state": "MI"
+        }
+      ]
+    },
+    {
+      "vote_id": "s192-119",
+      "vote_date": null,
+      "nominee": "Elbridge Colby, of the District of Columbia, to be Under Secretary of Defense for Policy",
+      "category": "cabinet",
+      "total_yes": 53,
+      "total_no": 39,
+      "dem_yes": 3,
+      "dem_no": 38,
+      "margin": 14,
+      "dem_supporters": [
+        {
+          "name": "KELLY, Mark Edward",
+          "state": "AZ"
+        },
+        {
+          "name": "REED, John F. (Jack)",
+          "state": "RI"
+        },
+        {
+          "name": "SLOTKIN, Elissa",
+          "state": "MI"
+        }
+      ]
+    },
+    {
+      "vote_id": "s193-119",
+      "vote_date": null,
+      "nominee": "Elbridge Colby, of the District of Columbia, to be Under Secretary of Defense for Policy",
+      "category": "cabinet",
+      "total_yes": 54,
+      "total_no": 45,
+      "dem_yes": 3,
+      "dem_no": 42,
+      "margin": 9,
+      "dem_supporters": [
+        {
+          "name": "KELLY, Mark Edward",
+          "state": "AZ"
+        },
+        {
+          "name": "REED, John F. (Jack)",
+          "state": "RI"
+        },
+        {
+          "name": "SLOTKIN, Elissa",
+          "state": "MI"
+        }
+      ]
+    },
+    {
+      "vote_id": "s155-119",
+      "vote_date": null,
+      "nominee": "Paul Lawrence, of Virginia, to be Deputy Secretary of Veterans Affairs",
+      "category": "cabinet",
+      "total_yes": 51,
+      "total_no": 45,
+      "dem_yes": 0,
+      "dem_no": 44,
+      "margin": 6,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s247-119",
+      "vote_date": null,
+      "nominee": "James Danly, of Tennessee, to be Deputy Secretary of Energy",
+      "category": "cabinet",
+      "total_yes": 53,
+      "total_no": 45,
+      "dem_yes": 1,
+      "dem_no": 44,
+      "margin": 8,
+      "dem_supporters": [
+        {
+          "name": "HEINRICH, Martin",
+          "state": "NM"
+        }
+      ]
+    },
+    {
+      "vote_id": "s248-119",
+      "vote_date": null,
+      "nominee": "James Danly, of Tennessee, to be Deputy Secretary of Energy",
+      "category": "cabinet",
+      "total_yes": 52,
+      "total_no": 44,
+      "dem_yes": 0,
+      "dem_no": 43,
+      "margin": 8,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s249-119",
+      "vote_date": null,
+      "nominee": "Katharine MacGregor, of Florida, to be Deputy Secretary of the Interior",
+      "category": "cabinet",
+      "total_yes": 57,
+      "total_no": 41,
+      "dem_yes": 4,
+      "dem_no": 40,
+      "margin": 16,
+      "dem_supporters": [
+        {
+          "name": "FETTERMAN, John Karl",
+          "state": "PA"
+        },
+        {
+          "name": "GALLEGO, Ruben",
+          "state": "AZ"
+        },
+        {
+          "name": "HEINRICH, Martin",
+          "state": "NM"
+        },
+        {
+          "name": "KELLY, Mark Edward",
+          "state": "AZ"
+        }
+      ]
+    },
+    {
+      "vote_id": "s250-119",
+      "vote_date": null,
+      "nominee": "Katharine MacGregor, of Florida, to be Deputy Secretary of the Interior",
+      "category": "cabinet",
+      "total_yes": 54,
+      "total_no": 40,
+      "dem_yes": 4,
+      "dem_no": 40,
+      "margin": 14,
+      "dem_supporters": [
+        {
+          "name": "FETTERMAN, John Karl",
+          "state": "PA"
+        },
+        {
+          "name": "GALLEGO, Ruben",
+          "state": "AZ"
+        },
+        {
+          "name": "HEINRICH, Martin",
+          "state": "NM"
+        },
+        {
+          "name": "KELLY, Mark Edward",
+          "state": "AZ"
+        }
+      ]
+    },
+    {
+      "vote_id": "s251-119",
+      "vote_date": null,
+      "nominee": "Michael Rigas, of Virginia, to be Deputy Secretary of State for Management and Resources",
+      "category": "cabinet",
+      "total_yes": 51,
+      "total_no": 45,
+      "dem_yes": 1,
+      "dem_no": 44,
+      "margin": 6,
+      "dem_supporters": [
+        {
+          "name": "SHAHEEN, Jeanne",
+          "state": "NH"
+        }
+      ]
+    },
+    {
+      "vote_id": "s252-119",
+      "vote_date": null,
+      "nominee": "Michael Rigas, of Virginia, to be Deputy Secretary of State for Management and Resources",
+      "category": "cabinet",
+      "total_yes": 51,
+      "total_no": 46,
+      "dem_yes": 1,
+      "dem_no": 44,
+      "margin": 5,
+      "dem_supporters": [
+        {
+          "name": "SHAHEEN, Jeanne",
+          "state": "NH"
+        }
+      ]
+    },
+    {
+      "vote_id": "s253-119",
+      "vote_date": null,
+      "nominee": "Emil Michael, of Florida, to be Under Secretary of Defense for Research and Engineering",
+      "category": "cabinet",
+      "total_yes": 53,
+      "total_no": 43,
+      "dem_yes": 2,
+      "dem_no": 42,
+      "margin": 10,
+      "dem_supporters": [
+        {
+          "name": "GALLEGO, Ruben",
+          "state": "AZ"
+        },
+        {
+          "name": "WARNER, Mark",
+          "state": "VA"
+        }
+      ]
+    },
+    {
+      "vote_id": "s254-119",
+      "vote_date": null,
+      "nominee": "Emil Michael, of Florida, to be Under Secretary of Defense for Research and Engineering",
+      "category": "cabinet",
+      "total_yes": 54,
+      "total_no": 43,
+      "dem_yes": 2,
+      "dem_no": 42,
+      "margin": 11,
+      "dem_supporters": [
+        {
+          "name": "GALLEGO, Ruben",
+          "state": "AZ"
+        },
+        {
+          "name": "WARNER, Mark",
+          "state": "VA"
+        }
+      ]
+    },
+    {
+      "vote_id": "s27-119",
+      "vote_date": null,
+      "nominee": "Christopher Wright, of Colorado, to be Secretary of Energy",
+      "category": "cabinet",
+      "total_yes": 62,
+      "total_no": 35,
+      "dem_yes": 8,
+      "dem_no": 34,
+      "margin": 27,
+      "dem_supporters": [
+        {
+          "name": "BENNET, Michael F.",
+          "state": "CO"
+        },
+        {
+          "name": "GALLEGO, Ruben",
+          "state": "AZ"
+        },
+        {
+          "name": "HASSAN, Margaret (Maggie)",
+          "state": "NH"
+        },
+        {
+          "name": "HEINRICH, Martin",
+          "state": "NM"
+        },
+        {
+          "name": "HICKENLOOPER, John Wright",
+          "state": "CO"
+        },
+        {
+          "name": "LUJ\u00c1N, Ben Ray",
+          "state": "NM"
+        },
+        {
+          "name": "SHAHEEN, Jeanne",
+          "state": "NH"
+        },
+        {
+          "name": "WARNER, Mark",
+          "state": "VA"
+        }
+      ]
+    },
+    {
+      "vote_id": "s282-119",
+      "vote_date": null,
+      "nominee": "Michael Duffey, of Virginia, to be Under Secretary of Defense for Acquisition and Sustainment",
+      "category": "cabinet",
+      "total_yes": 51,
+      "total_no": 45,
+      "dem_yes": 0,
+      "dem_no": 43,
+      "margin": 6,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s283-119",
+      "vote_date": null,
+      "nominee": "Michael Duffey, of Virginia, to be Under Secretary of Defense for Acquisition and Sustainment",
+      "category": "cabinet",
+      "total_yes": 51,
+      "total_no": 46,
+      "dem_yes": 0,
+      "dem_no": 44,
+      "margin": 5,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s284-119",
+      "vote_date": null,
+      "nominee": "Allison Hooker, of Georgia, to be an Under Secretary of State (Political Affairs)",
+      "category": "cabinet",
+      "total_yes": 59,
+      "total_no": 37,
+      "dem_yes": 8,
+      "dem_no": 36,
+      "margin": 22,
+      "dem_supporters": [
+        {
+          "name": "COONS, Christopher A.",
+          "state": "DE"
+        },
+        {
+          "name": "GALLEGO, Ruben",
+          "state": "AZ"
+        },
+        {
+          "name": "HASSAN, Margaret (Maggie)",
+          "state": "NH"
+        },
+        {
+          "name": "KAINE, Timothy Michael (Tim)",
+          "state": "VA"
+        },
+        {
+          "name": "KELLY, Mark Edward",
+          "state": "AZ"
+        },
+        {
+          "name": "SHAHEEN, Jeanne",
+          "state": "NH"
+        },
+        {
+          "name": "SLOTKIN, Elissa",
+          "state": "MI"
+        },
+        {
+          "name": "WARNER, Mark",
+          "state": "VA"
+        }
+      ]
+    },
+    {
+      "vote_id": "s285-119",
+      "vote_date": null,
+      "nominee": "Allison Hooker, of Georgia, to be an Under Secretary of State (Political Affairs)",
+      "category": "cabinet",
+      "total_yes": 59,
+      "total_no": 36,
+      "dem_yes": 9,
+      "dem_no": 35,
+      "margin": 23,
+      "dem_supporters": [
+        {
+          "name": "COONS, Christopher A.",
+          "state": "DE"
+        },
+        {
+          "name": "FETTERMAN, John Karl",
+          "state": "PA"
+        },
+        {
+          "name": "GALLEGO, Ruben",
+          "state": "AZ"
+        },
+        {
+          "name": "HASSAN, Margaret (Maggie)",
+          "state": "NH"
+        },
+        {
+          "name": "KAINE, Timothy Michael (Tim)",
+          "state": "VA"
+        },
+        {
+          "name": "KELLY, Mark Edward",
+          "state": "AZ"
+        },
+        {
+          "name": "SHAHEEN, Jeanne",
+          "state": "NH"
+        },
+        {
+          "name": "SLOTKIN, Elissa",
+          "state": "MI"
+        },
+        {
+          "name": "WARNER, Mark",
+          "state": "VA"
+        }
+      ]
+    },
+    {
+      "vote_id": "s290-119",
+      "vote_date": null,
+      "nominee": "James O'Neill, of California, to be Deputy Secretary of Health and Human Services",
+      "category": "cabinet",
+      "total_yes": 51,
+      "total_no": 46,
+      "dem_yes": 0,
+      "dem_no": 44,
+      "margin": 5,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s293-119",
+      "vote_date": null,
+      "nominee": "James O'Neill, of California, to be Deputy Secretary of Health and Human Services",
+      "category": "cabinet",
+      "total_yes": 52,
+      "total_no": 43,
+      "dem_yes": 0,
+      "dem_no": 41,
+      "margin": 9,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s294-119",
+      "vote_date": null,
+      "nominee": "John Andrew Eisenberg, of Virginia, to be an Assistant Attorney General",
+      "category": "cabinet",
+      "total_yes": 52,
+      "total_no": 43,
+      "dem_yes": 0,
+      "dem_no": 41,
+      "margin": 9,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s295-119",
+      "vote_date": null,
+      "nominee": "John Andrew Eisenberg, of Virginia, to be an Assistant Attorney General",
+      "category": "cabinet",
+      "total_yes": 52,
+      "total_no": 43,
+      "dem_yes": 0,
+      "dem_no": 41,
+      "margin": 9,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s296-119",
+      "vote_date": null,
+      "nominee": "Brett Shumate, of Virginia, to be an Assistant Attorney General",
+      "category": "cabinet",
+      "total_yes": 49,
+      "total_no": 40,
+      "dem_yes": 0,
+      "dem_no": 40,
+      "margin": 9,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s297-119",
+      "vote_date": null,
+      "nominee": "Brett Shumate, of Virginia, to be an Assistant Attorney General",
+      "category": "cabinet",
+      "total_yes": 51,
+      "total_no": 41,
+      "dem_yes": 0,
+      "dem_no": 39,
+      "margin": 10,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s30-119",
+      "vote_date": null,
+      "nominee": "Christopher Wright, of Colorado, to be Secretary of Energy",
+      "category": "cabinet",
+      "total_yes": 59,
+      "total_no": 38,
+      "dem_yes": 7,
+      "dem_no": 37,
+      "margin": 21,
+      "dem_supporters": [
+        {
+          "name": "BENNET, Michael F.",
+          "state": "CO"
+        },
+        {
+          "name": "GALLEGO, Ruben",
+          "state": "AZ"
+        },
+        {
+          "name": "HASSAN, Margaret (Maggie)",
+          "state": "NH"
+        },
+        {
+          "name": "HEINRICH, Martin",
+          "state": "NM"
+        },
+        {
+          "name": "HICKENLOOPER, John Wright",
+          "state": "CO"
+        },
+        {
+          "name": "LUJ\u00c1N, Ben Ray",
+          "state": "NM"
+        },
+        {
+          "name": "SHAHEEN, Jeanne",
+          "state": "NH"
+        }
+      ]
+    },
+    {
+      "vote_id": "s300-119",
+      "vote_date": null,
+      "nominee": "Stephen Vaden, of Tennessee, to be Deputy Secretary of Agriculture",
+      "category": "cabinet",
+      "total_yes": 48,
+      "total_no": 45,
+      "dem_yes": 0,
+      "dem_no": 43,
+      "margin": 3,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s301-119",
+      "vote_date": null,
+      "nominee": "Stephen Vaden, of Tennessee, to be Deputy Secretary of Agriculture",
+      "category": "cabinet",
+      "total_yes": 51,
+      "total_no": 44,
+      "dem_yes": 0,
+      "dem_no": 42,
+      "margin": 7,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s302-119",
+      "vote_date": null,
+      "nominee": "Andrew Hughes, of Texas, to be Deputy Secretary of Housing and Urban Development",
+      "category": "cabinet",
+      "total_yes": 51,
+      "total_no": 44,
+      "dem_yes": 0,
+      "dem_no": 42,
+      "margin": 7,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s303-119",
+      "vote_date": null,
+      "nominee": "Andrew Hughes, of Texas, to be Deputy Secretary of Housing and Urban Development",
+      "category": "cabinet",
+      "total_yes": 51,
+      "total_no": 43,
+      "dem_yes": 0,
+      "dem_no": 42,
+      "margin": 8,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s31-119",
+      "vote_date": null,
+      "nominee": "Pamela Bondi, of Florida, to be Attorney General",
+      "category": "cabinet",
+      "total_yes": 52,
+      "total_no": 46,
+      "dem_yes": 0,
+      "dem_no": 44,
+      "margin": 6,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s313-119",
+      "vote_date": null,
+      "nominee": "Gary Andres, of Virginia, to be an Assistant Secretary of Health and Human Services",
+      "category": "cabinet",
+      "total_yes": 44,
+      "total_no": 33,
+      "dem_yes": 2,
+      "dem_no": 31,
+      "margin": 11,
+      "dem_supporters": [
+        {
+          "name": "HASSAN, Margaret (Maggie)",
+          "state": "NH"
+        },
+        {
+          "name": "WHITEHOUSE, Sheldon",
+          "state": "RI"
+        }
+      ]
+    },
+    {
+      "vote_id": "s316-119",
+      "vote_date": null,
+      "nominee": "Gary Andres, of Virginia, to be an Assistant Secretary of Health and Human Services",
+      "category": "cabinet",
+      "total_yes": 57,
+      "total_no": 40,
+      "dem_yes": 5,
+      "dem_no": 38,
+      "margin": 17,
+      "dem_supporters": [
+        {
+          "name": "HASSAN, Margaret (Maggie)",
+          "state": "NH"
+        },
+        {
+          "name": "SHAHEEN, Jeanne",
+          "state": "NH"
+        },
+        {
+          "name": "WARNOCK, Raphael Gamaliel",
+          "state": "GA"
+        },
+        {
+          "name": "WELCH, Peter",
+          "state": "VT"
+        },
+        {
+          "name": "WHITEHOUSE, Sheldon",
+          "state": "RI"
+        }
+      ]
+    },
+    {
+      "vote_id": "s322-119",
+      "vote_date": null,
+      "nominee": "Daniel Zimmerman, of North Carolina, to be an Assistant Secretary of Defense",
+      "category": "cabinet",
+      "total_yes": 58,
+      "total_no": 33,
+      "dem_yes": 9,
+      "dem_no": 32,
+      "margin": 25,
+      "dem_supporters": [
+        {
+          "name": "FETTERMAN, John Karl",
+          "state": "PA"
+        },
+        {
+          "name": "GALLEGO, Ruben",
+          "state": "AZ"
+        },
+        {
+          "name": "HASSAN, Margaret (Maggie)",
+          "state": "NH"
+        },
+        {
+          "name": "KAINE, Timothy Michael (Tim)",
+          "state": "VA"
+        },
+        {
+          "name": "KELLY, Mark Edward",
+          "state": "AZ"
+        },
+        {
+          "name": "REED, John F. (Jack)",
+          "state": "RI"
+        },
+        {
+          "name": "ROSEN, Jacklyn Sheryl",
+          "state": "NV"
+        },
+        {
+          "name": "SLOTKIN, Elissa",
+          "state": "MI"
+        },
+        {
+          "name": "WARNOCK, Raphael Gamaliel",
+          "state": "GA"
+        }
+      ]
+    },
+    {
+      "vote_id": "s323-119",
+      "vote_date": null,
+      "nominee": "Daniel Zimmerman, of North Carolina, to be an Assistant Secretary of Defense",
+      "category": "cabinet",
+      "total_yes": 61,
+      "total_no": 35,
+      "dem_yes": 8,
+      "dem_no": 34,
+      "margin": 26,
+      "dem_supporters": [
+        {
+          "name": "FETTERMAN, John Karl",
+          "state": "PA"
+        },
+        {
+          "name": "HASSAN, Margaret (Maggie)",
+          "state": "NH"
+        },
+        {
+          "name": "KAINE, Timothy Michael (Tim)",
+          "state": "VA"
+        },
+        {
+          "name": "KELLY, Mark Edward",
+          "state": "AZ"
+        },
+        {
+          "name": "REED, John F. (Jack)",
+          "state": "RI"
+        },
+        {
+          "name": "ROSEN, Jacklyn Sheryl",
+          "state": "NV"
+        },
+        {
+          "name": "SLOTKIN, Elissa",
+          "state": "MI"
+        },
+        {
+          "name": "WARNOCK, Raphael Gamaliel",
+          "state": "GA"
+        }
+      ]
+    },
+    {
+      "vote_id": "s324-119",
+      "vote_date": null,
+      "nominee": "Paul Dabbar, of New York, to be Deputy Secretary of Commerce",
+      "category": "cabinet",
+      "total_yes": 56,
+      "total_no": 42,
+      "dem_yes": 3,
+      "dem_no": 40,
+      "margin": 14,
+      "dem_supporters": [
+        {
+          "name": "CANTWELL, Maria E.",
+          "state": "WA"
+        },
+        {
+          "name": "KLOBUCHAR, Amy",
+          "state": "MN"
+        },
+        {
+          "name": "WARNER, Mark",
+          "state": "VA"
+        }
+      ]
+    },
+    {
+      "vote_id": "s325-119",
+      "vote_date": null,
+      "nominee": "Paul Dabbar, of New York, to be Deputy Secretary of Commerce",
+      "category": "cabinet",
+      "total_yes": 56,
+      "total_no": 40,
+      "dem_yes": 3,
+      "dem_no": 39,
+      "margin": 16,
+      "dem_supporters": [
+        {
+          "name": "CANTWELL, Maria E.",
+          "state": "WA"
+        },
+        {
+          "name": "KLOBUCHAR, Amy",
+          "state": "MN"
+        },
+        {
+          "name": "WARNER, Mark",
+          "state": "VA"
+        }
+      ]
+    },
+    {
+      "vote_id": "s326-119",
+      "vote_date": null,
+      "nominee": "Kenneth Kies, of Virginia, to be an Assistant Secretary of the Treasury",
+      "category": "cabinet",
+      "total_yes": 53,
+      "total_no": 44,
+      "dem_yes": 0,
+      "dem_no": 42,
+      "margin": 9,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s327-119",
+      "vote_date": null,
+      "nominee": "Kenneth Kies, of Virginia, to be an Assistant Secretary of the Treasury",
+      "category": "cabinet",
+      "total_yes": 53,
+      "total_no": 45,
+      "dem_yes": 0,
+      "dem_no": 43,
+      "margin": 8,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s33-119",
+      "vote_date": null,
+      "nominee": "Pamela Bondi, of Florida, to be Attorney General",
+      "category": "cabinet",
+      "total_yes": 54,
+      "total_no": 46,
+      "dem_yes": 1,
+      "dem_no": 44,
+      "margin": 8,
+      "dem_supporters": [
+        {
+          "name": "FETTERMAN, John Karl",
+          "state": "PA"
+        }
+      ]
+    },
+    {
+      "vote_id": "s34-119",
+      "vote_date": null,
+      "nominee": "Eric Turner, of Texas, to be Secretary of Housing and Urban Development",
+      "category": "cabinet",
+      "total_yes": 55,
+      "total_no": 45,
+      "dem_yes": 2,
+      "dem_no": 43,
+      "margin": 10,
+      "dem_supporters": [
+        {
+          "name": "FETTERMAN, John Karl",
+          "state": "PA"
+        },
+        {
+          "name": "WELCH, Peter",
+          "state": "VT"
+        }
+      ]
+    },
+    {
+      "vote_id": "s35-119",
+      "vote_date": null,
+      "nominee": "Eric Turner, of Texas, to be Secretary of Housing and Urban Development",
+      "category": "cabinet",
+      "total_yes": 55,
+      "total_no": 44,
+      "dem_yes": 2,
+      "dem_no": 42,
+      "margin": 11,
+      "dem_supporters": [
+        {
+          "name": "FETTERMAN, John Karl",
+          "state": "PA"
+        },
+        {
+          "name": "WELCH, Peter",
+          "state": "VT"
+        }
+      ]
+    },
+    {
+      "vote_id": "s373-119",
+      "vote_date": null,
+      "nominee": "Preston Griffith, of Virginia, to be Under Secretary of Energy",
+      "category": "cabinet",
+      "total_yes": 47,
+      "total_no": 41,
+      "dem_yes": 0,
+      "dem_no": 40,
+      "margin": 6,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s375-119",
+      "vote_date": null,
+      "nominee": "Preston Griffith, of Virginia, to be Under Secretary of Energy",
+      "category": "cabinet",
+      "total_yes": 54,
+      "total_no": 43,
+      "dem_yes": 0,
+      "dem_no": 42,
+      "margin": 11,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s387-119",
+      "vote_date": null,
+      "nominee": "Anthony Tata, of Florida, to be Under Secretary of Defense for Personnel and Readiness",
+      "category": "cabinet",
+      "total_yes": 52,
+      "total_no": 47,
+      "dem_yes": 0,
+      "dem_no": 45,
+      "margin": 5,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s388-119",
+      "vote_date": null,
+      "nominee": "Anthony Tata, of Florida, to be Under Secretary of Defense for Personnel and Readiness",
+      "category": "cabinet",
+      "total_yes": 52,
+      "total_no": 46,
+      "dem_yes": 0,
+      "dem_no": 44,
+      "margin": 6,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s415-119",
+      "vote_date": null,
+      "nominee": "Bradley Hansell, of Virginia, to be Under Secretary of Defense for Intelligence and Security",
+      "category": "cabinet",
+      "total_yes": 57,
+      "total_no": 31,
+      "dem_yes": 8,
+      "dem_no": 30,
+      "margin": 26,
+      "dem_supporters": [
+        {
+          "name": "BALDWIN, Tammy",
+          "state": "WI"
+        },
+        {
+          "name": "FETTERMAN, John Karl",
+          "state": "PA"
+        },
+        {
+          "name": "HASSAN, Margaret (Maggie)",
+          "state": "NH"
+        },
+        {
+          "name": "KAINE, Timothy Michael (Tim)",
+          "state": "VA"
+        },
+        {
+          "name": "KELLY, Mark Edward",
+          "state": "AZ"
+        },
+        {
+          "name": "REED, John F. (Jack)",
+          "state": "RI"
+        },
+        {
+          "name": "ROSEN, Jacklyn Sheryl",
+          "state": "NV"
+        },
+        {
+          "name": "WARNOCK, Raphael Gamaliel",
+          "state": "GA"
+        }
+      ]
+    },
+    {
+      "vote_id": "s416-119",
+      "vote_date": null,
+      "nominee": "Arielle Roth, of the District of Columbia, to be Assistant Secretary of Commerce for Communications and Information",
+      "category": "cabinet",
+      "total_yes": 50,
+      "total_no": 34,
+      "dem_yes": 1,
+      "dem_no": 33,
+      "margin": 16,
+      "dem_supporters": [
+        {
+          "name": "FETTERMAN, John Karl",
+          "state": "PA"
+        }
+      ]
+    },
+    {
+      "vote_id": "s42-119",
+      "vote_date": null,
+      "nominee": "Robert F. Kennedy, Jr., of California, to be Secretary of Health and Human Services",
+      "category": "cabinet",
+      "total_yes": 52,
+      "total_no": 47,
+      "dem_yes": 0,
+      "dem_no": 45,
+      "margin": 5,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s425-119",
+      "vote_date": null,
+      "nominee": "Bradley Hansell, of Virginia, to be Under Secretary of Defense for Intelligence and Security",
+      "category": "cabinet",
+      "total_yes": 61,
+      "total_no": 35,
+      "dem_yes": 11,
+      "dem_no": 34,
+      "margin": 26,
+      "dem_supporters": [
+        {
+          "name": "BALDWIN, Tammy",
+          "state": "WI"
+        },
+        {
+          "name": "COONS, Christopher A.",
+          "state": "DE"
+        },
+        {
+          "name": "FETTERMAN, John Karl",
+          "state": "PA"
+        },
+        {
+          "name": "HASSAN, Margaret (Maggie)",
+          "state": "NH"
+        },
+        {
+          "name": "KAINE, Timothy Michael (Tim)",
+          "state": "VA"
+        },
+        {
+          "name": "KELLY, Mark Edward",
+          "state": "AZ"
+        },
+        {
+          "name": "REED, John F. (Jack)",
+          "state": "RI"
+        },
+        {
+          "name": "ROSEN, Jacklyn Sheryl",
+          "state": "NV"
+        },
+        {
+          "name": "SHAHEEN, Jeanne",
+          "state": "NH"
+        },
+        {
+          "name": "WARNER, Mark",
+          "state": "VA"
+        },
+        {
+          "name": "WARNOCK, Raphael Gamaliel",
+          "state": "GA"
+        }
+      ]
+    },
+    {
+      "vote_id": "s426-119",
+      "vote_date": null,
+      "nominee": "Arielle Roth, of the District of Columbia, to be Assistant Secretary of Commerce for Communications and Information",
+      "category": "cabinet",
+      "total_yes": 52,
+      "total_no": 41,
+      "dem_yes": 1,
+      "dem_no": 39,
+      "margin": 11,
+      "dem_supporters": [
+        {
+          "name": "FETTERMAN, John Karl",
+          "state": "PA"
+        }
+      ]
+    },
+    {
+      "vote_id": "s43-119",
+      "vote_date": null,
+      "nominee": "Robert F. Kennedy, Jr., of California, to be Secretary of Health and Human Services",
+      "category": "cabinet",
+      "total_yes": 52,
+      "total_no": 46,
+      "dem_yes": 0,
+      "dem_no": 44,
+      "margin": 6,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s433-119",
+      "vote_date": null,
+      "nominee": "Matthew Lohmeier, of Arizona, to be Under Secretary of the Air Force",
+      "category": "cabinet",
+      "total_yes": 49,
+      "total_no": 47,
+      "dem_yes": 0,
+      "dem_no": 45,
+      "margin": 2,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s434-119",
+      "vote_date": null,
+      "nominee": "Matthew Lohmeier, of Arizona, to be Under Secretary of the Air Force",
+      "category": "cabinet",
+      "total_yes": 52,
+      "total_no": 46,
+      "dem_yes": 0,
+      "dem_no": 44,
+      "margin": 6,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s44-119",
+      "vote_date": null,
+      "nominee": "Howard Lutnick, of New York, to be Secretary of Commerce",
+      "category": "cabinet",
+      "total_yes": 52,
+      "total_no": 46,
+      "dem_yes": 0,
+      "dem_no": 44,
+      "margin": 6,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s442-119",
+      "vote_date": null,
+      "nominee": "William Kimmitt, of Virginia, to be Under Secretary of Commerce for International Trade",
+      "category": "cabinet",
+      "total_yes": 51,
+      "total_no": 47,
+      "dem_yes": 0,
+      "dem_no": 45,
+      "margin": 4,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s443-119",
+      "vote_date": null,
+      "nominee": "William Kimmitt, of Virginia, to be Under Secretary of Commerce for International Trade",
+      "category": "cabinet",
+      "total_yes": 51,
+      "total_no": 47,
+      "dem_yes": 0,
+      "dem_no": 45,
+      "margin": 4,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s446-119",
+      "vote_date": null,
+      "nominee": "Samuel Brown, of Nevada, to be Under Secretary of Veterans Affairs for Memorial Affairs",
+      "category": "cabinet",
+      "total_yes": 53,
+      "total_no": 45,
+      "dem_yes": 2,
+      "dem_no": 43,
+      "margin": 8,
+      "dem_supporters": [
+        {
+          "name": "CORTEZ MASTO, Catherine Marie",
+          "state": "NV"
+        },
+        {
+          "name": "ROSEN, Jacklyn Sheryl",
+          "state": "NV"
+        }
+      ]
+    },
+    {
+      "vote_id": "s447-119",
+      "vote_date": null,
+      "nominee": "Samuel Brown, of Nevada, to be Under Secretary of Veterans Affairs for Memorial Affairs",
+      "category": "cabinet",
+      "total_yes": 54,
+      "total_no": 44,
+      "dem_yes": 2,
+      "dem_no": 42,
+      "margin": 10,
+      "dem_supporters": [
+        {
+          "name": "CORTEZ MASTO, Catherine Marie",
+          "state": "NV"
+        },
+        {
+          "name": "ROSEN, Jacklyn Sheryl",
+          "state": "NV"
+        }
+      ]
+    },
+    {
+      "vote_id": "s449-119",
+      "vote_date": null,
+      "nominee": "Thomas Gaiser, of Ohio, to be an Assistant Attorney General",
+      "category": "cabinet",
+      "total_yes": 53,
+      "total_no": 47,
+      "dem_yes": 0,
+      "dem_no": 45,
+      "margin": 6,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s45-119",
+      "vote_date": null,
+      "nominee": "Howard Lutnick, of New York, to be Secretary of Commerce",
+      "category": "cabinet",
+      "total_yes": 51,
+      "total_no": 46,
+      "dem_yes": 0,
+      "dem_no": 44,
+      "margin": 5,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s450-119",
+      "vote_date": null,
+      "nominee": "Thomas Gaiser, of Ohio, to be an Assistant Attorney General",
+      "category": "cabinet",
+      "total_yes": 53,
+      "total_no": 45,
+      "dem_yes": 0,
+      "dem_no": 43,
+      "margin": 8,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s46-119",
+      "vote_date": null,
+      "nominee": "Brooke Rollins, of Texas, to be Secretary of Agriculture",
+      "category": "cabinet",
+      "total_yes": 52,
+      "total_no": 46,
+      "dem_yes": 0,
+      "dem_no": 44,
+      "margin": 6,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s467-119",
+      "vote_date": null,
+      "nominee": "Nicholas Kent, of Virginia, to be Under Secretary of Education",
+      "category": "cabinet",
+      "total_yes": 52,
+      "total_no": 45,
+      "dem_yes": 0,
+      "dem_no": 43,
+      "margin": 7,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s47-119",
+      "vote_date": null,
+      "nominee": "Brooke Rollins, of Texas, to be Secretary of Agriculture",
+      "category": "cabinet",
+      "total_yes": 53,
+      "total_no": 46,
+      "dem_yes": 0,
+      "dem_no": 44,
+      "margin": 7,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s484-119",
+      "vote_date": null,
+      "nominee": "Nicholas Kent, of Virginia, to be Under Secretary of Education",
+      "category": "cabinet",
+      "total_yes": 50,
+      "total_no": 45,
+      "dem_yes": 0,
+      "dem_no": 43,
+      "margin": 5,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s5-119",
+      "vote_date": null,
+      "nominee": "A bill to require the Secretary of Homeland Security to take into custody aliens who have been charged in the United States with theft, and for other purposes.",
+      "category": "cabinet",
+      "total_yes": 61,
+      "total_no": 35,
+      "dem_yes": 10,
+      "dem_no": 33,
+      "margin": 26,
+      "dem_supporters": [
+        {
+          "name": "CORTEZ MASTO, Catherine Marie",
+          "state": "NV"
+        },
+        {
+          "name": "GALLEGO, Ruben",
+          "state": "AZ"
+        },
+        {
+          "name": "HASSAN, Margaret (Maggie)",
+          "state": "NH"
+        },
+        {
+          "name": "KELLY, Mark Edward",
+          "state": "AZ"
+        },
+        {
+          "name": "OSSOFF, Thomas Jonathan (Jon)",
+          "state": "GA"
+        },
+        {
+          "name": "PETERS, Gary C.",
+          "state": "MI"
+        },
+        {
+          "name": "ROSEN, Jacklyn Sheryl",
+          "state": "NV"
+        },
+        {
+          "name": "SHAHEEN, Jeanne",
+          "state": "NH"
+        },
+        {
+          "name": "SLOTKIN, Elissa",
+          "state": "MI"
+        },
+        {
+          "name": "WARNER, Mark",
+          "state": "VA"
+        }
+      ]
+    },
+    {
+      "vote_id": "s51-119",
+      "vote_date": null,
+      "nominee": "Robert F. Kennedy, Jr., of California, to be Secretary of Health and Human Services",
+      "category": "cabinet",
+      "total_yes": 53,
+      "total_no": 47,
+      "dem_yes": 0,
+      "dem_no": 45,
+      "margin": 6,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s512-119",
+      "vote_date": null,
+      "nominee": "To direct the Attorney General to make publicly available documents related to Jeffrey Epstein.",
+      "category": "cabinet",
+      "total_yes": 51,
+      "total_no": 49,
+      "dem_yes": 0,
+      "dem_no": 45,
+      "margin": 2,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s52-119",
+      "vote_date": null,
+      "nominee": "Robert F. Kennedy, Jr., of California, to be Secretary of Health and Human Services",
+      "category": "cabinet",
+      "total_yes": 52,
+      "total_no": 48,
+      "dem_yes": 0,
+      "dem_no": 45,
+      "margin": 4,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s538-119",
+      "vote_date": null,
+      "nominee": "Hung Cao, of Virginia, to be Under Secretary of the Navy",
+      "category": "cabinet",
+      "total_yes": 52,
+      "total_no": 47,
+      "dem_yes": 0,
+      "dem_no": 45,
+      "margin": 5,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s539-119",
+      "vote_date": null,
+      "nominee": "Hung Cao, of Virginia, to be Under Secretary of the Navy",
+      "category": "cabinet",
+      "total_yes": 52,
+      "total_no": 45,
+      "dem_yes": 0,
+      "dem_no": 42,
+      "margin": 7,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s54-119",
+      "vote_date": null,
+      "nominee": "Howard Lutnick, of New York, to be Secretary of Commerce",
+      "category": "cabinet",
+      "total_yes": 52,
+      "total_no": 45,
+      "dem_yes": 0,
+      "dem_no": 43,
+      "margin": 7,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s546-119",
+      "vote_date": null,
+      "nominee": "Neil Jacobs, of North Carolina, to be Under Secretary of Commerce for Oceans and Atmosphere; and Todd Wilcox, of Florida, to be an Assistant Secretary of State (Diplomatic Security); and Riley Barnes, of Texas, to be Assistant Secretary of State for Democracy, Human Rights, and Labor; and Michael...",
+      "category": "cabinet",
+      "total_yes": 50,
+      "total_no": 45,
+      "dem_yes": 0,
+      "dem_no": 43,
+      "margin": 5,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s547-119",
+      "vote_date": null,
+      "nominee": "Paul Atkins, of Virginia, to be a Member of the Securities and Exchange Commission for a term expiring June 5, 2031; and James Baehr, of Louisiana, to be General Counsel, Department of Veterans Affairs; and Patrick David Davis, of Maryland, to be an Assistant Attorney General; and Leah Campos, of...",
+      "category": "cabinet",
+      "total_yes": 51,
+      "total_no": 47,
+      "dem_yes": 0,
+      "dem_no": 45,
+      "margin": 4,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s57-119",
+      "vote_date": null,
+      "nominee": "Howard Lutnick, of New York, to be Secretary of Commerce",
+      "category": "cabinet",
+      "total_yes": 51,
+      "total_no": 45,
+      "dem_yes": 0,
+      "dem_no": 43,
+      "margin": 6,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s606-119",
+      "vote_date": null,
+      "nominee": "Caleb Orr, of Texas, to be an Assistant Secretary of State (Economic and Business Affairs)",
+      "category": "cabinet",
+      "total_yes": 57,
+      "total_no": 41,
+      "dem_yes": 4,
+      "dem_no": 39,
+      "margin": 16,
+      "dem_supporters": [
+        {
+          "name": "COONS, Christopher A.",
+          "state": "DE"
+        },
+        {
+          "name": "FETTERMAN, John Karl",
+          "state": "PA"
+        },
+        {
+          "name": "HASSAN, Margaret (Maggie)",
+          "state": "NH"
+        },
+        {
+          "name": "SHAHEEN, Jeanne",
+          "state": "NH"
+        }
+      ]
+    },
+    {
+      "vote_id": "s607-119",
+      "vote_date": null,
+      "nominee": "Caleb Orr, of Texas, to be an Assistant Secretary of State (Economic and Business Affairs)",
+      "category": "cabinet",
+      "total_yes": 57,
+      "total_no": 43,
+      "dem_yes": 4,
+      "dem_no": 41,
+      "margin": 14,
+      "dem_supporters": [
+        {
+          "name": "COONS, Christopher A.",
+          "state": "DE"
+        },
+        {
+          "name": "FETTERMAN, John Karl",
+          "state": "PA"
+        },
+        {
+          "name": "HASSAN, Margaret (Maggie)",
+          "state": "NH"
+        },
+        {
+          "name": "SHAHEEN, Jeanne",
+          "state": "NH"
+        }
+      ]
+    },
+    {
+      "vote_id": "s657-119",
+      "vote_date": null,
+      "nominee": "Keith Bass, of Texas, to be an Assistant Secretary of Defense",
+      "category": "cabinet",
+      "total_yes": 58,
+      "total_no": 36,
+      "dem_yes": 6,
+      "dem_no": 34,
+      "margin": 22,
+      "dem_supporters": [
+        {
+          "name": "FETTERMAN, John Karl",
+          "state": "PA"
+        },
+        {
+          "name": "KAINE, Timothy Michael (Tim)",
+          "state": "VA"
+        },
+        {
+          "name": "KELLY, Mark Edward",
+          "state": "AZ"
+        },
+        {
+          "name": "REED, John F. (Jack)",
+          "state": "RI"
+        },
+        {
+          "name": "ROSEN, Jacklyn Sheryl",
+          "state": "NV"
+        },
+        {
+          "name": "SHAHEEN, Jeanne",
+          "state": "NH"
+        }
+      ]
+    },
+    {
+      "vote_id": "s660-119",
+      "vote_date": null,
+      "nominee": "Keith Bass, of Texas, to be an Assistant Secretary of Defense",
+      "category": "cabinet",
+      "total_yes": 50,
+      "total_no": 35,
+      "dem_yes": 6,
+      "dem_no": 33,
+      "margin": 15,
+      "dem_supporters": [
+        {
+          "name": "FETTERMAN, John Karl",
+          "state": "PA"
+        },
+        {
+          "name": "GALLEGO, Ruben",
+          "state": "AZ"
+        },
+        {
+          "name": "KAINE, Timothy Michael (Tim)",
+          "state": "VA"
+        },
+        {
+          "name": "REED, John F. (Jack)",
+          "state": "RI"
+        },
+        {
+          "name": "ROSEN, Jacklyn Sheryl",
+          "state": "NV"
+        },
+        {
+          "name": "SHAHEEN, Jeanne",
+          "state": "NH"
+        }
+      ]
+    },
+    {
+      "vote_id": "s7-119",
+      "vote_date": null,
+      "nominee": "A bill to require the Secretary of Homeland Security to take into custody aliens who have been charged in the United States with theft, and for other purposes.",
+      "category": "cabinet",
+      "total_yes": 64,
+      "total_no": 35,
+      "dem_yes": 12,
+      "dem_no": 33,
+      "margin": 29,
+      "dem_supporters": [
+        {
+          "name": "CORTEZ MASTO, Catherine Marie",
+          "state": "NV"
+        },
+        {
+          "name": "FETTERMAN, John Karl",
+          "state": "PA"
+        },
+        {
+          "name": "GALLEGO, Ruben",
+          "state": "AZ"
+        },
+        {
+          "name": "HASSAN, Margaret (Maggie)",
+          "state": "NH"
+        },
+        {
+          "name": "KELLY, Mark Edward",
+          "state": "AZ"
+        },
+        {
+          "name": "OSSOFF, Thomas Jonathan (Jon)",
+          "state": "GA"
+        },
+        {
+          "name": "PETERS, Gary C.",
+          "state": "MI"
+        },
+        {
+          "name": "ROSEN, Jacklyn Sheryl",
+          "state": "NV"
+        },
+        {
+          "name": "SHAHEEN, Jeanne",
+          "state": "NH"
+        },
+        {
+          "name": "SLOTKIN, Elissa",
+          "state": "MI"
+        },
+        {
+          "name": "WARNER, Mark",
+          "state": "VA"
+        },
+        {
+          "name": "WARNOCK, Raphael Gamaliel",
+          "state": "GA"
+        }
+      ]
+    },
+    {
+      "vote_id": "s93-119",
+      "vote_date": null,
+      "nominee": "Linda McMahon, of Connecticut, to be Secretary of Education",
+      "category": "cabinet",
+      "total_yes": 51,
+      "total_no": 47,
+      "dem_yes": 0,
+      "dem_no": 45,
+      "margin": 4,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s98-119",
+      "vote_date": null,
+      "nominee": "Linda McMahon, of Connecticut, to be Secretary of Education",
+      "category": "cabinet",
+      "total_yes": 51,
+      "total_no": 47,
+      "dem_yes": 0,
+      "dem_no": 45,
+      "margin": 4,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s99-119",
+      "vote_date": null,
+      "nominee": "Linda McMahon, of Connecticut, to be Secretary of Education",
+      "category": "cabinet",
+      "total_yes": 51,
+      "total_no": 45,
+      "dem_yes": 0,
+      "dem_no": 43,
+      "margin": 6,
+      "dem_supporters": []
+    }
+  ],
+  "judicial_confirmations": [
+    {
+      "vote_id": "s382-119",
+      "vote_date": null,
+      "nominee": "Whitney D. Hermandorfer, of Tennessee, to be United States Circuit Judge for the Sixth Circuit",
+      "category": "judicial",
+      "total_yes": 51,
+      "total_no": 43,
+      "dem_yes": 0,
+      "dem_no": 41,
+      "margin": 8,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s384-119",
+      "vote_date": null,
+      "nominee": "Whitney D. Hermandorfer, of Tennessee, to be United States Circuit Judge for the Sixth Circuit",
+      "category": "judicial",
+      "total_yes": 46,
+      "total_no": 42,
+      "dem_yes": 0,
+      "dem_no": 40,
+      "margin": 4,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s412-119",
+      "vote_date": null,
+      "nominee": "Joshua M. Divine, of Missouri, to be United States District Judge for the Eastern and Western Districts of Missouri",
+      "category": "judicial",
+      "total_yes": 52,
+      "total_no": 46,
+      "dem_yes": 0,
+      "dem_no": 44,
+      "margin": 6,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s413-119",
+      "vote_date": null,
+      "nominee": "Cristian M. Stevens, of Missouri, to be United States District Judge for the Eastern District of Missouri",
+      "category": "judicial",
+      "total_yes": 49,
+      "total_no": 43,
+      "dem_yes": 0,
+      "dem_no": 42,
+      "margin": 6,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s420-119",
+      "vote_date": null,
+      "nominee": "Joshua M. Divine, of Missouri, to be United States District Judge for the Eastern and Western Districts of Missouri",
+      "category": "judicial",
+      "total_yes": 51,
+      "total_no": 46,
+      "dem_yes": 0,
+      "dem_no": 45,
+      "margin": 5,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s421-119",
+      "vote_date": null,
+      "nominee": "Cristian M. Stevens, of Missouri, to be United States District Judge for the Eastern District of Missouri",
+      "category": "judicial",
+      "total_yes": 50,
+      "total_no": 47,
+      "dem_yes": 0,
+      "dem_no": 45,
+      "margin": 3,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s429-119",
+      "vote_date": null,
+      "nominee": "Zachary M. Bluestone, of Missouri, to be United States District Judge for the Eastern District of Missouri",
+      "category": "judicial",
+      "total_yes": 49,
+      "total_no": 47,
+      "dem_yes": 0,
+      "dem_no": 45,
+      "margin": 2,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s430-119",
+      "vote_date": null,
+      "nominee": "Zachary M. Bluestone, of Missouri, to be United States District Judge for the Eastern District of Missouri",
+      "category": "judicial",
+      "total_yes": 49,
+      "total_no": 47,
+      "dem_yes": 0,
+      "dem_no": 45,
+      "margin": 2,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s437-119",
+      "vote_date": null,
+      "nominee": "Emil J. Bove III, of Pennsylvania, to be United States Circuit Judge for the Third Circuit",
+      "category": "judicial",
+      "total_yes": 50,
+      "total_no": 48,
+      "dem_yes": 0,
+      "dem_no": 44,
+      "margin": 2,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s448-119",
+      "vote_date": null,
+      "nominee": "Emil J. Bove III, of Pennsylvania, to be United States Circuit Judge for the Third Circuit",
+      "category": "judicial",
+      "total_yes": 50,
+      "total_no": 49,
+      "dem_yes": 0,
+      "dem_no": 45,
+      "margin": 1,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s501-119",
+      "vote_date": null,
+      "nominee": "Maria A. Lanahan, of Missouri, to be United States District Judge for the Eastern District of Missouri",
+      "category": "judicial",
+      "total_yes": 53,
+      "total_no": 45,
+      "dem_yes": 0,
+      "dem_no": 44,
+      "margin": 8,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s502-119",
+      "vote_date": null,
+      "nominee": "Edward L. Artau, of Florida, to be United States District Judge for the Southern District of Florida",
+      "category": "judicial",
+      "total_yes": 53,
+      "total_no": 46,
+      "dem_yes": 0,
+      "dem_no": 44,
+      "margin": 7,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s504-119",
+      "vote_date": null,
+      "nominee": "Edward L. Artau, of Florida, to be United States District Judge for the Southern District of Florida",
+      "category": "judicial",
+      "total_yes": 50,
+      "total_no": 43,
+      "dem_yes": 0,
+      "dem_no": 41,
+      "margin": 7,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s505-119",
+      "vote_date": null,
+      "nominee": "Maria A. Lanahan, of Missouri, to be United States District Judge for the Eastern District of Missouri",
+      "category": "judicial",
+      "total_yes": 52,
+      "total_no": 45,
+      "dem_yes": 0,
+      "dem_no": 43,
+      "margin": 7,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s508-119",
+      "vote_date": null,
+      "nominee": "Kyle Christopher Dudek, of Florida, to be United States District Judge for the Middle District of Florida",
+      "category": "judicial",
+      "total_yes": 53,
+      "total_no": 44,
+      "dem_yes": 1,
+      "dem_no": 42,
+      "margin": 9,
+      "dem_supporters": [
+        {
+          "name": "WELCH, Peter",
+          "state": "VT"
+        }
+      ]
+    },
+    {
+      "vote_id": "s509-119",
+      "vote_date": null,
+      "nominee": "Kyle Christopher Dudek, of Florida, to be United States District Judge for the Middle District of Florida",
+      "category": "judicial",
+      "total_yes": 53,
+      "total_no": 45,
+      "dem_yes": 1,
+      "dem_no": 43,
+      "margin": 8,
+      "dem_supporters": [
+        {
+          "name": "WELCH, Peter",
+          "state": "VT"
+        }
+      ]
+    },
+    {
+      "vote_id": "s552-119",
+      "vote_date": null,
+      "nominee": "Jennifer Lee Mascott, of Delaware, to be United States Circuit Judge for the Third Circuit",
+      "category": "judicial",
+      "total_yes": 50,
+      "total_no": 47,
+      "dem_yes": 0,
+      "dem_no": 45,
+      "margin": 3,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s561-119",
+      "vote_date": null,
+      "nominee": "Jennifer Lee Mascott, of Delaware, to be United States Circuit Judge for the Third Circuit",
+      "category": "judicial",
+      "total_yes": 50,
+      "total_no": 47,
+      "dem_yes": 0,
+      "dem_no": 44,
+      "margin": 3,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s574-119",
+      "vote_date": null,
+      "nominee": "Harold D. Mooty III, of Alabama, to be United States District Judge for the Northern District of Alabama",
+      "category": "judicial",
+      "total_yes": 62,
+      "total_no": 34,
+      "dem_yes": 11,
+      "dem_no": 33,
+      "margin": 28,
+      "dem_supporters": [
+        {
+          "name": "COONS, Christopher A.",
+          "state": "DE"
+        },
+        {
+          "name": "DURBIN, Richard Joseph",
+          "state": "IL"
+        },
+        {
+          "name": "HASSAN, Margaret (Maggie)",
+          "state": "NH"
+        },
+        {
+          "name": "KAINE, Timothy Michael (Tim)",
+          "state": "VA"
+        },
+        {
+          "name": "KELLY, Mark Edward",
+          "state": "AZ"
+        },
+        {
+          "name": "KLOBUCHAR, Amy",
+          "state": "MN"
+        },
+        {
+          "name": "REED, John F. (Jack)",
+          "state": "RI"
+        },
+        {
+          "name": "SCHIFF, Adam",
+          "state": "CA"
+        },
+        {
+          "name": "SHAHEEN, Jeanne",
+          "state": "NH"
+        },
+        {
+          "name": "WELCH, Peter",
+          "state": "VT"
+        },
+        {
+          "name": "WHITEHOUSE, Sheldon",
+          "state": "RI"
+        }
+      ]
+    },
+    {
+      "vote_id": "s578-119",
+      "vote_date": null,
+      "nominee": "Anne-Leigh Gaylord Moe, of Florida, to be United States District Judge for the Middle District of Florida",
+      "category": "judicial",
+      "total_yes": 53,
+      "total_no": 46,
+      "dem_yes": 0,
+      "dem_no": 44,
+      "margin": 7,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s579-119",
+      "vote_date": null,
+      "nominee": "William W. Mercer, of Montana, to be United States District Judge for the District of Montana",
+      "category": "judicial",
+      "total_yes": 53,
+      "total_no": 46,
+      "dem_yes": 0,
+      "dem_no": 44,
+      "margin": 7,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s580-119",
+      "vote_date": null,
+      "nominee": "Anne-Leigh Gaylord Moe, of Florida, to be United States District Judge for the Middle District of Florida",
+      "category": "judicial",
+      "total_yes": 53,
+      "total_no": 46,
+      "dem_yes": 0,
+      "dem_no": 44,
+      "margin": 7,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s582-119",
+      "vote_date": null,
+      "nominee": "Bill Lewis, of Alabama, to be United States District Judge for the Middle District of Alabama",
+      "category": "judicial",
+      "total_yes": 60,
+      "total_no": 39,
+      "dem_yes": 7,
+      "dem_no": 38,
+      "margin": 21,
+      "dem_supporters": [
+        {
+          "name": "DURBIN, Richard Joseph",
+          "state": "IL"
+        },
+        {
+          "name": "FETTERMAN, John Karl",
+          "state": "PA"
+        },
+        {
+          "name": "HASSAN, Margaret (Maggie)",
+          "state": "NH"
+        },
+        {
+          "name": "KAINE, Timothy Michael (Tim)",
+          "state": "VA"
+        },
+        {
+          "name": "PETERS, Gary C.",
+          "state": "MI"
+        },
+        {
+          "name": "SCHIFF, Adam",
+          "state": "CA"
+        },
+        {
+          "name": "SHAHEEN, Jeanne",
+          "state": "NH"
+        }
+      ]
+    },
+    {
+      "vote_id": "s583-119",
+      "vote_date": null,
+      "nominee": "Stephen Chad Meredith, of Kentucky, to be United States District Judge for the Eastern District of Kentucky",
+      "category": "judicial",
+      "total_yes": 52,
+      "total_no": 45,
+      "dem_yes": 0,
+      "dem_no": 43,
+      "margin": 7,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s584-119",
+      "vote_date": null,
+      "nominee": "William W. Mercer, of Montana, to be United States District Judge for the District of Montana",
+      "category": "judicial",
+      "total_yes": 52,
+      "total_no": 45,
+      "dem_yes": 0,
+      "dem_no": 43,
+      "margin": 7,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s586-119",
+      "vote_date": null,
+      "nominee": "Stephen Chad Meredith, of Kentucky, to be United States District Judge for the Eastern District of Kentucky",
+      "category": "judicial",
+      "total_yes": 48,
+      "total_no": 45,
+      "dem_yes": 0,
+      "dem_no": 43,
+      "margin": 3,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s587-119",
+      "vote_date": null,
+      "nominee": "Rebecca L. Taibleson, of Wisconsin, to be United States Circuit Judge for the Seventh Circuit",
+      "category": "judicial",
+      "total_yes": 50,
+      "total_no": 45,
+      "dem_yes": 0,
+      "dem_no": 43,
+      "margin": 5,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s588-119",
+      "vote_date": null,
+      "nominee": "Rebecca L. Taibleson, of Wisconsin, to be United States Circuit Judge for the Seventh Circuit",
+      "category": "judicial",
+      "total_yes": 52,
+      "total_no": 46,
+      "dem_yes": 0,
+      "dem_no": 44,
+      "margin": 6,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s589-119",
+      "vote_date": null,
+      "nominee": "Bill Lewis, of Alabama, to be United States District Judge for the Middle District of Alabama",
+      "category": "judicial",
+      "total_yes": 58,
+      "total_no": 40,
+      "dem_yes": 5,
+      "dem_no": 39,
+      "margin": 18,
+      "dem_supporters": [
+        {
+          "name": "DURBIN, Richard Joseph",
+          "state": "IL"
+        },
+        {
+          "name": "HASSAN, Margaret (Maggie)",
+          "state": "NH"
+        },
+        {
+          "name": "KAINE, Timothy Michael (Tim)",
+          "state": "VA"
+        },
+        {
+          "name": "PETERS, Gary C.",
+          "state": "MI"
+        },
+        {
+          "name": "SCHIFF, Adam",
+          "state": "CA"
+        }
+      ]
+    },
+    {
+      "vote_id": "s591-119",
+      "vote_date": null,
+      "nominee": "Jordan Emery Pratt, of Florida, to be United States District Judge for the Middle District of Florida",
+      "category": "judicial",
+      "total_yes": 52,
+      "total_no": 47,
+      "dem_yes": 0,
+      "dem_no": 45,
+      "margin": 5,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s592-119",
+      "vote_date": null,
+      "nominee": "Jordan Emery Pratt, of Florida, to be United States District Judge for the Middle District of Florida",
+      "category": "judicial",
+      "total_yes": 52,
+      "total_no": 47,
+      "dem_yes": 0,
+      "dem_no": 45,
+      "margin": 5,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s593-119",
+      "vote_date": null,
+      "nominee": "Edmund G. LaCour, Jr., of Alabama, to be United States District Judge for the Northern District of Alabama",
+      "category": "judicial",
+      "total_yes": 53,
+      "total_no": 46,
+      "dem_yes": 0,
+      "dem_no": 44,
+      "margin": 7,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s596-119",
+      "vote_date": null,
+      "nominee": "Edmund G. LaCour, Jr., of Alabama, to be United States District Judge for the Northern District of Alabama",
+      "category": "judicial",
+      "total_yes": 51,
+      "total_no": 47,
+      "dem_yes": 0,
+      "dem_no": 45,
+      "margin": 4,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s601-119",
+      "vote_date": null,
+      "nominee": "Joshua D. Dunlap, of Maine, to be United States Circuit Judge for the First Circuit",
+      "category": "judicial",
+      "total_yes": 51,
+      "total_no": 47,
+      "dem_yes": 0,
+      "dem_no": 45,
+      "margin": 4,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s602-119",
+      "vote_date": null,
+      "nominee": "Eric Chunyee Tung, of California, to be United States Circuit Judge for the Ninth Circuit",
+      "category": "judicial",
+      "total_yes": 51,
+      "total_no": 46,
+      "dem_yes": 0,
+      "dem_no": 44,
+      "margin": 5,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s604-119",
+      "vote_date": null,
+      "nominee": "Joshua D. Dunlap, of Maine, to be United States Circuit Judge for the First Circuit",
+      "category": "judicial",
+      "total_yes": 52,
+      "total_no": 46,
+      "dem_yes": 0,
+      "dem_no": 44,
+      "margin": 6,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s605-119",
+      "vote_date": null,
+      "nominee": "Eric Chunyee Tung, of California, to be United States Circuit Judge for the Ninth Circuit",
+      "category": "judicial",
+      "total_yes": 52,
+      "total_no": 45,
+      "dem_yes": 0,
+      "dem_no": 43,
+      "margin": 7,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s624-119",
+      "vote_date": null,
+      "nominee": "David A. Bragdon, of North Carolina, to be United States District Judge for the Middle District of North Carolina",
+      "category": "judicial",
+      "total_yes": 50,
+      "total_no": 41,
+      "dem_yes": 0,
+      "dem_no": 40,
+      "margin": 9,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s625-119",
+      "vote_date": null,
+      "nominee": "David A. Bragdon, of North Carolina, to be United States District Judge for the Middle District of North Carolina",
+      "category": "judicial",
+      "total_yes": 53,
+      "total_no": 45,
+      "dem_yes": 0,
+      "dem_no": 43,
+      "margin": 8,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s626-119",
+      "vote_date": null,
+      "nominee": "Lindsey Ann Freeman, of North Carolina, to be United States District Judge for the Middle District of North Carolina",
+      "category": "judicial",
+      "total_yes": 61,
+      "total_no": 36,
+      "dem_yes": 7,
+      "dem_no": 35,
+      "margin": 25,
+      "dem_supporters": [
+        {
+          "name": "DURBIN, Richard Joseph",
+          "state": "IL"
+        },
+        {
+          "name": "HASSAN, Margaret (Maggie)",
+          "state": "NH"
+        },
+        {
+          "name": "KAINE, Timothy Michael (Tim)",
+          "state": "VA"
+        },
+        {
+          "name": "PETERS, Gary C.",
+          "state": "MI"
+        },
+        {
+          "name": "ROSEN, Jacklyn Sheryl",
+          "state": "NV"
+        },
+        {
+          "name": "SHAHEEN, Jeanne",
+          "state": "NH"
+        },
+        {
+          "name": "WHITEHOUSE, Sheldon",
+          "state": "RI"
+        }
+      ]
+    },
+    {
+      "vote_id": "s627-119",
+      "vote_date": null,
+      "nominee": "Lindsey Ann Freeman, of North Carolina, to be United States District Judge for the Middle District of North Carolina",
+      "category": "judicial",
+      "total_yes": 60,
+      "total_no": 39,
+      "dem_yes": 7,
+      "dem_no": 38,
+      "margin": 21,
+      "dem_supporters": [
+        {
+          "name": "DURBIN, Richard Joseph",
+          "state": "IL"
+        },
+        {
+          "name": "HASSAN, Margaret (Maggie)",
+          "state": "NH"
+        },
+        {
+          "name": "KAINE, Timothy Michael (Tim)",
+          "state": "VA"
+        },
+        {
+          "name": "PETERS, Gary C.",
+          "state": "MI"
+        },
+        {
+          "name": "ROSEN, Jacklyn Sheryl",
+          "state": "NV"
+        },
+        {
+          "name": "SHAHEEN, Jeanne",
+          "state": "NH"
+        },
+        {
+          "name": "WHITEHOUSE, Sheldon",
+          "state": "RI"
+        }
+      ]
+    },
+    {
+      "vote_id": "s628-119",
+      "vote_date": null,
+      "nominee": "Matthew E. Orso, of North Carolina, to be United States District Judge for the Western District of North Carolina",
+      "category": "judicial",
+      "total_yes": 56,
+      "total_no": 40,
+      "dem_yes": 5,
+      "dem_no": 38,
+      "margin": 16,
+      "dem_supporters": [
+        {
+          "name": "DURBIN, Richard Joseph",
+          "state": "IL"
+        },
+        {
+          "name": "GALLEGO, Ruben",
+          "state": "AZ"
+        },
+        {
+          "name": "KAINE, Timothy Michael (Tim)",
+          "state": "VA"
+        },
+        {
+          "name": "SHAHEEN, Jeanne",
+          "state": "NH"
+        },
+        {
+          "name": "WHITEHOUSE, Sheldon",
+          "state": "RI"
+        }
+      ]
+    },
+    {
+      "vote_id": "s629-119",
+      "vote_date": null,
+      "nominee": "Matthew E. Orso, of North Carolina, to be United States District Judge for the Western District of North Carolina",
+      "category": "judicial",
+      "total_yes": 57,
+      "total_no": 41,
+      "dem_yes": 5,
+      "dem_no": 39,
+      "margin": 16,
+      "dem_supporters": [
+        {
+          "name": "DURBIN, Richard Joseph",
+          "state": "IL"
+        },
+        {
+          "name": "GALLEGO, Ruben",
+          "state": "AZ"
+        },
+        {
+          "name": "KAINE, Timothy Michael (Tim)",
+          "state": "VA"
+        },
+        {
+          "name": "SHAHEEN, Jeanne",
+          "state": "NH"
+        },
+        {
+          "name": "WHITEHOUSE, Sheldon",
+          "state": "RI"
+        }
+      ]
+    },
+    {
+      "vote_id": "s631-119",
+      "vote_date": null,
+      "nominee": "Susan Courtwright Rodriguez, of North Carolina, to be United States District Judge for the Western District of North Carolina",
+      "category": "judicial",
+      "total_yes": 63,
+      "total_no": 34,
+      "dem_yes": 10,
+      "dem_no": 33,
+      "margin": 29,
+      "dem_supporters": [
+        {
+          "name": "DURBIN, Richard Joseph",
+          "state": "IL"
+        },
+        {
+          "name": "GALLEGO, Ruben",
+          "state": "AZ"
+        },
+        {
+          "name": "HASSAN, Margaret (Maggie)",
+          "state": "NH"
+        },
+        {
+          "name": "HIRONO, Mazie",
+          "state": "HI"
+        },
+        {
+          "name": "KAINE, Timothy Michael (Tim)",
+          "state": "VA"
+        },
+        {
+          "name": "KELLY, Mark Edward",
+          "state": "AZ"
+        },
+        {
+          "name": "KLOBUCHAR, Amy",
+          "state": "MN"
+        },
+        {
+          "name": "REED, John F. (Jack)",
+          "state": "RI"
+        },
+        {
+          "name": "ROSEN, Jacklyn Sheryl",
+          "state": "NV"
+        },
+        {
+          "name": "WHITEHOUSE, Sheldon",
+          "state": "RI"
+        }
+      ]
+    },
+    {
+      "vote_id": "s634-119",
+      "vote_date": null,
+      "nominee": "Susan Courtwright Rodriguez, of North Carolina, to be United States District Judge for the Western District of North Carolina",
+      "category": "judicial",
+      "total_yes": 57,
+      "total_no": 32,
+      "dem_yes": 10,
+      "dem_no": 31,
+      "margin": 25,
+      "dem_supporters": [
+        {
+          "name": "COONS, Christopher A.",
+          "state": "DE"
+        },
+        {
+          "name": "DURBIN, Richard Joseph",
+          "state": "IL"
+        },
+        {
+          "name": "GALLEGO, Ruben",
+          "state": "AZ"
+        },
+        {
+          "name": "HASSAN, Margaret (Maggie)",
+          "state": "NH"
+        },
+        {
+          "name": "HIRONO, Mazie",
+          "state": "HI"
+        },
+        {
+          "name": "KAINE, Timothy Michael (Tim)",
+          "state": "VA"
+        },
+        {
+          "name": "KELLY, Mark Edward",
+          "state": "AZ"
+        },
+        {
+          "name": "KLOBUCHAR, Amy",
+          "state": "MN"
+        },
+        {
+          "name": "REED, John F. (Jack)",
+          "state": "RI"
+        },
+        {
+          "name": "ROSEN, Jacklyn Sheryl",
+          "state": "NV"
+        }
+      ]
+    },
+    {
+      "vote_id": "s635-119",
+      "vote_date": null,
+      "nominee": "Robert P. Chamberlin, of Mississippi, to be United States District Judge for the Northern District of Mississippi",
+      "category": "judicial",
+      "total_yes": 52,
+      "total_no": 44,
+      "dem_yes": 0,
+      "dem_no": 42,
+      "margin": 8,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s636-119",
+      "vote_date": null,
+      "nominee": "Robert P. Chamberlin, of Mississippi, to be United States District Judge for the Northern District of Mississippi",
+      "category": "judicial",
+      "total_yes": 51,
+      "total_no": 46,
+      "dem_yes": 0,
+      "dem_no": 44,
+      "margin": 5,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s637-119",
+      "vote_date": null,
+      "nominee": "William J. Crain, of Louisiana, to be United States District Judge for the Eastern District of Louisiana",
+      "category": "judicial",
+      "total_yes": 51,
+      "total_no": 46,
+      "dem_yes": 0,
+      "dem_no": 44,
+      "margin": 5,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s638-119",
+      "vote_date": null,
+      "nominee": "William J. Crain, of Louisiana, to be United States District Judge for the Eastern District of Louisiana",
+      "category": "judicial",
+      "total_yes": 49,
+      "total_no": 46,
+      "dem_yes": 0,
+      "dem_no": 44,
+      "margin": 3,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s639-119",
+      "vote_date": null,
+      "nominee": "James D. Maxwell II, of Mississippi, to be United States District Judge for the Northern District of Mississippi",
+      "category": "judicial",
+      "total_yes": 49,
+      "total_no": 46,
+      "dem_yes": 0,
+      "dem_no": 44,
+      "margin": 3,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s640-119",
+      "vote_date": null,
+      "nominee": "James D. Maxwell II, of Mississippi, to be United States District Judge for the Northern District of Mississippi",
+      "category": "judicial",
+      "total_yes": 51,
+      "total_no": 46,
+      "dem_yes": 0,
+      "dem_no": 44,
+      "margin": 5,
+      "dem_supporters": []
+    },
+    {
+      "vote_id": "s658-119",
+      "vote_date": null,
+      "nominee": "Alexander C. Van Hook, of Louisiana, to be United States District Judge for the Western District of Louisiana",
+      "category": "judicial",
+      "total_yes": 60,
+      "total_no": 35,
+      "dem_yes": 6,
+      "dem_no": 34,
+      "margin": 25,
+      "dem_supporters": [
+        {
+          "name": "COONS, Christopher A.",
+          "state": "DE"
+        },
+        {
+          "name": "HASSAN, Margaret (Maggie)",
+          "state": "NH"
+        },
+        {
+          "name": "KAINE, Timothy Michael (Tim)",
+          "state": "VA"
+        },
+        {
+          "name": "KLOBUCHAR, Amy",
+          "state": "MN"
+        },
+        {
+          "name": "SHAHEEN, Jeanne",
+          "state": "NH"
+        },
+        {
+          "name": "WELCH, Peter",
+          "state": "VT"
+        }
+      ]
+    },
+    {
+      "vote_id": "s665-119",
+      "vote_date": null,
+      "nominee": "Alexander C. Van Hook, of Louisiana, to be United States District Judge for the Western District of Louisiana",
+      "category": "judicial",
+      "total_yes": 53,
+      "total_no": 40,
+      "dem_yes": 6,
+      "dem_no": 39,
+      "margin": 13,
+      "dem_supporters": [
+        {
+          "name": "DURBIN, Richard Joseph",
+          "state": "IL"
+        },
+        {
+          "name": "HASSAN, Margaret (Maggie)",
+          "state": "NH"
+        },
+        {
+          "name": "KAINE, Timothy Michael (Tim)",
+          "state": "VA"
+        },
+        {
+          "name": "KLOBUCHAR, Amy",
+          "state": "MN"
+        },
+        {
+          "name": "SHAHEEN, Jeanne",
+          "state": "NH"
+        },
+        {
+          "name": "WELCH, Peter",
+          "state": "VT"
+        }
+      ]
+    }
+  ],
+  "other_confirmations": [
+    {
+      "vote_id": "s563-119",
+      "vote_date": null,
+      "nominee": "To require Presidential appointment and Senate confirmation of the Inspector General of the Board of Governors of the Federal Reserve System and the Bureau of Consumer Financial Protection.",
+      "category": "other",
+      "total_yes": 53,
+      "total_no": 43,
+      "dem_yes": 8,
+      "dem_no": 36,
+      "margin": 10,
+      "dem_supporters": [
+        {
+          "name": "CANTWELL, Maria E.",
+          "state": "WA"
+        },
+        {
+          "name": "DURBIN, Richard Joseph",
+          "state": "IL"
+        },
+        {
+          "name": "FETTERMAN, John Karl",
+          "state": "PA"
+        },
+        {
+          "name": "MARKEY, Edward John",
+          "state": "MA"
+        },
+        {
+          "name": "MERKLEY, Jeff",
+          "state": "OR"
+        },
+        {
+          "name": "MURPHY, Christopher",
+          "state": "CT"
+        },
+        {
+          "name": "WARREN, Elizabeth",
+          "state": "MA"
+        },
+        {
+          "name": "WYDEN, Ronald Lee",
+          "state": "OR"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_confirmations": 162,
+    "cabinet_count": 108,
+    "judicial_count": 53,
+    "other_count": 1
+  }
+}
