@@ -581,9 +581,9 @@
                     const total = v.voted_with_gop + v.absent;
                     let pattern = '';
                     
-                    // Count-based rating system
-                    if (total <= 19) pattern = 'Rare';
-                    else if (total <= 50) pattern = 'Strategic Rotator';
+                    // Count-based rating system (out of 135 winnable votes)
+                    if (total <= 10) pattern = 'Rare';
+                    else if (total <= 20) pattern = 'Strategic Rotator';
                     else pattern = 'Super Villain';
                     
                     const topSectors = Object.entries(v.sectors)
