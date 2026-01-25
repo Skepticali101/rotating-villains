@@ -560,87 +560,6 @@
                     </div>
 
                     <div class="section">
-                        <h2>📉 Austerity Votes</h2>
-                        <p style="margin-bottom: 20px; opacity: 0.9; font-size: 1.05rem;">
-                            Budget cuts to social programs, entitlement "reform", and debt ceiling deals
-                        </p>
-                        <div class="scroll-container" style="max-height: 500px;">
-                            <div id="austerity"></div>
-                        </div>
-                    </div>
-
-                    <div class="section">
-                        <h2>💊 Big Pharma Protection</h2>
-                        <p style="margin-bottom: 20px; opacity: 0.9; font-size: 1.05rem;">
-                            Blocking drug price negotiation and protecting pharmaceutical profits
-                        </p>
-                        <div class="scroll-container" style="max-height: 500px;">
-                            <div id="bigPharma"></div>
-                        </div>
-                    </div>
-
-                    <div class="section">
-                        <h2>💰 Corporate Giveaways</h2>
-                        <p style="margin-bottom: 20px; opacity: 0.9; font-size: 1.05rem;">
-                            Tax cuts, deregulation, and corporate welfare - which Democrats voted for these GOP bills?
-                        </p>
-                        <div class="scroll-container" style="max-height: 500px;">
-                            <div id="corporateGiveaways"></div>
-                        </div>
-                    </div>
-
-                    <div class="section">
-                        <h2>🪧 Union Busting</h2>
-                        <p style="margin-bottom: 20px; opacity: 0.9; font-size: 1.05rem;">
-                            Anti-labor legislation and attacks on worker organizing
-                        </p>
-                        <div class="scroll-container" style="max-height: 500px;">
-                            <div id="unionBusting"></div>
-                        </div>
-                    </div>
-
-                    <div class="section">
-                        <h2>⚔️ War Machine Funding</h2>
-                        <p style="margin-bottom: 20px; opacity: 0.9; font-size: 1.05rem;">
-                            Defense spending, military aid, and Pentagon budget expansions
-                        </p>
-                        <div class="scroll-container" style="max-height: 500px;">
-                            <div id="warMachine"></div>
-                        </div>
-                    </div>
-
-                    <div class="section">
-                        <h2>🏛️ Trump Cabinet & Judge Confirmations</h2>
-                        <p style="margin-bottom: 20px; opacity: 0.9; font-size: 1.05rem;">
-                            Which Democrats voted to confirm Trump's Cabinet members and judicial nominees?
-                        </p>
-                        
-                        <div class="controls">
-                            <div style="display: flex; gap: 15px; align-items: center; flex-wrap: wrap;">
-                                <label style="font-weight: 600; font-size: 1.1rem;">🔍 Search:</label>
-                                <input type="text" id="confirmationSearch" placeholder="Search nominee..." 
-                                       oninput="filterConfirmations()">
-                                
-                                <select id="confirmationType" onchange="filterConfirmations()">
-                                    <option value="all">All Confirmations</option>
-                                    <option value="cabinet">Cabinet Only</option>
-                                    <option value="judicial">Judges Only</option>
-                                </select>
-                                
-                                <select id="confirmationDemVotes" onchange="filterConfirmations()">
-                                    <option value="all">All Votes</option>
-                                    <option value="withDems">With Dem Support</option>
-                                    <option value="unanimous">Unanimous Dem Support</option>
-                                </select>
-                            </div>
-                        </div>
-                        
-                        <div class="scroll-container" style="max-height: 600px;">
-                            <div id="confirmations"></div>
-                        </div>
-                    </div>
-
-                    <div class="section">
                         <h2>🔥 Closest Calls - Where 1-5 Dems Made the Difference</h2>
                         <p style="margin-bottom: 20px; opacity: 0.9; font-size: 1.05rem;">
                             These votes were decided by razor-thin margins. Just a few more Democrats voting NO would have stopped these bills.
@@ -660,8 +579,6 @@
             document.getElementById('root').innerHTML = html;
             
             // Render all sections after DOM is ready
-            renderSpecialInterests();
-            renderConfirmations();
             renderClosestCalls(closestCalls);
         }
         
@@ -670,10 +587,11 @@
                 return villains.map((v, i) => {
                     const total = v.voted_with_gop + v.absent;
                     let pattern = '';
-                    if (v.betrayal_rate < 10) pattern = 'Rare';
-                    else if (v.betrayal_rate < 30) pattern = 'Strategic Rotator';
-                    else if (v.betrayal_rate < 70) pattern = 'Frequent Betrayer';
-                    else pattern = 'Always Betrays';
+                    
+                    // Count-based rating system
+                    if (total <= 19) pattern = 'Rare';
+                    else if (total <= 50) pattern = 'Strategic Rotator';
+                    else pattern = 'Super Villain';
                     
                     const topSectors = Object.entries(v.sectors)
                         .sort((a, b) => b[1].total - a[1].total)
