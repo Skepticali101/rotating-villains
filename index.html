@@ -430,9 +430,10 @@
         });
 
         function renderDashboard() {
-            const strategicVillains = fullData.rotating_villains.filter(v => {
+            // Calculate Super Villains (21+ betrayals)
+            const superVillains = fullData.rotating_villains.filter(v => {
                 const total = v.voted_with_gop + v.absent;
-                return total >= 20 && total <= 50;
+                return total >= 21;
             });
             
             // Use sectors from villain data directly
@@ -483,11 +484,11 @@
                             </div>
                             <div class="stat">
                                 <div class="stat-value">${fullData.summary.total_rotating_villains}</div>
-                                <div class="stat-label">Rotating Villains</div>
+                                <div class="stat-label">Total Members</div>
                             </div>
                             <div class="stat">
-                                <div class="stat-value">${strategicVillains.length}</div>
-                                <div class="stat-label">Strategic Rotators</div>
+                                <div class="stat-value">${superVillains.length}</div>
+                                <div class="stat-label">Super Villains</div>
                             </div>
                             <div class="stat">
                                 <div class="stat-value">${fullData.summary.total_betrayals}</div>
