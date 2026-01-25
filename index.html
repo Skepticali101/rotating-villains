@@ -510,22 +510,7 @@
                                     <option value="all">All States</option>
                                     ${stateOptions}
                                 </select>
-                                
-                                <select id="sectorFilter" onchange="filterTable()">
-                                    <option value="all">All Sectors (Total)</option>
-                                    ${Object.keys(SECTOR_COLORS).map(sector => 
-                                        `<option value="${sector}">${capitalizeFirst(sector)}</option>`
-                                    ).join('')}
-                                </select>
                             </div>
-                        </div>
-                        
-                        <div class="sector-legend">
-                            ${Object.entries(SECTOR_COLORS).map(([sector, color]) => `
-                                <div class="sector-tag" style="background: ${color}; color: white;">
-                                    ${capitalizeFirst(sector)}
-                                </div>
-                            `).join('')}
                         </div>
                         
                         <p style="margin-bottom: 20px; opacity: 0.9; font-size: 1.05rem;">
@@ -542,7 +527,6 @@
                                         <th>Voted with GOP</th>
                                         <th>Conveniently Absent</th>
                                         <th>Total Betrayals</th>
-                                        <th>Top Sectors</th>
                                         <th>Pattern</th>
                                     </tr>
                                 </thead>
@@ -577,94 +561,40 @@
         }
         
         function renderTableRows(villains, sector) {
-            if (sector === 'all') {
-                return villains.map((v, i) => {
-                    const total = v.voted_with_gop + v.absent;
-                    let pattern = '';
-                    
-                    // Count-based rating system (out of 135 winnable votes)
-                    if (total <= 10) pattern = 'Rare';
-                    else if (total <= 20) pattern = 'Strategic Rotator';
-                    else pattern = 'Super Villain';
-                    
-                    const topSectors = Object.entries(v.sectors)
-                        .sort((a, b) => b[1].total - a[1].total)
-                        .slice(0, 3);
-                    
-                    return `
-                        <tr>
-                            <td style="font-size: 1.1rem;"><strong>${i + 1}</strong></td>
-                            <td><strong style="font-size: 1.05rem;">${v.name}</strong></td>
-                            <td>${v.state}</td>
-                            <td>
-                                <span class="clickable" style="color: #ef4444;" 
-                                      onclick="showBetrayals('${escapeHtml(v.name)}', 'voted_yes', 'all')">
-                                    ${v.voted_with_gop}
-                                </span>
-                            </td>
-                            <td>
-                                <span class="clickable" style="color: #f59e0b;" 
-                                      onclick="showBetrayals('${escapeHtml(v.name)}', 'absent', 'all')">
-                                    ${v.absent}
-                                </span>
-                            </td>
-                            <td style="font-size: 1.3rem;"><strong>${total}</strong></td>
-                            <td>
-                                <div class="sector-breakdown">
-                                    ${topSectors.map(([sector, data]) => {
-                                        const color = SECTOR_COLORS[sector.toLowerCase()];
-                                        return `<span class="sector-mini" style="background: ${color};">${capitalizeFirst(sector)}: ${data.total}</span>`;
-                                    }).join('')}
-                                </div>
-                            </td>
-                            <td><span class="badge ${
-                                pattern === 'Rare' ? 'badge-info' : 
-                                pattern === 'Strategic Rotator' ? 'badge-warning' : 'badge-danger'
-                            }">${pattern}</span></td>
-                        </tr>
-                    `;
-                }).join('');
-            } else {
-                // Filter by specific sector
-                const filtered = villains
-                    .map(v => ({
-                        ...v,
-                        sectorTotal: v.sectors[sector]?.total || 0,
-                        sectorVoted: v.sectors[sector]?.voted_yes || 0,
-                        sectorAbsent: v.sectors[sector]?.absent || 0
-                    }))
-                    .filter(v => v.sectorTotal > 0)
-                    .sort((a, b) => b.sectorTotal - a.sectorTotal);
+            return villains.map((v, i) => {
+                const total = v.voted_with_gop + v.absent;
+                let pattern = '';
                 
-                return filtered.map((v, i) => {
-                    return `
-                        <tr>
-                            <td style="font-size: 1.1rem;"><strong>${i + 1}</strong></td>
-                            <td><strong style="font-size: 1.05rem;">${v.name}</strong></td>
-                            <td>${v.state}</td>
-                            <td>
-                                <span class="clickable" style="color: #ef4444;" 
-                                      onclick="showBetrayals('${escapeHtml(v.name)}', 'voted_yes', '${sector}')">
-                                    ${v.sectorVoted}
-                                </span>
-                            </td>
-                            <td>
-                                <span class="clickable" style="color: #f59e0b;" 
-                                      onclick="showBetrayals('${escapeHtml(v.name)}', 'absent', '${sector}')">
-                                    ${v.sectorAbsent}
-                                </span>
-                            </td>
-                            <td style="font-size: 1.3rem;"><strong>${v.sectorTotal}</strong></td>
-                            <td>
-                                <span class="sector-mini" style="background: ${SECTOR_COLORS[sector]}; color: white;">
-                                    ${capitalizeFirst(sector)} Sector
-                                </span>
-                            </td>
-                            <td><span class="badge badge-info">${v.betrayal_rate.toFixed(1)}% Overall</span></td>
-                        </tr>
-                    `;
-                }).join('');
-            }
+                // Count-based rating system (out of 135 winnable votes)
+                if (total <= 10) pattern = 'Rare';
+                else if (total <= 20) pattern = 'Strategic Rotator';
+                else pattern = 'Super Villain';
+                
+                return `
+                    <tr>
+                        <td style="font-size: 1.1rem;"><strong>${i + 1}</strong></td>
+                        <td><strong style="font-size: 1.05rem;">${v.name}</strong></td>
+                        <td>${v.state}</td>
+                        <td>
+                            <span class="clickable" style="color: #ef4444;" 
+                                  onclick="showBetrayals('${escapeHtml(v.name)}', 'voted_yes', 'all')">
+                                ${v.voted_with_gop}
+                            </span>
+                        </td>
+                        <td>
+                            <span class="clickable" style="color: #f59e0b;" 
+                                  onclick="showBetrayals('${escapeHtml(v.name)}', 'absent', 'all')">
+                                ${v.absent}
+                            </span>
+                        </td>
+                        <td style="font-size: 1.3rem;"><strong>${total}</strong></td>
+                        <td><span class="badge ${
+                            pattern === 'Rare' ? 'badge-info' : 
+                            pattern === 'Strategic Rotator' ? 'badge-warning' : 'badge-danger'
+                        }">${pattern}</span></td>
+                    </tr>
+                `;
+            }).join('');
         }
         
         let allConfirmations = { cabinet: [], judicial: [] };
@@ -962,7 +892,6 @@
         function filterTable() {
             const searchText = document.getElementById('searchBox').value.toLowerCase();
             const stateFilter = document.getElementById('stateFilter').value;
-            const sectorFilter = document.getElementById('sectorFilter').value;
             
             let filtered = enrichedVillains;
             
@@ -979,13 +908,7 @@
                 filtered = filtered.filter(v => v.state === stateFilter);
             }
             
-            // Apply sector filter (affects display, not filtering)
-            document.getElementById('tableBody').innerHTML = renderTableRows(filtered, sectorFilter);
-        }
-        
-        function filterBySector(sector) {
-            document.getElementById('sectorFilter').value = sector;
-            filterTable();
+            document.getElementById('tableBody').innerHTML = renderTableRows(filtered, 'all');
         }
         
         function capitalizeFirst(str) {
