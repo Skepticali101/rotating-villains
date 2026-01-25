@@ -65,6 +65,7 @@
                 overflow-x: hidden !important;
                 position: relative !important;
                 left: 0 !important;
+                border-left: none !important;
             }
             
             /* Make scroll containers scrollable INSIDE sections */
@@ -91,6 +92,13 @@
                 box-sizing: border-box !important;
                 overflow-x: hidden !important;
                 position: relative !important;
+            }
+            
+            /* Remove all left borders that cause right-shift */
+            .vote-item,
+            .closest-call-card,
+            .betrayer-card {
+                border-left: none !important;
             }
         }
         
