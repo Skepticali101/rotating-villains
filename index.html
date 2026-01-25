@@ -647,15 +647,14 @@
                             <div style="display: flex; gap: 15px; align-items: center; flex-wrap: wrap;">
                                 <label style="font-weight: 600; font-size: 1.1rem;">🔍 Find Your Rep:</label>
                                 <input type="text" id="searchBox" placeholder="Search by name..." 
-                                       oninput="filterTable()" 
-                                       style="min-width: 250px;">
+                                       oninput="filterTable()">
                                 
-                                <select id="stateFilter" onchange="filterTable()" style="min-width: 180px;">
+                                <select id="stateFilter" onchange="filterTable()">
                                     <option value="all">All States</option>
                                     ${stateOptions}
                                 </select>
                                 
-                                <select id="sectorFilter" onchange="filterTable()" style="min-width: 200px;">
+                                <select id="sectorFilter" onchange="filterTable()">
                                     <option value="all">All Sectors (Total)</option>
                                     ${Object.keys(SECTOR_COLORS).map(sector => 
                                         `<option value="${sector}">${capitalizeFirst(sector)}</option>`
@@ -757,16 +756,15 @@
                             <div style="display: flex; gap: 15px; align-items: center; flex-wrap: wrap;">
                                 <label style="font-weight: 600; font-size: 1.1rem;">🔍 Search:</label>
                                 <input type="text" id="confirmationSearch" placeholder="Search nominee..." 
-                                       oninput="filterConfirmations()" 
-                                       style="min-width: 250px;">
+                                       oninput="filterConfirmations()">
                                 
-                                <select id="confirmationType" onchange="filterConfirmations()" style="min-width: 200px;">
+                                <select id="confirmationType" onchange="filterConfirmations()">
                                     <option value="all">All Confirmations</option>
                                     <option value="cabinet">Cabinet Only</option>
                                     <option value="judicial">Judges Only</option>
                                 </select>
                                 
-                                <select id="confirmationDemVotes" onchange="filterConfirmations()" style="min-width: 200px;">
+                                <select id="confirmationDemVotes" onchange="filterConfirmations()">
                                     <option value="all">All Votes</option>
                                     <option value="withDems">With Dem Support</option>
                                     <option value="unanimous">Unanimous Dem Support</option>
