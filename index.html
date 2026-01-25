@@ -418,17 +418,10 @@
         let currentFilter = 'all';
         let enrichedVillains = [];
         
-        Promise.all([
-            fetch('rotating_villains_data.json').then(res => res.json()),
-            fetch('sector_analysis.json').then(res => res.json()),
-            fetch('confirmation_analysis.json').then(res => res.json()),
-            fetch('special_interests.json').then(res => res.json())
-        ])
-        .then(([villainsData, sectors, confirmations, specialInterests]) => {
+        fetch('rotating_villains_data.json')
+        .then(res => res.json())
+        .then(villainsData => {
             fullData = villainsData;
-            sectorData = sectors;
-            confirmationData = confirmations;
-            specialInterestsData = specialInterests;
             renderDashboard();
         })
         .catch(err => {
@@ -437,21 +430,21 @@
         });
 
         function renderDashboard() {
-            const strategicVillains = fullData.rotating_villains.filter(v => 
-                v.betrayal_rate >= 10 && v.betrayal_rate <= 70
-            );
+            const strategicVillains = fullData.rotating_villains.filter(v => {
+                const total = v.voted_with_gop + v.absent;
+                return total >= 20 && total <= 50;
+            });
             
-            // Merge sector data with villain data
+            // Use sectors from villain data directly
             enrichedVillains = fullData.rotating_villains.map(villain => {
-                const memberSectorData = sectorData.member_patterns.find(m => m.name === villain.name);
                 return {
                     ...villain,
-                    sectors: memberSectorData?.sectors || {}
+                    sectors: villain.sectors || {}
                 };
             });
             
             // Calculate closest calls (showing all votes with margin <= 5)
-            const closestCalls = fullData.winnable_votes_lost
+            const closestCalls = fullData.winnable_votes
                 .filter(v => v.margin <= 5)
                 .sort((a, b) => a.margin - b.margin)
                 .slice(0, 50);
@@ -497,8 +490,8 @@
                                 <div class="stat-label">Strategic Rotators</div>
                             </div>
                             <div class="stat">
-                                <div class="stat-value">${Object.keys(sectorData.sector_summary || {}).length}</div>
-                                <div class="stat-label">Bill Sectors Tracked</div>
+                                <div class="stat-value">${fullData.summary.total_betrayals}</div>
+                                <div class="stat-label">Total Betrayals</div>
                             </div>
                         </div>
                     </div>
@@ -1013,7 +1006,7 @@
                     const actionMatch = (type === 'voted_yes' && betrayal.action === 'Voted YES') ||
                                        (type === 'absent' && betrayal.action === 'Absent');
                     if (actionMatch) {
-                        const voteDetail = fullData.winnable_votes_lost.find(v => v.vote_id === voteId);
+                        const voteDetail = fullData.winnable_votes.find(v => v.vote_id === voteId);
                         if (voteDetail) {
                             memberBetrayal.push({
                                 voteId: voteId,
