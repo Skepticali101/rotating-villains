@@ -617,8 +617,8 @@
                                 </div>
                             </td>
                             <td><span class="badge ${
-                                v.betrayal_rate < 30 ? 'badge-info' : 
-                                v.betrayal_rate < 70 ? 'badge-warning' : 'badge-danger'
+                                pattern === 'Rare' ? 'badge-info' : 
+                                pattern === 'Strategic Rotator' ? 'badge-warning' : 'badge-danger'
                             }">${pattern}</span></td>
                         </tr>
                     `;
