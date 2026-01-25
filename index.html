@@ -43,14 +43,30 @@
                 margin: 0 0 2px 0 !important;
                 padding: 15px 10px !important;
                 box-sizing: border-box !important;
+                overflow-x: hidden !important;
             }
             
-            /* Prevent any child from causing overflow */
-            .section *,
-            .header *,
-            .alert-banner * {
+            /* Make scroll containers and tables scrollable INSIDE sections */
+            .scroll-container {
+                width: 100% !important;
+                max-width: 100% !important;
+                overflow-x: auto !important;
+                -webkit-overflow-scrolling: touch !important;
+                margin: 10px 0 !important;
+            }
+            
+            table {
+                min-width: 600px !important;
+                max-width: none !important;
+            }
+            
+            /* Prevent any child from causing page-level overflow */
+            .section > *:not(.scroll-container),
+            .header > *,
+            .alert-banner > * {
                 max-width: 100% !important;
                 box-sizing: border-box !important;
+                overflow-x: hidden !important;
             }
         }
         
