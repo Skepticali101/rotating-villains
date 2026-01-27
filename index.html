@@ -430,10 +430,8 @@
         });
 
         function renderDashboard() {
-            // Calculate Super Villains (21+ betrayals)
-            const superVillains = fullData.rotating_villains.filter(v => v.pattern === "Super Villain");
-                const total = v.voted_with_gop + v.absent;
-            });
+            // Calculate Super Villains (using pattern field)
+            const superVillains = fullData.rotating_villains.filter(v => v.pattern === 'Super Villain');
             
             // Use sectors from villain data directly
             enrichedVillains = fullData.rotating_villains.map(villain => {
