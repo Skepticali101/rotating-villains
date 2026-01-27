@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_winnable_votes_lost": 138,
+    "total_winnable_votes_lost": 163,
     "total_rotating_villains": 234,
     "total_betrayals": 1924
   },
@@ -714,6 +714,30 @@
       "could_have_won_with": 225
     },
     {
+      "vote_id": "s407-111",
+      "congress": 111,
+      "chamber": "Senate",
+      "description": null,
+      "yes": 51,
+      "no": 49,
+      "margin": 2,
+      "dems_betrayed": 14,
+      "dems_absent": 0,
+      "could_have_won_with": 52
+    },
+    {
+      "vote_id": "s632-111",
+      "congress": 111,
+      "chamber": "Senate",
+      "description": null,
+      "yes": 51,
+      "no": 48,
+      "margin": 3,
+      "dems_betrayed": 12,
+      "dems_absent": 0,
+      "could_have_won_with": 52
+    },
+    {
       "vote_id": "h543-118",
       "congress": 118,
       "chamber": "house",
@@ -774,6 +798,18 @@
       "could_have_won_with": 207
     },
     {
+      "vote_id": "h179-111",
+      "congress": 111,
+      "chamber": "House",
+      "description": null,
+      "yes": 228,
+      "no": 198,
+      "margin": 30,
+      "dems_betrayed": 63,
+      "dems_absent": 0,
+      "could_have_won_with": 229
+    },
+    {
       "vote_id": "h97-116",
       "congress": 116,
       "chamber": "house",
@@ -784,6 +820,18 @@
       "dems_betrayed": 26,
       "dems_absent": 0,
       "could_have_won_with": 221
+    },
+    {
+      "vote_id": "h303-111",
+      "congress": 111,
+      "chamber": "House",
+      "description": null,
+      "yes": 219,
+      "no": 211,
+      "margin": 8,
+      "dems_betrayed": 42,
+      "dems_absent": 0,
+      "could_have_won_with": 220
     },
     {
       "vote_id": "h1036-118",
@@ -798,6 +846,90 @@
       "could_have_won_with": 209
     },
     {
+      "vote_id": "h437-111",
+      "congress": 111,
+      "chamber": "House",
+      "description": null,
+      "yes": 240,
+      "no": 187,
+      "margin": 53,
+      "dems_betrayed": 65,
+      "dems_absent": 0,
+      "could_have_won_with": 241
+    },
+    {
+      "vote_id": "h447-111",
+      "congress": 111,
+      "chamber": "House",
+      "description": null,
+      "yes": 234,
+      "no": 193,
+      "margin": 41,
+      "dems_betrayed": 61,
+      "dems_absent": 0,
+      "could_have_won_with": 235
+    },
+    {
+      "vote_id": "h687-111",
+      "congress": 111,
+      "chamber": "House",
+      "description": null,
+      "yes": 206,
+      "no": 191,
+      "margin": 15,
+      "dems_betrayed": 50,
+      "dems_absent": 0,
+      "could_have_won_with": 207
+    },
+    {
+      "vote_id": "h882-111",
+      "congress": 111,
+      "chamber": "House",
+      "description": null,
+      "yes": 240,
+      "no": 194,
+      "margin": 46,
+      "dems_betrayed": 64,
+      "dems_absent": 0,
+      "could_have_won_with": 241
+    },
+    {
+      "vote_id": "h929-111",
+      "congress": 111,
+      "chamber": "House",
+      "description": null,
+      "yes": 212,
+      "no": 193,
+      "margin": 19,
+      "dems_betrayed": 47,
+      "dems_absent": 0,
+      "could_have_won_with": 213
+    },
+    {
+      "vote_id": "h997-111",
+      "congress": 111,
+      "chamber": "House",
+      "description": null,
+      "yes": 225,
+      "no": 191,
+      "margin": 34,
+      "dems_betrayed": 61,
+      "dems_absent": 0,
+      "could_have_won_with": 226
+    },
+    {
+      "vote_id": "h1133-111",
+      "congress": 111,
+      "chamber": "House",
+      "description": null,
+      "yes": 227,
+      "no": 180,
+      "margin": 47,
+      "dems_betrayed": 56,
+      "dems_absent": 0,
+      "could_have_won_with": 228
+    },
+    {
       "vote_id": "h76-119",
       "congress": 119,
       "chamber": "house",
@@ -808,6 +940,18 @@
       "dems_betrayed": 6,
       "dems_absent": 25,
       "could_have_won_with": 204
+    },
+    {
+      "vote_id": "h1219-111",
+      "congress": 111,
+      "chamber": "House",
+      "description": null,
+      "yes": 223,
+      "no": 179,
+      "margin": 44,
+      "dems_betrayed": 74,
+      "dems_absent": 0,
+      "could_have_won_with": 224
     },
     {
       "vote_id": "h163-119",
@@ -1014,6 +1158,18 @@
       "could_have_won_with": 211
     },
     {
+      "vote_id": "s34-111",
+      "congress": 111,
+      "chamber": "Senate",
+      "description": null,
+      "yes": 52,
+      "no": 45,
+      "margin": 7,
+      "dems_betrayed": 14,
+      "dems_absent": 0,
+      "could_have_won_with": 53
+    },
+    {
       "vote_id": "h422-116",
       "congress": 116,
       "chamber": "house",
@@ -1024,6 +1180,150 @@
       "dems_betrayed": 37,
       "dems_absent": 0,
       "could_have_won_with": 227
+    },
+    {
+      "vote_id": "s142-111",
+      "congress": 111,
+      "chamber": "Senate",
+      "description": null,
+      "yes": 54,
+      "no": 44,
+      "margin": 10,
+      "dems_betrayed": 13,
+      "dems_absent": 0,
+      "could_have_won_with": 55
+    },
+    {
+      "vote_id": "s146-111",
+      "congress": 111,
+      "chamber": "Senate",
+      "description": null,
+      "yes": 51,
+      "no": 48,
+      "margin": 3,
+      "dems_betrayed": 10,
+      "dems_absent": 0,
+      "could_have_won_with": 52
+    },
+    {
+      "vote_id": "s183-111",
+      "congress": 111,
+      "chamber": "Senate",
+      "description": null,
+      "yes": 50,
+      "no": 46,
+      "margin": 4,
+      "dems_betrayed": 11,
+      "dems_absent": 0,
+      "could_have_won_with": 51
+    },
+    {
+      "vote_id": "s220-111",
+      "congress": 111,
+      "chamber": "Senate",
+      "description": null,
+      "yes": 54,
+      "no": 44,
+      "margin": 10,
+      "dems_betrayed": 21,
+      "dems_absent": 0,
+      "could_have_won_with": 55
+    },
+    {
+      "vote_id": "s360-111",
+      "congress": 111,
+      "chamber": "Senate",
+      "description": null,
+      "yes": 51,
+      "no": 47,
+      "margin": 4,
+      "dems_betrayed": 12,
+      "dems_absent": 0,
+      "could_have_won_with": 52
+    },
+    {
+      "vote_id": "s399-111",
+      "congress": 111,
+      "chamber": "Senate",
+      "description": null,
+      "yes": 53,
+      "no": 46,
+      "margin": 7,
+      "dems_betrayed": 13,
+      "dems_absent": 0,
+      "could_have_won_with": 54
+    },
+    {
+      "vote_id": "s408-111",
+      "congress": 111,
+      "chamber": "Senate",
+      "description": null,
+      "yes": 56,
+      "no": 44,
+      "margin": 12,
+      "dems_betrayed": 17,
+      "dems_absent": 0,
+      "could_have_won_with": 57
+    },
+    {
+      "vote_id": "s548-111",
+      "congress": 111,
+      "chamber": "Senate",
+      "description": null,
+      "yes": 47,
+      "no": 46,
+      "margin": 1,
+      "dems_betrayed": 7,
+      "dems_absent": 0,
+      "could_have_won_with": 48
+    },
+    {
+      "vote_id": "s562-111",
+      "congress": 111,
+      "chamber": "Senate",
+      "description": null,
+      "yes": 51,
+      "no": 46,
+      "margin": 5,
+      "dems_betrayed": 12,
+      "dems_absent": 0,
+      "could_have_won_with": 52
+    },
+    {
+      "vote_id": "s563-111",
+      "congress": 111,
+      "chamber": "Senate",
+      "description": null,
+      "yes": 54,
+      "no": 44,
+      "margin": 10,
+      "dems_betrayed": 14,
+      "dems_absent": 0,
+      "could_have_won_with": 55
+    },
+    {
+      "vote_id": "s564-111",
+      "congress": 111,
+      "chamber": "Senate",
+      "description": null,
+      "yes": 54,
+      "no": 43,
+      "margin": 11,
+      "dems_betrayed": 14,
+      "dems_absent": 0,
+      "could_have_won_with": 55
+    },
+    {
+      "vote_id": "s609-111",
+      "congress": 111,
+      "chamber": "Senate",
+      "description": null,
+      "yes": 54,
+      "no": 44,
+      "margin": 10,
+      "dems_betrayed": 14,
+      "dems_absent": 0,
+      "could_have_won_with": 55
     },
     {
       "vote_id": "h758-118",
@@ -1669,7 +1969,7 @@
       "voted_with_gop": 0,
       "absent": 86,
       "total": 86,
-      "betrayal_rate": 62.31884057971014
+      "betrayal_rate": 52.760736196319016
     },
     {
       "name": "EVANS, Dwight",
@@ -1677,7 +1977,7 @@
       "voted_with_gop": 0,
       "absent": 66,
       "total": 66,
-      "betrayal_rate": 47.82608695652174
+      "betrayal_rate": 40.49079754601227
     },
     {
       "name": "JACKSON LEE, Sheila",
@@ -1685,7 +1985,7 @@
       "voted_with_gop": 0,
       "absent": 59,
       "total": 59,
-      "betrayal_rate": 42.7536231884058
+      "betrayal_rate": 36.19631901840491
     },
     {
       "name": "PHILLIPS, Dean",
@@ -1693,7 +1993,7 @@
       "voted_with_gop": 0,
       "absent": 42,
       "total": 42,
-      "betrayal_rate": 30.434782608695656
+      "betrayal_rate": 25.766871165644172
     },
     {
       "name": "BOWMAN, Jamaal",
@@ -1701,7 +2001,7 @@
       "voted_with_gop": 0,
       "absent": 40,
       "total": 40,
-      "betrayal_rate": 28.985507246376812
+      "betrayal_rate": 24.539877300613497
     },
     {
       "name": "WILSON, Frederica",
@@ -1709,7 +2009,7 @@
       "voted_with_gop": 0,
       "absent": 38,
       "total": 38,
-      "betrayal_rate": 27.536231884057973
+      "betrayal_rate": 23.31288343558282
     },
     {
       "name": "WATSON COLEMAN, Bonnie",
@@ -1717,7 +2017,7 @@
       "voted_with_gop": 0,
       "absent": 37,
       "total": 37,
-      "betrayal_rate": 26.811594202898554
+      "betrayal_rate": 22.699386503067483
     },
     {
       "name": "GARAMENDI, John",
@@ -1725,7 +2025,7 @@
       "voted_with_gop": 1,
       "absent": 32,
       "total": 33,
-      "betrayal_rate": 23.91304347826087
+      "betrayal_rate": 20.245398773006134
     },
     {
       "name": "PORTER, Katie",
@@ -1733,7 +2033,7 @@
       "voted_with_gop": 0,
       "absent": 30,
       "total": 30,
-      "betrayal_rate": 21.73913043478261
+      "betrayal_rate": 18.404907975460123
     },
     {
       "name": "TRONE, David",
@@ -1741,7 +2041,7 @@
       "voted_with_gop": 1,
       "absent": 28,
       "total": 29,
-      "betrayal_rate": 21.014492753623188
+      "betrayal_rate": 17.791411042944784
     },
     {
       "name": "WEXTON, Jennifer",
@@ -1749,7 +2049,7 @@
       "voted_with_gop": 0,
       "absent": 29,
       "total": 29,
-      "betrayal_rate": 21.014492753623188
+      "betrayal_rate": 17.791411042944784
     },
     {
       "name": "GOLDEN, Jared",
@@ -1757,7 +2057,7 @@
       "voted_with_gop": 22,
       "absent": 6,
       "total": 28,
-      "betrayal_rate": 20.28985507246377
+      "betrayal_rate": 17.177914110429448
     },
     {
       "name": "PEREZ, Marie Gluesenkamp",
@@ -1765,7 +2065,7 @@
       "voted_with_gop": 21,
       "absent": 5,
       "total": 26,
-      "betrayal_rate": 18.84057971014493
+      "betrayal_rate": 15.950920245398773
     },
     {
       "name": "CUELLAR, Henry",
@@ -1773,7 +2073,7 @@
       "voted_with_gop": 19,
       "absent": 5,
       "total": 24,
-      "betrayal_rate": 17.391304347826086
+      "betrayal_rate": 14.723926380368098
     },
     {
       "name": "BUSH, Cori",
@@ -1781,7 +2081,7 @@
       "voted_with_gop": 0,
       "absent": 24,
       "total": 24,
-      "betrayal_rate": 17.391304347826086
+      "betrayal_rate": 14.723926380368098
     },
     {
       "name": "KIM, Andy",
@@ -1789,7 +2089,7 @@
       "voted_with_gop": 0,
       "absent": 23,
       "total": 23,
-      "betrayal_rate": 16.666666666666664
+      "betrayal_rate": 14.11042944785276
     },
     {
       "name": "GALLEGO, Ruben",
@@ -1797,7 +2097,7 @@
       "voted_with_gop": 3,
       "absent": 20,
       "total": 23,
-      "betrayal_rate": 16.666666666666664
+      "betrayal_rate": 14.11042944785276
     },
     {
       "name": "SWALWELL, Eric",
@@ -1805,7 +2105,7 @@
       "voted_with_gop": 0,
       "absent": 22,
       "total": 22,
-      "betrayal_rate": 15.942028985507244
+      "betrayal_rate": 13.496932515337424
     },
     {
       "name": "PELTOLA, Mary Sattler",
@@ -1813,7 +2113,7 @@
       "voted_with_gop": 12,
       "absent": 9,
       "total": 21,
-      "betrayal_rate": 15.217391304347828
+      "betrayal_rate": 12.883435582822086
     },
     {
       "name": "SHERRILL, Mikie",
@@ -1821,7 +2121,7 @@
       "voted_with_gop": 0,
       "absent": 21,
       "total": 21,
-      "betrayal_rate": 15.217391304347828
+      "betrayal_rate": 12.883435582822086
     },
     {
       "name": "TITUS, Alice (Dina)",
@@ -1829,7 +2129,7 @@
       "voted_with_gop": 0,
       "absent": 20,
       "total": 20,
-      "betrayal_rate": 14.492753623188406
+      "betrayal_rate": 12.269938650306749
     },
     {
       "name": "BLUMENAUER, Earl",
@@ -1837,7 +2137,7 @@
       "voted_with_gop": 0,
       "absent": 20,
       "total": 20,
-      "betrayal_rate": 14.492753623188406
+      "betrayal_rate": 12.269938650306749
     },
     {
       "name": "CLEAVER, Emanuel, II",
@@ -1845,7 +2145,7 @@
       "voted_with_gop": 0,
       "absent": 20,
       "total": 20,
-      "betrayal_rate": 14.492753623188406
+      "betrayal_rate": 12.269938650306749
     },
     {
       "name": "MAGAZINER, Seth",
@@ -1853,7 +2153,7 @@
       "voted_with_gop": 0,
       "absent": 17,
       "total": 17,
-      "betrayal_rate": 12.318840579710146
+      "betrayal_rate": 10.429447852760736
     },
     {
       "name": "PASCRELL, William J., Jr.",
@@ -1861,7 +2161,7 @@
       "voted_with_gop": 0,
       "absent": 16,
       "total": 16,
-      "betrayal_rate": 11.594202898550725
+      "betrayal_rate": 9.815950920245399
     },
     {
       "name": "JAYAPAL, Pramila",
@@ -1869,7 +2169,7 @@
       "voted_with_gop": 0,
       "absent": 16,
       "total": 16,
-      "betrayal_rate": 11.594202898550725
+      "betrayal_rate": 9.815950920245399
     },
     {
       "name": "GOTTHEIMER, Josh S.",
@@ -1877,7 +2177,7 @@
       "voted_with_gop": 0,
       "absent": 16,
       "total": 16,
-      "betrayal_rate": 11.594202898550725
+      "betrayal_rate": 9.815950920245399
     },
     {
       "name": "MOORE, Gwendolynne S. (Gwen)",
@@ -1885,7 +2185,7 @@
       "voted_with_gop": 0,
       "absent": 16,
       "total": 16,
-      "betrayal_rate": 11.594202898550725
+      "betrayal_rate": 9.815950920245399
     },
     {
       "name": "PELOSI, Nancy",
@@ -1893,7 +2193,7 @@
       "voted_with_gop": 0,
       "absent": 15,
       "total": 15,
-      "betrayal_rate": 10.869565217391305
+      "betrayal_rate": 9.202453987730062
     },
     {
       "name": "GOMEZ, Jimmy",
@@ -1901,7 +2201,7 @@
       "voted_with_gop": 0,
       "absent": 15,
       "total": 15,
-      "betrayal_rate": 10.869565217391305
+      "betrayal_rate": 9.202453987730062
     },
     {
       "name": "CASTRO, Joaquin",
@@ -1909,7 +2209,7 @@
       "voted_with_gop": 0,
       "absent": 15,
       "total": 15,
-      "betrayal_rate": 10.869565217391305
+      "betrayal_rate": 9.202453987730062
     },
     {
       "name": "SORENSEN, Eric",
@@ -1917,7 +2217,7 @@
       "voted_with_gop": 0,
       "absent": 14,
       "total": 14,
-      "betrayal_rate": 10.144927536231885
+      "betrayal_rate": 8.588957055214724
     },
     {
       "name": "SEWELL, Terri",
@@ -1925,7 +2225,7 @@
       "voted_with_gop": 0,
       "absent": 14,
       "total": 14,
-      "betrayal_rate": 10.144927536231885
+      "betrayal_rate": 8.588957055214724
     },
     {
       "name": "LANDSMAN, Greg",
@@ -1933,7 +2233,7 @@
       "voted_with_gop": 0,
       "absent": 14,
       "total": 14,
-      "betrayal_rate": 10.144927536231885
+      "betrayal_rate": 8.588957055214724
     },
     {
       "name": "SCANLON, Mary Gay",
@@ -1941,7 +2241,7 @@
       "voted_with_gop": 0,
       "absent": 13,
       "total": 13,
-      "betrayal_rate": 9.420289855072465
+      "betrayal_rate": 7.975460122699387
     },
     {
       "name": "GONZALEZ, Vicente Jr.",
@@ -1949,7 +2249,7 @@
       "voted_with_gop": 12,
       "absent": 1,
       "total": 13,
-      "betrayal_rate": 9.420289855072465
+      "betrayal_rate": 7.975460122699387
     },
     {
       "name": "COSTA, Jim",
@@ -1957,7 +2257,7 @@
       "voted_with_gop": 3,
       "absent": 10,
       "total": 13,
-      "betrayal_rate": 9.420289855072465
+      "betrayal_rate": 7.975460122699387
     },
     {
       "name": "KUSTER, Ann McLane",
@@ -1965,7 +2265,7 @@
       "voted_with_gop": 0,
       "absent": 13,
       "total": 13,
-      "betrayal_rate": 9.420289855072465
+      "betrayal_rate": 7.975460122699387
     },
     {
       "name": "GOLDMAN, Daniel",
@@ -1973,7 +2273,7 @@
       "voted_with_gop": 0,
       "absent": 12,
       "total": 12,
-      "betrayal_rate": 8.695652173913043
+      "betrayal_rate": 7.361963190184049
     },
     {
       "name": "WATERS, Maxine",
@@ -1981,7 +2281,7 @@
       "voted_with_gop": 0,
       "absent": 12,
       "total": 12,
-      "betrayal_rate": 8.695652173913043
+      "betrayal_rate": 7.361963190184049
     },
     {
       "name": "PETTERSEN, Brittany",
@@ -1989,7 +2289,7 @@
       "voted_with_gop": 0,
       "absent": 12,
       "total": 12,
-      "betrayal_rate": 8.695652173913043
+      "betrayal_rate": 7.361963190184049
     },
     {
       "name": "KAMLAGER-DOVE, Sydney",
@@ -1997,7 +2297,7 @@
       "voted_with_gop": 0,
       "absent": 12,
       "total": 12,
-      "betrayal_rate": 8.695652173913043
+      "betrayal_rate": 7.361963190184049
     },
     {
       "name": "RUPPERSBERGER, C. A. (Dutch)",
@@ -2005,7 +2305,7 @@
       "voted_with_gop": 0,
       "absent": 12,
       "total": 12,
-      "betrayal_rate": 8.695652173913043
+      "betrayal_rate": 7.361963190184049
     },
     {
       "name": "BLUNT ROCHESTER, Lisa",
@@ -2013,7 +2313,7 @@
       "voted_with_gop": 0,
       "absent": 11,
       "total": 11,
-      "betrayal_rate": 7.971014492753622
+      "betrayal_rate": 6.748466257668712
     },
     {
       "name": "SCHAKOWSKY, Janice D.",
@@ -2021,7 +2321,7 @@
       "voted_with_gop": 0,
       "absent": 11,
       "total": 11,
-      "betrayal_rate": 7.971014492753622
+      "betrayal_rate": 6.748466257668712
     },
     {
       "name": "CONNOLLY, Gerald E. (Gerry)",
@@ -2029,7 +2329,7 @@
       "voted_with_gop": 0,
       "absent": 11,
       "total": 11,
-      "betrayal_rate": 7.971014492753622
+      "betrayal_rate": 6.748466257668712
     },
     {
       "name": "HUFFMAN, Jared",
@@ -2037,7 +2337,7 @@
       "voted_with_gop": 0,
       "absent": 11,
       "total": 11,
-      "betrayal_rate": 7.971014492753622
+      "betrayal_rate": 6.748466257668712
     },
     {
       "name": "NADLER, Jerrold Lewis",
@@ -2045,7 +2345,7 @@
       "voted_with_gop": 0,
       "absent": 11,
       "total": 11,
-      "betrayal_rate": 7.971014492753622
+      "betrayal_rate": 6.748466257668712
     },
     {
       "name": "DAVIS, Don",
@@ -2053,7 +2353,7 @@
       "voted_with_gop": 9,
       "absent": 2,
       "total": 11,
-      "betrayal_rate": 7.971014492753622
+      "betrayal_rate": 6.748466257668712
     },
     {
       "name": "VEL\u00c1ZQUEZ, Nydia M.",
@@ -2061,7 +2361,7 @@
       "voted_with_gop": 0,
       "absent": 11,
       "total": 11,
-      "betrayal_rate": 7.971014492753622
+      "betrayal_rate": 6.748466257668712
     },
     {
       "name": "CORREA, Jose Luis",
@@ -2069,7 +2369,7 @@
       "voted_with_gop": 1,
       "absent": 10,
       "total": 11,
-      "betrayal_rate": 7.971014492753622
+      "betrayal_rate": 6.748466257668712
     },
     {
       "name": "DAVIS, Danny K.",
@@ -2077,7 +2377,7 @@
       "voted_with_gop": 0,
       "absent": 11,
       "total": 11,
-      "betrayal_rate": 7.971014492753622
+      "betrayal_rate": 6.748466257668712
     },
     {
       "name": "GARCIA, Sylvia",
@@ -2085,7 +2385,7 @@
       "voted_with_gop": 0,
       "absent": 11,
       "total": 11,
-      "betrayal_rate": 7.971014492753622
+      "betrayal_rate": 6.748466257668712
     },
     {
       "name": "LOFGREN, Zoe",
@@ -2093,7 +2393,7 @@
       "voted_with_gop": 0,
       "absent": 10,
       "total": 10,
-      "betrayal_rate": 7.246376811594203
+      "betrayal_rate": 6.134969325153374
     },
     {
       "name": "TLAIB, Rashida",
@@ -2101,7 +2401,7 @@
       "voted_with_gop": 0,
       "absent": 10,
       "total": 10,
-      "betrayal_rate": 7.246376811594203
+      "betrayal_rate": 6.134969325153374
     },
     {
       "name": "CROCKETT, Jasmine",
@@ -2109,7 +2409,7 @@
       "voted_with_gop": 0,
       "absent": 10,
       "total": 10,
-      "betrayal_rate": 7.246376811594203
+      "betrayal_rate": 6.134969325153374
     },
     {
       "name": "LIEU, Ted",
@@ -2117,7 +2417,7 @@
       "voted_with_gop": 0,
       "absent": 10,
       "total": 10,
-      "betrayal_rate": 7.246376811594203
+      "betrayal_rate": 6.134969325153374
     },
     {
       "name": "MULLIN, Kevin",
@@ -2125,7 +2425,7 @@
       "voted_with_gop": 0,
       "absent": 10,
       "total": 10,
-      "betrayal_rate": 7.246376811594203
+      "betrayal_rate": 6.134969325153374
     },
     {
       "name": "LEE, Susie",
@@ -2133,7 +2433,7 @@
       "voted_with_gop": 0,
       "absent": 10,
       "total": 10,
-      "betrayal_rate": 7.246376811594203
+      "betrayal_rate": 6.134969325153374
     },
     {
       "name": "JOHNSON, Hank",
@@ -2141,7 +2441,7 @@
       "voted_with_gop": 0,
       "absent": 10,
       "total": 10,
-      "betrayal_rate": 7.246376811594203
+      "betrayal_rate": 6.134969325153374
     },
     {
       "name": "GARCIA, Robert",
@@ -2149,7 +2449,7 @@
       "voted_with_gop": 0,
       "absent": 10,
       "total": 10,
-      "betrayal_rate": 7.246376811594203
+      "betrayal_rate": 6.134969325153374
     },
     {
       "name": "CROW, Jason",
@@ -2157,7 +2457,7 @@
       "voted_with_gop": 0,
       "absent": 10,
       "total": 10,
-      "betrayal_rate": 7.246376811594203
+      "betrayal_rate": 6.134969325153374
     },
     {
       "name": "STANSBURY, Melanie Ann",
@@ -2165,7 +2465,7 @@
       "voted_with_gop": 0,
       "absent": 10,
       "total": 10,
-      "betrayal_rate": 7.246376811594203
+      "betrayal_rate": 6.134969325153374
     },
     {
       "name": "DOGGETT, Lloyd Alton, II",
@@ -2173,7 +2473,7 @@
       "voted_with_gop": 0,
       "absent": 9,
       "total": 9,
-      "betrayal_rate": 6.521739130434782
+      "betrayal_rate": 5.521472392638037
     },
     {
       "name": "CARTER, Troy",
@@ -2181,7 +2481,7 @@
       "voted_with_gop": 0,
       "absent": 9,
       "total": 9,
-      "betrayal_rate": 6.521739130434782
+      "betrayal_rate": 5.521472392638037
     },
     {
       "name": "FRANKEL, Lois",
@@ -2189,7 +2489,7 @@
       "voted_with_gop": 0,
       "absent": 9,
       "total": 9,
-      "betrayal_rate": 6.521739130434782
+      "betrayal_rate": 5.521472392638037
     },
     {
       "name": "JACOBS, Sara",
@@ -2197,7 +2497,7 @@
       "voted_with_gop": 0,
       "absent": 9,
       "total": 9,
-      "betrayal_rate": 6.521739130434782
+      "betrayal_rate": 5.521472392638037
     },
     {
       "name": "CARAVEO, Yadira",
@@ -2205,7 +2505,7 @@
       "voted_with_gop": 5,
       "absent": 4,
       "total": 9,
-      "betrayal_rate": 6.521739130434782
+      "betrayal_rate": 5.521472392638037
     },
     {
       "name": "OCASIO-CORTEZ, Alexandria",
@@ -2213,7 +2513,7 @@
       "voted_with_gop": 0,
       "absent": 9,
       "total": 9,
-      "betrayal_rate": 6.521739130434782
+      "betrayal_rate": 5.521472392638037
     },
     {
       "name": "HOYER, Steny Hamilton",
@@ -2221,7 +2521,7 @@
       "voted_with_gop": 0,
       "absent": 9,
       "total": 9,
-      "betrayal_rate": 6.521739130434782
+      "betrayal_rate": 5.521472392638037
     },
     {
       "name": "BEATTY, Joyce",
@@ -2229,7 +2529,7 @@
       "voted_with_gop": 0,
       "absent": 9,
       "total": 9,
-      "betrayal_rate": 6.521739130434782
+      "betrayal_rate": 5.521472392638037
     },
     {
       "name": "NORCROSS, Donald",
@@ -2237,7 +2537,7 @@
       "voted_with_gop": 0,
       "absent": 9,
       "total": 9,
-      "betrayal_rate": 6.521739130434782
+      "betrayal_rate": 5.521472392638037
     },
     {
       "name": "C\u00c1RDENAS, Tony",
@@ -2245,7 +2545,7 @@
       "voted_with_gop": 0,
       "absent": 8,
       "total": 8,
-      "betrayal_rate": 5.797101449275362
+      "betrayal_rate": 4.9079754601226995
     },
     {
       "name": "BROWNLEY, Julia",
@@ -2253,7 +2553,7 @@
       "voted_with_gop": 0,
       "absent": 8,
       "total": 8,
-      "betrayal_rate": 5.797101449275362
+      "betrayal_rate": 4.9079754601226995
     },
     {
       "name": "CHERFILUS-MCCORMICK, Sheila",
@@ -2261,7 +2561,7 @@
       "voted_with_gop": 0,
       "absent": 8,
       "total": 8,
-      "betrayal_rate": 5.797101449275362
+      "betrayal_rate": 4.9079754601226995
     },
     {
       "name": "MFUME, Kweisi",
@@ -2269,7 +2569,7 @@
       "voted_with_gop": 0,
       "absent": 8,
       "total": 8,
-      "betrayal_rate": 5.797101449275362
+      "betrayal_rate": 4.9079754601226995
     },
     {
       "name": "DINGELL, Debbie",
@@ -2277,7 +2577,7 @@
       "voted_with_gop": 0,
       "absent": 8,
       "total": 8,
-      "betrayal_rate": 5.797101449275362
+      "betrayal_rate": 4.9079754601226995
     },
     {
       "name": "CARSON, Andr\u00e9",
@@ -2285,7 +2585,7 @@
       "voted_with_gop": 0,
       "absent": 8,
       "total": 8,
-      "betrayal_rate": 5.797101449275362
+      "betrayal_rate": 4.9079754601226995
     },
     {
       "name": "MOSKOWITZ, Jared",
@@ -2293,7 +2593,7 @@
       "voted_with_gop": 0,
       "absent": 8,
       "total": 8,
-      "betrayal_rate": 5.797101449275362
+      "betrayal_rate": 4.9079754601226995
     },
     {
       "name": "LEGER FERNANDEZ, Teresa",
@@ -2301,7 +2601,7 @@
       "voted_with_gop": 0,
       "absent": 8,
       "total": 8,
-      "betrayal_rate": 5.797101449275362
+      "betrayal_rate": 4.9079754601226995
     },
     {
       "name": "MEEKS, Gregory W.",
@@ -2309,7 +2609,7 @@
       "voted_with_gop": 0,
       "absent": 8,
       "total": 8,
-      "betrayal_rate": 5.797101449275362
+      "betrayal_rate": 4.9079754601226995
     },
     {
       "name": "GREEN, Al",
@@ -2317,7 +2617,7 @@
       "voted_with_gop": 0,
       "absent": 8,
       "total": 8,
-      "betrayal_rate": 5.797101449275362
+      "betrayal_rate": 4.9079754601226995
     },
     {
       "name": "CARTWRIGHT, Matt",
@@ -2325,7 +2625,7 @@
       "voted_with_gop": 1,
       "absent": 6,
       "total": 7,
-      "betrayal_rate": 5.072463768115942
+      "betrayal_rate": 4.294478527607362
     },
     {
       "name": "KELLY, Robin L.",
@@ -2333,7 +2633,7 @@
       "voted_with_gop": 0,
       "absent": 7,
       "total": 7,
-      "betrayal_rate": 5.072463768115942
+      "betrayal_rate": 4.294478527607362
     },
     {
       "name": "UNDERWOOD, Lauren",
@@ -2341,7 +2641,7 @@
       "voted_with_gop": 0,
       "absent": 7,
       "total": 7,
-      "betrayal_rate": 5.072463768115942
+      "betrayal_rate": 4.294478527607362
     },
     {
       "name": "HARDER, Josh",
@@ -2349,7 +2649,7 @@
       "voted_with_gop": 1,
       "absent": 6,
       "total": 7,
-      "betrayal_rate": 5.072463768115942
+      "betrayal_rate": 4.294478527607362
     },
     {
       "name": "WILD, Susan",
@@ -2357,7 +2657,7 @@
       "voted_with_gop": 2,
       "absent": 5,
       "total": 7,
-      "betrayal_rate": 5.072463768115942
+      "betrayal_rate": 4.294478527607362
     },
     {
       "name": "AUCHINCLOSS, Jake",
@@ -2365,7 +2665,7 @@
       "voted_with_gop": 0,
       "absent": 7,
       "total": 7,
-      "betrayal_rate": 5.072463768115942
+      "betrayal_rate": 4.294478527607362
     },
     {
       "name": "JACKSON, Jonathan",
@@ -2373,7 +2673,7 @@
       "voted_with_gop": 0,
       "absent": 7,
       "total": 7,
-      "betrayal_rate": 5.072463768115942
+      "betrayal_rate": 4.294478527607362
     },
     {
       "name": "HORSFORD, Steven",
@@ -2381,7 +2681,7 @@
       "voted_with_gop": 0,
       "absent": 7,
       "total": 7,
-      "betrayal_rate": 5.072463768115942
+      "betrayal_rate": 4.294478527607362
     },
     {
       "name": "CASAR, Greg",
@@ -2389,7 +2689,7 @@
       "voted_with_gop": 0,
       "absent": 7,
       "total": 7,
-      "betrayal_rate": 5.072463768115942
+      "betrayal_rate": 4.294478527607362
     },
     {
       "name": "QUIGLEY, Mike",
@@ -2397,7 +2697,7 @@
       "voted_with_gop": 0,
       "absent": 7,
       "total": 7,
-      "betrayal_rate": 5.072463768115942
+      "betrayal_rate": 4.294478527607362
     },
     {
       "name": "PLASKETT, Stacey E.",
@@ -2405,7 +2705,7 @@
       "voted_with_gop": 0,
       "absent": 7,
       "total": 7,
-      "betrayal_rate": 5.072463768115942
+      "betrayal_rate": 4.294478527607362
     },
     {
       "name": "SABLAN, Gregorio Kilili Camacho",
@@ -2413,7 +2713,7 @@
       "voted_with_gop": 0,
       "absent": 7,
       "total": 7,
-      "betrayal_rate": 5.072463768115942
+      "betrayal_rate": 4.294478527607362
     },
     {
       "name": "MCCLELLAN, Jennifer",
@@ -2421,7 +2721,7 @@
       "voted_with_gop": 0,
       "absent": 6,
       "total": 6,
-      "betrayal_rate": 4.3478260869565215
+      "betrayal_rate": 3.6809815950920246
     },
     {
       "name": "MENENDEZ, Robert",
@@ -2429,7 +2729,7 @@
       "voted_with_gop": 0,
       "absent": 6,
       "total": 6,
-      "betrayal_rate": 4.3478260869565215
+      "betrayal_rate": 3.6809815950920246
     },
     {
       "name": "PAPPAS, Chris",
@@ -2437,7 +2737,7 @@
       "voted_with_gop": 1,
       "absent": 5,
       "total": 6,
-      "betrayal_rate": 4.3478260869565215
+      "betrayal_rate": 3.6809815950920246
     },
     {
       "name": "MENG, Grace",
@@ -2445,7 +2745,7 @@
       "voted_with_gop": 0,
       "absent": 6,
       "total": 6,
-      "betrayal_rate": 4.3478260869565215
+      "betrayal_rate": 3.6809815950920246
     },
     {
       "name": "PRESSLEY, Ayanna",
@@ -2453,7 +2753,7 @@
       "voted_with_gop": 0,
       "absent": 6,
       "total": 6,
-      "betrayal_rate": 4.3478260869565215
+      "betrayal_rate": 3.6809815950920246
     },
     {
       "name": "FLETCHER, Elizabeth",
@@ -2461,7 +2761,7 @@
       "voted_with_gop": 0,
       "absent": 6,
       "total": 6,
-      "betrayal_rate": 4.3478260869565215
+      "betrayal_rate": 3.6809815950920246
     },
     {
       "name": "NICKEL, Wiley",
@@ -2469,7 +2769,7 @@
       "voted_with_gop": 0,
       "absent": 6,
       "total": 6,
-      "betrayal_rate": 4.3478260869565215
+      "betrayal_rate": 3.6809815950920246
     },
     {
       "name": "JACKSON, Jeff",
@@ -2477,7 +2777,7 @@
       "voted_with_gop": 1,
       "absent": 5,
       "total": 6,
-      "betrayal_rate": 4.3478260869565215
+      "betrayal_rate": 3.6809815950920246
     },
     {
       "name": "DEAN, Madeleine",
@@ -2485,7 +2785,7 @@
       "voted_with_gop": 0,
       "absent": 6,
       "total": 6,
-      "betrayal_rate": 4.3478260869565215
+      "betrayal_rate": 3.6809815950920246
     },
     {
       "name": "DeLAURO, Rosa L.",
@@ -2493,7 +2793,7 @@
       "voted_with_gop": 0,
       "absent": 6,
       "total": 6,
-      "betrayal_rate": 4.3478260869565215
+      "betrayal_rate": 3.6809815950920246
     },
     {
       "name": "POCAN, Mark",
@@ -2501,7 +2801,7 @@
       "voted_with_gop": 0,
       "absent": 6,
       "total": 6,
-      "betrayal_rate": 4.3478260869565215
+      "betrayal_rate": 3.6809815950920246
     },
     {
       "name": "SHERMAN, Brad",
@@ -2509,7 +2809,7 @@
       "voted_with_gop": 0,
       "absent": 6,
       "total": 6,
-      "betrayal_rate": 4.3478260869565215
+      "betrayal_rate": 3.6809815950920246
     },
     {
       "name": "SCHIFF, Adam",
@@ -2517,7 +2817,7 @@
       "voted_with_gop": 0,
       "absent": 6,
       "total": 6,
-      "betrayal_rate": 4.3478260869565215
+      "betrayal_rate": 3.6809815950920246
     },
     {
       "name": "MRVAN, Frank J.",
@@ -2525,7 +2825,7 @@
       "voted_with_gop": 0,
       "absent": 6,
       "total": 6,
-      "betrayal_rate": 4.3478260869565215
+      "betrayal_rate": 3.6809815950920246
     },
     {
       "name": "FOUSHEE, Valerie",
@@ -2533,7 +2833,7 @@
       "voted_with_gop": 0,
       "absent": 6,
       "total": 6,
-      "betrayal_rate": 4.3478260869565215
+      "betrayal_rate": 3.6809815950920246
     },
     {
       "name": "McBATH, Lucy",
@@ -2541,7 +2841,7 @@
       "voted_with_gop": 0,
       "absent": 6,
       "total": 6,
-      "betrayal_rate": 4.3478260869565215
+      "betrayal_rate": 3.6809815950920246
     },
     {
       "name": "TORRES, Ritchie",
@@ -2549,7 +2849,7 @@
       "voted_with_gop": 0,
       "absent": 6,
       "total": 6,
-      "betrayal_rate": 4.3478260869565215
+      "betrayal_rate": 3.6809815950920246
     },
     {
       "name": "KEATING, William R.",
@@ -2557,7 +2857,7 @@
       "voted_with_gop": 0,
       "absent": 6,
       "total": 6,
-      "betrayal_rate": 4.3478260869565215
+      "betrayal_rate": 3.6809815950920246
     },
     {
       "name": "NAPOLITANO, Grace Flores",
@@ -2565,7 +2865,7 @@
       "voted_with_gop": 0,
       "absent": 6,
       "total": 6,
-      "betrayal_rate": 4.3478260869565215
+      "betrayal_rate": 3.6809815950920246
     },
     {
       "name": "VASQUEZ, Gabriel",
@@ -2573,7 +2873,7 @@
       "voted_with_gop": 4,
       "absent": 1,
       "total": 5,
-      "betrayal_rate": 3.6231884057971016
+      "betrayal_rate": 3.067484662576687
     },
     {
       "name": "JEFFRIES, Hakeem",
@@ -2581,7 +2881,7 @@
       "voted_with_gop": 0,
       "absent": 5,
       "total": 5,
-      "betrayal_rate": 3.6231884057971016
+      "betrayal_rate": 3.067484662576687
     },
     {
       "name": "SCOTT, David",
@@ -2589,7 +2889,7 @@
       "voted_with_gop": 0,
       "absent": 5,
       "total": 5,
-      "betrayal_rate": 3.6231884057971016
+      "betrayal_rate": 3.067484662576687
     },
     {
       "name": "LARSEN, Richard Ray (Rick)",
@@ -2597,7 +2897,7 @@
       "voted_with_gop": 0,
       "absent": 5,
       "total": 5,
-      "betrayal_rate": 3.6231884057971016
+      "betrayal_rate": 3.067484662576687
     },
     {
       "name": "HOULAHAN, Christina",
@@ -2605,7 +2905,7 @@
       "voted_with_gop": 1,
       "absent": 4,
       "total": 5,
-      "betrayal_rate": 3.6231884057971016
+      "betrayal_rate": 3.067484662576687
     },
     {
       "name": "RASKIN, Jamie Ben",
@@ -2613,7 +2913,7 @@
       "voted_with_gop": 0,
       "absent": 5,
       "total": 5,
-      "betrayal_rate": 3.6231884057971016
+      "betrayal_rate": 3.067484662576687
     },
     {
       "name": "TRAHAN, Lori",
@@ -2621,7 +2921,7 @@
       "voted_with_gop": 0,
       "absent": 5,
       "total": 5,
-      "betrayal_rate": 3.6231884057971016
+      "betrayal_rate": 3.067484662576687
     },
     {
       "name": "CRAIG, Angela",
@@ -2629,7 +2929,7 @@
       "voted_with_gop": 2,
       "absent": 3,
       "total": 5,
-      "betrayal_rate": 3.6231884057971016
+      "betrayal_rate": 3.067484662576687
     },
     {
       "name": "BARRAG\u00c1N, Nanette Diaz",
@@ -2637,7 +2937,7 @@
       "voted_with_gop": 0,
       "absent": 5,
       "total": 5,
-      "betrayal_rate": 3.6231884057971016
+      "betrayal_rate": 3.067484662576687
     },
     {
       "name": "LARSON, John B.",
@@ -2645,7 +2945,7 @@
       "voted_with_gop": 0,
       "absent": 5,
       "total": 5,
-      "betrayal_rate": 3.6231884057971016
+      "betrayal_rate": 3.067484662576687
     },
     {
       "name": "OMAR, Ilhan",
@@ -2653,7 +2953,7 @@
       "voted_with_gop": 0,
       "absent": 5,
       "total": 5,
-      "betrayal_rate": 3.6231884057971016
+      "betrayal_rate": 3.067484662576687
     },
     {
       "name": "PETERS, Scott",
@@ -2661,7 +2961,7 @@
       "voted_with_gop": 1,
       "absent": 4,
       "total": 5,
-      "betrayal_rate": 3.6231884057971016
+      "betrayal_rate": 3.067484662576687
     },
     {
       "name": "THOMPSON, Bennie",
@@ -2669,7 +2969,7 @@
       "voted_with_gop": 0,
       "absent": 5,
       "total": 5,
-      "betrayal_rate": 3.6231884057971016
+      "betrayal_rate": 3.067484662576687
     },
     {
       "name": "DESAULNIER, Mark James",
@@ -2677,7 +2977,7 @@
       "voted_with_gop": 0,
       "absent": 5,
       "total": 5,
-      "betrayal_rate": 3.6231884057971016
+      "betrayal_rate": 3.067484662576687
     },
     {
       "name": "CLYBURN, James Enos",
@@ -2685,7 +2985,7 @@
       "voted_with_gop": 0,
       "absent": 5,
       "total": 5,
-      "betrayal_rate": 3.6231884057971016
+      "betrayal_rate": 3.067484662576687
     },
     {
       "name": "NEAL, Richard Edmund",
@@ -2693,7 +2993,7 @@
       "voted_with_gop": 0,
       "absent": 5,
       "total": 5,
-      "betrayal_rate": 3.6231884057971016
+      "betrayal_rate": 3.067484662576687
     },
     {
       "name": "SMITH, Adam",
@@ -2701,7 +3001,7 @@
       "voted_with_gop": 0,
       "absent": 5,
       "total": 5,
-      "betrayal_rate": 3.6231884057971016
+      "betrayal_rate": 3.067484662576687
     },
     {
       "name": "KILDEE, Dan",
@@ -2709,7 +3009,7 @@
       "voted_with_gop": 0,
       "absent": 4,
       "total": 4,
-      "betrayal_rate": 2.898550724637681
+      "betrayal_rate": 2.4539877300613497
     },
     {
       "name": "TONKO, Paul",
@@ -2717,7 +3017,7 @@
       "voted_with_gop": 0,
       "absent": 4,
       "total": 4,
-      "betrayal_rate": 2.898550724637681
+      "betrayal_rate": 2.4539877300613497
     },
     {
       "name": "COURTNEY, Joe",
@@ -2725,7 +3025,7 @@
       "voted_with_gop": 1,
       "absent": 3,
       "total": 4,
-      "betrayal_rate": 2.898550724637681
+      "betrayal_rate": 2.4539877300613497
     },
     {
       "name": "FOSTER, Bill",
@@ -2733,7 +3033,7 @@
       "voted_with_gop": 0,
       "absent": 4,
       "total": 4,
-      "betrayal_rate": 2.898550724637681
+      "betrayal_rate": 2.4539877300613497
     },
     {
       "name": "SCHRIER, Kim",
@@ -2741,7 +3041,7 @@
       "voted_with_gop": 2,
       "absent": 2,
       "total": 4,
-      "betrayal_rate": 2.898550724637681
+      "betrayal_rate": 2.4539877300613497
     },
     {
       "name": "SLOTKIN, Elissa",
@@ -2749,7 +3049,7 @@
       "voted_with_gop": 2,
       "absent": 2,
       "total": 4,
-      "betrayal_rate": 2.898550724637681
+      "betrayal_rate": 2.4539877300613497
     },
     {
       "name": "CLARKE, Yvette Diane",
@@ -2757,7 +3057,7 @@
       "voted_with_gop": 0,
       "absent": 4,
       "total": 4,
-      "betrayal_rate": 2.898550724637681
+      "betrayal_rate": 2.4539877300613497
     },
     {
       "name": "BERA, Ami",
@@ -2765,7 +3065,7 @@
       "voted_with_gop": 1,
       "absent": 3,
       "total": 4,
-      "betrayal_rate": 2.898550724637681
+      "betrayal_rate": 2.4539877300613497
     },
     {
       "name": "SPANBERGER, Abigail",
@@ -2773,7 +3073,7 @@
       "voted_with_gop": 1,
       "absent": 3,
       "total": 4,
-      "betrayal_rate": 2.898550724637681
+      "betrayal_rate": 2.4539877300613497
     },
     {
       "name": "CASE, Ed",
@@ -2781,7 +3081,7 @@
       "voted_with_gop": 1,
       "absent": 3,
       "total": 4,
-      "betrayal_rate": 2.898550724637681
+      "betrayal_rate": 2.4539877300613497
     },
     {
       "name": "SCHNEIDER, Brad",
@@ -2789,7 +3089,7 @@
       "voted_with_gop": 0,
       "absent": 4,
       "total": 4,
-      "betrayal_rate": 2.898550724637681
+      "betrayal_rate": 2.4539877300613497
     },
     {
       "name": "SCHOLTEN, Hillary",
@@ -2797,7 +3097,7 @@
       "voted_with_gop": 0,
       "absent": 4,
       "total": 4,
-      "betrayal_rate": 2.898550724637681
+      "betrayal_rate": 2.4539877300613497
     },
     {
       "name": "ADAMS, Alma",
@@ -2805,7 +3105,7 @@
       "voted_with_gop": 0,
       "absent": 4,
       "total": 4,
-      "betrayal_rate": 2.898550724637681
+      "betrayal_rate": 2.4539877300613497
     },
     {
       "name": "ESPAILLAT, Adriano J.",
@@ -2813,7 +3113,7 @@
       "voted_with_gop": 0,
       "absent": 4,
       "total": 4,
-      "betrayal_rate": 2.898550724637681
+      "betrayal_rate": 2.4539877300613497
     },
     {
       "name": "HOYLE, Val",
@@ -2821,7 +3121,7 @@
       "voted_with_gop": 0,
       "absent": 4,
       "total": 4,
-      "betrayal_rate": 2.898550724637681
+      "betrayal_rate": 2.4539877300613497
     },
     {
       "name": "SYKES, Emilia",
@@ -2829,7 +3129,7 @@
       "voted_with_gop": 0,
       "absent": 4,
       "total": 4,
-      "betrayal_rate": 2.898550724637681
+      "betrayal_rate": 2.4539877300613497
     },
     {
       "name": "BOYLE, Brendan Francis",
@@ -2837,7 +3137,7 @@
       "voted_with_gop": 0,
       "absent": 4,
       "total": 4,
-      "betrayal_rate": 2.898550724637681
+      "betrayal_rate": 2.4539877300613497
     },
     {
       "name": "COHEN, Stephen",
@@ -2845,7 +3145,7 @@
       "voted_with_gop": 0,
       "absent": 4,
       "total": 4,
-      "betrayal_rate": 2.898550724637681
+      "betrayal_rate": 2.4539877300613497
     },
     {
       "name": "PINGREE, Chellie",
@@ -2853,7 +3153,7 @@
       "voted_with_gop": 0,
       "absent": 4,
       "total": 4,
-      "betrayal_rate": 2.898550724637681
+      "betrayal_rate": 2.4539877300613497
     },
     {
       "name": "GRAY, Adam",
@@ -2861,7 +3161,7 @@
       "voted_with_gop": 2,
       "absent": 2,
       "total": 4,
-      "betrayal_rate": 2.898550724637681
+      "betrayal_rate": 2.4539877300613497
     },
     {
       "name": "STANTON, Greg",
@@ -2869,7 +3169,7 @@
       "voted_with_gop": 0,
       "absent": 3,
       "total": 3,
-      "betrayal_rate": 2.1739130434782608
+      "betrayal_rate": 1.8404907975460123
     },
     {
       "name": "MOULTON, Seth",
@@ -2877,7 +3177,7 @@
       "voted_with_gop": 0,
       "absent": 3,
       "total": 3,
-      "betrayal_rate": 2.1739130434782608
+      "betrayal_rate": 1.8404907975460123
     },
     {
       "name": "SARBANES, John",
@@ -2885,7 +3185,7 @@
       "voted_with_gop": 0,
       "absent": 3,
       "total": 3,
-      "betrayal_rate": 2.1739130434782608
+      "betrayal_rate": 1.8404907975460123
     },
     {
       "name": "KAPTUR, Marcia Carolyn (Marcy)",
@@ -2893,7 +3193,7 @@
       "voted_with_gop": 1,
       "absent": 2,
       "total": 3,
-      "betrayal_rate": 2.1739130434782608
+      "betrayal_rate": 1.8404907975460123
     },
     {
       "name": "AMO, Gabe",
@@ -2901,7 +3201,7 @@
       "voted_with_gop": 0,
       "absent": 3,
       "total": 3,
-      "betrayal_rate": 2.1739130434782608
+      "betrayal_rate": 1.8404907975460123
     },
     {
       "name": "BEYER, Donald Sternoff Jr.",
@@ -2909,7 +3209,7 @@
       "voted_with_gop": 0,
       "absent": 3,
       "total": 3,
-      "betrayal_rate": 2.1739130434782608
+      "betrayal_rate": 1.8404907975460123
     },
     {
       "name": "GARC\u00cdA, Jes\u00fas",
@@ -2917,7 +3217,7 @@
       "voted_with_gop": 0,
       "absent": 3,
       "total": 3,
-      "betrayal_rate": 2.1739130434782608
+      "betrayal_rate": 1.8404907975460123
     },
     {
       "name": "LYNCH, Stephen F.",
@@ -2925,7 +3225,7 @@
       "voted_with_gop": 0,
       "absent": 3,
       "total": 3,
-      "betrayal_rate": 2.1739130434782608
+      "betrayal_rate": 1.8404907975460123
     },
     {
       "name": "RUIZ, Raul",
@@ -2933,7 +3233,7 @@
       "voted_with_gop": 0,
       "absent": 3,
       "total": 3,
-      "betrayal_rate": 2.1739130434782608
+      "betrayal_rate": 1.8404907975460123
     },
     {
       "name": "S\u00c1NCHEZ, Linda T.",
@@ -2941,7 +3241,7 @@
       "voted_with_gop": 0,
       "absent": 3,
       "total": 3,
-      "betrayal_rate": 2.1739130434782608
+      "betrayal_rate": 1.8404907975460123
     },
     {
       "name": "FROST, Maxwell",
@@ -2949,7 +3249,7 @@
       "voted_with_gop": 0,
       "absent": 3,
       "total": 3,
-      "betrayal_rate": 2.1739130434782608
+      "betrayal_rate": 1.8404907975460123
     },
     {
       "name": "TAKANO, Mark",
@@ -2957,7 +3257,7 @@
       "voted_with_gop": 0,
       "absent": 3,
       "total": 3,
-      "betrayal_rate": 2.1739130434782608
+      "betrayal_rate": 1.8404907975460123
     },
     {
       "name": "SUOZZI, Thomas",
@@ -2965,7 +3265,7 @@
       "voted_with_gop": 0,
       "absent": 3,
       "total": 3,
-      "betrayal_rate": 2.1739130434782608
+      "betrayal_rate": 1.8404907975460123
     },
     {
       "name": "WILLIAMS, Nikema",
@@ -2973,7 +3273,7 @@
       "voted_with_gop": 0,
       "absent": 3,
       "total": 3,
-      "betrayal_rate": 2.1739130434782608
+      "betrayal_rate": 1.8404907975460123
     },
     {
       "name": "IVEY, Glenn",
@@ -2981,7 +3281,7 @@
       "voted_with_gop": 0,
       "absent": 3,
       "total": 3,
-      "betrayal_rate": 2.1739130434782608
+      "betrayal_rate": 1.8404907975460123
     },
     {
       "name": "OSSOFF, Thomas Jonathan (Jon)",
@@ -2989,7 +3289,7 @@
       "voted_with_gop": 0,
       "absent": 3,
       "total": 3,
-      "betrayal_rate": 2.1739130434782608
+      "betrayal_rate": 1.8404907975460123
     },
     {
       "name": "PAYNE, Donald, Jr.",
@@ -2997,7 +3297,7 @@
       "voted_with_gop": 0,
       "absent": 3,
       "total": 3,
-      "betrayal_rate": 2.1739130434782608
+      "betrayal_rate": 1.8404907975460123
     },
     {
       "name": "CARBAJAL, Salud",
@@ -3005,7 +3305,7 @@
       "voted_with_gop": 1,
       "absent": 1,
       "total": 2,
-      "betrayal_rate": 1.4492753623188406
+      "betrayal_rate": 1.2269938650306749
     },
     {
       "name": "KRISHNAMOORTHI, S. Raja",
@@ -3013,7 +3313,7 @@
       "voted_with_gop": 0,
       "absent": 2,
       "total": 2,
-      "betrayal_rate": 1.4492753623188406
+      "betrayal_rate": 1.2269938650306749
     },
     {
       "name": "DelBENE, Suzan K.",
@@ -3021,7 +3321,7 @@
       "voted_with_gop": 0,
       "absent": 2,
       "total": 2,
-      "betrayal_rate": 1.4492753623188406
+      "betrayal_rate": 1.2269938650306749
     },
     {
       "name": "MATSUI, Doris",
@@ -3029,7 +3329,7 @@
       "voted_with_gop": 0,
       "absent": 2,
       "total": 2,
-      "betrayal_rate": 1.4492753623188406
+      "betrayal_rate": 1.2269938650306749
     },
     {
       "name": "BROWN, Shontel  M.",
@@ -3037,7 +3337,7 @@
       "voted_with_gop": 0,
       "absent": 2,
       "total": 2,
-      "betrayal_rate": 1.4492753623188406
+      "betrayal_rate": 1.2269938650306749
     },
     {
       "name": "McGOVERN, James P.",
@@ -3045,7 +3345,7 @@
       "voted_with_gop": 0,
       "absent": 2,
       "total": 2,
-      "betrayal_rate": 1.4492753623188406
+      "betrayal_rate": 1.2269938650306749
     },
     {
       "name": "SOTO, Darren Michael",
@@ -3053,7 +3353,7 @@
       "voted_with_gop": 0,
       "absent": 2,
       "total": 2,
-      "betrayal_rate": 1.4492753623188406
+      "betrayal_rate": 1.2269938650306749
     },
     {
       "name": "BALINT, Becca",
@@ -3061,7 +3361,7 @@
       "voted_with_gop": 0,
       "absent": 2,
       "total": 2,
-      "betrayal_rate": 1.4492753623188406
+      "betrayal_rate": 1.2269938650306749
     },
     {
       "name": "TOKUDA, Jill",
@@ -3069,7 +3369,7 @@
       "voted_with_gop": 0,
       "absent": 2,
       "total": 2,
-      "betrayal_rate": 1.4492753623188406
+      "betrayal_rate": 1.2269938650306749
     },
     {
       "name": "SCOTT, Robert C.",
@@ -3077,7 +3377,7 @@
       "voted_with_gop": 0,
       "absent": 2,
       "total": 2,
-      "betrayal_rate": 1.4492753623188406
+      "betrayal_rate": 1.2269938650306749
     },
     {
       "name": "McCOLLUM, Betty",
@@ -3085,7 +3385,7 @@
       "voted_with_gop": 0,
       "absent": 2,
       "total": 2,
-      "betrayal_rate": 1.4492753623188406
+      "betrayal_rate": 1.2269938650306749
     },
     {
       "name": "RIVAS, Luz M.",
@@ -3093,7 +3393,7 @@
       "voted_with_gop": 0,
       "absent": 2,
       "total": 2,
-      "betrayal_rate": 1.4492753623188406
+      "betrayal_rate": 1.2269938650306749
     },
     {
       "name": "ESCOBAR, Veronica",
@@ -3101,7 +3401,7 @@
       "voted_with_gop": 0,
       "absent": 2,
       "total": 2,
-      "betrayal_rate": 1.4492753623188406
+      "betrayal_rate": 1.2269938650306749
     },
     {
       "name": "BELL, Wesley",
@@ -3109,7 +3409,7 @@
       "voted_with_gop": 0,
       "absent": 2,
       "total": 2,
-      "betrayal_rate": 1.4492753623188406
+      "betrayal_rate": 1.2269938650306749
     },
     {
       "name": "RILEY, Josh",
@@ -3117,7 +3417,7 @@
       "voted_with_gop": 0,
       "absent": 2,
       "total": 2,
-      "betrayal_rate": 1.4492753623188406
+      "betrayal_rate": 1.2269938650306749
     },
     {
       "name": "MANNING, Kathy E.",
@@ -3125,7 +3425,7 @@
       "voted_with_gop": 0,
       "absent": 2,
       "total": 2,
-      "betrayal_rate": 1.4492753623188406
+      "betrayal_rate": 1.2269938650306749
     },
     {
       "name": "MORELLE, Joseph D.",
@@ -3133,7 +3433,7 @@
       "voted_with_gop": 0,
       "absent": 2,
       "total": 2,
-      "betrayal_rate": 1.4492753623188406
+      "betrayal_rate": 1.2269938650306749
     },
     {
       "name": "BROWN, Sherrod",
@@ -3141,7 +3441,7 @@
       "voted_with_gop": 0,
       "absent": 2,
       "total": 2,
-      "betrayal_rate": 1.4492753623188406
+      "betrayal_rate": 1.2269938650306749
     },
     {
       "name": "FEINSTEIN, Dianne",
@@ -3149,7 +3449,7 @@
       "voted_with_gop": 0,
       "absent": 2,
       "total": 2,
-      "betrayal_rate": 1.4492753623188406
+      "betrayal_rate": 1.2269938650306749
     },
     {
       "name": "MANCHIN, Joe, III",
@@ -3157,7 +3457,7 @@
       "voted_with_gop": 2,
       "absent": 0,
       "total": 2,
-      "betrayal_rate": 1.4492753623188406
+      "betrayal_rate": 1.2269938650306749
     },
     {
       "name": "SMITH, Tina",
@@ -3165,7 +3465,7 @@
       "voted_with_gop": 0,
       "absent": 2,
       "total": 2,
-      "betrayal_rate": 1.4492753623188406
+      "betrayal_rate": 1.2269938650306749
     },
     {
       "name": "STABENOW, Deborah Ann",
@@ -3173,7 +3473,7 @@
       "voted_with_gop": 0,
       "absent": 2,
       "total": 2,
-      "betrayal_rate": 1.4492753623188406
+      "betrayal_rate": 1.2269938650306749
     },
     {
       "name": "BLUMENTHAL, Richard",
@@ -3181,7 +3481,7 @@
       "voted_with_gop": 0,
       "absent": 2,
       "total": 2,
-      "betrayal_rate": 1.4492753623188406
+      "betrayal_rate": 1.2269938650306749
     },
     {
       "name": "KELLY, Mark Edward",
@@ -3189,7 +3489,7 @@
       "voted_with_gop": 0,
       "absent": 2,
       "total": 2,
-      "betrayal_rate": 1.4492753623188406
+      "betrayal_rate": 1.2269938650306749
     },
     {
       "name": "SHAHEEN, Jeanne",
@@ -3197,7 +3497,7 @@
       "voted_with_gop": 0,
       "absent": 2,
       "total": 2,
-      "betrayal_rate": 1.4492753623188406
+      "betrayal_rate": 1.2269938650306749
     },
     {
       "name": "SIMON, Lateefah",
@@ -3205,7 +3505,7 @@
       "voted_with_gop": 0,
       "absent": 2,
       "total": 2,
-      "betrayal_rate": 1.4492753623188406
+      "betrayal_rate": 1.2269938650306749
     },
     {
       "name": "BISHOP, Sanford Dixon, Jr.",
@@ -3213,7 +3513,7 @@
       "voted_with_gop": 0,
       "absent": 2,
       "total": 2,
-      "betrayal_rate": 1.4492753623188406
+      "betrayal_rate": 1.2269938650306749
     },
     {
       "name": "RYAN, Patrick",
@@ -3221,7 +3521,7 @@
       "voted_with_gop": 0,
       "absent": 2,
       "total": 2,
-      "betrayal_rate": 1.4492753623188406
+      "betrayal_rate": 1.2269938650306749
     },
     {
       "name": "DUCKWORTH, Tammy",
@@ -3229,7 +3529,7 @@
       "voted_with_gop": 0,
       "absent": 2,
       "total": 2,
-      "betrayal_rate": 1.4492753623188406
+      "betrayal_rate": 1.2269938650306749
     },
     {
       "name": "WARNOCK, Raphael Gamaliel",
@@ -3237,7 +3537,7 @@
       "voted_with_gop": 0,
       "absent": 2,
       "total": 2,
-      "betrayal_rate": 1.4492753623188406
+      "betrayal_rate": 1.2269938650306749
     },
     {
       "name": "STRICKLAND, Marilyn",
@@ -3245,7 +3545,7 @@
       "voted_with_gop": 0,
       "absent": 2,
       "total": 2,
-      "betrayal_rate": 1.4492753623188406
+      "betrayal_rate": 1.2269938650306749
     },
     {
       "name": "DAVIDS, Sharice",
@@ -3253,7 +3553,7 @@
       "voted_with_gop": 0,
       "absent": 1,
       "total": 1,
-      "betrayal_rate": 0.7246376811594203
+      "betrayal_rate": 0.6134969325153374
     },
     {
       "name": "LEVIN, Mike",
@@ -3261,7 +3561,7 @@
       "voted_with_gop": 1,
       "absent": 0,
       "total": 1,
-      "betrayal_rate": 0.7246376811594203
+      "betrayal_rate": 0.6134969325153374
     },
     {
       "name": "ESHOO, Anna Georges",
@@ -3269,7 +3569,7 @@
       "voted_with_gop": 0,
       "absent": 1,
       "total": 1,
-      "betrayal_rate": 0.7246376811594203
+      "betrayal_rate": 0.6134969325153374
     },
     {
       "name": "PANETTA, James Varni",
@@ -3277,7 +3577,7 @@
       "voted_with_gop": 0,
       "absent": 1,
       "total": 1,
-      "betrayal_rate": 0.7246376811594203
+      "betrayal_rate": 0.6134969325153374
     },
     {
       "name": "SALINAS, Andrea",
@@ -3285,7 +3585,7 @@
       "voted_with_gop": 0,
       "absent": 1,
       "total": 1,
-      "betrayal_rate": 0.7246376811594203
+      "betrayal_rate": 0.6134969325153374
     },
     {
       "name": "HIMES, James A.",
@@ -3293,7 +3593,7 @@
       "voted_with_gop": 0,
       "absent": 1,
       "total": 1,
-      "betrayal_rate": 0.7246376811594203
+      "betrayal_rate": 0.6134969325153374
     },
     {
       "name": "KHANNA, Rohit",
@@ -3301,7 +3601,7 @@
       "voted_with_gop": 0,
       "absent": 1,
       "total": 1,
-      "betrayal_rate": 0.7246376811594203
+      "betrayal_rate": 0.6134969325153374
     },
     {
       "name": "NEGUSE, Joseph",
@@ -3309,7 +3609,7 @@
       "voted_with_gop": 0,
       "absent": 1,
       "total": 1,
-      "betrayal_rate": 0.7246376811594203
+      "betrayal_rate": 0.6134969325153374
     },
     {
       "name": "PALLONE, Frank, Jr.",
@@ -3317,7 +3617,7 @@
       "voted_with_gop": 0,
       "absent": 1,
       "total": 1,
-      "betrayal_rate": 0.7246376811594203
+      "betrayal_rate": 0.6134969325153374
     },
     {
       "name": "GILLEN, Laura",
@@ -3325,7 +3625,7 @@
       "voted_with_gop": 1,
       "absent": 0,
       "total": 1,
-      "betrayal_rate": 0.7246376811594203
+      "betrayal_rate": 0.6134969325153374
     },
     {
       "name": "CHU, Judy",
@@ -3333,7 +3633,7 @@
       "voted_with_gop": 0,
       "absent": 1,
       "total": 1,
-      "betrayal_rate": 0.7246376811594203
+      "betrayal_rate": 0.6134969325153374
     },
     {
       "name": "FIGURES, Shomari",
@@ -3341,7 +3641,7 @@
       "voted_with_gop": 0,
       "absent": 1,
       "total": 1,
-      "betrayal_rate": 0.7246376811594203
+      "betrayal_rate": 0.6134969325153374
     },
     {
       "name": "LEE, Barbara",
@@ -3349,7 +3649,7 @@
       "voted_with_gop": 0,
       "absent": 1,
       "total": 1,
-      "betrayal_rate": 0.7246376811594203
+      "betrayal_rate": 0.6134969325153374
     },
     {
       "name": "ANSARI, Yassamin",
@@ -3357,7 +3657,7 @@
       "voted_with_gop": 0,
       "absent": 1,
       "total": 1,
-      "betrayal_rate": 0.7246376811594203
+      "betrayal_rate": 0.6134969325153374
     },
     {
       "name": "MORRISON, Kelly",
@@ -3365,7 +3665,7 @@
       "voted_with_gop": 0,
       "absent": 1,
       "total": 1,
-      "betrayal_rate": 0.7246376811594203
+      "betrayal_rate": 0.6134969325153374
     },
     {
       "name": "RANDALL, Emily",
@@ -3373,7 +3673,7 @@
       "voted_with_gop": 0,
       "absent": 1,
       "total": 1,
-      "betrayal_rate": 0.7246376811594203
+      "betrayal_rate": 0.6134969325153374
     },
     {
       "name": "OLSZEWSKI, Johnny, Jr.",
@@ -3381,7 +3681,7 @@
       "voted_with_gop": 0,
       "absent": 1,
       "total": 1,
-      "betrayal_rate": 0.7246376811594203
+      "betrayal_rate": 0.6134969325153374
     },
     {
       "name": "KLOBUCHAR, Amy",
@@ -3389,7 +3689,7 @@
       "voted_with_gop": 1,
       "absent": 0,
       "total": 1,
-      "betrayal_rate": 0.7246376811594203
+      "betrayal_rate": 0.6134969325153374
     },
     {
       "name": "MURPHY, Christopher",
@@ -3397,7 +3697,7 @@
       "voted_with_gop": 0,
       "absent": 1,
       "total": 1,
-      "betrayal_rate": 0.7246376811594203
+      "betrayal_rate": 0.6134969325153374
     },
     {
       "name": "FIELDS, Cleo",
@@ -3405,7 +3705,7 @@
       "voted_with_gop": 0,
       "absent": 1,
       "total": 1,
-      "betrayal_rate": 0.7246376811594203
+      "betrayal_rate": 0.6134969325153374
     },
     {
       "name": "TORRES, Norma Judith",
@@ -3413,7 +3713,7 @@
       "voted_with_gop": 0,
       "absent": 1,
       "total": 1,
-      "betrayal_rate": 0.7246376811594203
+      "betrayal_rate": 0.6134969325153374
     },
     {
       "name": "VINDMAN, Eugene Simon",
@@ -3421,7 +3721,7 @@
       "voted_with_gop": 0,
       "absent": 1,
       "total": 1,
-      "betrayal_rate": 0.7246376811594203
+      "betrayal_rate": 0.6134969325153374
     },
     {
       "name": "STEVENS, Haley",
@@ -3429,7 +3729,7 @@
       "voted_with_gop": 0,
       "absent": 1,
       "total": 1,
-      "betrayal_rate": 0.7246376811594203
+      "betrayal_rate": 0.6134969325153374
     },
     {
       "name": "CISNEROS, Gil",
@@ -3437,7 +3737,7 @@
       "voted_with_gop": 0,
       "absent": 1,
       "total": 1,
-      "betrayal_rate": 0.7246376811594203
+      "betrayal_rate": 0.6134969325153374
     },
     {
       "name": "MCBRIDE, Sarah",
@@ -3445,7 +3745,7 @@
       "voted_with_gop": 0,
       "absent": 1,
       "total": 1,
-      "betrayal_rate": 0.7246376811594203
+      "betrayal_rate": 0.6134969325153374
     },
     {
       "name": "HAYES, Jahana",
@@ -3453,7 +3753,7 @@
       "voted_with_gop": 0,
       "absent": 1,
       "total": 1,
-      "betrayal_rate": 0.7246376811594203
+      "betrayal_rate": 0.6134969325153374
     },
     {
       "name": "CORTEZ MASTO, Catherine Marie",
@@ -3461,7 +3761,7 @@
       "voted_with_gop": 0,
       "absent": 1,
       "total": 1,
-      "betrayal_rate": 0.7246376811594203
+      "betrayal_rate": 0.6134969325153374
     },
     {
       "name": "HASSAN, Margaret (Maggie)",
@@ -3469,7 +3769,7 @@
       "voted_with_gop": 1,
       "absent": 0,
       "total": 1,
-      "betrayal_rate": 0.7246376811594203
+      "betrayal_rate": 0.6134969325153374
     },
     {
       "name": "MURRAY, Patty",
@@ -3477,7 +3777,7 @@
       "voted_with_gop": 0,
       "absent": 1,
       "total": 1,
-      "betrayal_rate": 0.7246376811594203
+      "betrayal_rate": 0.6134969325153374
     },
     {
       "name": "PETERS, Gary C.",
@@ -3485,7 +3785,7 @@
       "voted_with_gop": 0,
       "absent": 1,
       "total": 1,
-      "betrayal_rate": 0.7246376811594203
+      "betrayal_rate": 0.6134969325153374
     },
     {
       "name": "ROSEN, Jacklyn Sheryl",
@@ -3493,7 +3793,7 @@
       "voted_with_gop": 0,
       "absent": 1,
       "total": 1,
-      "betrayal_rate": 0.7246376811594203
+      "betrayal_rate": 0.6134969325153374
     },
     {
       "name": "WELCH, Peter",
@@ -3501,7 +3801,7 @@
       "voted_with_gop": 0,
       "absent": 1,
       "total": 1,
-      "betrayal_rate": 0.7246376811594203
+      "betrayal_rate": 0.6134969325153374
     },
     {
       "name": "WHITEHOUSE, Sheldon",
@@ -3509,7 +3809,7 @@
       "voted_with_gop": 1,
       "absent": 0,
       "total": 1,
-      "betrayal_rate": 0.7246376811594203
+      "betrayal_rate": 0.6134969325153374
     },
     {
       "name": "COONS, Christopher A.",
@@ -3517,7 +3817,7 @@
       "voted_with_gop": 0,
       "absent": 1,
       "total": 1,
-      "betrayal_rate": 0.7246376811594203
+      "betrayal_rate": 0.6134969325153374
     },
     {
       "name": "VEASEY, Marc",
@@ -3525,7 +3825,7 @@
       "voted_with_gop": 1,
       "absent": 0,
       "total": 1,
-      "betrayal_rate": 0.7246376811594203
+      "betrayal_rate": 0.6134969325153374
     },
     {
       "name": "RAMIREZ, Delia",
@@ -3533,7 +3833,7 @@
       "voted_with_gop": 0,
       "absent": 1,
       "total": 1,
-      "betrayal_rate": 0.7246376811594203
+      "betrayal_rate": 0.6134969325153374
     }
   ],
   "betrayers_by_vote": {
@@ -8069,6 +8369,8 @@
       }
     ],
     "h836-116": [],
+    "s407-111": [],
+    "s632-111": [],
     "h543-118": [
       {
         "name": "COHEN, Stephen",
@@ -8529,7 +8831,9 @@
         "action": "Absent"
       }
     ],
+    "h179-111": [],
     "h97-116": [],
+    "h303-111": [],
     "h1036-118": [
       {
         "name": "BOWMAN, Jamaal",
@@ -8607,6 +8911,13 @@
         "action": "Absent"
       }
     ],
+    "h437-111": [],
+    "h447-111": [],
+    "h687-111": [],
+    "h882-111": [],
+    "h929-111": [],
+    "h997-111": [],
+    "h1133-111": [],
     "h76-119": [
       {
         "name": "ANSARI, Yassamin",
@@ -8764,6 +9075,7 @@
         "action": "Absent"
       }
     ],
+    "h1219-111": [],
     "h163-119": [
       {
         "name": "BEATTY, Joyce",
@@ -9803,7 +10115,20 @@
         "action": "Absent"
       }
     ],
+    "s34-111": [],
     "h422-116": [],
+    "s142-111": [],
+    "s146-111": [],
+    "s183-111": [],
+    "s220-111": [],
+    "s360-111": [],
+    "s399-111": [],
+    "s408-111": [],
+    "s548-111": [],
+    "s562-111": [],
+    "s563-111": [],
+    "s564-111": [],
+    "s609-111": [],
     "h758-118": [
       {
         "name": "GREEN, Al",
