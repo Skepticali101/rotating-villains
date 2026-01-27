@@ -418,7 +418,7 @@
         let currentFilter = 'all';
         let enrichedVillains = [];
         
-        fetch('rotating_villains_data.json')
+        fetch('rotating_villains_data.json?v=2')
         .then(res => res.json())
         .then(villainsData => {
             fullData = villainsData;
