@@ -1,0 +1,261 @@
+{
+  "summary": {
+    "gop_wins_with_dem_help": 3045,
+    "dem_wins_with_gop_help": 2309,
+    "total_dems_betraying_party": 30
+  },
+  "congress_breakdown": [
+    {
+      "congress": 111,
+      "years": "2009-2010",
+      "president": "Obama",
+      "control": "Dem trifecta",
+      "dem_bills": 864,
+      "dem_passed": 864,
+      "dem_failed": 0,
+      "dem_success_rate": 100.0,
+      "gop_bills": 1266,
+      "gop_passed": 941,
+      "gop_failed": 325,
+      "gop_success_rate": 74.3
+    },
+    {
+      "congress": 116,
+      "years": "2019-2020",
+      "president": "Trump",
+      "control": "Dems control House",
+      "dem_bills": 598,
+      "dem_passed": 575,
+      "dem_failed": 23,
+      "dem_success_rate": 96.2,
+      "gop_bills": 1003,
+      "gop_passed": 837,
+      "gop_failed": 166,
+      "gop_success_rate": 83.4
+    },
+    {
+      "congress": 117,
+      "years": "2021-2022",
+      "president": "Biden",
+      "control": "Dem trifecta (50-50)",
+      "dem_bills": 1207,
+      "dem_passed": 1156,
+      "dem_failed": 51,
+      "dem_success_rate": 95.8,
+      "gop_bills": 680,
+      "gop_passed": 435,
+      "gop_failed": 245,
+      "gop_success_rate": 64.0
+    },
+    {
+      "congress": 118,
+      "years": "2023-2024",
+      "president": "Biden",
+      "control": "GOP controls House",
+      "dem_bills": 718,
+      "dem_passed": 515,
+      "dem_failed": 203,
+      "dem_success_rate": 71.7,
+      "gop_bills": 934,
+      "gop_passed": 769,
+      "gop_failed": 165,
+      "gop_success_rate": 82.3
+    },
+    {
+      "congress": 119,
+      "years": "2025-2026",
+      "president": "Trump",
+      "control": "GOP trifecta",
+      "dem_bills": 211,
+      "dem_passed": 30,
+      "dem_failed": 181,
+      "dem_success_rate": 14.2,
+      "gop_bills": 806,
+      "gop_passed": 785,
+      "gop_failed": 21,
+      "gop_success_rate": 97.4
+    }
+  ],
+  "top_anti_dem_members": [
+    {
+      "name": "MANCHIN, Joe, III",
+      "state": "WV",
+      "party": "D",
+      "anti_dem_votes": 60
+    },
+    {
+      "name": "GOLDEN, Jared",
+      "state": "ME",
+      "party": "D",
+      "anti_dem_votes": 47
+    },
+    {
+      "name": "PEREZ, Marie Gluesenkamp",
+      "state": "WA",
+      "party": "D",
+      "anti_dem_votes": 34
+    },
+    {
+      "name": "FLETCHER, Elizabeth",
+      "state": "TX",
+      "party": "D",
+      "anti_dem_votes": 31
+    },
+    {
+      "name": "PELTOLA, Mary Sattler",
+      "state": "AK",
+      "party": "D",
+      "anti_dem_votes": 30
+    },
+    {
+      "name": "CRAIG, Angela",
+      "state": "MN",
+      "party": "D",
+      "anti_dem_votes": 26
+    },
+    {
+      "name": "SANDERS, Bernard",
+      "state": "VT",
+      "party": "I",
+      "anti_dem_votes": 25
+    },
+    {
+      "name": "CUELLAR, Henry",
+      "state": "TX",
+      "party": "D",
+      "anti_dem_votes": 24
+    },
+    {
+      "name": "DAVIS, Don",
+      "state": "NC",
+      "party": "D",
+      "anti_dem_votes": 23
+    },
+    {
+      "name": "GONZALEZ, Vicente Jr.",
+      "state": "TX",
+      "party": "D",
+      "anti_dem_votes": 19
+    },
+    {
+      "name": "ALLRED, Colin",
+      "state": "TX",
+      "party": "D",
+      "anti_dem_votes": 19
+    },
+    {
+      "name": "COSTA, Jim",
+      "state": "CA",
+      "party": "D",
+      "anti_dem_votes": 17
+    },
+    {
+      "name": "VEASEY, Marc",
+      "state": "TX",
+      "party": "D",
+      "anti_dem_votes": 16
+    },
+    {
+      "name": "SINEMA, Kyrsten",
+      "state": "AZ",
+      "party": "D",
+      "anti_dem_votes": 15
+    },
+    {
+      "name": "CARAVEO, Yadira",
+      "state": "CO",
+      "party": "D",
+      "anti_dem_votes": 15
+    },
+    {
+      "name": "PAPPAS, Chris",
+      "state": "NH",
+      "party": "D",
+      "anti_dem_votes": 13
+    },
+    {
+      "name": "SCHRIER, Kim",
+      "state": "WA",
+      "party": "D",
+      "anti_dem_votes": 12
+    },
+    {
+      "name": "TLAIB, Rashida",
+      "state": "MI",
+      "party": "D",
+      "anti_dem_votes": 11
+    },
+    {
+      "name": "MOSKOWITZ, Jared",
+      "state": "FL",
+      "party": "D",
+      "anti_dem_votes": 11
+    },
+    {
+      "name": "STANTON, Greg",
+      "state": "AZ",
+      "party": "D",
+      "anti_dem_votes": 10
+    },
+    {
+      "name": "SCHUMER, Charles Ellis (Chuck)",
+      "state": "NY",
+      "party": "D",
+      "anti_dem_votes": 10
+    },
+    {
+      "name": "LEE, Susie",
+      "state": "NV",
+      "party": "D",
+      "anti_dem_votes": 10
+    },
+    {
+      "name": "RYAN, Patrick",
+      "state": "NY",
+      "party": "D",
+      "anti_dem_votes": 9
+    },
+    {
+      "name": "CASE, Ed",
+      "state": "HI",
+      "party": "D",
+      "anti_dem_votes": 9
+    },
+    {
+      "name": "SCHNEIDER, Brad",
+      "state": "IL",
+      "party": "D",
+      "anti_dem_votes": 9
+    },
+    {
+      "name": "GOTTHEIMER, Josh S.",
+      "state": "NJ",
+      "party": "D",
+      "anti_dem_votes": 9
+    },
+    {
+      "name": "VASQUEZ, Gabriel",
+      "state": "NM",
+      "party": "D",
+      "anti_dem_votes": 8
+    },
+    {
+      "name": "DELUZIO, Chris",
+      "state": "PA",
+      "party": "D",
+      "anti_dem_votes": 8
+    },
+    {
+      "name": "OMAR, Ilhan",
+      "state": "MN",
+      "party": "D",
+      "anti_dem_votes": 8
+    },
+    {
+      "name": "MERKLEY, Jeff",
+      "state": "OR",
+      "party": "D",
+      "anti_dem_votes": 7
+    }
+  ]
+}

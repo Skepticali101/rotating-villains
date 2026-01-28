@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Missing Agenda - What's NOT Being Voted On</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Special+Elite&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Courier Prime', 'Courier New', monospace; 
+            background: #0a0a0a; 
+            color: #d4d4d4; 
+            line-height: 1.6;
+        }
+        .container { max-width: 1400px; margin: 0 auto; padding: 20px; }
+        
+        .header { 
+            background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+            padding: 50px; 
+            border-radius: 0; 
+            margin-bottom: 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+            border-top: 4px solid #d4af37;
+            border-bottom: 4px solid #d4af37;
+            text-align: center;
+        }
+        .header h1 { 
+            font-family: 'Special Elite', 'Courier Prime', monospace;
+            font-size: 3.5rem; 
+            margin-bottom: 15px; 
+            color: #d4af37;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        }
+        .header .subtitle { 
+            font-size: 1.4rem; 
+            opacity: 0.85; 
+            line-height: 1.6;
+            color: #a8a8a8;
+            font-style: italic;
+            letter-spacing: 1px;
+        }
+        
+        .alert-banner {
+            background: linear-gradient(135deg, #1a1200 0%, #0f0a00 100%);
+            padding: 40px;
+            border-radius: 0;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.2);
+            border: 3px solid #d4af37;
+            border-left: 8px solid #d4af37;
+        }
+        .alert-banner h2 { 
+            font-family: 'Special Elite', monospace;
+            font-size: 2.5rem; 
+            margin-bottom: 20px; 
+            color: #d4af37;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: center;
+        }
+        .alert-banner p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 25px;
+            color: #c4c4c4;
+            text-align: center;
+        }
+        
+        .asymmetry-box {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 30px 0;
+        }
+        .asym-card {
+            background: rgba(212, 175, 55, 0.08);
+            padding: 30px;
+            border: 3px solid #d4af37;
+            border-radius: 0;
+            text-align: center;
+        }
+        .asym-card.bad {
+            border-color: #b22222;
+            background: rgba(178, 34, 34, 0.08);
+        }
+        .asym-number {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 4rem;
+            font-weight: 700;
+            color: #d4af37;
+            text-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+            margin-bottom: 15px;
+        }
+        .asym-card.bad .asym-number {
+            color: #b22222;
+            text-shadow: 0 0 15px rgba(178, 34, 34, 0.4);
+        }
+        .asym-label {
+            font-size: 1.2rem;
+            color: #a8a8a8;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .section { 
+            background: #141414; 
+            padding: 35px; 
+            border-radius: 0; 
+            margin-bottom: 25px; 
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+            border: 1px solid #333;
+        }
+        .section h2 { 
+            font-family: 'Special Elite', monospace;
+            font-size: 2rem; 
+            margin-bottom: 25px; 
+            color: #d4af37;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 2px solid #d4af37;
+            padding-bottom: 10px;
+        }
+        
+        .congress-grid {
+            display: grid;
+            gap: 20px;
+        }
+        .congress-card {
+            background: #1a1a1a;
+            padding: 25px;
+            border-left: 4px solid #d4af37;
+            border: 1px solid #333;
+        }
+        .congress-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #444;
+        }
+        .congress-title {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 1.3rem;
+            color: #d4af37;
+            font-weight: 700;
+        }
+        .congress-control {
+            font-size: 1rem;
+            color: #888;
+            font-style: italic;
+        }
+        .stats-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 15px;
+        }
+        .stat-block {
+            padding: 15px;
+            background: rgba(212, 175, 55, 0.05);
+            border: 1px solid #444;
+        }
+        .stat-block.dem {
+            border-left: 3px solid #4682b4;
+        }
+        .stat-block.gop {
+            border-left: 3px solid #b22222;
+        }
+        .stat-label {
+            font-size: 0.9rem;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+        .stat-value {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #d4d4d4;
+        }
+        .success-rate {
+            font-size: 1rem;
+            color: #a8a8a8;
+            margin-top: 5px;
+        }
+        .success-rate.good { color: #6b8e23; }
+        .success-rate.bad { color: #b22222; }
+        
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            font-family: 'IBM Plex Mono', monospace;
+            margin-top: 20px;
+        }
+        th { 
+            background: #0a0a0a; 
+            padding: 15px; 
+            text-align: left; 
+            font-weight: 600; 
+            border-bottom: 3px solid #d4af37;
+            color: #d4af37;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.95rem;
+        }
+        td { 
+            padding: 15px; 
+            border-bottom: 1px solid #333;
+            color: #c4c4c4;
+        }
+        tr:hover { background: #1a1a1a; }
+        
+        .back-link {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 12px 24px;
+            background: transparent;
+            color: #d4af37;
+            text-decoration: none;
+            border: 2px solid #d4af37;
+            font-size: 1rem;
+            transition: all 0.3s;
+            font-family: 'Courier Prime', monospace;
+        }
+        .back-link:hover {
+            background: rgba(212, 175, 55, 0.1);
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+        }
+        
+        @media (max-width: 768px) {
+            .asymmetry-box { grid-template-columns: 1fr; }
+            .stats-row { grid-template-columns: 1fr; }
+            .header h1 { font-size: 2rem; }
+            .asym-number { font-size: 3rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>The Missing Agenda</h1>
+            <p class="subtitle">What's NOT Being Voted On<br>A Study in Political Asymmetry</p>
+        </div>
+        
+        <a href="index.html" class="back-link">← Back to Rotating Villains Tracker</a>
+        
+        <div class="alert-banner">
+            <h2>The Great Imbalance</h2>
+            <p>Republicans in the minority get help from Democrats thousands of times.<br>
+            Democrats in the minority? They're on their own.</p>
+            
+            <div class="asymmetry-box">
+                <div class="asym-card bad">
+                    <div class="asym-number" id="gopHelp">0</div>
+                    <div class="asym-label">GOP Bills Passed<br>with Dem Help</div>
+                </div>
+                <div class="asym-card">
+                    <div class="asym-number" id="demHelp">0</div>
+                    <div class="asym-label">Dem Bills Passed<br>with GOP Help</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>📊 Success Rates by Congress</h2>
+            <p style="color: #888; margin-bottom: 20px;">How often does each party's agenda actually pass?</p>
+            <div class="congress-grid" id="congressGrid"></div>
+        </div>
+        
+        <div class="section">
+            <h2>🔄 The Party Breakers</h2>
+            <p style="color: #888; margin-bottom: 20px;">Democrats who most often vote NO on their own party's bills</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Member</th>
+                        <th>State</th>
+                        <th>Anti-Dem Votes</th>
+                    </tr>
+                </thead>
+                <tbody id="antiDemTable"></tbody>
+            </table>
+        </div>
+    </div>
+    
+    <script>
+        fetch('missing_agenda_data.json')
+            .then(res => res.json())
+            .then(data => {
+                // Animate numbers
+                animateNumber('gopHelp', data.summary.gop_wins_with_dem_help);
+                animateNumber('demHelp', data.summary.dem_wins_with_gop_help);
+                
+                // Render congress breakdown
+                const congressHtml = data.congress_breakdown.map(c => `
+                    <div class="congress-card">
+                        <div class="congress-header">
+                            <div>
+                                <div class="congress-title">Congress ${c.congress} (${c.years})</div>
+                                <div class="congress-control">${c.control} • ${c.president} presidency</div>
+                            </div>
+                        </div>
+                        <div class="stats-row">
+                            <div class="stat-block dem">
+                                <div class="stat-label">Democratic Bills</div>
+                                <div class="stat-value">${c.dem_passed || 0} / ${c.dem_bills || 0}</div>
+                                <div class="success-rate ${(c.dem_success_rate || 0) > 50 ? 'good' : 'bad'}">
+                                    ${c.dem_success_rate || 0}% success rate
+                                </div>
+                            </div>
+                            <div class="stat-block gop">
+                                <div class="stat-label">Republican Bills</div>
+                                <div class="stat-value">${c.gop_passed || 0} / ${c.gop_bills || 0}</div>
+                                <div class="success-rate ${(c.gop_success_rate || 0) > 50 ? 'good' : 'bad'}">
+                                    ${c.gop_success_rate || 0}% success rate
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `).join('');
+                
+                document.getElementById('congressGrid').innerHTML = congressHtml;
+                
+                // Render anti-Dem table
+                const tableHtml = data.top_anti_dem_members.map((m, i) => `
+                    <tr>
+                        <td><strong>${i + 1}</strong></td>
+                        <td><strong>${m.name}</strong></td>
+                        <td>${m.state}</td>
+                        <td style="font-size: 1.2rem; color: #b22222; font-weight: 700;">${m.anti_dem_votes}</td>
+                    </tr>
+                `).join('');
+                
+                document.getElementById('antiDemTable').innerHTML = tableHtml;
+            });
+        
+        function animateNumber(id, target) {
+            const element = document.getElementById(id);
+            const duration = 2000;
+            const steps = 60;
+            const increment = target / steps;
+            let current = 0;
+            
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    element.textContent = target.toLocaleString();
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(current).toLocaleString();
+                }
+            }, duration / steps);
+        }
+    </script>
+</body>
+</html>
