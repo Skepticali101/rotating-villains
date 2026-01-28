@@ -314,12 +314,17 @@
         .close:hover { color: #d4af37; }
         
         .vote-item {
-            background: #0f172a;
+            background: #1a1a1a;
             padding: 18px;
-            border-radius: 8px;
+            border-radius: 0;
             margin-bottom: 15px;
+            border-left: 4px solid #d4af37;
+            border: 1px solid #333;
         }
-        .vote-item:hover { background: #1e293b; }
+        .vote-item:hover { 
+            background: #222;
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.15);
+        }
         .vote-item-header { 
             display: flex; 
             justify-content: space-between; 
@@ -328,45 +333,74 @@
         }
         .vote-item-title { 
             font-weight: 600; 
-            color: #fbbf24;
+            color: #d4af37;
             font-size: 1.2rem;
+            font-family: 'IBM Plex Mono', monospace;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
         .vote-item-link {
-            color: #60a5fa;
+            color: #d4af37;
             text-decoration: none;
             font-size: 0.95rem;
+            border: 1px solid #d4af37;
+            padding: 4px 12px;
+            transition: all 0.2s;
         }
-        .vote-item-link:hover { text-decoration: underline; }
+        .vote-item-link:hover { 
+            background: rgba(212, 175, 55, 0.1);
+            text-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
+        }
         .vote-item-description {
-            color: #60a5fa;
+            color: #a8a8a8;
             font-weight: 500;
             margin: 10px 0;
             font-size: 1rem;
+            font-style: italic;
         }
         .vote-item-details { 
-            color: #94a3b8; 
+            color: #888; 
             font-size: 0.95rem;
             margin-top: 8px;
+            font-family: 'Courier Prime', monospace;
         }
         
         .highlight { 
-            color: #fca5a5; 
+            color: #d4af37; 
             font-weight: 700; 
             font-size: 1.05em;
+            text-shadow: 0 0 8px rgba(212, 175, 55, 0.3);
         }
         .scroll-container { max-height: 600px; overflow-y: auto; }
         .scroll-container::-webkit-scrollbar { width: 12px; }
-        .scroll-container::-webkit-scrollbar-track { background: #0f172a; }
-        .scroll-container::-webkit-scrollbar-thumb { background: #475569; border-radius: 6px; }
+        .scroll-container::-webkit-scrollbar-track { background: #0a0a0a; }
+        .scroll-container::-webkit-scrollbar-thumb { 
+            background: #d4af37; 
+            border-radius: 0;
+        }
+        .scroll-container::-webkit-scrollbar-thumb:hover { 
+            background: #f4d88a;
+        }
         
-        .loading { text-align: center; padding: 100px; font-size: 1.8rem; color: #94a3b8; }
+        .loading { 
+            text-align: center; 
+            padding: 100px; 
+            font-size: 1.8rem; 
+            color: #d4af37;
+            font-family: 'Special Elite', monospace;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
         
         .badge {
             display: inline-block;
             padding: 6px 12px;
-            border-radius: 5px;
+            border-radius: 0;
             font-size: 0.9rem;
             font-weight: 600;
+            font-family: 'IBM Plex Mono', monospace;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
         .badge-danger { 
             background: linear-gradient(135deg, #8b0000 0%, #5c0000 100%); 
@@ -388,15 +422,18 @@
         }
         
         .closest-call-card {
-            background: #0f172a;
+            background: #1a1a1a;
             padding: 20px;
-            border-radius: 8px;
+            border-radius: 0;
             margin-bottom: 15px;
             transition: all 0.2s;
+            border-left: 4px solid #d4af37;
+            border: 1px solid #333;
         }
         .closest-call-card:hover {
-            background: #1e293b;
+            background: #222;
             transform: translateX(5px);
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.15);
         }
         .closest-call-header {
             display: flex;
@@ -407,34 +444,44 @@
         .closest-call-title {
             font-size: 1.2rem;
             font-weight: 700;
-            color: #fbbf24;
+            color: #d4af37;
+            font-family: 'IBM Plex Mono', monospace;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
         .closest-call-margin {
             font-size: 1.5rem;
             font-weight: 700;
-            color: #ef4444;
+            color: #b22222;
+            font-family: 'IBM Plex Mono', monospace;
+            text-shadow: 0 0 10px rgba(178, 34, 34, 0.3);
         }
         .closest-call-description {
-            color: #60a5fa;
+            color: #a8a8a8;
             margin: 10px 0;
             font-size: 1rem;
+            font-style: italic;
         }
         .closest-call-betrayers {
             margin-top: 12px;
             padding-top: 12px;
-            border-top: 1px solid #334155;
+            border-top: 1px solid #444;
         }
         .betrayer-tag {
             display: inline-block;
-            background: #dc2626;
-            color: white;
+            background: linear-gradient(135deg, #8b0000 0%, #5c0000 100%);
+            color: #ffcccb;
             padding: 5px 10px;
-            border-radius: 5px;
+            border-radius: 0;
             margin: 3px;
             font-size: 0.85rem;
+            border: 1px solid #b22222;
+            font-family: 'Courier Prime', monospace;
         }
         .betrayer-tag.absent {
-            background: #f59e0b;
+            background: linear-gradient(135deg, #8b6914 0%, #5c4609 100%);
+            color: #ffd700;
+            border: 1px solid #d4af37;
         }
         
         /* Mobile Responsive Styles - Apply AFTER nuclear reset */
@@ -531,7 +578,7 @@
         })
         .catch(err => {
             document.getElementById('root').innerHTML = 
-                '<div class="loading" style="color: #ef4444;">Error loading data: ' + err.message + '</div>';
+                '<div class="loading" style="color: #d4af37;">Error loading data: ' + err.message + '</div>';
         });
 
         function renderDashboard() {
@@ -720,13 +767,13 @@
                         <td><strong style="font-size: 1.05rem;">${v.name}</strong></td>
                         <td>${v.state}</td>
                         <td>
-                            <span class="clickable" style="color: #ef4444;" 
+                            <span class="clickable" style="color: #b22222;" 
                                   onclick="showBetrayals('${escapeHtml(v.name)}', 'voted_yes', 'all')">
                                 ${v.voted_with_gop}
                             </span>
                         </td>
                         <td>
-                            <span class="clickable" style="color: #f59e0b;" 
+                            <span class="clickable" style="color: #d4af37;" 
                                   onclick="showBetrayals('${escapeHtml(v.name)}', 'absent', 'all')">
                                 ${v.absent}
                             </span>
@@ -789,7 +836,7 @@
             
             if (votes.length === 0) {
                 document.getElementById(elementId).innerHTML = 
-                    '<p style="color: #94a3b8; text-align: center; padding: 40px;">No votes found in this category yet.</p>';
+                    '<p style="color: #888; text-align: center; padding: 40px; font-family: Courier Prime, monospace;">No votes found in this category yet.</p>';
                 return;
             }
             
@@ -806,8 +853,8 @@
                         <div class="closest-call-header">
                             <div class="closest-call-title" style="flex: 1;">${vote.vote_id}</div>
                             <div style="text-align: right;">
-                                <span style="color: #ef4444; font-size: 1.3rem; font-weight: 700;">GOP Won</span>
-                                <span style="color: #94a3b8; font-size: 1rem;"> ${vote.total_yes}-${vote.total_no}</span>
+                                <span style="color: #b22222; font-size: 1.3rem; font-weight: 700;">GOP Won</span>
+                                <span style="color: #888; font-size: 1rem;"> ${vote.total_yes}-${vote.total_no}</span>
                             </div>
                         </div>
                         ${vote.description ? `
@@ -816,23 +863,23 @@
                             </div>
                         ` : ''}
                         <div style="margin: 15px 0;">
-                            <span style="font-size: 1.1rem; color: ${vote.dem_yes > 0 ? '#ef4444' : '#10b981'}; font-weight: 600;">
+                            <span style="font-size: 1.1rem; color: ${vote.dem_yes > 0 ? '#b22222' : '#6b8e23'}; font-weight: 600;">
                                 ${vote.dem_yes} Democrat${vote.dem_yes !== 1 ? 's' : ''} voted YES
                             </span>
-                            <span style="color: #94a3b8; margin-left: 15px;">
+                            <span style="color: #888; margin-left: 15px;">
                                 ${vote.dem_no} voted NO
                             </span>
                         </div>
                         ${vote.dem_betrayers && vote.dem_betrayers.length > 0 ? `
                             <div class="closest-call-betrayers">
-                                <strong style="color: #e2e8f0;">Democrats Who Voted YES:</strong><br>
+                                <strong style="color: #d4af37;">Democrats Who Voted YES:</strong><br>
                                 ${vote.dem_betrayers.map(d => 
                                     `<span class="betrayer-tag">${d.name} (${d.state})</span>`
                                 ).join('')}
                             </div>
                         ` : ''}
                         <div style="margin-top: 10px;">
-                            <a href="${voteviewUrl}" target="_blank" style="color: #60a5fa; text-decoration: none; font-size: 0.9rem;">
+                            <a href="${voteviewUrl}" target="_blank" style="color: #d4af37; text-decoration: none; font-size: 0.9rem; border: 1px solid #d4af37; padding: 4px 12px; display: inline-block; transition: all 0.2s;">
                                 View Full Vote →
                             </a>
                         </div>
@@ -887,28 +934,28 @@
                             <div class="closest-call-header">
                                 <div class="closest-call-title" style="flex: 1;">${conf.nominee}</div>
                                 <div style="text-align: right;">
-                                    <span style="color: #10b981; font-size: 1.3rem; font-weight: 700;">Confirmed</span>
-                                    <span style="color: #94a3b8; font-size: 1rem;"> ${conf.total_yes}-${conf.total_no}</span>
+                                    <span style="color: #6b8e23; font-size: 1.3rem; font-weight: 700;">Confirmed</span>
+                                    <span style="color: #888; font-size: 1rem;"> ${conf.total_yes}-${conf.total_no}</span>
                                 </div>
                             </div>
                             <div style="margin: 15px 0;">
-                                <span style="font-size: 1.1rem; color: ${conf.dem_yes > 0 ? '#ef4444' : '#10b981'}; font-weight: 600;">
+                                <span style="font-size: 1.1rem; color: ${conf.dem_yes > 0 ? '#b22222' : '#6b8e23'}; font-weight: 600;">
                                     ${conf.dem_yes} Democrat${conf.dem_yes !== 1 ? 's' : ''} voted YES
                                 </span>
-                                <span style="color: #94a3b8; margin-left: 15px;">
+                                <span style="color: #888; margin-left: 15px;">
                                     ${conf.dem_no} voted NO
                                 </span>
                             </div>
                             ${conf.dem_supporters && conf.dem_supporters.length > 0 ? `
                                 <div class="closest-call-betrayers">
-                                    <strong style="color: #e2e8f0;">Democrats Who Confirmed:</strong><br>
+                                    <strong style="color: #d4af37;">Democrats Who Confirmed:</strong><br>
                                     ${conf.dem_supporters.map(d => 
                                         `<span class="betrayer-tag">${d.name} (${d.state})</span>`
                                     ).join('')}
                                 </div>
                             ` : ''}
                             <div style="margin-top: 10px;">
-                                <a href="${voteviewUrl}" target="_blank" style="color: #60a5fa; text-decoration: none; font-size: 0.9rem;">
+                                <a href="${voteviewUrl}" target="_blank" style="color: #d4af37; text-decoration: none; font-size: 0.9rem; border: 1px solid #d4af37; padding: 4px 12px; display: inline-block;">
                                     View Full Vote →
                                 </a>
                             </div>
@@ -1088,7 +1135,7 @@
             memberBetrayal.sort((a, b) => a.voteId.localeCompare(b.voteId));
             
             const actionLabel = type === 'voted_yes' ? 'Voted with GOP' : 'Was Absent';
-            const actionColor = type === 'voted_yes' ? '#ef4444' : '#f59e0b';
+            const actionColor = type === 'voted_yes' ? '#b22222' : '#d4af37';
             
             const sectorLabel = sector !== 'all' ? ` on ${capitalizeFirst(sector)} Bills` : '';
             
@@ -1098,7 +1145,7 @@
             let modalContent = '';
             
             if (memberBetrayal.length === 0) {
-                modalContent = '<p style="text-align: center; padding: 40px; color: #94a3b8;">No betrayals found of this type.</p>';
+                modalContent = '<p style="text-align: center; padding: 40px; color: #888; font-family: Courier Prime, monospace;">No betrayals found of this type.</p>';
             } else {
                 modalContent = memberBetrayal.map(vote => {
                     const match = vote.voteId.match(/([hs])(\d+)-(\d+)/);
