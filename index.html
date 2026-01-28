@@ -418,7 +418,7 @@
         let currentFilter = 'all';
         let enrichedVillains = [];
         
-        fetch('rotating_villains_data.json?v=2')
+        fetch('rotating_villains_data.json')
         .then(res => res.json())
         .then(villainsData => {
             fullData = villainsData;
@@ -560,12 +560,7 @@
         function renderTableRows(villains, sector) {
             return villains.map((v, i) => {
                 const total = v.voted_with_gop + v.absent;
-                let pattern = '';
-                
-                // Count-based rating system (out of 135 winnable votes)
-                if (total <= 10) pattern = 'Rare';
-                else if (total <= 20) pattern = 'Strategic Rotator';
-                else pattern = 'Super Villain';
+                const pattern = v.pattern; // Read pattern from data
                 
                 return `
                     <tr>
