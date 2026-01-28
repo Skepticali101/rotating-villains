@@ -1,0 +1,184 @@
+{
+  "voting_blocs": [
+    {
+      "member1": "GOLDEN, Jared",
+      "member2": "PEREZ, Marie Gluesenkamp",
+      "co_betrayals": 116,
+      "overlap_rate": 20.8
+    },
+    {
+      "member1": "CUELLAR, Henry",
+      "member2": "PEREZ, Marie Gluesenkamp",
+      "co_betrayals": 95,
+      "overlap_rate": 17.2
+    },
+    {
+      "member1": "DAVIS, Don",
+      "member2": "PEREZ, Marie Gluesenkamp",
+      "co_betrayals": 87,
+      "overlap_rate": 16.1
+    },
+    {
+      "member1": "CUELLAR, Henry",
+      "member2": "GOLDEN, Jared",
+      "co_betrayals": 86,
+      "overlap_rate": 15.6
+    },
+    {
+      "member1": "CUELLAR, Henry",
+      "member2": "DAVIS, Don",
+      "co_betrayals": 86,
+      "overlap_rate": 15.9
+    },
+    {
+      "member1": "DAVIS, Don",
+      "member2": "GOLDEN, Jared",
+      "co_betrayals": 81,
+      "overlap_rate": 15.0
+    },
+    {
+      "member1": "CUELLAR, Henry",
+      "member2": "GONZALEZ, Vicente Jr.",
+      "co_betrayals": 73,
+      "overlap_rate": 15.3
+    },
+    {
+      "member1": "GONZALEZ, Vicente Jr.",
+      "member2": "PEREZ, Marie Gluesenkamp",
+      "co_betrayals": 67,
+      "overlap_rate": 14.0
+    },
+    {
+      "member1": "HASSAN, Margaret (Maggie)",
+      "member2": "SHAHEEN, Jeanne",
+      "co_betrayals": 65,
+      "overlap_rate": 32.3
+    },
+    {
+      "member1": "DAVIS, Don",
+      "member2": "GONZALEZ, Vicente Jr.",
+      "co_betrayals": 62,
+      "overlap_rate": 13.0
+    },
+    {
+      "member1": "GOLDEN, Jared",
+      "member2": "GONZALEZ, Vicente Jr.",
+      "co_betrayals": 62,
+      "overlap_rate": 13.0
+    },
+    {
+      "member1": "HASSAN, Margaret (Maggie)",
+      "member2": "KING, Angus Stanley, Jr.",
+      "co_betrayals": 55,
+      "overlap_rate": 27.1
+    },
+    {
+      "member1": "FETTERMAN, John Karl",
+      "member2": "KING, Angus Stanley, Jr.",
+      "co_betrayals": 52,
+      "overlap_rate": 25.7
+    },
+    {
+      "member1": "HASSAN, Margaret (Maggie)",
+      "member2": "KAINE, Timothy Michael (Tim)",
+      "co_betrayals": 52,
+      "overlap_rate": 30.6
+    },
+    {
+      "member1": "HASSAN, Margaret (Maggie)",
+      "member2": "ROSEN, Jacklyn Sheryl",
+      "co_betrayals": 50,
+      "overlap_rate": 26.7
+    },
+    {
+      "member1": "KAINE, Timothy Michael (Tim)",
+      "member2": "SHAHEEN, Jeanne",
+      "co_betrayals": 50,
+      "overlap_rate": 29.4
+    },
+    {
+      "member1": "KING, Angus Stanley, Jr.",
+      "member2": "SHAHEEN, Jeanne",
+      "co_betrayals": 50,
+      "overlap_rate": 24.9
+    },
+    {
+      "member1": "FETTERMAN, John Karl",
+      "member2": "HASSAN, Margaret (Maggie)",
+      "co_betrayals": 50,
+      "overlap_rate": 24.8
+    },
+    {
+      "member1": "KAINE, Timothy Michael (Tim)",
+      "member2": "KING, Angus Stanley, Jr.",
+      "co_betrayals": 48,
+      "overlap_rate": 28.2
+    },
+    {
+      "member1": "FETTERMAN, John Karl",
+      "member2": "SHAHEEN, Jeanne",
+      "co_betrayals": 47,
+      "overlap_rate": 23.4
+    },
+    {
+      "member1": "PELTOLA, Mary Sattler",
+      "member2": "PEREZ, Marie Gluesenkamp",
+      "co_betrayals": 45,
+      "overlap_rate": 14.2
+    },
+    {
+      "member1": "HASSAN, Margaret (Maggie)",
+      "member2": "WARNER, Mark",
+      "co_betrayals": 45,
+      "overlap_rate": 26.5
+    },
+    {
+      "member1": "GOLDEN, Jared",
+      "member2": "PELTOLA, Mary Sattler",
+      "co_betrayals": 44,
+      "overlap_rate": 13.9
+    },
+    {
+      "member1": "CORTEZ MASTO, Catherine Marie",
+      "member2": "FETTERMAN, John Karl",
+      "co_betrayals": 41,
+      "overlap_rate": 24.3
+    },
+    {
+      "member1": "HASSAN, Margaret (Maggie)",
+      "member2": "KELLY, Mark Edward",
+      "co_betrayals": 41,
+      "overlap_rate": 24.6
+    },
+    {
+      "member1": "CORTEZ MASTO, Catherine Marie",
+      "member2": "ROSEN, Jacklyn Sheryl",
+      "co_betrayals": 40,
+      "overlap_rate": 23.7
+    },
+    {
+      "member1": "FETTERMAN, John Karl",
+      "member2": "KAINE, Timothy Michael (Tim)",
+      "co_betrayals": 40,
+      "overlap_rate": 23.5
+    },
+    {
+      "member1": "FETTERMAN, John Karl",
+      "member2": "WARNER, Mark",
+      "co_betrayals": 38,
+      "overlap_rate": 22.4
+    },
+    {
+      "member1": "SHAHEEN, Jeanne",
+      "member2": "WARNER, Mark",
+      "co_betrayals": 38,
+      "overlap_rate": 22.4
+    },
+    {
+      "member1": "KING, Angus Stanley, Jr.",
+      "member2": "ROSEN, Jacklyn Sheryl",
+      "co_betrayals": 37,
+      "overlap_rate": 19.8
+    }
+  ]
+}

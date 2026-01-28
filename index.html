@@ -686,6 +686,8 @@
                                 <thead>
                                     <tr>
                                         <th style="cursor: pointer;" onclick="sortTable('name')">Member ↕</th>
+                                        <th style="cursor: pointer;" onclick="sortTable('voting_bloc')">Voting Bloc ↕</th>
+                                        <th style="cursor: pointer;" onclick="sortTable('voting_bloc')">Voting Bloc ↕</th>
                                         <th style="cursor: pointer;" onclick="sortTable('state')">State ↕</th>
                                         <th style="cursor: pointer;" onclick="sortTable('voted_with_gop')">Voted with GOP ↕</th>
                                         <th style="cursor: pointer;" onclick="sortTable('absent')">Conveniently Absent ↕</th>
@@ -768,12 +770,20 @@
         function renderTableRows(villains, sector) {
             return villains.map((v) => {
                 const total = v.voted_with_gop + v.absent;
-                const pattern = v.pattern; // Read pattern from data
+                const pattern = v.pattern;
                 const antiDem = v.voted_against_dems || 0;
+                
+                // Voting bloc badge
+                let blocBadge = '<span style="color: #666;">—</span>';
+                if (v.voting_bloc) {
+                    const shortName = v.voting_bloc.partner.split(',')[0];
+                    blocBadge = `<span style="display: inline-block; padding: 4px 8px; background: rgba(178, 34, 34, 0.15); color: #d4af37; border: 1px solid #b22222; font-size: 0.85rem; font-family: IBM Plex Mono, monospace;" title="Co-betrayed ${v.voting_bloc.count} times with ${v.voting_bloc.partner}">↔ ${shortName}</span>`;
+                }
                 
                 return `
                     <tr>
                         <td><strong style="font-size: 1.05rem;">${v.name}</strong></td>
+                        <td>${blocBadge}</td>
                         <td>${v.state}</td>
                         <td>
                             <span class="clickable" style="color: #b22222;" 
@@ -797,6 +807,11 @@
                         <td><span class="badge ${
                             pattern === 'Rare' ? 'badge-info' : 
                             pattern === 'Strategic Rotator' ? 'badge-warning' : 'badge-danger'
+                        }">${pattern}</span></td>
+                    </tr>
+                `;
+            }).join('');
+        }
                         }">${pattern}</span></td>
                     </tr>
                 `;

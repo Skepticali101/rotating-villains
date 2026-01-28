@@ -15404,7 +15404,8 @@
           "no": 191,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "EVANS, Dwight",
@@ -15680,7 +15681,8 @@
       "total": 66,
       "pattern": "Super Villain",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "JACKSON LEE, Sheila",
@@ -15944,7 +15946,8 @@
           "no": 231,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "PHILLIPS, Dean",
@@ -16128,7 +16131,8 @@
       "total": 43,
       "pattern": "Super Villain",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "BOWMAN, Jamaal",
@@ -16350,7 +16354,8 @@
           "no": 94,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "WILSON, Frederica",
@@ -16514,7 +16519,8 @@
       "total": 38,
       "pattern": "Super Villain",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "WATSON COLEMAN, Bonnie",
@@ -16682,7 +16688,8 @@
           "no": 94,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "GARAMENDI, John",
@@ -16866,7 +16873,8 @@
           "no": 116,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "GOLDEN, Jared",
@@ -17332,7 +17340,11 @@
           "no": 213,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": {
+        "partner": "PEREZ, Marie Gluesenkamp",
+        "count": 116
+      }
     },
     {
       "name": "PORTER, Katie",
@@ -17479,7 +17491,8 @@
           "no": 240,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "WEXTON, Jennifer",
@@ -17619,7 +17632,8 @@
           "no": 256,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "TRONE, David",
@@ -17776,7 +17790,8 @@
           "no": 256,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "OBAMA, Barack",
@@ -17904,7 +17919,8 @@
       "total": 29,
       "pattern": "Super Villain",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "CUELLAR, Henry",
@@ -18201,7 +18217,11 @@
           "no": 229,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": {
+        "partner": "PEREZ, Marie Gluesenkamp",
+        "count": 95
+      }
     },
     {
       "name": "PEREZ, Marie Gluesenkamp",
@@ -18556,7 +18576,11 @@
           "no": 213,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": {
+        "partner": "GOLDEN, Jared",
+        "count": 116
+      }
     },
     {
       "name": "KIM, Andy",
@@ -18687,7 +18711,8 @@
           "no": 56,
           "congress": 119
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "TITUS, Alice (Dina)",
@@ -18811,7 +18836,8 @@
           "no": 256,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "GALLEGO, Ruben",
@@ -18931,7 +18957,8 @@
           "no": 223,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "BUSH, Cori",
@@ -19075,7 +19102,8 @@
           "no": 94,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "SWALWELL, Eric",
@@ -19187,7 +19215,8 @@
           "no": 191,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "SHERRILL, Mikie",
@@ -19320,7 +19349,8 @@
           "no": 228,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "CLEAVER, Emanuel",
@@ -19420,7 +19450,8 @@
       "total": 22,
       "pattern": "Super Villain",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "PELTOLA, Mary Sattler",
@@ -19727,7 +19758,11 @@
           "no": 213,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": {
+        "partner": "PEREZ, Marie Gluesenkamp",
+        "count": 45
+      }
     },
     {
       "name": "BLUMENAUER, Earl",
@@ -19819,7 +19854,8 @@
       "total": 20,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "BAYH, Evan",
@@ -19907,7 +19943,8 @@
       "total": 19,
       "pattern": "Super Villain",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "GOTTHEIMER, Josh S.",
@@ -20059,7 +20096,8 @@
           "no": 256,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "LINCOLN, Blanche Lambert",
@@ -20143,7 +20181,8 @@
       "total": 18,
       "pattern": "Super Villain",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "NELSON, Earl Benjamin (Ben)",
@@ -20227,7 +20266,8 @@
       "total": 18,
       "pattern": "Super Villain",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "PASCRELL, William J.",
@@ -20311,7 +20351,8 @@
       "total": 18,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "MAGAZINER, Seth",
@@ -20406,7 +20447,8 @@
           "no": 240,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "MOORE, Gwendolynne S. (Gwen)",
@@ -20508,7 +20550,8 @@
           "no": 134,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "COSTA, Jim",
@@ -20708,7 +20751,8 @@
           "no": 222,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "RUPPERSBERGER, C. A. (Dutch)",
@@ -20810,7 +20854,8 @@
           "no": 256,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "JAYAPAL, Pramila",
@@ -20915,7 +20960,8 @@
           "no": 94,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "CASTRO, Joaquin",
@@ -20999,7 +21045,8 @@
           "no": 134,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "NADLER, Jerrold Lewis",
@@ -21075,7 +21122,8 @@
       "total": 16,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "PELOSI, Nancy",
@@ -21147,7 +21195,8 @@
       "total": 15,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "GOMEZ, Jimmy",
@@ -21241,7 +21290,8 @@
           "no": 134,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "TESTER, Jon",
@@ -21321,7 +21371,8 @@
           "no": 49,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "SORENSEN, Eric",
@@ -21425,7 +21476,8 @@
           "no": 256,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "SEWELL, Terri",
@@ -21501,7 +21553,8 @@
           "no": 236,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "LANDSMAN, Greg",
@@ -21605,7 +21658,8 @@
           "no": 236,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "WEBB, James H. (Jim)",
@@ -21673,7 +21727,8 @@
       "total": 14,
       "pattern": "Super Villain",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "GONZALEZ, Vicente Jr.",
@@ -21875,7 +21930,11 @@
           "no": 229,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": {
+        "partner": "CUELLAR, Henry",
+        "count": 73
+      }
     },
     {
       "name": "WATERS, Maxine",
@@ -21986,7 +22045,8 @@
           "no": 94,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "KUSTER, Ann Mclane",
@@ -22050,7 +22110,8 @@
       "total": 13,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "SCANLON, Mary Gay",
@@ -22114,7 +22175,8 @@
       "total": 13,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "MCCASKILL, Claire",
@@ -22178,7 +22240,8 @@
       "total": 13,
       "pattern": "Super Villain",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "PRYOR, Mark",
@@ -22242,7 +22305,8 @@
       "total": 13,
       "pattern": "Super Villain",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "LEE, Susie",
@@ -22377,7 +22441,8 @@
           "no": 229,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "GOLDMAN, Daniel",
@@ -22452,7 +22517,8 @@
           "no": 240,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "KAMLAGER-DOVE, Sydney",
@@ -22527,7 +22593,8 @@
           "no": 94,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "PETTERSEN, Brittany",
@@ -22587,7 +22654,8 @@
       "total": 12,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "HAGAN, Kay",
@@ -22647,7 +22715,8 @@
       "total": 12,
       "pattern": "Super Villain",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "BYRD, Robert Carlyle",
@@ -22707,7 +22776,8 @@
       "total": 12,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "SCHAKOWSKY, Janice D.",
@@ -22782,7 +22852,8 @@
           "no": 213,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "CONNOLLY, Gerald E. (Gerry)",
@@ -22850,7 +22921,8 @@
           "no": 256,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "DAVIS, Danny K.",
@@ -22932,7 +23004,8 @@
           "no": 94,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "VEL\u00c1ZQUEZ, Nydia M.",
@@ -23007,7 +23080,8 @@
           "no": 134,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "CROW, Jason",
@@ -23067,7 +23141,8 @@
       "total": 12,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "MEEKS, Gregory W.",
@@ -23127,7 +23202,8 @@
       "total": 12,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "FOSTER, Bill",
@@ -23195,7 +23271,8 @@
           "no": 236,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "GARCIA, Sylvia",
@@ -23266,7 +23343,8 @@
           "no": 70,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "HUFFMAN, Jared",
@@ -23337,7 +23415,8 @@
           "no": 116,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "DAVIS, Don",
@@ -23555,7 +23634,11 @@
           "no": 116,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": {
+        "partner": "PEREZ, Marie Gluesenkamp",
+        "count": 87
+      }
     },
     {
       "name": "BLUNT ROCHESTER, Lisa",
@@ -23611,7 +23694,8 @@
       "total": 11,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "CORREA, Jose Luis",
@@ -23675,7 +23759,8 @@
           "no": 134,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "MANCHIN, Joe",
@@ -23731,7 +23816,8 @@
       "total": 11,
       "pattern": "Super Villain",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "MARSHALL, Jim",
@@ -23787,7 +23873,8 @@
       "total": 11,
       "pattern": "Super Villain",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "MCINTYRE, Mike",
@@ -23843,7 +23930,8 @@
       "total": 11,
       "pattern": "Super Villain",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "ALTMIRE, Jason",
@@ -23899,7 +23987,8 @@
       "total": 11,
       "pattern": "Super Villain",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "LOFGREN, Zoe",
@@ -23984,7 +24073,8 @@
           "no": 240,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "JOHNSON, Hank",
@@ -24069,7 +24159,8 @@
           "no": 70,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "KLOBUCHAR, Amy",
@@ -24125,7 +24216,8 @@
       "total": 11,
       "pattern": "Super Villain",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "WARNER, Mark",
@@ -24181,7 +24273,11 @@
       "total": 11,
       "pattern": "Super Villain",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": {
+        "partner": "HASSAN, Margaret (Maggie)",
+        "count": 45
+      }
     },
     {
       "name": "DOGGETT, Lloyd Alton",
@@ -24237,7 +24333,8 @@
       "total": 11,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "SHAHEEN, Jeanne",
@@ -24293,7 +24390,11 @@
       "total": 11,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": {
+        "partner": "HASSAN, Margaret (Maggie)",
+        "count": 65
+      }
     },
     {
       "name": "SMITH, Adam",
@@ -24349,7 +24450,8 @@
       "total": 11,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "FEINSTEIN, Dianne",
@@ -24405,7 +24507,8 @@
       "total": 11,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "TLAIB, Rashida",
@@ -24535,7 +24638,8 @@
           "no": 94,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "LIEU, Ted",
@@ -24602,7 +24706,8 @@
           "no": 236,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "CROCKETT, Jasmine",
@@ -24669,7 +24774,8 @@
           "no": 94,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "GARCIA, Robert",
@@ -24736,7 +24842,8 @@
           "no": 94,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "MULLIN, Kevin",
@@ -24796,7 +24903,8 @@
           "no": 94,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "STANSBURY, Melanie Ann",
@@ -24856,7 +24964,8 @@
           "no": 225,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "LIPINSKI, Daniel",
@@ -24908,7 +25017,8 @@
       "total": 10,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "BENNET, Michael F.",
@@ -24989,7 +25099,8 @@
           "no": 24,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "MINNICK, Walt",
@@ -25041,7 +25152,8 @@
       "total": 10,
       "pattern": "Super Villain",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "BOCCIERI, John A.",
@@ -25093,7 +25205,8 @@
       "total": 10,
       "pattern": "Super Villain",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "FRANKEL, Lois",
@@ -25153,7 +25266,8 @@
           "no": 236,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "QUIGLEY, Mike",
@@ -25234,7 +25348,8 @@
           "no": 99,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "NORCROSS, Donald",
@@ -25290,7 +25405,8 @@
           "no": 54,
           "congress": 119
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "HOYER, Steny Hamilton",
@@ -25353,7 +25469,8 @@
           "no": 55,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "JACOBS, Sara",
@@ -25409,7 +25526,8 @@
           "no": 223,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "CARTER, Troy",
@@ -25465,7 +25583,8 @@
           "no": 230,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "OCASIO-CORTEZ, Alexandria",
@@ -25563,7 +25682,8 @@
           "no": 94,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "BEATTY, Joyce",
@@ -25611,7 +25731,8 @@
       "total": 9,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "CARAVEO, Yadira",
@@ -25765,7 +25886,8 @@
           "no": 213,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "LIEBERMAN, Joseph I.",
@@ -25813,7 +25935,8 @@
       "total": 9,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "NELSON, Clarence William (Bill)",
@@ -25861,7 +25984,8 @@
       "total": 9,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "CHILDERS, Travis W.",
@@ -25909,7 +26033,8 @@
       "total": 9,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "NYE, Glenn C.",
@@ -25957,7 +26082,8 @@
       "total": 9,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "BRIGHT, Bobby Neal",
@@ -26005,7 +26131,8 @@
       "total": 9,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "DONNELLY, Joe",
@@ -26053,7 +26180,8 @@
       "total": 9,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "TAYLOR, Gary Eugene (Gene)",
@@ -26101,7 +26229,8 @@
       "total": 9,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "MURPHY, Scott",
@@ -26149,7 +26278,8 @@
       "total": 9,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "DAVIS, Artur",
@@ -26197,7 +26327,8 @@
       "total": 9,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "SPACE, Zack",
@@ -26245,7 +26376,8 @@
       "total": 9,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "UDALL, Mark",
@@ -26293,7 +26425,8 @@
       "total": 9,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "GREEN, Al",
@@ -26341,7 +26474,8 @@
       "total": 9,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "HIMES, James A.",
@@ -26439,7 +26573,8 @@
           "no": 222,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "HARDER, Josh",
@@ -26495,7 +26630,8 @@
           "no": 226,
           "congress": 119
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "WILD, Susan",
@@ -26579,7 +26715,8 @@
           "no": 240,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "MENENDEZ, Robert",
@@ -26677,7 +26814,8 @@
           "no": 47,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "C\u00c1RDENAS, Tony",
@@ -26721,7 +26859,8 @@
       "total": 8,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "MFUME, Kweisi",
@@ -26780,7 +26919,8 @@
           "no": 55,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "BROWNLEY, Julia",
@@ -26824,7 +26964,8 @@
       "total": 8,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "CHERFILUS-MCCORMICK, Sheila",
@@ -26868,7 +27009,8 @@
       "total": 8,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "CARSON, Andr\u00e9",
@@ -26934,7 +27076,8 @@
           "no": 94,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "MOSKOWITZ, Jared",
@@ -27056,7 +27199,8 @@
           "no": 240,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "LEGER FERNANDEZ, Teresa",
@@ -27115,7 +27259,8 @@
           "no": 229,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "DINGELL, Debbie",
@@ -27167,7 +27312,8 @@
           "no": 94,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "GRIFFITH, Parker",
@@ -27211,7 +27357,8 @@
       "total": 8,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "ROSS, Michael Avery",
@@ -27255,7 +27402,8 @@
       "total": 8,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "KRATOVIL, Frank M.",
@@ -27299,7 +27447,8 @@
       "total": 8,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "MITCHELL, Harry E.",
@@ -27343,7 +27492,8 @@
       "total": 8,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "ELLSWORTH, Brad",
@@ -27387,7 +27537,8 @@
       "total": 8,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "ARCURI, Michael",
@@ -27431,7 +27582,8 @@
       "total": 8,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "BOREN, Daniel David",
@@ -27475,7 +27627,8 @@
       "total": 8,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "CARNEY, Chris",
@@ -27519,7 +27672,8 @@
       "total": 8,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "PERRIELLO, Tom",
@@ -27563,7 +27717,8 @@
       "total": 8,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "BAUCUS, Max Sieben",
@@ -27607,7 +27762,8 @@
       "total": 8,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "UNDERWOOD, Lauren",
@@ -27666,7 +27822,8 @@
           "no": 94,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "SABLAN, Gregorio Kilili Camacho",
@@ -27718,7 +27875,8 @@
           "no": 191,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "MCBATH, Lucy",
@@ -27762,7 +27920,8 @@
       "total": 8,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "SLOTKIN, Elissa",
@@ -27849,7 +28008,8 @@
           "no": 256,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "CRAIG, Angela",
@@ -28076,7 +28236,8 @@
           "no": 213,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "NEAL, Richard Edmund",
@@ -28120,7 +28281,8 @@
       "total": 8,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "COURTNEY, Joe",
@@ -28172,7 +28334,8 @@
           "no": 230,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "COHEN, Stephen",
@@ -28231,7 +28394,8 @@
           "no": 191,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "HORSFORD, Steven",
@@ -28279,7 +28443,8 @@
           "no": 213,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "CARTWRIGHT, Matt",
@@ -28355,7 +28520,8 @@
           "no": 256,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "KELLY, Robin L.",
@@ -28395,7 +28561,8 @@
       "total": 7,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "JACKSON, Jonathan",
@@ -28471,7 +28638,8 @@
           "no": 94,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "PLASKETT, Stacey E.",
@@ -28554,7 +28722,8 @@
           "no": 256,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "AUCHINCLOSS, Jake",
@@ -28637,7 +28806,8 @@
           "no": 223,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "SCHIFF, Adam",
@@ -28677,7 +28847,8 @@
       "total": 7,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "CASAR, Greg",
@@ -28760,7 +28931,8 @@
           "no": 94,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "LOEBSACK, Dave",
@@ -28800,7 +28972,8 @@
       "total": 7,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "PETERSON, Collin Clark",
@@ -28840,7 +29013,8 @@
       "total": 7,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "KIRKPATRICK, Ann",
@@ -28880,7 +29054,8 @@
       "total": 7,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "GIFFORDS, Gabrielle",
@@ -28920,7 +29095,8 @@
       "total": 7,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "SHULER, Heath",
@@ -28960,7 +29136,8 @@
       "total": 7,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "TANNER, John S.",
@@ -29000,7 +29177,8 @@
       "total": 7,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "DRIEHAUS, Steve",
@@ -29040,7 +29218,8 @@
       "total": 7,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "DAHLKEMPER, Kathleen A. (Kathy)",
@@ -29080,7 +29259,8 @@
       "total": 7,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "MICHAUD, Michael H.",
@@ -29120,7 +29300,8 @@
       "total": 7,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "TEAGUE, Harry",
@@ -29160,7 +29341,8 @@
       "total": 7,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "CARPER, Thomas Richard",
@@ -29229,7 +29411,8 @@
           "no": 51,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "LANDRIEU, Mary L.",
@@ -29269,7 +29452,8 @@
       "total": 7,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "BEGICH, Mark",
@@ -29309,7 +29493,8 @@
       "total": 7,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "PAPPAS, Chris",
@@ -29441,7 +29626,8 @@
           "no": 229,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "DELAURO, Rosa L.",
@@ -29481,7 +29667,8 @@
       "total": 7,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "SHERMAN, Brad",
@@ -29543,7 +29730,8 @@
           "no": 236,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "LARSEN, Richard Ray (Rick)",
@@ -29619,7 +29807,8 @@
           "no": 240,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "HOULAHAN, Christina",
@@ -29681,7 +29870,8 @@
           "no": 223,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "PETERS, Gary C.",
@@ -29729,7 +29919,8 @@
           "no": 51,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "SPANBERGER, Abigail",
@@ -29791,7 +29982,8 @@
           "no": 256,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "KAPTUR, Marcia Carolyn (Marcy)",
@@ -29867,7 +30059,8 @@
           "no": 256,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "MCCLELLAN, Jennifer",
@@ -29903,7 +30096,8 @@
       "total": 6,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "MENG, Grace",
@@ -29939,7 +30133,8 @@
       "total": 6,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "PRESSLEY, Ayanna",
@@ -30018,7 +30213,8 @@
           "no": 94,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "FLETCHER, Elizabeth",
@@ -30272,7 +30468,8 @@
           "no": 229,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "NAPOLITANO, Grace Flores",
@@ -30316,7 +30513,8 @@
           "no": 70,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "POCAN, Mark",
@@ -30367,7 +30565,8 @@
           "no": 94,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "NICKEL, Wiley",
@@ -30418,7 +30617,8 @@
           "no": 191,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "JACKSON, Jeff",
@@ -30483,7 +30683,8 @@
           "no": 213,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "DEAN, Madeleine",
@@ -30527,7 +30728,8 @@
           "no": 191,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "KEATING, William R.",
@@ -30571,7 +30773,8 @@
           "no": 188,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "MRVAN, Frank J.",
@@ -30622,7 +30825,8 @@
           "no": 256,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "FOUSHEE, Valerie",
@@ -30658,7 +30862,8 @@
       "total": 6,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "TORRES, Ritchie",
@@ -30716,7 +30921,8 @@
           "no": 116,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "ADLER, John H.",
@@ -30752,7 +30958,8 @@
       "total": 6,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "COOPER, James Hayes Shofner",
@@ -30788,7 +30995,8 @@
       "total": 6,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "MATHESON, James David (Jim)",
@@ -30824,7 +31032,8 @@
       "total": 6,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "BOUCHER, Frederick C.",
@@ -30860,7 +31069,8 @@
       "total": 6,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "BARROW, John",
@@ -30896,7 +31106,8 @@
       "total": 6,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "HILL, Baron P.",
@@ -30932,7 +31143,8 @@
       "total": 6,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "MELANCON, Charles J.",
@@ -30968,7 +31180,8 @@
       "total": 6,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "HODES, Paul",
@@ -31004,7 +31217,8 @@
       "total": 6,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "HERSETH SANDLIN, Stephanie",
@@ -31040,7 +31254,8 @@
       "total": 6,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "FEINGOLD, Russell Dana",
@@ -31076,7 +31291,8 @@
       "total": 6,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "SCOTT, David",
@@ -31120,7 +31336,8 @@
           "no": 116,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "THOMPSON, Bennie",
@@ -31164,7 +31381,8 @@
           "no": 94,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "SCHRIER, Kim",
@@ -31285,7 +31503,8 @@
           "no": 223,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "CLARKE, Yvette Diane",
@@ -31321,7 +31540,8 @@
       "total": 6,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "SARBANES, John",
@@ -31379,7 +31599,8 @@
           "no": 94,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "VASQUEZ, Gabriel",
@@ -31468,7 +31689,8 @@
           "no": 256,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "ROSEN, Jacklyn Sheryl",
@@ -31515,7 +31737,11 @@
           "no": 56,
           "congress": 119
         }
-      ]
+      ],
+      "voting_bloc": {
+        "partner": "HASSAN, Margaret (Maggie)",
+        "count": 50
+      }
     },
     {
       "name": "DESAULNIER, Mark James",
@@ -31562,7 +31788,8 @@
           "no": 94,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "OMAR, Ilhan",
@@ -31651,7 +31878,8 @@
           "no": 94,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "JEFFRIES, Hakeem",
@@ -31683,7 +31911,8 @@
       "total": 5,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "CLYBURN, James Enos",
@@ -31723,7 +31952,8 @@
           "no": 94,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "TRAHAN, Lori",
@@ -31755,7 +31985,8 @@
       "total": 5,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "RASKIN, Jamie Ben",
@@ -31802,7 +32033,8 @@
           "no": 94,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "BARRAG\u00c1N, Nanette Diaz",
@@ -31842,7 +32074,8 @@
           "no": 94,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "LARSON, John B.",
@@ -31896,7 +32129,8 @@
           "no": 210,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "PETERS, Scott",
@@ -31964,7 +32198,8 @@
           "no": 229,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "BOXER, Barbara",
@@ -31996,7 +32231,8 @@
       "total": 5,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "SALAZAR, John",
@@ -32028,7 +32264,8 @@
       "total": 5,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "MARKEY, Betsy",
@@ -32060,7 +32297,8 @@
       "total": 5,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "RUSH, Bobby L.",
@@ -32092,7 +32330,8 @@
       "total": 5,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "BEAN, Melissa L.",
@@ -32124,7 +32363,8 @@
       "total": 5,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "OBERSTAR, James Louis",
@@ -32156,7 +32396,8 @@
       "total": 5,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "MCMAHON, Michael E.",
@@ -32188,7 +32429,8 @@
       "total": 5,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "MAFFEI, Daniel B.",
@@ -32220,7 +32462,8 @@
       "total": 5,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "POMEROY, Earl Ralph",
@@ -32252,7 +32495,8 @@
       "total": 5,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "SESTAK, Joe",
@@ -32284,7 +32528,8 @@
       "total": 5,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "DAVIS, Lincoln",
@@ -32316,7 +32561,8 @@
       "total": 5,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "SCHRADER, Kurt",
@@ -32348,7 +32594,8 @@
       "total": 5,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "COSTELLO, Jerry Francis",
@@ -32380,7 +32627,8 @@
       "total": 5,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "WALZ, Tim",
@@ -32412,7 +32660,8 @@
       "total": 5,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "BERKLEY, Shelley",
@@ -32444,7 +32693,8 @@
       "total": 5,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "WILSON, Charlie",
@@ -32476,7 +32726,8 @@
       "total": 5,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "SKELTON, Isaac Newton",
@@ -32508,7 +32759,8 @@
       "total": 5,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "MCNERNEY, Jerry",
@@ -32540,7 +32792,8 @@
       "total": 5,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "CAPUANO, Michael Everett",
@@ -32572,7 +32825,8 @@
       "total": 5,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "HALL, John",
@@ -32604,7 +32858,8 @@
       "total": 5,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "SINEMA, Kyrsten",
@@ -32742,7 +32997,8 @@
           "no": 45,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "BROWN, Sherrod",
@@ -32789,7 +33045,8 @@
           "no": 42,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "KENNEDY, Edward Moore (Ted)",
@@ -32821,7 +33078,8 @@
       "total": 5,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "DORGAN, Byron Leslie",
@@ -32853,7 +33111,8 @@
       "total": 5,
       "pattern": "Strategic Rotator",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "CONRAD, Kent",
@@ -32885,7 +33144,8 @@
       "total": 5,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "TONKO, Paul",
@@ -32917,7 +33177,8 @@
       "total": 5,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "SCHNEIDER, Brad",
@@ -33013,7 +33274,8 @@
           "no": 229,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "PINGREE, Chellie",
@@ -33053,7 +33315,8 @@
           "no": 94,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "MURPHY, Christopher",
@@ -33100,7 +33363,8 @@
           "no": 22,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "LYNCH, Stephen F.",
@@ -33140,7 +33404,8 @@
           "no": 240,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "MURRAY, Patty",
@@ -33172,7 +33437,8 @@
       "total": 5,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "KILDEE, Dan",
@@ -33208,7 +33474,8 @@
           "no": 237,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "BOYLE, Brendan Francis",
@@ -33236,7 +33503,8 @@
       "total": 4,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "ESPAILLAT, Adriano J.",
@@ -33264,7 +33532,8 @@
       "total": 4,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "SCHOLTEN, Hillary",
@@ -33328,7 +33597,8 @@
           "no": 230,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "HOYLE, Val",
@@ -33371,7 +33641,8 @@
           "no": 54,
           "congress": 119
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "GRAY, Adam",
@@ -33407,7 +33678,8 @@
           "no": 226,
           "congress": 119
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "BERA, Ami",
@@ -33443,7 +33715,8 @@
           "no": 256,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "CASE, Ed",
@@ -33535,7 +33808,8 @@
           "no": 256,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "ADAMS, Alma",
@@ -33563,7 +33837,8 @@
       "total": 4,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "SYKES, Emilia",
@@ -33591,7 +33866,8 @@
       "total": 4,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "SPECTER, Arlen",
@@ -33619,7 +33895,8 @@
       "total": 4,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "SNYDER, Victor F.",
@@ -33647,7 +33924,8 @@
       "total": 4,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "SANCHEZ, Loretta",
@@ -33675,7 +33953,8 @@
       "total": 4,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "MURPHY, Patrick",
@@ -33703,7 +33982,8 @@
       "total": 4,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "KANJORSKI, Paul E.",
@@ -33731,7 +34011,8 @@
       "total": 4,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "KENNEDY, Patrick Joseph",
@@ -33759,7 +34040,8 @@
       "total": 4,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "BOYD, F. Allen",
@@ -33787,7 +34069,8 @@
       "total": 4,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "KLEIN, Ron",
@@ -33815,7 +34098,8 @@
       "total": 4,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "CHANDLER, A. B. (Ben)",
@@ -33843,7 +34127,8 @@
       "total": 4,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "KOSMAS, Suzanne M.",
@@ -33871,7 +34156,8 @@
       "total": 4,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "HALVORSON, Deborah L.",
@@ -33899,7 +34185,8 @@
       "total": 4,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "SCHAUER, Mark H.",
@@ -33927,7 +34214,8 @@
       "total": 4,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "HOLDEN, Thomas Timothy (Tim)",
@@ -33955,7 +34243,8 @@
       "total": 4,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "GORDON, Barton Jennings",
@@ -33983,7 +34272,8 @@
       "total": 4,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "DICKS, Norman Devalois",
@@ -34011,7 +34301,8 @@
       "total": 4,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "SPRATT, John Mckee",
@@ -34039,7 +34330,8 @@
       "total": 4,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "RICHARDSON, Laura",
@@ -34067,7 +34359,8 @@
       "total": 4,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "TOWNS, Edolphus",
@@ -34095,7 +34388,8 @@
       "total": 4,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "MURTHA, John Patrick",
@@ -34123,7 +34417,8 @@
       "total": 4,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "JOHNSON, Timothy Peter (Tim)",
@@ -34151,7 +34446,8 @@
       "total": 4,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "ROCKEFELLER, John Davison Iv (Jay)",
@@ -34179,7 +34475,8 @@
       "total": 4,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "KOHL, Herbert H.",
@@ -34207,7 +34504,8 @@
       "total": 4,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "CANTWELL, Maria E.",
@@ -34235,7 +34533,8 @@
       "total": 4,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "WYDEN, Ronald Lee",
@@ -34271,7 +34570,8 @@
           "no": 49,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "WELCH, Peter",
@@ -34314,7 +34614,8 @@
           "no": 18,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "S\u00c1NCHEZ, Linda T.",
@@ -34357,7 +34658,8 @@
           "no": 70,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "MOULTON, Seth",
@@ -34428,7 +34730,8 @@
           "no": 240,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "MERKLEY, Jeff",
@@ -34506,7 +34809,8 @@
           "no": 18,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "HEINRICH, Martin",
@@ -34542,7 +34846,8 @@
           "no": 55,
           "congress": 119
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "CASEY, Robert (Bob)",
@@ -34570,7 +34875,8 @@
       "total": 4,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "MCCOLLUM, Betty",
@@ -34598,7 +34904,8 @@
       "total": 4,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "BISHOP, Sanford Dixon",
@@ -34626,7 +34933,8 @@
       "total": 4,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "STABENOW, Deborah Ann",
@@ -34654,7 +34962,8 @@
       "total": 4,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "STANTON, Greg",
@@ -34749,7 +35058,8 @@
           "no": 229,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "FETTERMAN, John Karl",
@@ -34809,7 +35119,11 @@
           "no": 36,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": {
+        "partner": "KING, Angus Stanley, Jr.",
+        "count": 52
+      }
     },
     {
       "name": "AMO, Gabe",
@@ -34841,7 +35155,8 @@
           "no": 116,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "SUOZZI, Thomas",
@@ -34873,7 +35188,8 @@
           "no": 226,
           "congress": 119
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "BEYER, Donald Sternoff Jr.",
@@ -34912,7 +35228,8 @@
           "no": 224,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "GARC\u00cdA, Jes\u00fas",
@@ -34979,7 +35296,8 @@
           "no": 94,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "WILLIAMS, Nikema",
@@ -35025,7 +35343,8 @@
           "no": 94,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "FROST, Maxwell",
@@ -35092,7 +35411,8 @@
           "no": 211,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "RUIZ, Raul",
@@ -35116,7 +35436,8 @@
       "total": 3,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "TAKANO, Mark",
@@ -35169,7 +35490,8 @@
           "no": 223,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "CRIST, Charlie Joseph Jr.",
@@ -35193,7 +35515,8 @@
       "total": 3,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "MURPHY, Stephanie",
@@ -35217,7 +35540,8 @@
       "total": 3,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "LAMB, Conor",
@@ -35241,7 +35565,8 @@
       "total": 3,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "AXNE, Cynthia",
@@ -35265,7 +35590,8 @@
       "total": 3,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "BRINDISI, Anthony",
@@ -35289,7 +35615,8 @@
       "total": 3,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "CUNNINGHAM, Joe",
@@ -35313,7 +35640,8 @@
       "total": 3,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "DELGADO, Antonio",
@@ -35337,7 +35665,8 @@
       "total": 3,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "FINKENAUER, Abby",
@@ -35361,7 +35690,8 @@
       "total": 3,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "HORN, Kendra",
@@ -35385,7 +35715,8 @@
       "total": 3,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "LURIA, Elaine",
@@ -35409,7 +35740,8 @@
       "total": 3,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "MCADAMS, Ben",
@@ -35433,7 +35765,8 @@
       "total": 3,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "ROSE, Max",
@@ -35457,7 +35790,8 @@
       "total": 3,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "TORRES SMALL, Xochitl",
@@ -35481,7 +35815,8 @@
       "total": 3,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "HARMAN, Jane L.",
@@ -35505,7 +35840,8 @@
       "total": 3,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "YARMUTH, John",
@@ -35529,7 +35865,8 @@
       "total": 3,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "BISHOP, Timothy H.",
@@ -35553,7 +35890,8 @@
       "total": 3,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "WEINER, Anthony D.",
@@ -35577,7 +35915,8 @@
       "total": 3,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "LOWEY, Nita M.",
@@ -35601,7 +35940,8 @@
       "total": 3,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "MASSA, Eric J.J.",
@@ -35625,7 +35965,8 @@
       "total": 3,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "ETHERIDGE, Bobby R.",
@@ -35649,7 +35990,8 @@
       "total": 3,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "WU, David",
@@ -35673,7 +36015,8 @@
       "total": 3,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "SCHWARTZ, Allyson Y.",
@@ -35697,7 +36040,8 @@
       "total": 3,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "KIND, Ron",
@@ -35721,7 +36065,8 @@
       "total": 3,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "ABERCROMBIE, Neil",
@@ -35745,7 +36090,8 @@
       "total": 3,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "KISSELL, Larry",
@@ -35769,7 +36115,8 @@
       "total": 3,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "LEWIS, John R.",
@@ -35793,7 +36140,8 @@
       "total": 3,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "VISCLOSKY, Peter",
@@ -35817,7 +36165,8 @@
       "total": 3,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "ELLISON, Keith",
@@ -35841,7 +36190,8 @@
       "total": 3,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "SHEA-PORTER, Carol",
@@ -35865,7 +36215,8 @@
       "total": 3,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "RODRIGUEZ, Ciro D.",
@@ -35889,7 +36240,8 @@
       "total": 3,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "MOLLOHAN, Alan Bowlby",
@@ -35913,7 +36265,8 @@
       "total": 3,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "STUPAK, Bart T.",
@@ -35937,7 +36290,8 @@
       "total": 3,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "MCCARTHY, Carolyn",
@@ -35961,7 +36315,8 @@
       "total": 3,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "KUCINICH, Dennis",
@@ -35985,7 +36340,8 @@
       "total": 3,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "DELAHUNT, Bill",
@@ -36009,7 +36365,8 @@
       "total": 3,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "HINCHEY, Maurice Dunlea",
@@ -36033,7 +36390,8 @@
       "total": 3,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "IVEY, Glenn",
@@ -36065,7 +36423,8 @@
           "no": 55,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "KELLY, Mark Edward",
@@ -36104,7 +36463,11 @@
           "no": 42,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": {
+        "partner": "HASSAN, Margaret (Maggie)",
+        "count": 41
+      }
     },
     {
       "name": "COONS, Christopher A.",
@@ -36143,7 +36506,8 @@
           "no": 56,
           "congress": 119
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "KING, Angus Stanley",
@@ -36167,7 +36531,8 @@
       "total": 3,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "OSSOFF, Thomas Jonathan (Jon)",
@@ -36206,7 +36571,8 @@
           "no": 46,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "PAYNE, Donald",
@@ -36230,7 +36596,8 @@
       "total": 3,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "CISNEROS, Gil",
@@ -36254,7 +36621,8 @@
       "total": 3,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "CARBAJAL, Salud",
@@ -36274,7 +36642,8 @@
       "total": 2,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "RIVAS, Luz M.",
@@ -36294,7 +36663,8 @@
       "total": 2,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "ESCOBAR, Veronica",
@@ -36322,7 +36692,8 @@
           "no": 94,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "MORELLE, Joseph D.",
@@ -36342,7 +36713,8 @@
       "total": 2,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "MANNING, Kathy E.",
@@ -36412,7 +36784,8 @@
           "no": 240,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "MCGOVERN, James P.",
@@ -36432,7 +36805,8 @@
       "total": 2,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "KRISHNAMOORTHI, S. Raja",
@@ -36460,7 +36834,8 @@
           "no": 236,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "DELBENE, Suzan K.",
@@ -36480,7 +36855,8 @@
       "total": 2,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "MATSUI, Doris",
@@ -36500,7 +36876,8 @@
       "total": 2,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "SOTO, Darren Michael",
@@ -36535,7 +36912,8 @@
           "no": 236,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "BROWN, Shontel  M.",
@@ -36555,7 +36933,8 @@
       "total": 2,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "BALINT, Becca",
@@ -36590,7 +36969,8 @@
           "no": 94,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "TOKUDA, Jill",
@@ -36610,7 +36990,8 @@
       "total": 2,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "SCOTT, Robert C.",
@@ -36652,7 +37033,8 @@
           "no": 70,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "RILEY, Josh",
@@ -36687,7 +37069,8 @@
           "no": 54,
           "congress": 119
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "BELL, Wesley",
@@ -36707,7 +37090,8 @@
       "total": 2,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "MALONEY, Sean Patrick",
@@ -36727,7 +37111,8 @@
       "total": 2,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "MALINOWSKI, Tomaz",
@@ -36747,7 +37132,8 @@
       "total": 2,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "DURBIN, Richard Joseph",
@@ -36767,7 +37153,8 @@
       "total": 2,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "POLIS, Jared",
@@ -36787,7 +37174,8 @@
       "total": 2,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "PERLMUTTER, Ed",
@@ -36807,7 +37195,8 @@
       "total": 2,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "MARKEY, Edward John",
@@ -36877,7 +37266,8 @@
           "no": 27,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "ACKERMAN, Gary Leonard",
@@ -36897,7 +37287,8 @@
       "total": 2,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "RANGEL, Charles B.",
@@ -36917,7 +37308,8 @@
       "total": 2,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "ENGEL, Eliot Lance",
@@ -36937,7 +37329,8 @@
       "total": 2,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "VAN DREW, Jefferson",
@@ -36957,7 +37350,8 @@
       "total": 2,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "BOSWELL, Leonard L.",
@@ -36977,7 +37371,8 @@
       "total": 2,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "INSLEE, Jay Robert",
@@ -36997,7 +37392,8 @@
       "total": 2,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "MOORE, Dennis",
@@ -37017,7 +37413,8 @@
       "total": 2,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "KILDEE, Dale Edward",
@@ -37037,7 +37434,8 @@
       "total": 2,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "FRANK, Barney",
@@ -37057,7 +37455,8 @@
       "total": 2,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "HIGGINS, Brian",
@@ -37077,7 +37476,8 @@
       "total": 2,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "CHRISTENSEN, Donna Marie",
@@ -37097,7 +37497,8 @@
       "total": 2,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "FALEOMAVAEGA, Eni F. H.",
@@ -37117,7 +37518,8 @@
       "total": 2,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "BERMAN, Howard Lawrence",
@@ -37137,7 +37539,8 @@
       "total": 2,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "GUTI\u00c9RREZ, Luis V.",
@@ -37157,7 +37560,8 @@
       "total": 2,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "CARNAHAN, Russ",
@@ -37177,7 +37581,8 @@
       "total": 2,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "MILLER, Brad",
@@ -37197,7 +37602,8 @@
       "total": 2,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "KILROY, Mary Jo",
@@ -37217,7 +37623,8 @@
       "total": 2,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "FATTAH, Chaka",
@@ -37237,7 +37644,8 @@
       "total": 2,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "CARDOZA, Dennis A.",
@@ -37257,7 +37665,8 @@
       "total": 2,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "RYAN, Timothy J.",
@@ -37277,7 +37686,8 @@
       "total": 2,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "REYES, Silvestre",
@@ -37297,7 +37707,8 @@
       "total": 2,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "OBEY, David Ross",
@@ -37317,7 +37728,8 @@
       "total": 2,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "OWENS, William",
@@ -37337,7 +37749,8 @@
       "total": 2,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "MORAN, James P.",
@@ -37357,7 +37770,8 @@
       "total": 2,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "SPEIER, Karen Lorraine Jacqueline (Jackie)",
@@ -37377,7 +37791,8 @@
       "total": 2,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "STARK, Fortney Hillman (Pete)",
@@ -37397,7 +37812,8 @@
       "total": 2,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "HINOJOSA, Rub\u00e9n",
@@ -37417,7 +37833,8 @@
       "total": 2,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "PAYNE, Donald Milford",
@@ -37437,7 +37854,8 @@
       "total": 2,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "GREEN, Raymond Eugene (Gene)",
@@ -37457,7 +37875,8 @@
       "total": 2,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "CORTEZ MASTO, Catherine Marie",
@@ -37492,7 +37911,11 @@
           "no": 56,
           "congress": 119
         }
-      ]
+      ],
+      "voting_bloc": {
+        "partner": "FETTERMAN, John Karl",
+        "count": 41
+      }
     },
     {
       "name": "WHITEHOUSE, Sheldon",
@@ -37512,7 +37935,8 @@
       "total": 2,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "SANDERS, Bernard",
@@ -37708,7 +38132,8 @@
           "no": 11,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "SMITH, Tina",
@@ -37728,7 +38153,8 @@
       "total": 2,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "BLUMENTHAL, Richard",
@@ -37748,7 +38174,8 @@
       "total": 2,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "SIMON, Lateefah",
@@ -37768,7 +38195,8 @@
       "total": 2,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "RYAN, Patrick",
@@ -37852,7 +38280,8 @@
           "no": 224,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "SCHUMER, Charles Ellis (Chuck)",
@@ -37943,7 +38372,8 @@
           "no": 47,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "MIKULSKI, Barbara Ann",
@@ -37963,7 +38393,8 @@
       "total": 2,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "DUCKWORTH, Tammy",
@@ -37983,7 +38414,8 @@
       "total": 2,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "WARNOCK, Raphael Gamaliel",
@@ -38011,7 +38443,8 @@
           "no": 55,
           "congress": 119
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "STRICKLAND, Marilyn",
@@ -38046,7 +38479,8 @@
           "no": 237,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "PALLONE, Frank",
@@ -38066,7 +38500,8 @@
       "total": 2,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "FIGURES, Shomari",
@@ -38082,7 +38517,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "DAVIDS, Sharice",
@@ -38141,7 +38577,8 @@
           "no": 256,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "LEVIN, Mike",
@@ -38172,7 +38609,8 @@
           "no": 94,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "PANETTA, James Varni",
@@ -38217,7 +38655,8 @@
           "no": 240,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "SALINAS, Andrea",
@@ -38241,7 +38680,8 @@
           "no": 240,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "ESHOO, Anna Georges",
@@ -38257,7 +38697,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "OLSZEWSKI, Johnny",
@@ -38273,7 +38714,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "KHANNA, Rohit",
@@ -38311,7 +38753,8 @@
           "no": 94,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "NEGUSE, Joseph",
@@ -38327,7 +38770,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "GILLEN, Laura",
@@ -38351,7 +38795,8 @@
           "no": 226,
           "congress": 119
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "CHU, Judy",
@@ -38375,7 +38820,8 @@
           "no": 213,
           "congress": 119
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "COX, Tj",
@@ -38391,7 +38837,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "MUCARSEL-POWELL, Debbie",
@@ -38407,7 +38854,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "ROUDA, Harley",
@@ -38423,7 +38871,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "FRANKEN, Al",
@@ -38439,7 +38888,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "LEE, Barbara",
@@ -38470,7 +38920,8 @@
           "no": 94,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "LEVIN, Sander Martin",
@@ -38486,7 +38937,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "ISRAEL, Steve",
@@ -38502,7 +38954,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "CROWLEY, Joseph",
@@ -38518,7 +38971,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "MALONEY, Carolyn Bosher",
@@ -38534,7 +38988,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "O'HALLERAN, Thomas C.",
@@ -38550,7 +39005,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "HIRONO, Mazie",
@@ -38581,7 +39037,8 @@
           "no": 42,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "SLAUGHTER, Louise Mcintosh",
@@ -38597,7 +39054,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "PASTOR, Ed",
@@ -38613,7 +39071,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "TAUSCHER, Ellen O'Kane",
@@ -38629,7 +39088,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "EDWARDS, Thomas Chester (Chet)",
@@ -38645,7 +39105,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "HASTINGS, Alcee Lamar",
@@ -38661,7 +39122,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "BORDALLO, Madeleine",
@@ -38677,7 +39139,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "PIERLUISI, Pedro",
@@ -38693,7 +39156,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "DEFAZIO, Peter Anthony",
@@ -38709,7 +39173,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "FILNER, Bob",
@@ -38725,7 +39190,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "BROWN, Corrine",
@@ -38741,7 +39207,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "BERRY, Robert Marion",
@@ -38757,7 +39224,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "BACA, Joe",
@@ -38773,7 +39241,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "DOYLE, Michael F.",
@@ -38789,7 +39258,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "LANGEVIN, James",
@@ -38805,7 +39275,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "ORTIZ, Solomon P.",
@@ -38821,7 +39292,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "RAHALL, Nick Joe",
@@ -38837,7 +39309,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "WEXLER, Robert",
@@ -38853,7 +39326,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "BRALEY, Bruce",
@@ -38869,7 +39343,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "BAIRD, Brian",
@@ -38885,7 +39360,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "KAGEN, Steven",
@@ -38901,7 +39377,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "MILLER, George",
@@ -38917,7 +39394,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "DAVIS, Susan A.",
@@ -38933,7 +39411,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "GONZALEZ, Charles A.",
@@ -38949,7 +39428,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "JOHNSON, Eddie Bernice",
@@ -38965,7 +39445,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "ANDREWS, Robert Ernest",
@@ -38981,7 +39462,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "HOLT, Rush",
@@ -38997,7 +39479,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "ANSARI, Yassamin",
@@ -39013,7 +39496,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "MORRISON, Kelly",
@@ -39029,7 +39513,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "WOOLSEY, Lynn C.",
@@ -39045,7 +39530,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "HONDA, Mike",
@@ -39061,7 +39547,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "WAXMAN, Henry Arnold",
@@ -39077,7 +39564,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "BECERRA, Xavier",
@@ -39093,7 +39581,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "ROYBAL-ALLARD, Lucille",
@@ -39109,7 +39598,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "DEGETTE, Diana",
@@ -39125,7 +39615,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "CASTOR, Kathy",
@@ -39141,7 +39632,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "JACKSON, Jesse L.",
@@ -39157,7 +39649,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "CUMMINGS, Elijah Eugene",
@@ -39173,7 +39666,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "TIERNEY, John F.",
@@ -39189,7 +39683,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "KILPATRICK, Carolyn Cheeks",
@@ -39205,7 +39700,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "CLAY, William Lacy",
@@ -39221,7 +39717,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "BUTTERFIELD, George Kenneth",
@@ -39237,7 +39734,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "WATT, Melvin L.",
@@ -39253,7 +39751,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "RANDALL, Emily",
@@ -39269,7 +39768,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "KAINE, Timothy Michael (Tim)",
@@ -39300,7 +39800,11 @@
           "no": 27,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": {
+        "partner": "HASSAN, Margaret (Maggie)",
+        "count": 52
+      }
     },
     {
       "name": "FIELDS, Cleo",
@@ -39316,7 +39820,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "TORRES, Norma Judith",
@@ -39332,7 +39837,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "VINDMAN, Eugene Simon",
@@ -39356,7 +39862,8 @@
           "no": 226,
           "congress": 119
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "GABBARD, Tulsi",
@@ -39372,7 +39879,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "REID, Harry",
@@ -39388,7 +39896,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "UDALL, Thomas (Tom)",
@@ -39404,7 +39913,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "KAUFMAN, Edward E. (Ted)",
@@ -39420,7 +39930,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "HARKIN, Thomas Richard (Tom)",
@@ -39436,7 +39947,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "GILLIBRAND, Kirsten",
@@ -39452,7 +39964,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "DODD, Christopher John",
@@ -39468,7 +39981,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "AKAKA, Daniel Kahikina",
@@ -39484,7 +39998,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "INOUYE, Daniel Ken",
@@ -39500,7 +40015,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "KERRY, John Forbes",
@@ -39516,7 +40032,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "BINGAMAN, Jesse Francis",
@@ -39532,7 +40049,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "REED, John F. (Jack)",
@@ -39548,7 +40066,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "STEVENS, Haley",
@@ -39572,7 +40091,8 @@
           "no": 96,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "MCBRIDE, Sarah",
@@ -39588,7 +40108,8 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": null
     },
     {
       "name": "HAYES, Jahana",
@@ -39612,7 +40133,8 @@
           "no": 96,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "HASSAN, Margaret (Maggie)",
@@ -39628,7 +40150,11 @@
       "total": 1,
       "pattern": "Rare",
       "voted_against_dems": 0,
-      "anti_dem_votes": []
+      "anti_dem_votes": [],
+      "voting_bloc": {
+        "partner": "SHAHEEN, Jeanne",
+        "count": 65
+      }
     },
     {
       "name": "VEASEY, Marc",
@@ -39757,7 +40283,8 @@
           "no": 229,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     },
     {
       "name": "RAMIREZ, Delia",
@@ -39823,7 +40350,8 @@
           "no": 94,
           "congress": 118
         }
-      ]
+      ],
+      "voting_bloc": null
     }
   ],
   "betrayers_by_vote": {
