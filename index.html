@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Rotating Villains - Congressional Betrayal Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Special+Elite&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f172a; color: #e2e8f0; }
+        body { 
+            font-family: 'Courier Prime', 'Courier New', monospace; 
+            background: #0a0a0a; 
+            color: #d4d4d4; 
+            line-height: 1.6;
+        }
         .container { max-width: 1600px; margin: 0 auto; padding: 20px; }
         
         /* Mobile First - Nuclear reset override */
@@ -76,31 +84,91 @@
         }
         
         .header { 
-            background: #1e293b;
+            background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
             padding: 50px; 
-            border-radius: 15px; 
+            border-radius: 0; 
             margin-bottom: 30px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
-            border: 2px solid #475569;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+            border-top: 4px solid #d4af37;
+            border-bottom: 4px solid #d4af37;
         }
-        .header h1 { font-size: 3.5rem; margin-bottom: 10px; color: #e2e8f0; }
-        .header .subtitle { font-size: 1.4rem; opacity: 0.95; line-height: 1.6; }
+        .header h1 { 
+            font-family: 'Special Elite', 'Courier Prime', monospace;
+            font-size: 3.5rem; 
+            margin-bottom: 10px; 
+            color: #d4af37;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        }
+        .header .subtitle { 
+            font-size: 1.4rem; 
+            opacity: 0.85; 
+            line-height: 1.6;
+            color: #a8a8a8;
+            font-style: italic;
+            letter-spacing: 1px;
+        }
         
         .alert-banner {
-            background: #1e293b;
+            background: linear-gradient(135deg, #1a1200 0%, #0f0a00 100%);
             padding: 35px;
-            border-radius: 10px;
+            border-radius: 0;
             margin-bottom: 30px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.2);
+            border: 3px solid #d4af37;
+            border-left: 8px solid #d4af37;
         }
-        .alert-banner h2 { font-size: 2.2rem; margin-bottom: 15px; color: #ef4444; }
+        .alert-banner h2 { 
+            font-family: 'Special Elite', monospace;
+            font-size: 2.2rem; 
+            margin-bottom: 15px; 
+            color: #d4af37;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
         .alert-banner .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-top: 25px; }
-        .alert-banner .stat { background: #0f172a; padding: 20px; border-radius: 8px; border: 1px solid #334155; }
-        .alert-banner .stat-value { font-size: 3rem; font-weight: bold; color: #ef4444; }
-        .alert-banner .stat-label { font-size: 1rem; opacity: 0.9; margin-top: 8px; }
+        .alert-banner .stat { 
+            background: rgba(212, 175, 55, 0.08); 
+            padding: 20px; 
+            border-radius: 0; 
+            border: 2px solid #d4af37;
+            box-shadow: inset 0 0 15px rgba(212, 175, 55, 0.1);
+        }
+        .alert-banner .stat-value { 
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 3rem; 
+            font-weight: bold; 
+            color: #d4af37;
+            text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+        }
+        .alert-banner .stat-label { 
+            font-size: 1rem; 
+            opacity: 0.8; 
+            margin-top: 8px;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
         
-        .section { background: #1e293b; padding: 35px; border-radius: 10px; margin-bottom: 25px; box-shadow: 0 4px 20px rgba(0,0,0,0.3); }
-        .section h2 { font-size: 2rem; margin-bottom: 25px; color: #60a5fa; }
+        .section { 
+            background: #141414; 
+            padding: 35px; 
+            border-radius: 0; 
+            margin-bottom: 25px; 
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+            border: 1px solid #333;
+        }
+        .section h2 { 
+            font-family: 'Special Elite', monospace;
+            font-size: 2rem; 
+            margin-bottom: 25px; 
+            color: #d4af37;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 2px solid #d4af37;
+            padding-bottom: 10px;
+        }
         
         .controls { 
             display: flex; 
@@ -110,21 +178,26 @@
             align-items: center;
         }
         .controls select, .controls input {
-            background: #0f172a;
-            color: #e2e8f0;
-            border: 2px solid #475569;
+            background: #0a0a0a;
+            color: #d4d4d4;
+            border: 2px solid #444;
             padding: 12px 20px;
-            border-radius: 8px;
+            border-radius: 0;
             font-size: 1rem;
+            font-family: 'Courier Prime', monospace;
             cursor: pointer;
-            transition: border-color 0.2s;
+            transition: all 0.2s;
         }
         .controls select:hover, .controls input:hover {
-            border-color: #60a5fa;
+            border-color: #d4af37;
+            box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
         }
         .controls label {
             font-weight: 600;
             font-size: 1.1rem;
+            color: #a8a8a8;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
         
         .sector-legend {
@@ -133,40 +206,51 @@
             flex-wrap: wrap;
             margin-bottom: 25px;
             padding: 20px;
-            background: #0f172a;
-            border-radius: 8px;
+            background: #0a0a0a;
+            border-radius: 0;
+            border: 1px solid #333;
         }
         .sector-tag {
             padding: 8px 15px;
-            border-radius: 6px;
+            border-radius: 0;
             font-size: 0.9rem;
             font-weight: 600;
-            border: 2px solid rgba(255,255,255,0.2);
+            border: 2px solid rgba(212, 175, 55, 0.3);
         }
         
-        table { width: 100%; border-collapse: collapse; }
+        table { width: 100%; border-collapse: collapse; font-family: 'IBM Plex Mono', monospace; }
         th { 
-            background: #0f172a; 
+            background: #0a0a0a; 
             padding: 18px 15px; 
             text-align: left; 
             font-weight: 600; 
-            border-bottom: 2px solid #475569;
+            border-bottom: 3px solid #d4af37;
             position: sticky;
             top: 0;
-            font-size: 1rem;
+            font-size: 0.95rem;
+            color: #d4af37;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
-        td { padding: 15px; border-bottom: 1px solid #334155; }
-        tr:hover { background: #334155; }
+        td { 
+            padding: 15px; 
+            border-bottom: 1px solid #333;
+            color: #c4c4c4;
+        }
+        tr:hover { background: #1a1a1a; }
         
         .clickable { 
             cursor: pointer; 
-            color: #60a5fa;
+            color: #d4af37;
             text-decoration: underline;
             font-weight: 700;
             font-size: 1.2rem;
-            transition: color 0.2s;
+            transition: all 0.2s;
         }
-        .clickable:hover { color: #93c5fd; }
+        .clickable:hover { 
+            color: #f4d88a;
+            text-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
+        }
         
         .sector-breakdown {
             display: flex;
@@ -196,14 +280,14 @@
         }
         .modal.show { display: block; }
         .modal-content {
-            background-color: #1e293b;
+            background-color: #141414;
             margin: 50px auto;
             padding: 35px;
-            border: 1px solid #475569;
-            border-radius: 10px;
+            border: 3px solid #d4af37;
+            border-radius: 0;
             width: 90%;
             max-width: 1000px;
-            box-shadow: 0 10px 50px rgba(0,0,0,0.5);
+            box-shadow: 0 10px 50px rgba(0,0,0,0.9);
         }
         .modal-header {
             display: flex;
@@ -211,17 +295,23 @@
             align-items: center;
             margin-bottom: 25px;
             padding-bottom: 20px;
-            border-bottom: 2px solid #475569;
+            border-bottom: 2px solid #d4af37;
         }
-        .modal-header h2 { color: #60a5fa; font-size: 2rem; }
+        .modal-header h2 { 
+            color: #d4af37; 
+            font-size: 2rem;
+            font-family: 'Special Elite', monospace;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
         .close {
-            color: #94a3b8;
+            color: #888;
             font-size: 36px;
             font-weight: bold;
             cursor: pointer;
             transition: color 0.2s;
         }
-        .close:hover { color: #e2e8f0; }
+        .close:hover { color: #d4af37; }
         
         .vote-item {
             background: #0f172a;
@@ -278,9 +368,24 @@
             font-size: 0.9rem;
             font-weight: 600;
         }
-        .badge-danger { background: #dc2626; color: white; }
-        .badge-warning { background: #f59e0b; color: white; }
-        .badge-info { background: #3b82f6; color: white; }
+        .badge-danger { 
+            background: linear-gradient(135deg, #8b0000 0%, #5c0000 100%); 
+            color: #ffcccb; 
+            border: 2px solid #b22222;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+        .badge-warning { 
+            background: linear-gradient(135deg, #8b6914 0%, #5c4609 100%); 
+            color: #ffd700; 
+            border: 2px solid #d4af37;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+        .badge-info { 
+            background: linear-gradient(135deg, #2c4a5e 0%, #1a2d3d 100%); 
+            color: #87ceeb; 
+            border: 2px solid #4682b4;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
         
         .closest-call-card {
             background: #0f172a;
@@ -441,6 +546,14 @@
                 };
             });
             
+            // Default sort by pattern (Super Villain first)
+            const patternPriority = {'Super Villain': 3, 'Strategic Rotator': 2, 'Rare': 1};
+            enrichedVillains.sort((a, b) => {
+                const aPriority = patternPriority[a.pattern] || 0;
+                const bPriority = patternPriority[b.pattern] || 0;
+                return bPriority - aPriority; // Descending order
+            });
+            
             // Calculate closest calls (showing all votes with margin <= 5)
             const closestCalls = fullData.winnable_votes
                 .filter(v => v.margin <= 5)
@@ -518,13 +631,12 @@
                             <table id="mainTable">
                                 <thead>
                                     <tr>
-                                        <th>Rank</th>
-                                        <th>Member</th>
-                                        <th>State</th>
-                                        <th>Voted with GOP</th>
-                                        <th>Conveniently Absent</th>
-                                        <th>Total Betrayals</th>
-                                        <th>Pattern</th>
+                                        <th style="cursor: pointer;" onclick="sortTable('name')">Member ↕</th>
+                                        <th style="cursor: pointer;" onclick="sortTable('state')">State ↕</th>
+                                        <th style="cursor: pointer;" onclick="sortTable('voted_with_gop')">Voted with GOP ↕</th>
+                                        <th style="cursor: pointer;" onclick="sortTable('absent')">Conveniently Absent ↕</th>
+                                        <th style="cursor: pointer;" onclick="sortTable('total')">Total Betrayals ↕</th>
+                                        <th style="cursor: pointer;" onclick="sortTable('pattern')">Pattern ↕</th>
                                     </tr>
                                 </thead>
                                 <tbody id="tableBody">
@@ -557,14 +669,54 @@
             renderClosestCalls(closestCalls);
         }
         
+        let currentSort = { column: 'pattern', direction: 'desc' };
+        
+        function sortTable(column) {
+            // Toggle direction if clicking same column
+            if (currentSort.column === column) {
+                currentSort.direction = currentSort.direction === 'asc' ? 'desc' : 'asc';
+            } else {
+                currentSort.column = column;
+                currentSort.direction = 'desc'; // Default to descending
+            }
+            
+            const sortedVillains = [...enrichedVillains].sort((a, b) => {
+                let aVal, bVal;
+                
+                if (column === 'pattern') {
+                    // Sort by pattern priority: Super Villain > Strategic Rotator > Rare
+                    const priority = {'Super Villain': 3, 'Strategic Rotator': 2, 'Rare': 1};
+                    aVal = priority[a.pattern] || 0;
+                    bVal = priority[b.pattern] || 0;
+                } else if (column === 'name' || column === 'state') {
+                    aVal = (a[column] || '').toLowerCase();
+                    bVal = (b[column] || '').toLowerCase();
+                } else if (column === 'total') {
+                    aVal = a.voted_with_gop + a.absent;
+                    bVal = b.voted_with_gop + b.absent;
+                } else {
+                    aVal = a[column] || 0;
+                    bVal = b[column] || 0;
+                }
+                
+                if (currentSort.direction === 'asc') {
+                    return aVal > bVal ? 1 : aVal < bVal ? -1 : 0;
+                } else {
+                    return aVal < bVal ? 1 : aVal > bVal ? -1 : 0;
+                }
+            });
+            
+            // Re-render table
+            document.getElementById('tableBody').innerHTML = renderTableRows(sortedVillains, 'all');
+        }
+        
         function renderTableRows(villains, sector) {
-            return villains.map((v, i) => {
+            return villains.map((v) => {
                 const total = v.voted_with_gop + v.absent;
                 const pattern = v.pattern; // Read pattern from data
                 
                 return `
                     <tr>
-                        <td style="font-size: 1.1rem;"><strong>${i + 1}</strong></td>
                         <td><strong style="font-size: 1.05rem;">${v.name}</strong></td>
                         <td>${v.state}</td>
                         <td>
