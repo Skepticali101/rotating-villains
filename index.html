@@ -682,6 +682,7 @@
                                         <th style="cursor: pointer;" onclick="sortTable('state')">State ↕</th>
                                         <th style="cursor: pointer;" onclick="sortTable('voted_with_gop')">Voted with GOP ↕</th>
                                         <th style="cursor: pointer;" onclick="sortTable('absent')">Conveniently Absent ↕</th>
+                                        <th style="cursor: pointer;" onclick="sortTable('voted_against_dems')">Voted Against Dems ↕</th>
                                         <th style="cursor: pointer;" onclick="sortTable('total')">Total Betrayals ↕</th>
                                         <th style="cursor: pointer;" onclick="sortTable('pattern')">Pattern ↕</th>
                                     </tr>
@@ -761,6 +762,7 @@
             return villains.map((v) => {
                 const total = v.voted_with_gop + v.absent;
                 const pattern = v.pattern; // Read pattern from data
+                const antiDem = v.voted_against_dems || 0;
                 
                 return `
                     <tr>
@@ -776,6 +778,12 @@
                             <span class="clickable" style="color: #d4af37;" 
                                   onclick="showBetrayals('${escapeHtml(v.name)}', 'absent', 'all')">
                                 ${v.absent}
+                            </span>
+                        </td>
+                        <td>
+                            <span class="clickable" style="color: #4682b4;" 
+                                  onclick="showAntiDemVotes('${escapeHtml(v.name)}')">
+                                ${antiDem}
                             </span>
                         </td>
                         <td style="font-size: 1.3rem;"><strong>${total}</strong></td>
@@ -1171,6 +1179,59 @@
                                 <span style="color: ${actionColor}; font-weight: 600;">${actionLabel}</span> on this vote
                                 <br>
                                 ${vote.dems_betrayed} Dems voted YES • ${vote.dems_absent} Dems absent
+                            </div>
+                        </div>
+                    `;
+                }).join('');
+            }
+            
+            document.getElementById('modalBody').innerHTML = modalContent;
+            document.getElementById('betrayalModal').classList.add('show');
+        }
+        
+        function showAntiDemVotes(memberName) {
+            if (!fullData) return;
+            
+            // Find the villain data
+            const villain = fullData.rotating_villains.find(v => v.name === memberName);
+            if (!villain || !villain.anti_dem_votes) {
+                return;
+            }
+            
+            const antiDemVotes = villain.anti_dem_votes || [];
+            
+            document.getElementById('modalTitle').innerHTML = 
+                `${memberName} — Voted NO on DEM Bills (${antiDemVotes.length} times)`;
+            
+            let modalContent = '';
+            
+            if (antiDemVotes.length === 0) {
+                modalContent = '<p style="text-align: center; padding: 40px; color: #888; font-family: Courier Prime, monospace;">No anti-Dem votes found.</p>';
+            } else {
+                modalContent = antiDemVotes.map(vote => {
+                    const match = vote.vote_id.match(/([hs])(\d+)-(\d+)/);
+                    const chamber = match[1].toUpperCase();
+                    const rollcall = match[2].padStart(4, '0');
+                    const congress = match[3];
+                    const voteviewUrl = `https://voteview.com/rollcall/R${chamber}${congress}${rollcall}`;
+                    
+                    return `
+                        <div class="vote-item">
+                            <div class="vote-item-header">
+                                <span class="vote-item-title">${vote.vote_id}</span>
+                                <a href="${voteviewUrl}" target="_blank" class="vote-item-link">View Vote Details →</a>
+                            </div>
+                            ${vote.description && vote.description !== vote.vote_id.toUpperCase() ? `
+                                <div class="vote-item-description">
+                                    ${vote.description}
+                                </div>
+                            ` : ''}
+                            <div class="vote-item-details">
+                                Result: ${vote.yes}-${vote.no} ${vote.yes > vote.no ? '(PASSED)' : '(FAILED)'}
+                                <br>
+                                <span style="color: #4682b4; font-weight: 600;">Voted NO</span> on this DEM bill
+                                <br>
+                                Congress ${vote.congress}
                             </div>
                         </div>
                     `;
