@@ -1184,7 +1184,19 @@
             document.getElementById('betrayalModal').classList.add('show');
         }
             if (antiDemVotes.length === 0) {
-                modalContent = '<p style="text-align: center; padding: 40px; color: #888; font-family: Courier Prime, monospace;">No anti-Dem votes found.</p>';
+        function showAntiDemVotes(memberName) {
+            if (!fullData) return;
+            
+            const member = fullData.rotating_villains.find(v => v.name === memberName);
+            if (!member) return;
+            
+            const antiDemVotes = member.anti_dem_votes || [];
+            
+            document.getElementById('modalTitle').innerHTML = 
+                `${memberName} — Voted Against Democratic Bills (${antiDemVotes.length} times)`;
+            
+            let modalContent = '';
+            
             } else {
                 modalContent = antiDemVotes.map(vote => {
                     const match = vote.vote_id.match(/([hs])(\d+)-(\d+)/);
