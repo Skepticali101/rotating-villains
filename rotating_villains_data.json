@@ -2,7 +2,12 @@
   "summary": {
     "total_winnable_votes_lost": 181,
     "total_rotating_villains": 486,
-    "total_betrayals": 3214
+    "total_betrayals": 3214,
+    "pattern_breakdown": {
+      "super_villains": 22,
+      "strategic_rotators": 89,
+      "rare": 375
+    }
   },
   "winnable_votes": [
     {
@@ -15387,7 +15392,7 @@
         }
       ],
       "total": 86,
-      "pattern": "Super Villain",
+      "pattern": "Rare",
       "voted_against_dems": 2,
       "anti_dem_votes": [
         {
@@ -15679,7 +15684,7 @@
         }
       ],
       "total": 66,
-      "pattern": "Super Villain",
+      "pattern": "Rare",
       "voted_against_dems": 0,
       "anti_dem_votes": [],
       "voting_bloc": null
@@ -15936,7 +15941,7 @@
         }
       ],
       "total": 61,
-      "pattern": "Super Villain",
+      "pattern": "Rare",
       "voted_against_dems": 1,
       "anti_dem_votes": [
         {
@@ -16129,7 +16134,7 @@
         }
       ],
       "total": 43,
-      "pattern": "Super Villain",
+      "pattern": "Rare",
       "voted_against_dems": 0,
       "anti_dem_votes": [],
       "voting_bloc": null
@@ -16302,7 +16307,7 @@
         }
       ],
       "total": 40,
-      "pattern": "Super Villain",
+      "pattern": "Rare",
       "voted_against_dems": 7,
       "anti_dem_votes": [
         {
@@ -16517,7 +16522,7 @@
         }
       ],
       "total": 38,
-      "pattern": "Super Villain",
+      "pattern": "Rare",
       "voted_against_dems": 0,
       "anti_dem_votes": [],
       "voting_bloc": null
@@ -16678,7 +16683,7 @@
         }
       ],
       "total": 37,
-      "pattern": "Super Villain",
+      "pattern": "Rare",
       "voted_against_dems": 1,
       "anti_dem_votes": [
         {
@@ -16835,7 +16840,7 @@
         }
       ],
       "total": 34,
-      "pattern": "Super Villain",
+      "pattern": "Strategic Rotator",
       "voted_against_dems": 5,
       "anti_dem_votes": [
         {
@@ -17474,7 +17479,7 @@
         }
       ],
       "total": 30,
-      "pattern": "Super Villain",
+      "pattern": "Rare",
       "voted_against_dems": 2,
       "anti_dem_votes": [
         {
@@ -17622,7 +17627,7 @@
         }
       ],
       "total": 30,
-      "pattern": "Super Villain",
+      "pattern": "Rare",
       "voted_against_dems": 1,
       "anti_dem_votes": [
         {
@@ -17759,7 +17764,7 @@
         }
       ],
       "total": 29,
-      "pattern": "Super Villain",
+      "pattern": "Rare",
       "voted_against_dems": 4,
       "anti_dem_votes": [
         {
@@ -17917,7 +17922,7 @@
         }
       ],
       "total": 29,
-      "pattern": "Super Villain",
+      "pattern": "Rare",
       "voted_against_dems": 0,
       "anti_dem_votes": [],
       "voting_bloc": null
@@ -18694,7 +18699,7 @@
         }
       ],
       "total": 26,
-      "pattern": "Super Villain",
+      "pattern": "Rare",
       "voted_against_dems": 2,
       "anti_dem_votes": [
         {
@@ -18947,7 +18952,7 @@
         }
       ],
       "total": 25,
-      "pattern": "Super Villain",
+      "pattern": "Rare",
       "voted_against_dems": 1,
       "anti_dem_votes": [
         {
@@ -19064,7 +19069,7 @@
         }
       ],
       "total": 24,
-      "pattern": "Super Villain",
+      "pattern": "Rare",
       "voted_against_dems": 5,
       "anti_dem_votes": [
         {
@@ -19205,7 +19210,7 @@
         }
       ],
       "total": 23,
-      "pattern": "Super Villain",
+      "pattern": "Rare",
       "voted_against_dems": 1,
       "anti_dem_votes": [
         {
@@ -19318,7 +19323,7 @@
         }
       ],
       "total": 23,
-      "pattern": "Super Villain",
+      "pattern": "Rare",
       "voted_against_dems": 4,
       "anti_dem_votes": [
         {
@@ -19448,7 +19453,7 @@
         }
       ],
       "total": 22,
-      "pattern": "Super Villain",
+      "pattern": "Rare",
       "voted_against_dems": 0,
       "anti_dem_votes": [],
       "voting_bloc": null
@@ -19852,7 +19857,7 @@
         }
       ],
       "total": 20,
-      "pattern": "Strategic Rotator",
+      "pattern": "Rare",
       "voted_against_dems": 0,
       "anti_dem_votes": [],
       "voting_bloc": null
@@ -20349,7 +20354,7 @@
         }
       ],
       "total": 18,
-      "pattern": "Strategic Rotator",
+      "pattern": "Rare",
       "voted_against_dems": 0,
       "anti_dem_votes": [],
       "voting_bloc": null
@@ -20430,7 +20435,7 @@
         }
       ],
       "total": 17,
-      "pattern": "Strategic Rotator",
+      "pattern": "Rare",
       "voted_against_dems": 2,
       "anti_dem_votes": [
         {
@@ -20526,7 +20531,7 @@
         }
       ],
       "total": 17,
-      "pattern": "Strategic Rotator",
+      "pattern": "Rare",
       "voted_against_dems": 3,
       "anti_dem_votes": [
         {
@@ -20830,7 +20835,7 @@
         }
       ],
       "total": 17,
-      "pattern": "Strategic Rotator",
+      "pattern": "Rare",
       "voted_against_dems": 3,
       "anti_dem_votes": [
         {
@@ -20929,7 +20934,7 @@
         }
       ],
       "total": 16,
-      "pattern": "Strategic Rotator",
+      "pattern": "Rare",
       "voted_against_dems": 4,
       "anti_dem_votes": [
         {
@@ -21035,7 +21040,7 @@
         }
       ],
       "total": 16,
-      "pattern": "Strategic Rotator",
+      "pattern": "Rare",
       "voted_against_dems": 1,
       "anti_dem_votes": [
         {
@@ -21120,7 +21125,7 @@
         }
       ],
       "total": 16,
-      "pattern": "Strategic Rotator",
+      "pattern": "Rare",
       "voted_against_dems": 0,
       "anti_dem_votes": [],
       "voting_bloc": null
@@ -21193,7 +21198,7 @@
         }
       ],
       "total": 15,
-      "pattern": "Strategic Rotator",
+      "pattern": "Rare",
       "voted_against_dems": 0,
       "anti_dem_votes": [],
       "voting_bloc": null
@@ -21266,7 +21271,7 @@
         }
       ],
       "total": 15,
-      "pattern": "Strategic Rotator",
+      "pattern": "Rare",
       "voted_against_dems": 3,
       "anti_dem_votes": [
         {
@@ -21438,7 +21443,7 @@
         }
       ],
       "total": 14,
-      "pattern": "Strategic Rotator",
+      "pattern": "Rare",
       "voted_against_dems": 5,
       "anti_dem_votes": [
         {
@@ -21543,7 +21548,7 @@
         }
       ],
       "total": 14,
-      "pattern": "Strategic Rotator",
+      "pattern": "Rare",
       "voted_against_dems": 1,
       "anti_dem_votes": [
         {
@@ -21620,7 +21625,7 @@
         }
       ],
       "total": 14,
-      "pattern": "Strategic Rotator",
+      "pattern": "Rare",
       "voted_against_dems": 5,
       "anti_dem_votes": [
         {
@@ -22000,7 +22005,7 @@
         }
       ],
       "total": 14,
-      "pattern": "Strategic Rotator",
+      "pattern": "Rare",
       "voted_against_dems": 6,
       "anti_dem_votes": [
         {
@@ -22108,7 +22113,7 @@
         }
       ],
       "total": 13,
-      "pattern": "Strategic Rotator",
+      "pattern": "Rare",
       "voted_against_dems": 0,
       "anti_dem_votes": [],
       "voting_bloc": null
@@ -22173,7 +22178,7 @@
         }
       ],
       "total": 13,
-      "pattern": "Strategic Rotator",
+      "pattern": "Rare",
       "voted_against_dems": 0,
       "anti_dem_votes": [],
       "voting_bloc": null
@@ -22500,7 +22505,7 @@
         }
       ],
       "total": 12,
-      "pattern": "Strategic Rotator",
+      "pattern": "Rare",
       "voted_against_dems": 2,
       "anti_dem_votes": [
         {
@@ -22576,7 +22581,7 @@
         }
       ],
       "total": 12,
-      "pattern": "Strategic Rotator",
+      "pattern": "Rare",
       "voted_against_dems": 2,
       "anti_dem_votes": [
         {
@@ -22652,7 +22657,7 @@
         }
       ],
       "total": 12,
-      "pattern": "Strategic Rotator",
+      "pattern": "Rare",
       "voted_against_dems": 0,
       "anti_dem_votes": [],
       "voting_bloc": null
@@ -22774,7 +22779,7 @@
         }
       ],
       "total": 12,
-      "pattern": "Strategic Rotator",
+      "pattern": "Rare",
       "voted_against_dems": 0,
       "anti_dem_votes": [],
       "voting_bloc": null
@@ -22835,7 +22840,7 @@
         }
       ],
       "total": 12,
-      "pattern": "Strategic Rotator",
+      "pattern": "Rare",
       "voted_against_dems": 2,
       "anti_dem_votes": [
         {
@@ -22911,7 +22916,7 @@
         }
       ],
       "total": 12,
-      "pattern": "Strategic Rotator",
+      "pattern": "Rare",
       "voted_against_dems": 1,
       "anti_dem_votes": [
         {
@@ -22980,7 +22985,7 @@
         }
       ],
       "total": 12,
-      "pattern": "Strategic Rotator",
+      "pattern": "Rare",
       "voted_against_dems": 3,
       "anti_dem_votes": [
         {
@@ -23063,7 +23068,7 @@
         }
       ],
       "total": 12,
-      "pattern": "Strategic Rotator",
+      "pattern": "Rare",
       "voted_against_dems": 2,
       "anti_dem_votes": [
         {
@@ -23139,7 +23144,7 @@
         }
       ],
       "total": 12,
-      "pattern": "Strategic Rotator",
+      "pattern": "Rare",
       "voted_against_dems": 0,
       "anti_dem_votes": [],
       "voting_bloc": null
@@ -23200,7 +23205,7 @@
         }
       ],
       "total": 12,
-      "pattern": "Strategic Rotator",
+      "pattern": "Rare",
       "voted_against_dems": 0,
       "anti_dem_votes": [],
       "voting_bloc": null
@@ -23326,7 +23331,7 @@
         }
       ],
       "total": 11,
-      "pattern": "Strategic Rotator",
+      "pattern": "Rare",
       "voted_against_dems": 2,
       "anti_dem_votes": [
         {
@@ -23398,7 +23403,7 @@
         }
       ],
       "total": 11,
-      "pattern": "Strategic Rotator",
+      "pattern": "Rare",
       "voted_against_dems": 2,
       "anti_dem_votes": [
         {
@@ -23692,7 +23697,7 @@
         }
       ],
       "total": 11,
-      "pattern": "Strategic Rotator",
+      "pattern": "Rare",
       "voted_against_dems": 0,
       "anti_dem_votes": [],
       "voting_bloc": null
@@ -23749,7 +23754,7 @@
         }
       ],
       "total": 11,
-      "pattern": "Strategic Rotator",
+      "pattern": "Rare",
       "voted_against_dems": 1,
       "anti_dem_votes": [
         {
@@ -24042,7 +24047,7 @@
         }
       ],
       "total": 11,
-      "pattern": "Strategic Rotator",
+      "pattern": "Rare",
       "voted_against_dems": 4,
       "anti_dem_votes": [
         {
@@ -24128,7 +24133,7 @@
         }
       ],
       "total": 11,
-      "pattern": "Strategic Rotator",
+      "pattern": "Rare",
       "voted_against_dems": 4,
       "anti_dem_votes": [
         {
@@ -24331,7 +24336,7 @@
         }
       ],
       "total": 11,
-      "pattern": "Strategic Rotator",
+      "pattern": "Rare",
       "voted_against_dems": 0,
       "anti_dem_votes": [],
       "voting_bloc": null
@@ -24388,7 +24393,7 @@
         }
       ],
       "total": 11,
-      "pattern": "Strategic Rotator",
+      "pattern": "Rare",
       "voted_against_dems": 0,
       "anti_dem_votes": [],
       "voting_bloc": {
@@ -26677,7 +26682,7 @@
         }
       ],
       "total": 9,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "voted_against_dems": 5,
       "anti_dem_votes": [
         {
@@ -28482,7 +28487,7 @@
         }
       ],
       "total": 7,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "voted_against_dems": 5,
       "anti_dem_votes": [
         {
@@ -29532,7 +29537,7 @@
         }
       ],
       "total": 7,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "voted_against_dems": 13,
       "anti_dem_votes": [
         {
@@ -29769,7 +29774,7 @@
         }
       ],
       "total": 7,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "voted_against_dems": 5,
       "anti_dem_votes": [
         {
@@ -31416,7 +31421,7 @@
         }
       ],
       "total": 6,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "voted_against_dems": 12,
       "anti_dem_votes": [
         {
@@ -31630,7 +31635,7 @@
         }
       ],
       "total": 5,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "voted_against_dems": 8,
       "anti_dem_votes": [
         {
@@ -32160,7 +32165,7 @@
         }
       ],
       "total": 5,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "voted_against_dems": 5,
       "anti_dem_votes": [
         {
@@ -33208,7 +33213,7 @@
         }
       ],
       "total": 5,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "voted_against_dems": 9,
       "anti_dem_votes": [
         {
@@ -33742,7 +33747,7 @@
         }
       ],
       "total": 4,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "voted_against_dems": 9,
       "anti_dem_votes": [
         {
@@ -34757,7 +34762,7 @@
         }
       ],
       "total": 4,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "voted_against_dems": 7,
       "anti_dem_votes": [
         {
@@ -35081,7 +35086,7 @@
         }
       ],
       "total": 3,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "voted_against_dems": 5,
       "anti_dem_votes": [
         {
@@ -37214,7 +37219,7 @@
         }
       ],
       "total": 2,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "voted_against_dems": 7,
       "anti_dem_votes": [
         {
@@ -38299,7 +38304,7 @@
         }
       ],
       "total": 2,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "voted_against_dems": 10,
       "anti_dem_votes": [
         {
@@ -40168,7 +40173,7 @@
         }
       ],
       "total": 1,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "voted_against_dems": 16,
       "anti_dem_votes": [
         {
