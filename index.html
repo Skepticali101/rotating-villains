@@ -75,15 +75,19 @@
                 padding: 8px 6px !important;
             }
             
-            /* Make clickable numbers tappable - must come AFTER * reset */
-            span.clickable {
-                padding: 15px !important;
-                display: inline-block !important;
-                min-width: 60px !important;
-                min-height: 50px !important;
-                text-align: center !important;
-                line-height: 50px !important;
+            /* Disable clicking on mobile - cleaner UX */
+            .clickable {
+                pointer-events: none !important;
+                cursor: default !important;
             }
+            
+            /* Hide the click instruction on mobile */
+            .mobile-hide {
+                display: none !important;
+            }
+        }
+            }
+        }
         }
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -673,7 +677,7 @@
                             </div>
                         </div>
                         
-                        <p style="margin-bottom: 20px; opacity: 0.9; font-size: 1.05rem;">
+                        <p class="mobile-hide" style="margin-bottom: 20px; opacity: 0.9; font-size: 1.05rem;">
                             💡 <strong>Click the numbers</strong> to see exactly which votes each member betrayed on.
                         </p>
                         
