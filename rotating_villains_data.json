@@ -1,12 +1,12 @@
 {
   "summary": {
-    "total_winnable_votes_lost": 1584,
+    "total_winnable_votes_lost": 100,
     "total_rotating_villains": 309,
     "super_villains": 58,
     "pattern_breakdown": {
       "super_villains": 58,
-      "strategic_rotators": 76,
-      "rare": 175
+      "strategic_rotators": 101,
+      "rare": 150
     },
     "total_betrayals": 14200
   },
@@ -39468,7 +39468,7 @@
       "voted_against_dems": 0,
       "total_gop_votes": 614,
       "betrayal_rate": 16.0,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -47134,7 +47134,7 @@
       "voted_against_dems": 6,
       "total_gop_votes": 614,
       "betrayal_rate": 14.2,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -55389,7 +55389,7 @@
       "voted_against_dems": 2,
       "total_gop_votes": 502,
       "betrayal_rate": 11.8,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -65831,7 +65831,7 @@
       "voted_against_dems": 3,
       "total_gop_votes": 489,
       "betrayal_rate": 8.8,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -66997,7 +66997,7 @@
       "voted_against_dems": 3,
       "total_gop_votes": 373,
       "betrayal_rate": 8.6,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -67677,7 +67677,7 @@
       "voted_against_dems": 0,
       "total_gop_votes": 614,
       "betrayal_rate": 8.5,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -70558,7 +70558,7 @@
       "voted_against_dems": 3,
       "total_gop_votes": 614,
       "betrayal_rate": 8.1,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -73416,7 +73416,7 @@
       "voted_against_dems": 0,
       "total_gop_votes": 614,
       "betrayal_rate": 7.5,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -74348,7 +74348,7 @@
       "voted_against_dems": 5,
       "total_gop_votes": 502,
       "betrayal_rate": 7.2,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -75143,7 +75143,7 @@
       "voted_against_dems": 2,
       "total_gop_votes": 614,
       "betrayal_rate": 6.8,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -75696,7 +75696,7 @@
       "voted_against_dems": 1,
       "total_gop_votes": 614,
       "betrayal_rate": 6.7,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -76352,7 +76352,7 @@
       "voted_against_dems": 2,
       "total_gop_votes": 614,
       "betrayal_rate": 6.7,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -76989,7 +76989,7 @@
       "voted_against_dems": 6,
       "total_gop_votes": 614,
       "betrayal_rate": 6.5,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -77549,7 +77549,7 @@
       "voted_against_dems": 0,
       "total_gop_votes": 614,
       "betrayal_rate": 6.2,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -79217,7 +79217,7 @@
       "voted_against_dems": 4,
       "total_gop_votes": 614,
       "betrayal_rate": 5.9,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -79476,7 +79476,7 @@
       "voted_against_dems": 4,
       "total_gop_votes": 614,
       "betrayal_rate": 5.9,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -81653,7 +81653,7 @@
       "voted_against_dems": 3,
       "total_gop_votes": 614,
       "betrayal_rate": 5.5,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -81894,7 +81894,7 @@
       "voted_against_dems": 2,
       "total_gop_votes": 614,
       "betrayal_rate": 5.4,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -82605,7 +82605,7 @@
       "voted_against_dems": 6,
       "total_gop_votes": 614,
       "betrayal_rate": 5.2,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -83508,7 +83508,7 @@
       "voted_against_dems": 2,
       "total_gop_votes": 614,
       "betrayal_rate": 5.0,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -84407,7 +84407,7 @@
       "voted_against_dems": 2,
       "total_gop_votes": 614,
       "betrayal_rate": 4.7,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -85022,7 +85022,7 @@
       "voted_against_dems": 1,
       "total_gop_votes": 614,
       "betrayal_rate": 4.7,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -85426,7 +85426,7 @@
       "voted_against_dems": 2,
       "total_gop_votes": 614,
       "betrayal_rate": 4.7,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -86685,7 +86685,7 @@
       "voted_against_dems": 1,
       "total_gop_votes": 614,
       "betrayal_rate": 4.4,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -88553,7 +88553,7 @@
       "voted_against_dems": 2,
       "total_gop_votes": 614,
       "betrayal_rate": 4.1,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -99362,5 +99362,2145 @@
       "anti_dem_votes": []
     }
   ],
-  "winnable_votes": []
+  "winnable_votes": [
+    {
+      "vote_id": "h1007-118",
+      "description": "h1007-118",
+      "congress": 118,
+      "yes": 207,
+      "no": 206,
+      "margin": 1,
+      "dem_yes": 0,
+      "dem_no": 205,
+      "betrayers": [
+        {
+          "name": "GRIJALVA, Ra\u00fal M.",
+          "action": "Absent"
+        },
+        {
+          "name": "KUSTER, Ann McLane",
+          "action": "Absent"
+        },
+        {
+          "name": "WATSON COLEMAN, Bonnie",
+          "action": "Absent"
+        },
+        {
+          "name": "EVANS, Dwight",
+          "action": "Absent"
+        },
+        {
+          "name": "PHILLIPS, Dean",
+          "action": "Absent"
+        },
+        {
+          "name": "BOWMAN, Jamaal",
+          "action": "Absent"
+        },
+        {
+          "name": "BUSH, Cori",
+          "action": "Absent"
+        },
+        {
+          "name": "GOLDMAN, Daniel",
+          "action": "Absent"
+        },
+        {
+          "name": "KAMLAGER-DOVE, Sydney",
+          "action": "Absent"
+        },
+        {
+          "name": "SORENSEN, Eric",
+          "action": "Absent"
+        },
+        {
+          "name": "JACKSON LEE, Sheila",
+          "action": "Absent"
+        }
+      ]
+    },
+    {
+      "vote_id": "h1009-118",
+      "description": "h1009-118",
+      "congress": 118,
+      "yes": 204,
+      "no": 203,
+      "margin": 1,
+      "dem_yes": 0,
+      "dem_no": 202,
+      "betrayers": [
+        {
+          "name": "GRIJALVA, Ra\u00fal M.",
+          "action": "Absent"
+        },
+        {
+          "name": "KUSTER, Ann McLane",
+          "action": "Absent"
+        },
+        {
+          "name": "WATSON COLEMAN, Bonnie",
+          "action": "Absent"
+        },
+        {
+          "name": "EVANS, Dwight",
+          "action": "Absent"
+        },
+        {
+          "name": "PHILLIPS, Dean",
+          "action": "Absent"
+        },
+        {
+          "name": "BOWMAN, Jamaal",
+          "action": "Absent"
+        },
+        {
+          "name": "BUSH, Cori",
+          "action": "Absent"
+        },
+        {
+          "name": "GOLDMAN, Daniel",
+          "action": "Absent"
+        },
+        {
+          "name": "KAMLAGER-DOVE, Sydney",
+          "action": "Absent"
+        },
+        {
+          "name": "SORENSEN, Eric",
+          "action": "Absent"
+        },
+        {
+          "name": "JACKSON LEE, Sheila",
+          "action": "Absent"
+        }
+      ]
+    },
+    {
+      "vote_id": "h144-119",
+      "description": "h144-119",
+      "congress": 119,
+      "yes": 215,
+      "no": 214,
+      "margin": 1,
+      "dem_yes": 0,
+      "dem_no": 212,
+      "betrayers": []
+    },
+    {
+      "vote_id": "h185-119",
+      "description": "h185-119",
+      "congress": 119,
+      "yes": 212,
+      "no": 211,
+      "margin": 1,
+      "dem_yes": 0,
+      "dem_no": 211,
+      "betrayers": [
+        {
+          "name": "LATIMER, George",
+          "action": "Absent"
+        }
+      ]
+    },
+    {
+      "vote_id": "h193-119",
+      "description": "h193-119",
+      "congress": 119,
+      "yes": 211,
+      "no": 210,
+      "margin": 1,
+      "dem_yes": 0,
+      "dem_no": 210,
+      "betrayers": [
+        {
+          "name": "WILSON, Frederica",
+          "action": "Absent"
+        },
+        {
+          "name": "RAMIREZ, Delia",
+          "action": "Absent"
+        }
+      ]
+    },
+    {
+      "vote_id": "h220-118",
+      "description": "h220-118",
+      "congress": 118,
+      "yes": 218,
+      "no": 217,
+      "margin": 1,
+      "dem_yes": 0,
+      "dem_no": 214,
+      "betrayers": [
+        {
+          "name": "PELTOLA, Mary Sattler",
+          "action": "Absent"
+        },
+        {
+          "name": "PELOSI, Nancy",
+          "action": "Absent"
+        }
+      ]
+    },
+    {
+      "vote_id": "h238-119",
+      "description": "h238-119",
+      "congress": 119,
+      "yes": 214,
+      "no": 213,
+      "margin": 1,
+      "dem_yes": 0,
+      "dem_no": 209,
+      "betrayers": [
+        {
+          "name": "QUIGLEY, Mike",
+          "action": "Absent"
+        },
+        {
+          "name": "SWALWELL, Eric",
+          "action": "Absent"
+        },
+        {
+          "name": "SHERRILL, Mikie",
+          "action": "Absent"
+        }
+      ]
+    },
+    {
+      "vote_id": "h308-119",
+      "description": "h308-119",
+      "congress": 119,
+      "yes": 210,
+      "no": 209,
+      "margin": 1,
+      "dem_yes": 0,
+      "dem_no": 206,
+      "betrayers": [
+        {
+          "name": "GARAMENDI, John",
+          "action": "Absent"
+        },
+        {
+          "name": "WILSON, Frederica",
+          "action": "Absent"
+        },
+        {
+          "name": "SWALWELL, Eric",
+          "action": "Absent"
+        },
+        {
+          "name": "AUCHINCLOSS, Jake",
+          "action": "Absent"
+        },
+        {
+          "name": "CASAR, Greg",
+          "action": "Absent"
+        },
+        {
+          "name": "BELL, Wesley",
+          "action": "Absent"
+        },
+        {
+          "name": "NADLER, Jerrold Lewis",
+          "action": "Absent"
+        }
+      ]
+    },
+    {
+      "vote_id": "h311-118",
+      "description": "h311-118",
+      "congress": 118,
+      "yes": 214,
+      "no": 213,
+      "margin": 1,
+      "dem_yes": 0,
+      "dem_no": 209,
+      "betrayers": [
+        {
+          "name": "GALLEGO, Ruben",
+          "action": "Absent"
+        },
+        {
+          "name": "EVANS, Dwight",
+          "action": "Absent"
+        },
+        {
+          "name": "PELTOLA, Mary Sattler",
+          "action": "Absent"
+        }
+      ]
+    },
+    {
+      "vote_id": "h325-118",
+      "description": "h325-118",
+      "congress": 118,
+      "yes": 217,
+      "no": 216,
+      "margin": 1,
+      "dem_yes": 0,
+      "dem_no": 213,
+      "betrayers": [
+        {
+          "name": "EVANS, Dwight",
+          "action": "Absent"
+        },
+        {
+          "name": "GALLEGO, Ruben",
+          "action": "Absent"
+        }
+      ]
+    },
+    {
+      "vote_id": "h342-119",
+      "description": "h342-119",
+      "congress": 119,
+      "yes": 204,
+      "no": 203,
+      "margin": 1,
+      "dem_yes": 0,
+      "dem_no": 203,
+      "betrayers": [
+        {
+          "name": "MOORE, Gwendolynne S. (Gwen)",
+          "action": "Absent"
+        },
+        {
+          "name": "COURTNEY, Joe",
+          "action": "Absent"
+        },
+        {
+          "name": "SWALWELL, Eric",
+          "action": "Absent"
+        },
+        {
+          "name": "RUIZ, Raul",
+          "action": "Absent"
+        },
+        {
+          "name": "BEYER, Donald Sternoff Jr.",
+          "action": "Absent"
+        },
+        {
+          "name": "ESPAILLAT, Adriano J.",
+          "action": "Absent"
+        },
+        {
+          "name": "GARCIA, Sylvia",
+          "action": "Absent"
+        },
+        {
+          "name": "McBATH, Lucy",
+          "action": "Absent"
+        },
+        {
+          "name": "GOLDMAN, Daniel",
+          "action": "Absent"
+        },
+        {
+          "name": "NADLER, Jerrold Lewis",
+          "action": "Absent"
+        }
+      ]
+    },
+    {
+      "vote_id": "h376-119",
+      "description": "h376-119",
+      "congress": 119,
+      "yes": 206,
+      "no": 205,
+      "margin": 1,
+      "dem_yes": 0,
+      "dem_no": 205,
+      "betrayers": [
+        {
+          "name": "WILSON, Frederica",
+          "action": "Absent"
+        },
+        {
+          "name": "SWALWELL, Eric",
+          "action": "Absent"
+        },
+        {
+          "name": "HOULAHAN, Christina",
+          "action": "Absent"
+        },
+        {
+          "name": "STANSBURY, Melanie Ann",
+          "action": "Absent"
+        },
+        {
+          "name": "CASAR, Greg",
+          "action": "Absent"
+        },
+        {
+          "name": "SYKES, Emilia",
+          "action": "Absent"
+        },
+        {
+          "name": "GRAY, Adam",
+          "action": "Absent"
+        },
+        {
+          "name": "SHERMAN, Brad",
+          "action": "Absent"
+        }
+      ]
+    },
+    {
+      "vote_id": "h427-118",
+      "description": "h427-118",
+      "congress": 118,
+      "yes": 217,
+      "no": 216,
+      "margin": 1,
+      "dem_yes": 0,
+      "dem_no": 213,
+      "betrayers": [
+        {
+          "name": "BUSH, Cori",
+          "action": "Absent"
+        },
+        {
+          "name": "PELTOLA, Mary Sattler",
+          "action": "Absent"
+        }
+      ]
+    },
+    {
+      "vote_id": "h428-118",
+      "description": "h428-118",
+      "congress": 118,
+      "yes": 217,
+      "no": 216,
+      "margin": 1,
+      "dem_yes": 0,
+      "dem_no": 213,
+      "betrayers": [
+        {
+          "name": "BUSH, Cori",
+          "action": "Absent"
+        },
+        {
+          "name": "PELTOLA, Mary Sattler",
+          "action": "Absent"
+        }
+      ]
+    },
+    {
+      "vote_id": "h570-118",
+      "description": "h570-118",
+      "congress": 118,
+      "yes": 213,
+      "no": 212,
+      "margin": 1,
+      "dem_yes": 4,
+      "dem_no": 204,
+      "betrayers": [
+        {
+          "name": "COSTA, Jim",
+          "action": "Voted YES"
+        },
+        {
+          "name": "DESAULNIER, Mark James",
+          "action": "Absent"
+        },
+        {
+          "name": "SCANLON, Mary Gay",
+          "action": "Absent"
+        },
+        {
+          "name": "GOLDEN, Jared",
+          "action": "Voted YES"
+        },
+        {
+          "name": "PHILLIPS, Dean",
+          "action": "Absent"
+        },
+        {
+          "name": "WEXTON, Jennifer",
+          "action": "Absent"
+        },
+        {
+          "name": "PLASKETT, Stacey E.",
+          "action": "Absent"
+        },
+        {
+          "name": "PEREZ, Marie Gluesenkamp",
+          "action": "Voted YES"
+        },
+        {
+          "name": "VASQUEZ, Gabriel",
+          "action": "Voted YES"
+        },
+        {
+          "name": "JACKSON LEE, Sheila",
+          "action": "Absent"
+        },
+        {
+          "name": "NAPOLITANO, Grace Flores",
+          "action": "Absent"
+        }
+      ]
+    },
+    {
+      "vote_id": "h590-118",
+      "description": "h590-118",
+      "congress": 118,
+      "yes": 208,
+      "no": 207,
+      "margin": 1,
+      "dem_yes": 0,
+      "dem_no": 201,
+      "betrayers": [
+        {
+          "name": "SEWELL, Terri",
+          "action": "Absent"
+        },
+        {
+          "name": "KUSTER, Ann McLane",
+          "action": "Absent"
+        },
+        {
+          "name": "CASTRO, Joaquin",
+          "action": "Absent"
+        },
+        {
+          "name": "SCANLON, Mary Gay",
+          "action": "Absent"
+        },
+        {
+          "name": "PHILLIPS, Dean",
+          "action": "Absent"
+        },
+        {
+          "name": "UNDERWOOD, Lauren",
+          "action": "Absent"
+        },
+        {
+          "name": "WEXTON, Jennifer",
+          "action": "Absent"
+        },
+        {
+          "name": "PLASKETT, Stacey E.",
+          "action": "Absent"
+        },
+        {
+          "name": "TORRES, Ritchie",
+          "action": "Absent"
+        },
+        {
+          "name": "KAMLAGER-DOVE, Sydney",
+          "action": "Absent"
+        },
+        {
+          "name": "PETTERSEN, Brittany",
+          "action": "Absent"
+        },
+        {
+          "name": "JACKSON LEE, Sheila",
+          "action": "Absent"
+        },
+        {
+          "name": "NAPOLITANO, Grace Flores",
+          "action": "Absent"
+        },
+        {
+          "name": "SCHAKOWSKY, Janice D.",
+          "action": "Absent"
+        }
+      ]
+    },
+    {
+      "vote_id": "h761-118",
+      "description": "h761-118",
+      "congress": 118,
+      "yes": 214,
+      "no": 213,
+      "margin": 1,
+      "dem_yes": 0,
+      "dem_no": 210,
+      "betrayers": [
+        {
+          "name": "CHU, Judy",
+          "action": "Absent"
+        },
+        {
+          "name": "FRANKEL, Lois",
+          "action": "Absent"
+        }
+      ]
+    },
+    {
+      "vote_id": "h825-118",
+      "description": "h825-118",
+      "congress": 118,
+      "yes": 210,
+      "no": 209,
+      "margin": 1,
+      "dem_yes": 0,
+      "dem_no": 209,
+      "betrayers": [
+        {
+          "name": "GRIJALVA, Ra\u00fal M.",
+          "action": "Absent"
+        },
+        {
+          "name": "GOLDEN, Jared",
+          "action": "Absent"
+        },
+        {
+          "name": "STRICKLAND, Marilyn",
+          "action": "Absent"
+        },
+        {
+          "name": "PAYNE, Donald, Jr.",
+          "action": "Absent"
+        }
+      ]
+    },
+    {
+      "vote_id": "h93-119",
+      "description": "h93-119",
+      "congress": 119,
+      "yes": 216,
+      "no": 215,
+      "margin": 1,
+      "dem_yes": 0,
+      "dem_no": 212,
+      "betrayers": [
+        {
+          "name": "NORCROSS, Donald",
+          "action": "Absent"
+        }
+      ]
+    },
+    {
+      "vote_id": "h940-118",
+      "description": "h940-118",
+      "congress": 118,
+      "yes": 204,
+      "no": 203,
+      "margin": 1,
+      "dem_yes": 0,
+      "dem_no": 203,
+      "betrayers": [
+        {
+          "name": "GRIJALVA, Ra\u00fal M.",
+          "action": "Absent"
+        },
+        {
+          "name": "MOORE, Gwendolynne S. (Gwen)",
+          "action": "Absent"
+        },
+        {
+          "name": "EVANS, Dwight",
+          "action": "Absent"
+        },
+        {
+          "name": "JAYAPAL, Pramila",
+          "action": "Absent"
+        },
+        {
+          "name": "STANSBURY, Melanie Ann",
+          "action": "Absent"
+        },
+        {
+          "name": "LANDSMAN, Greg",
+          "action": "Absent"
+        },
+        {
+          "name": "MAGAZINER, Seth",
+          "action": "Absent"
+        },
+        {
+          "name": "VEL\u00c1ZQUEZ, Nydia M.",
+          "action": "Absent"
+        },
+        {
+          "name": "JACKSON LEE, Sheila",
+          "action": "Absent"
+        },
+        {
+          "name": "BLUMENAUER, Earl",
+          "action": "Absent"
+        }
+      ]
+    },
+    {
+      "vote_id": "h969-118",
+      "description": "h969-118",
+      "congress": 118,
+      "yes": 208,
+      "no": 207,
+      "margin": 1,
+      "dem_yes": 0,
+      "dem_no": 207,
+      "betrayers": [
+        {
+          "name": "MFUME, Kweisi",
+          "action": "Absent"
+        },
+        {
+          "name": "GRIJALVA, Ra\u00fal M.",
+          "action": "Absent"
+        },
+        {
+          "name": "WATSON COLEMAN, Bonnie",
+          "action": "Absent"
+        },
+        {
+          "name": "EVANS, Dwight",
+          "action": "Absent"
+        },
+        {
+          "name": "BOWMAN, Jamaal",
+          "action": "Absent"
+        },
+        {
+          "name": "JACKSON LEE, Sheila",
+          "action": "Absent"
+        }
+      ]
+    },
+    {
+      "vote_id": "s139-118",
+      "description": "s139-118",
+      "congress": 118,
+      "yes": 49,
+      "no": 48,
+      "margin": 1,
+      "dem_yes": 1,
+      "dem_no": 46,
+      "betrayers": [
+        {
+          "name": "ROSEN, Jacklyn Sheryl",
+          "action": "Voted YES"
+        },
+        {
+          "name": "FEINSTEIN, Dianne",
+          "action": "Absent"
+        },
+        {
+          "name": "SINEMA, Kyrsten",
+          "action": "Voted YES"
+        }
+      ]
+    },
+    {
+      "vote_id": "s162-117",
+      "description": "s162-117",
+      "congress": 117,
+      "yes": 49,
+      "no": 48,
+      "margin": 1,
+      "dem_yes": 0,
+      "dem_no": 46,
+      "betrayers": []
+    },
+    {
+      "vote_id": "s163-117",
+      "description": "s163-117",
+      "congress": 117,
+      "yes": 49,
+      "no": 48,
+      "margin": 1,
+      "dem_yes": 0,
+      "dem_no": 46,
+      "betrayers": []
+    },
+    {
+      "vote_id": "s204-118",
+      "description": "s204-118",
+      "congress": 118,
+      "yes": 50,
+      "no": 49,
+      "margin": 1,
+      "dem_yes": 1,
+      "dem_no": 46,
+      "betrayers": [
+        {
+          "name": "DURBIN, Richard Joseph",
+          "action": "Absent"
+        },
+        {
+          "name": "MANCHIN, Joe, III",
+          "action": "Voted YES"
+        }
+      ]
+    },
+    {
+      "vote_id": "s242-118",
+      "description": "s242-118",
+      "congress": 118,
+      "yes": 47,
+      "no": 46,
+      "margin": 1,
+      "dem_yes": 1,
+      "dem_no": 43,
+      "betrayers": [
+        {
+          "name": "BROWN, Sherrod",
+          "action": "Absent"
+        },
+        {
+          "name": "STABENOW, Deborah Ann",
+          "action": "Absent"
+        },
+        {
+          "name": "MANCHIN, Joe, III",
+          "action": "Voted YES"
+        },
+        {
+          "name": "SMITH, Tina",
+          "action": "Absent"
+        },
+        {
+          "name": "FEINSTEIN, Dianne",
+          "action": "Absent"
+        }
+      ]
+    },
+    {
+      "vote_id": "s336-117",
+      "description": "s336-117",
+      "congress": 117,
+      "yes": 50,
+      "no": 49,
+      "margin": 1,
+      "dem_yes": 1,
+      "dem_no": 47,
+      "betrayers": []
+    },
+    {
+      "vote_id": "s342-117",
+      "description": "s342-117",
+      "congress": 117,
+      "yes": 50,
+      "no": 49,
+      "margin": 1,
+      "dem_yes": 1,
+      "dem_no": 47,
+      "betrayers": []
+    },
+    {
+      "vote_id": "s355-117",
+      "description": "s355-117",
+      "congress": 117,
+      "yes": 50,
+      "no": 49,
+      "margin": 1,
+      "dem_yes": 1,
+      "dem_no": 47,
+      "betrayers": []
+    },
+    {
+      "vote_id": "s418-119",
+      "description": "s418-119",
+      "congress": 119,
+      "yes": 44,
+      "no": 43,
+      "margin": 1,
+      "dem_yes": 0,
+      "dem_no": 41,
+      "betrayers": [
+        {
+          "name": "DUCKWORTH, Tammy",
+          "action": "Absent"
+        },
+        {
+          "name": "COONS, Christopher A.",
+          "action": "Absent"
+        },
+        {
+          "name": "OSSOFF, Thomas Jonathan (Jon)",
+          "action": "Absent"
+        },
+        {
+          "name": "WARNOCK, Raphael Gamaliel",
+          "action": "Absent"
+        }
+      ]
+    },
+    {
+      "vote_id": "s431-119",
+      "description": "s431-119",
+      "congress": 119,
+      "yes": 48,
+      "no": 47,
+      "margin": 1,
+      "dem_yes": 0,
+      "dem_no": 45,
+      "betrayers": []
+    },
+    {
+      "vote_id": "s448-119",
+      "description": "s448-119",
+      "congress": 119,
+      "yes": 50,
+      "no": 49,
+      "margin": 1,
+      "dem_yes": 0,
+      "dem_no": 45,
+      "betrayers": []
+    },
+    {
+      "vote_id": "s519-119",
+      "description": "s519-119",
+      "congress": 119,
+      "yes": 48,
+      "no": 47,
+      "margin": 1,
+      "dem_yes": 0,
+      "dem_no": 45,
+      "betrayers": [
+        {
+          "name": "SANDERS, Bernard",
+          "action": "Absent"
+        }
+      ]
+    },
+    {
+      "vote_id": "s548-111",
+      "description": "s548-111",
+      "congress": 111,
+      "yes": 47,
+      "no": 46,
+      "margin": 1,
+      "dem_yes": 7,
+      "dem_no": 45,
+      "betrayers": []
+    },
+    {
+      "vote_id": "s695-116",
+      "description": "s695-116",
+      "congress": 116,
+      "yes": 48,
+      "no": 47,
+      "margin": 1,
+      "dem_yes": 0,
+      "dem_no": 45,
+      "betrayers": []
+    },
+    {
+      "vote_id": "s696-116",
+      "description": "s696-116",
+      "congress": 116,
+      "yes": 48,
+      "no": 47,
+      "margin": 1,
+      "dem_yes": 0,
+      "dem_no": 45,
+      "betrayers": []
+    },
+    {
+      "vote_id": "s7-116",
+      "description": "s7-116",
+      "congress": 116,
+      "yes": 48,
+      "no": 47,
+      "margin": 1,
+      "dem_yes": 2,
+      "dem_no": 43,
+      "betrayers": []
+    },
+    {
+      "vote_id": "s716-116",
+      "description": "s716-116",
+      "congress": 116,
+      "yes": 48,
+      "no": 47,
+      "margin": 1,
+      "dem_yes": 0,
+      "dem_no": 45,
+      "betrayers": []
+    },
+    {
+      "vote_id": "s76-117",
+      "description": "s76-117",
+      "congress": 117,
+      "yes": 50,
+      "no": 49,
+      "margin": 1,
+      "dem_yes": 1,
+      "dem_no": 47,
+      "betrayers": []
+    },
+    {
+      "vote_id": "s807-117",
+      "description": "s807-117",
+      "congress": 117,
+      "yes": 48,
+      "no": 47,
+      "margin": 1,
+      "dem_yes": 0,
+      "dem_no": 45,
+      "betrayers": []
+    },
+    {
+      "vote_id": "s98-118",
+      "description": "s98-118",
+      "congress": 118,
+      "yes": 50,
+      "no": 49,
+      "margin": 1,
+      "dem_yes": 1,
+      "dem_no": 46,
+      "betrayers": [
+        {
+          "name": "MANCHIN, Joe, III",
+          "action": "Voted YES"
+        },
+        {
+          "name": "FEINSTEIN, Dianne",
+          "action": "Absent"
+        }
+      ]
+    },
+    {
+      "vote_id": "h1-119",
+      "description": "h1-119",
+      "congress": 119,
+      "yes": 218,
+      "no": 216,
+      "margin": 2,
+      "dem_yes": 0,
+      "dem_no": 215,
+      "betrayers": []
+    },
+    {
+      "vote_id": "h1081-118",
+      "description": "h1081-118",
+      "congress": 118,
+      "yes": 199,
+      "no": 197,
+      "margin": 2,
+      "dem_yes": 0,
+      "dem_no": 195,
+      "betrayers": [
+        {
+          "name": "GRIJALVA, Ra\u00fal M.",
+          "action": "Absent"
+        },
+        {
+          "name": "RUPPERSBERGER, C. A. (Dutch)",
+          "action": "Absent"
+        },
+        {
+          "name": "COSTA, Jim",
+          "action": "Absent"
+        },
+        {
+          "name": "CLEAVER, Emanuel, II",
+          "action": "Absent"
+        },
+        {
+          "name": "TITUS, Alice (Dina)",
+          "action": "Absent"
+        },
+        {
+          "name": "GARAMENDI, John",
+          "action": "Absent"
+        },
+        {
+          "name": "CASTRO, Joaquin",
+          "action": "Absent"
+        },
+        {
+          "name": "GALLEGO, Ruben",
+          "action": "Absent"
+        },
+        {
+          "name": "EVANS, Dwight",
+          "action": "Absent"
+        },
+        {
+          "name": "CROW, Jason",
+          "action": "Absent"
+        },
+        {
+          "name": "PRESSLEY, Ayanna",
+          "action": "Absent"
+        },
+        {
+          "name": "SHERRILL, Mikie",
+          "action": "Absent"
+        },
+        {
+          "name": "TRAHAN, Lori",
+          "action": "Absent"
+        },
+        {
+          "name": "TRONE, David",
+          "action": "Absent"
+        },
+        {
+          "name": "PLASKETT, Stacey E.",
+          "action": "Absent"
+        },
+        {
+          "name": "BUSH, Cori",
+          "action": "Absent"
+        },
+        {
+          "name": "STANSBURY, Melanie Ann",
+          "action": "Absent"
+        },
+        {
+          "name": "GOLDMAN, Daniel",
+          "action": "Absent"
+        },
+        {
+          "name": "PASCRELL, William J., Jr.",
+          "action": "Absent"
+        },
+        {
+          "name": "SCOTT, Robert C.",
+          "action": "Absent"
+        }
+      ]
+    },
+    {
+      "vote_id": "h134-119",
+      "description": "h134-119",
+      "congress": 119,
+      "yes": 210,
+      "no": 208,
+      "margin": 2,
+      "dem_yes": 0,
+      "dem_no": 207,
+      "betrayers": [
+        {
+          "name": "CLEAVER, Emanuel, II",
+          "action": "Absent"
+        },
+        {
+          "name": "CONNOLLY, Gerald E. (Gerry)",
+          "action": "Absent"
+        },
+        {
+          "name": "NORCROSS, Donald",
+          "action": "Absent"
+        },
+        {
+          "name": "OMAR, Ilhan",
+          "action": "Absent"
+        },
+        {
+          "name": "SHERRILL, Mikie",
+          "action": "Absent"
+        },
+        {
+          "name": "STANTON, Greg",
+          "action": "Absent"
+        }
+      ]
+    },
+    {
+      "vote_id": "h140-119",
+      "description": "h140-119",
+      "congress": 119,
+      "yes": 213,
+      "no": 211,
+      "margin": 2,
+      "dem_yes": 0,
+      "dem_no": 211,
+      "betrayers": [
+        {
+          "name": "WATERS, Maxine",
+          "action": "Absent"
+        }
+      ]
+    },
+    {
+      "vote_id": "h167-119",
+      "description": "h167-119",
+      "congress": 119,
+      "yes": 214,
+      "no": 212,
+      "margin": 2,
+      "dem_yes": 0,
+      "dem_no": 208,
+      "betrayers": [
+        {
+          "name": "BEATTY, Joyce",
+          "action": "Absent"
+        },
+        {
+          "name": "NORCROSS, Donald",
+          "action": "Absent"
+        },
+        {
+          "name": "CORREA, Jose Luis",
+          "action": "Absent"
+        },
+        {
+          "name": "RANDALL, Emily",
+          "action": "Absent"
+        }
+      ]
+    },
+    {
+      "vote_id": "h186-119",
+      "description": "h186-119",
+      "congress": 119,
+      "yes": 214,
+      "no": 212,
+      "margin": 2,
+      "dem_yes": 0,
+      "dem_no": 212,
+      "betrayers": []
+    },
+    {
+      "vote_id": "h198-118",
+      "description": "h198-118",
+      "congress": 118,
+      "yes": 217,
+      "no": 215,
+      "margin": 2,
+      "dem_yes": 0,
+      "dem_no": 211,
+      "betrayers": [
+        {
+          "name": "PETERS, Scott",
+          "action": "Absent"
+        },
+        {
+          "name": "WATSON COLEMAN, Bonnie",
+          "action": "Absent"
+        }
+      ]
+    },
+    {
+      "vote_id": "h262-118",
+      "description": "h262-118",
+      "congress": 118,
+      "yes": 219,
+      "no": 217,
+      "margin": 2,
+      "dem_yes": 1,
+      "dem_no": 212,
+      "betrayers": [
+        {
+          "name": "GOLDEN, Jared",
+          "action": "Voted YES"
+        },
+        {
+          "name": "PLASKETT, Stacey E.",
+          "action": "Absent"
+        },
+        {
+          "name": "RAMIREZ, Delia",
+          "action": "Absent"
+        }
+      ]
+    },
+    {
+      "vote_id": "h264-119",
+      "description": "h264-119",
+      "congress": 119,
+      "yes": 200,
+      "no": 198,
+      "margin": 2,
+      "dem_yes": 0,
+      "dem_no": 196,
+      "betrayers": [
+        {
+          "name": "HOYER, Steny Hamilton",
+          "action": "Absent"
+        },
+        {
+          "name": "MFUME, Kweisi",
+          "action": "Absent"
+        },
+        {
+          "name": "PELOSI, Nancy",
+          "action": "Absent"
+        },
+        {
+          "name": "NEAL, Richard Edmund",
+          "action": "Absent"
+        },
+        {
+          "name": "GREEN, Al",
+          "action": "Absent"
+        },
+        {
+          "name": "TITUS, Alice (Dina)",
+          "action": "Absent"
+        },
+        {
+          "name": "KEATING, William R.",
+          "action": "Absent"
+        },
+        {
+          "name": "MENG, Grace",
+          "action": "Absent"
+        },
+        {
+          "name": "POCAN, Mark",
+          "action": "Absent"
+        },
+        {
+          "name": "GOTTHEIMER, Josh S.",
+          "action": "Absent"
+        },
+        {
+          "name": "SHERRILL, Mikie",
+          "action": "Absent"
+        },
+        {
+          "name": "LEGER FERNANDEZ, Teresa",
+          "action": "Absent"
+        },
+        {
+          "name": "HOYLE, Val",
+          "action": "Absent"
+        },
+        {
+          "name": "MAGAZINER, Seth",
+          "action": "Absent"
+        },
+        {
+          "name": "PETTERSEN, Brittany",
+          "action": "Absent"
+        },
+        {
+          "name": "GRAY, Adam",
+          "action": "Absent"
+        },
+        {
+          "name": "WATERS, Maxine",
+          "action": "Absent"
+        }
+      ]
+    },
+    {
+      "vote_id": "h267-119",
+      "description": "h267-119",
+      "congress": 119,
+      "yes": 213,
+      "no": 211,
+      "margin": 2,
+      "dem_yes": 0,
+      "dem_no": 208,
+      "betrayers": [
+        {
+          "name": "MFUME, Kweisi",
+          "action": "Absent"
+        },
+        {
+          "name": "TITUS, Alice (Dina)",
+          "action": "Absent"
+        },
+        {
+          "name": "BOYLE, Brendan Francis",
+          "action": "Absent"
+        },
+        {
+          "name": "SHERRILL, Mikie",
+          "action": "Absent"
+        },
+        {
+          "name": "GRAY, Adam",
+          "action": "Absent"
+        }
+      ]
+    },
+    {
+      "vote_id": "h293-119",
+      "description": "h293-119",
+      "congress": 119,
+      "yes": 214,
+      "no": 212,
+      "margin": 2,
+      "dem_yes": 0,
+      "dem_no": 211,
+      "betrayers": [
+        {
+          "name": "SWALWELL, Eric",
+          "action": "Absent"
+        },
+        {
+          "name": "SHERRILL, Mikie",
+          "action": "Absent"
+        },
+        {
+          "name": "CASAR, Greg",
+          "action": "Absent"
+        }
+      ]
+    },
+    {
+      "vote_id": "h362-119",
+      "description": "h362-119",
+      "congress": 119,
+      "yes": 213,
+      "no": 211,
+      "margin": 2,
+      "dem_yes": 0,
+      "dem_no": 211,
+      "betrayers": [
+        {
+          "name": "THOMPSON, Bennie",
+          "action": "Absent"
+        },
+        {
+          "name": "LARSON, John B.",
+          "action": "Absent"
+        }
+      ]
+    },
+    {
+      "vote_id": "h363-119",
+      "description": "h363-119",
+      "congress": 119,
+      "yes": 214,
+      "no": 212,
+      "margin": 2,
+      "dem_yes": 0,
+      "dem_no": 212,
+      "betrayers": [
+        {
+          "name": "THOMPSON, Bennie",
+          "action": "Absent"
+        }
+      ]
+    },
+    {
+      "vote_id": "h49-119",
+      "description": "h49-119",
+      "congress": 119,
+      "yes": 217,
+      "no": 215,
+      "margin": 2,
+      "dem_yes": 0,
+      "dem_no": 214,
+      "betrayers": [
+        {
+          "name": "GRIJALVA, Ra\u00fal M.",
+          "action": "Absent"
+        }
+      ]
+    },
+    {
+      "vote_id": "h56-119",
+      "description": "h56-119",
+      "congress": 119,
+      "yes": 211,
+      "no": 209,
+      "margin": 2,
+      "dem_yes": 0,
+      "dem_no": 209,
+      "betrayers": [
+        {
+          "name": "GRIJALVA, Ra\u00fal M.",
+          "action": "Absent"
+        },
+        {
+          "name": "CARSON, Andr\u00e9",
+          "action": "Absent"
+        },
+        {
+          "name": "GOTTHEIMER, Josh S.",
+          "action": "Absent"
+        },
+        {
+          "name": "KRISHNAMOORTHI, S. Raja",
+          "action": "Absent"
+        },
+        {
+          "name": "SHERRILL, Mikie",
+          "action": "Absent"
+        },
+        {
+          "name": "PETTERSEN, Brittany",
+          "action": "Absent"
+        }
+      ]
+    },
+    {
+      "vote_id": "h66-119",
+      "description": "h66-119",
+      "congress": 119,
+      "yes": 216,
+      "no": 214,
+      "margin": 2,
+      "dem_yes": 0,
+      "dem_no": 213,
+      "betrayers": [
+        {
+          "name": "GRIJALVA, Ra\u00fal M.",
+          "action": "Absent"
+        }
+      ]
+    },
+    {
+      "vote_id": "h7-118",
+      "description": "h7-118",
+      "congress": 118,
+      "yes": 216,
+      "no": 214,
+      "margin": 2,
+      "dem_yes": 0,
+      "dem_no": 210,
+      "betrayers": [
+        {
+          "name": "C\u00c1RDENAS, Tony",
+          "action": "Absent"
+        },
+        {
+          "name": "ESPAILLAT, Adriano J.",
+          "action": "Absent"
+        }
+      ]
+    },
+    {
+      "vote_id": "h85-119",
+      "description": "h85-119",
+      "congress": 119,
+      "yes": 215,
+      "no": 213,
+      "margin": 2,
+      "dem_yes": 0,
+      "dem_no": 213,
+      "betrayers": []
+    },
+    {
+      "vote_id": "h90-119",
+      "description": "h90-119",
+      "congress": 119,
+      "yes": 213,
+      "no": 211,
+      "margin": 2,
+      "dem_yes": 0,
+      "dem_no": 211,
+      "betrayers": [
+        {
+          "name": "NORCROSS, Donald",
+          "action": "Absent"
+        },
+        {
+          "name": "GOTTHEIMER, Josh S.",
+          "action": "Absent"
+        }
+      ]
+    },
+    {
+      "vote_id": "h91-119",
+      "description": "h91-119",
+      "congress": 119,
+      "yes": 213,
+      "no": 211,
+      "margin": 2,
+      "dem_yes": 0,
+      "dem_no": 210,
+      "betrayers": [
+        {
+          "name": "NORCROSS, Donald",
+          "action": "Absent"
+        },
+        {
+          "name": "GOTTHEIMER, Josh S.",
+          "action": "Absent"
+        },
+        {
+          "name": "SIMON, Lateefah",
+          "action": "Absent"
+        }
+      ]
+    },
+    {
+      "vote_id": "h939-118",
+      "description": "h939-118",
+      "congress": 118,
+      "yes": 205,
+      "no": 203,
+      "margin": 2,
+      "dem_yes": 0,
+      "dem_no": 203,
+      "betrayers": [
+        {
+          "name": "GRIJALVA, Ra\u00fal M.",
+          "action": "Absent"
+        },
+        {
+          "name": "MOORE, Gwendolynne S. (Gwen)",
+          "action": "Absent"
+        },
+        {
+          "name": "EVANS, Dwight",
+          "action": "Absent"
+        },
+        {
+          "name": "JAYAPAL, Pramila",
+          "action": "Absent"
+        },
+        {
+          "name": "STANSBURY, Melanie Ann",
+          "action": "Absent"
+        },
+        {
+          "name": "LANDSMAN, Greg",
+          "action": "Absent"
+        },
+        {
+          "name": "MAGAZINER, Seth",
+          "action": "Absent"
+        },
+        {
+          "name": "VEL\u00c1ZQUEZ, Nydia M.",
+          "action": "Absent"
+        },
+        {
+          "name": "JACKSON LEE, Sheila",
+          "action": "Absent"
+        },
+        {
+          "name": "BLUMENAUER, Earl",
+          "action": "Absent"
+        }
+      ]
+    },
+    {
+      "vote_id": "h99-119",
+      "description": "h99-119",
+      "congress": 119,
+      "yes": 216,
+      "no": 214,
+      "margin": 2,
+      "dem_yes": 0,
+      "dem_no": 212,
+      "betrayers": [
+        {
+          "name": "NORCROSS, Donald",
+          "action": "Absent"
+        }
+      ]
+    },
+    {
+      "vote_id": "s110-118",
+      "description": "s110-118",
+      "congress": 118,
+      "yes": 50,
+      "no": 48,
+      "margin": 2,
+      "dem_yes": 1,
+      "dem_no": 45,
+      "betrayers": [
+        {
+          "name": "SHAHEEN, Jeanne",
+          "action": "Absent"
+        },
+        {
+          "name": "MANCHIN, Joe, III",
+          "action": "Voted YES"
+        },
+        {
+          "name": "FEINSTEIN, Dianne",
+          "action": "Absent"
+        }
+      ]
+    },
+    {
+      "vote_id": "s122-118",
+      "description": "s122-118",
+      "congress": 118,
+      "yes": 51,
+      "no": 49,
+      "margin": 2,
+      "dem_yes": 1,
+      "dem_no": 47,
+      "betrayers": [
+        {
+          "name": "MANCHIN, Joe, III",
+          "action": "Voted YES"
+        },
+        {
+          "name": "KING, Angus Stanley, Jr.",
+          "action": "Voted YES"
+        }
+      ]
+    },
+    {
+      "vote_id": "s123-118",
+      "description": "s123-118",
+      "congress": 118,
+      "yes": 51,
+      "no": 49,
+      "margin": 2,
+      "dem_yes": 2,
+      "dem_no": 46,
+      "betrayers": [
+        {
+          "name": "KLOBUCHAR, Amy",
+          "action": "Voted YES"
+        },
+        {
+          "name": "MANCHIN, Joe, III",
+          "action": "Voted YES"
+        }
+      ]
+    },
+    {
+      "vote_id": "s14-119",
+      "description": "s14-119",
+      "congress": 119,
+      "yes": 51,
+      "no": 49,
+      "margin": 2,
+      "dem_yes": 0,
+      "dem_no": 45,
+      "betrayers": []
+    },
+    {
+      "vote_id": "s209-117",
+      "description": "s209-117",
+      "congress": 117,
+      "yes": 51,
+      "no": 49,
+      "margin": 2,
+      "dem_yes": 1,
+      "dem_no": 47,
+      "betrayers": []
+    },
+    {
+      "vote_id": "s243-118",
+      "description": "s243-118",
+      "congress": 118,
+      "yes": 47,
+      "no": 45,
+      "margin": 2,
+      "dem_yes": 2,
+      "dem_no": 42,
+      "betrayers": [
+        {
+          "name": "BROWN, Sherrod",
+          "action": "Absent"
+        },
+        {
+          "name": "STABENOW, Deborah Ann",
+          "action": "Absent"
+        },
+        {
+          "name": "KLOBUCHAR, Amy",
+          "action": "Voted YES"
+        },
+        {
+          "name": "MANCHIN, Joe, III",
+          "action": "Voted YES"
+        },
+        {
+          "name": "SMITH, Tina",
+          "action": "Absent"
+        },
+        {
+          "name": "FEINSTEIN, Dianne",
+          "action": "Absent"
+        }
+      ]
+    },
+    {
+      "vote_id": "s291-119",
+      "description": "s291-119",
+      "congress": 119,
+      "yes": 48,
+      "no": 46,
+      "margin": 2,
+      "dem_yes": 0,
+      "dem_no": 44,
+      "betrayers": [
+        {
+          "name": "OSSOFF, Thomas Jonathan (Jon)",
+          "action": "Absent"
+        }
+      ]
+    },
+    {
+      "vote_id": "s303-118",
+      "description": "s303-118",
+      "congress": 118,
+      "yes": 50,
+      "no": 48,
+      "margin": 2,
+      "dem_yes": 3,
+      "dem_no": 45,
+      "betrayers": [
+        {
+          "name": "BROWN, Sherrod",
+          "action": "Voted YES"
+        },
+        {
+          "name": "TESTER, Jon",
+          "action": "Voted YES"
+        },
+        {
+          "name": "MANCHIN, Joe, III",
+          "action": "Voted YES"
+        },
+        {
+          "name": "SINEMA, Kyrsten",
+          "action": "Voted YES"
+        }
+      ]
+    },
+    {
+      "vote_id": "s329-119",
+      "description": "s329-119",
+      "congress": 119,
+      "yes": 51,
+      "no": 49,
+      "margin": 2,
+      "dem_yes": 0,
+      "dem_no": 45,
+      "betrayers": []
+    },
+    {
+      "vote_id": "s377-111",
+      "description": "s377-111",
+      "congress": 111,
+      "yes": 51,
+      "no": 49,
+      "margin": 2,
+      "dem_yes": 27,
+      "dem_no": 32,
+      "betrayers": []
+    },
+    {
+      "vote_id": "s407-111",
+      "description": "s407-111",
+      "congress": 111,
+      "yes": 51,
+      "no": 49,
+      "margin": 2,
+      "dem_yes": 14,
+      "dem_no": 45,
+      "betrayers": []
+    },
+    {
+      "vote_id": "s422-119",
+      "description": "s422-119",
+      "congress": 119,
+      "yes": 50,
+      "no": 48,
+      "margin": 2,
+      "dem_yes": 0,
+      "dem_no": 45,
+      "betrayers": []
+    },
+    {
+      "vote_id": "s429-119",
+      "description": "s429-119",
+      "congress": 119,
+      "yes": 49,
+      "no": 47,
+      "margin": 2,
+      "dem_yes": 0,
+      "dem_no": 45,
+      "betrayers": []
+    },
+    {
+      "vote_id": "s43-117",
+      "description": "s43-117",
+      "congress": 117,
+      "yes": 51,
+      "no": 49,
+      "margin": 2,
+      "dem_yes": 1,
+      "dem_no": 47,
+      "betrayers": []
+    },
+    {
+      "vote_id": "s430-119",
+      "description": "s430-119",
+      "congress": 119,
+      "yes": 49,
+      "no": 47,
+      "margin": 2,
+      "dem_yes": 0,
+      "dem_no": 45,
+      "betrayers": []
+    },
+    {
+      "vote_id": "s432-119",
+      "description": "s432-119",
+      "congress": 119,
+      "yes": 49,
+      "no": 47,
+      "margin": 2,
+      "dem_yes": 0,
+      "dem_no": 45,
+      "betrayers": []
+    },
+    {
+      "vote_id": "s433-119",
+      "description": "s433-119",
+      "congress": 119,
+      "yes": 49,
+      "no": 47,
+      "margin": 2,
+      "dem_yes": 0,
+      "dem_no": 45,
+      "betrayers": []
+    },
+    {
+      "vote_id": "s437-119",
+      "description": "s437-119",
+      "congress": 119,
+      "yes": 50,
+      "no": 48,
+      "margin": 2,
+      "dem_yes": 0,
+      "dem_no": 44,
+      "betrayers": [
+        {
+          "name": "GALLEGO, Ruben",
+          "action": "Absent"
+        }
+      ]
+    },
+    {
+      "vote_id": "s44-117",
+      "description": "s44-117",
+      "congress": 117,
+      "yes": 51,
+      "no": 49,
+      "margin": 2,
+      "dem_yes": 1,
+      "dem_no": 47,
+      "betrayers": []
+    },
+    {
+      "vote_id": "s457-116",
+      "description": "s457-116",
+      "congress": 116,
+      "yes": 51,
+      "no": 49,
+      "margin": 2,
+      "dem_yes": 0,
+      "dem_no": 45,
+      "betrayers": []
+    },
+    {
+      "vote_id": "s458-116",
+      "description": "s458-116",
+      "congress": 116,
+      "yes": 51,
+      "no": 49,
+      "margin": 2,
+      "dem_yes": 0,
+      "dem_no": 45,
+      "betrayers": []
+    },
+    {
+      "vote_id": "s474-118",
+      "description": "s474-118",
+      "congress": 118,
+      "yes": 50,
+      "no": 48,
+      "margin": 2,
+      "dem_yes": 1,
+      "dem_no": 46,
+      "betrayers": [
+        {
+          "name": "MENENDEZ, Robert",
+          "action": "Absent"
+        },
+        {
+          "name": "MANCHIN, Joe, III",
+          "action": "Voted YES"
+        },
+        {
+          "name": "KING, Angus Stanley, Jr.",
+          "action": "Voted YES"
+        },
+        {
+          "name": "SINEMA, Kyrsten",
+          "action": "Voted YES"
+        }
+      ]
+    },
+    {
+      "vote_id": "s50-117",
+      "description": "s50-117",
+      "congress": 117,
+      "yes": 51,
+      "no": 49,
+      "margin": 2,
+      "dem_yes": 1,
+      "dem_no": 47,
+      "betrayers": []
+    },
+    {
+      "vote_id": "s503-116",
+      "description": "s503-116",
+      "congress": 116,
+      "yes": 50,
+      "no": 48,
+      "margin": 2,
+      "dem_yes": 2,
+      "dem_no": 43,
+      "betrayers": []
+    },
+    {
+      "vote_id": "s512-119",
+      "description": "s512-119",
+      "congress": 119,
+      "yes": 51,
+      "no": 49,
+      "margin": 2,
+      "dem_yes": 0,
+      "dem_no": 45,
+      "betrayers": []
+    },
+    {
+      "vote_id": "s529-119",
+      "description": "s529-119",
+      "congress": 119,
+      "yes": 47,
+      "no": 45,
+      "margin": 2,
+      "dem_yes": 3,
+      "dem_no": 42,
+      "betrayers": [
+        {
+          "name": "SHAHEEN, Jeanne",
+          "action": "Voted YES"
+        },
+        {
+          "name": "KELLY, Mark Edward",
+          "action": "Voted YES"
+        },
+        {
+          "name": "FETTERMAN, John Karl",
+          "action": "Voted YES"
+        }
+      ]
+    },
+    {
+      "vote_id": "s591-117",
+      "description": "s591-117",
+      "congress": 117,
+      "yes": 47,
+      "no": 45,
+      "margin": 2,
+      "dem_yes": 2,
+      "dem_no": 42,
+      "betrayers": []
+    },
+    {
+      "vote_id": "s61-119",
+      "description": "s61-119",
+      "congress": 119,
+      "yes": 51,
+      "no": 49,
+      "margin": 2,
+      "dem_yes": 0,
+      "dem_no": 45,
+      "betrayers": []
+    },
+    {
+      "vote_id": "s626-116",
+      "description": "s626-116",
+      "congress": 116,
+      "yes": 48,
+      "no": 46,
+      "margin": 2,
+      "dem_yes": 0,
+      "dem_no": 43,
+      "betrayers": []
+    },
+    {
+      "vote_id": "s630-119",
+      "description": "s630-119",
+      "congress": 119,
+      "yes": 49,
+      "no": 47,
+      "margin": 2,
+      "dem_yes": 0,
+      "dem_no": 44,
+      "betrayers": [
+        {
+          "name": "COONS, Christopher A.",
+          "action": "Absent"
+        }
+      ]
+    },
+    {
+      "vote_id": "s679-116",
+      "description": "s679-116",
+      "congress": 116,
+      "yes": 49,
+      "no": 47,
+      "margin": 2,
+      "dem_yes": 0,
+      "dem_no": 45,
+      "betrayers": []
+    },
+    {
+      "vote_id": "s682-116",
+      "description": "s682-116",
+      "congress": 116,
+      "yes": 48,
+      "no": 46,
+      "margin": 2,
+      "dem_yes": 0,
+      "dem_no": 44,
+      "betrayers": []
+    },
+    {
+      "vote_id": "s683-116",
+      "description": "s683-116",
+      "congress": 116,
+      "yes": 49,
+      "no": 47,
+      "margin": 2,
+      "dem_yes": 0,
+      "dem_no": 45,
+      "betrayers": []
+    },
+    {
+      "vote_id": "s685-117",
+      "description": "s685-117",
+      "congress": 117,
+      "yes": 49,
+      "no": 47,
+      "margin": 2,
+      "dem_yes": 2,
+      "dem_no": 45,
+      "betrayers": []
+    },
+    {
+      "vote_id": "s70-119",
+      "description": "s70-119",
+      "congress": 119,
+      "yes": 51,
+      "no": 49,
+      "margin": 2,
+      "dem_yes": 0,
+      "dem_no": 45,
+      "betrayers": []
+    },
+    {
+      "vote_id": "s713-116",
+      "description": "s713-116",
+      "congress": 116,
+      "yes": 48,
+      "no": 46,
+      "margin": 2,
+      "dem_yes": 0,
+      "dem_no": 44,
+      "betrayers": []
+    },
+    {
+      "vote_id": "s714-116",
+      "description": "s714-116",
+      "congress": 116,
+      "yes": 48,
+      "no": 46,
+      "margin": 2,
+      "dem_yes": 0,
+      "dem_no": 44,
+      "betrayers": []
+    }
+  ]
 }
