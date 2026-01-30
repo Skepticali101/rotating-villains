@@ -659,8 +659,8 @@
                                 <div class="stat-label">Super Villains</div>
                             </div>
                             <div class="stat">
-                                <div class="stat-value">${fullData.summary.total_betrayals}</div>
-                                <div class="stat-label">Total Betrayals</div>
+                                <div class="stat-value">${enrichedVillains.filter(v => v.pattern === "Strategic Rotator").length}</div>
+                                <div class="stat-label">Strategic Rotators</div>
                             </div>
                         </div>
                     </div>
