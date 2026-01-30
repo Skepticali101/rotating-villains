@@ -5,8 +5,8 @@
     "super_villains": 58,
     "pattern_breakdown": {
       "super_villains": 58,
-      "strategic_rotators": 101,
-      "rare": 150
+      "strategic_rotators": 130,
+      "rare": 121
     },
     "total_betrayals": 14200
   },
@@ -31547,7 +31547,7 @@
       "voted_against_dems": 2,
       "total_gop_votes": 114,
       "betrayal_rate": 19.3,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -35688,7 +35688,7 @@
       "voted_against_dems": 7,
       "total_gop_votes": 420,
       "betrayal_rate": 17.4,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -42386,7 +42386,7 @@
       "voted_against_dems": 4,
       "total_gop_votes": 420,
       "betrayal_rate": 15.2,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -49551,7 +49551,7 @@
       "voted_against_dems": 2,
       "total_gop_votes": 420,
       "betrayal_rate": 13.6,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -54421,7 +54421,7 @@
       "voted_against_dems": 3,
       "total_gop_votes": 614,
       "betrayal_rate": 12.1,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -55774,7 +55774,7 @@
       "voted_against_dems": 16,
       "total_gop_votes": 502,
       "betrayal_rate": 11.6,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -61151,7 +61151,7 @@
       "voted_against_dems": 1,
       "total_gop_votes": 276,
       "betrayal_rate": 10.1,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -61344,7 +61344,7 @@
       "voted_against_dems": 0,
       "total_gop_votes": 614,
       "betrayal_rate": 10.1,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -62498,7 +62498,7 @@
       "voted_against_dems": 1,
       "total_gop_votes": 420,
       "betrayal_rate": 9.8,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -68675,7 +68675,7 @@
       "voted_against_dems": 1,
       "total_gop_votes": 614,
       "betrayal_rate": 8.3,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -75967,7 +75967,7 @@
       "voted_against_dems": 4,
       "total_gop_votes": 614,
       "betrayal_rate": 6.7,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -76629,7 +76629,7 @@
       "voted_against_dems": 0,
       "total_gop_votes": 614,
       "betrayal_rate": 6.7,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -77795,7 +77795,7 @@
       "voted_against_dems": 2,
       "total_gop_votes": 420,
       "betrayal_rate": 6.2,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -78277,7 +78277,7 @@
       "voted_against_dems": 3,
       "total_gop_votes": 614,
       "betrayal_rate": 6.0,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -83725,7 +83725,7 @@
       "voted_against_dems": 3,
       "total_gop_votes": 614,
       "betrayal_rate": 5.0,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -84612,7 +84612,7 @@
       "voted_against_dems": 3,
       "total_gop_votes": 614,
       "betrayal_rate": 4.7,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -85221,7 +85221,7 @@
       "voted_against_dems": 2,
       "total_gop_votes": 614,
       "betrayal_rate": 4.7,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -86872,7 +86872,7 @@
       "voted_against_dems": 3,
       "total_gop_votes": 614,
       "betrayal_rate": 4.4,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -87071,7 +87071,7 @@
       "voted_against_dems": 1,
       "total_gop_votes": 614,
       "betrayal_rate": 4.4,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -87258,7 +87258,7 @@
       "voted_against_dems": 6,
       "total_gop_votes": 614,
       "betrayal_rate": 4.4,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -87475,7 +87475,7 @@
       "voted_against_dems": 0,
       "total_gop_votes": 614,
       "betrayal_rate": 4.4,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -88306,7 +88306,7 @@
       "voted_against_dems": 1,
       "total_gop_votes": 614,
       "betrayal_rate": 4.2,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -88800,7 +88800,7 @@
       "voted_against_dems": 6,
       "total_gop_votes": 614,
       "betrayal_rate": 4.1,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -89136,7 +89136,7 @@
       "voted_against_dems": 3,
       "total_gop_votes": 614,
       "betrayal_rate": 4.1,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -89323,7 +89323,7 @@
       "voted_against_dems": 1,
       "total_gop_votes": 502,
       "betrayal_rate": 4.0,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [],
@@ -90750,7 +90750,7 @@
       "voted_against_dems": 1,
       "total_gop_votes": 614,
       "betrayal_rate": 3.7,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -90913,7 +90913,7 @@
       "voted_against_dems": 4,
       "total_gop_votes": 614,
       "betrayal_rate": 3.7,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -91094,7 +91094,7 @@
       "voted_against_dems": 6,
       "total_gop_votes": 614,
       "betrayal_rate": 3.7,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
@@ -91287,7 +91287,7 @@
       "voted_against_dems": 3,
       "total_gop_votes": 614,
       "betrayal_rate": 3.7,
-      "pattern": "Rare",
+      "pattern": "Strategic Rotator",
       "sectors": {},
       "voting_bloc": null,
       "voted_yes": [
