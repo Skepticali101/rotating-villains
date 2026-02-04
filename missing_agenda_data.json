@@ -1,9 +1,146 @@
 {
   "summary": {
-    "gop_votes_total": 2504,
-    "gop_votes_passed": 1529,
-    "dem_votes_total": 2164,
-    "dem_votes_passed": 1712,
-    "dem_votes_failed": 452
-  }
+    "gop_wins_with_dem_help": 1529,
+    "dem_wins_with_gop_help": 0
+  },
+  "congress_breakdown": [
+    {
+      "congress": 111,
+      "gop_passed": 55
+    },
+    {
+      "congress": 116,
+      "gop_passed": 358
+    },
+    {
+      "congress": 118,
+      "gop_passed": 453
+    },
+    {
+      "congress": 119,
+      "gop_passed": 663
+    }
+  ],
+  "top_anti_dem_members": [
+    {
+      "name": "MANCHIN, Joe, III",
+      "state": "WV",
+      "voted_against_dems": 61,
+      "voted_with_gop": 29
+    },
+    {
+      "name": "GOLDEN, Jared",
+      "state": "ME",
+      "voted_against_dems": 48,
+      "voted_with_gop": 237
+    },
+    {
+      "name": "PEREZ, Marie Gluesenkamp",
+      "state": "WA",
+      "voted_against_dems": 37,
+      "voted_with_gop": 242
+    },
+    {
+      "name": "FLETCHER, Elizabeth",
+      "state": "TX",
+      "voted_against_dems": 36,
+      "voted_with_gop": 24
+    },
+    {
+      "name": "CRAIG, Angela",
+      "state": "MN",
+      "voted_against_dems": 31,
+      "voted_with_gop": 105
+    },
+    {
+      "name": "PELTOLA, Mary Sattler",
+      "state": "AK",
+      "voted_against_dems": 30,
+      "voted_with_gop": 104
+    },
+    {
+      "name": "CUELLAR, Henry",
+      "state": "TX",
+      "voted_against_dems": 28,
+      "voted_with_gop": 237
+    },
+    {
+      "name": "DAVIS, Don",
+      "state": "NC",
+      "voted_against_dems": 28,
+      "voted_with_gop": 215
+    },
+    {
+      "name": "ALLRED, Colin",
+      "state": "TX",
+      "voted_against_dems": 24,
+      "voted_with_gop": 53
+    },
+    {
+      "name": "GONZALEZ, Vicente Jr.",
+      "state": "TX",
+      "voted_against_dems": 22,
+      "voted_with_gop": 165
+    },
+    {
+      "name": "COSTA, Jim",
+      "state": "CA",
+      "voted_against_dems": 22,
+      "voted_with_gop": 99
+    },
+    {
+      "name": "CARAVEO, Yadira",
+      "state": "CO",
+      "voted_against_dems": 20,
+      "voted_with_gop": 97
+    },
+    {
+      "name": "VEASEY, Marc",
+      "state": "TX",
+      "voted_against_dems": 19,
+      "voted_with_gop": 48
+    },
+    {
+      "name": "SCHRIER, Kim",
+      "state": "WA",
+      "voted_against_dems": 18,
+      "voted_with_gop": 90
+    },
+    {
+      "name": "SINEMA, Kyrsten",
+      "state": "AZ",
+      "voted_against_dems": 17,
+      "voted_with_gop": 22
+    },
+    {
+      "name": "PAPPAS, Chris",
+      "state": "NH",
+      "voted_against_dems": 17,
+      "voted_with_gop": 116
+    },
+    {
+      "name": "SANDERS, Bernard",
+      "state": "VT",
+      "voted_against_dems": 16,
+      "voted_with_gop": 2
+    },
+    {
+      "name": "LEE, Susie",
+      "state": "NV",
+      "voted_against_dems": 15,
+      "voted_with_gop": 109
+    },
+    {
+      "name": "STANTON, Greg",
+      "state": "AZ",
+      "voted_against_dems": 15,
+      "voted_with_gop": 79
+    },
+    {
+      "name": "GOTTHEIMER, Josh S.",
+      "state": "NJ",
+      "voted_against_dems": 14,
+      "voted_with_gop": 96
+    }
+  ]
 }
