@@ -1,184 +1,242 @@
-{
-  "voting_blocs": [
-    {
-      "member1": "GOLDEN, Jared",
-      "member2": "PEREZ, Marie Gluesenkamp",
-      "co_betrayals": 116,
-      "overlap_rate": 20.8
-    },
-    {
-      "member1": "CUELLAR, Henry",
-      "member2": "PEREZ, Marie Gluesenkamp",
-      "co_betrayals": 95,
-      "overlap_rate": 17.2
-    },
-    {
-      "member1": "DAVIS, Don",
-      "member2": "PEREZ, Marie Gluesenkamp",
-      "co_betrayals": 87,
-      "overlap_rate": 16.1
-    },
-    {
-      "member1": "CUELLAR, Henry",
-      "member2": "GOLDEN, Jared",
-      "co_betrayals": 86,
-      "overlap_rate": 15.6
-    },
-    {
-      "member1": "CUELLAR, Henry",
-      "member2": "DAVIS, Don",
-      "co_betrayals": 86,
-      "overlap_rate": 15.9
-    },
-    {
-      "member1": "DAVIS, Don",
-      "member2": "GOLDEN, Jared",
-      "co_betrayals": 81,
-      "overlap_rate": 15.0
-    },
-    {
-      "member1": "CUELLAR, Henry",
-      "member2": "GONZALEZ, Vicente Jr.",
-      "co_betrayals": 73,
-      "overlap_rate": 15.3
-    },
-    {
-      "member1": "GONZALEZ, Vicente Jr.",
-      "member2": "PEREZ, Marie Gluesenkamp",
-      "co_betrayals": 67,
-      "overlap_rate": 14.0
-    },
-    {
-      "member1": "HASSAN, Margaret (Maggie)",
-      "member2": "SHAHEEN, Jeanne",
-      "co_betrayals": 65,
-      "overlap_rate": 32.3
-    },
-    {
-      "member1": "DAVIS, Don",
-      "member2": "GONZALEZ, Vicente Jr.",
-      "co_betrayals": 62,
-      "overlap_rate": 13.0
-    },
-    {
-      "member1": "GOLDEN, Jared",
-      "member2": "GONZALEZ, Vicente Jr.",
-      "co_betrayals": 62,
-      "overlap_rate": 13.0
-    },
-    {
-      "member1": "HASSAN, Margaret (Maggie)",
-      "member2": "KING, Angus Stanley, Jr.",
-      "co_betrayals": 55,
-      "overlap_rate": 27.1
-    },
-    {
-      "member1": "FETTERMAN, John Karl",
-      "member2": "KING, Angus Stanley, Jr.",
-      "co_betrayals": 52,
-      "overlap_rate": 25.7
-    },
-    {
-      "member1": "HASSAN, Margaret (Maggie)",
-      "member2": "KAINE, Timothy Michael (Tim)",
-      "co_betrayals": 52,
-      "overlap_rate": 30.6
-    },
-    {
-      "member1": "HASSAN, Margaret (Maggie)",
-      "member2": "ROSEN, Jacklyn Sheryl",
-      "co_betrayals": 50,
-      "overlap_rate": 26.7
-    },
-    {
-      "member1": "KAINE, Timothy Michael (Tim)",
-      "member2": "SHAHEEN, Jeanne",
-      "co_betrayals": 50,
-      "overlap_rate": 29.4
-    },
-    {
-      "member1": "KING, Angus Stanley, Jr.",
-      "member2": "SHAHEEN, Jeanne",
-      "co_betrayals": 50,
-      "overlap_rate": 24.9
-    },
-    {
-      "member1": "FETTERMAN, John Karl",
-      "member2": "HASSAN, Margaret (Maggie)",
-      "co_betrayals": 50,
-      "overlap_rate": 24.8
-    },
-    {
-      "member1": "KAINE, Timothy Michael (Tim)",
-      "member2": "KING, Angus Stanley, Jr.",
-      "co_betrayals": 48,
-      "overlap_rate": 28.2
-    },
-    {
-      "member1": "FETTERMAN, John Karl",
-      "member2": "SHAHEEN, Jeanne",
-      "co_betrayals": 47,
-      "overlap_rate": 23.4
-    },
-    {
-      "member1": "PELTOLA, Mary Sattler",
-      "member2": "PEREZ, Marie Gluesenkamp",
-      "co_betrayals": 45,
-      "overlap_rate": 14.2
-    },
-    {
-      "member1": "HASSAN, Margaret (Maggie)",
-      "member2": "WARNER, Mark",
-      "co_betrayals": 45,
-      "overlap_rate": 26.5
-    },
-    {
-      "member1": "GOLDEN, Jared",
-      "member2": "PELTOLA, Mary Sattler",
-      "co_betrayals": 44,
-      "overlap_rate": 13.9
-    },
-    {
-      "member1": "CORTEZ MASTO, Catherine Marie",
-      "member2": "FETTERMAN, John Karl",
-      "co_betrayals": 41,
-      "overlap_rate": 24.3
-    },
-    {
-      "member1": "HASSAN, Margaret (Maggie)",
-      "member2": "KELLY, Mark Edward",
-      "co_betrayals": 41,
-      "overlap_rate": 24.6
-    },
-    {
-      "member1": "CORTEZ MASTO, Catherine Marie",
-      "member2": "ROSEN, Jacklyn Sheryl",
-      "co_betrayals": 40,
-      "overlap_rate": 23.7
-    },
-    {
-      "member1": "FETTERMAN, John Karl",
-      "member2": "KAINE, Timothy Michael (Tim)",
-      "co_betrayals": 40,
-      "overlap_rate": 23.5
-    },
-    {
-      "member1": "FETTERMAN, John Karl",
-      "member2": "WARNER, Mark",
-      "co_betrayals": 38,
-      "overlap_rate": 22.4
-    },
-    {
-      "member1": "SHAHEEN, Jeanne",
-      "member2": "WARNER, Mark",
-      "co_betrayals": 38,
-      "overlap_rate": 22.4
-    },
-    {
-      "member1": "KING, Angus Stanley, Jr.",
-      "member2": "ROSEN, Jacklyn Sheryl",
-      "co_betrayals": 37,
-      "overlap_rate": 19.8
-    }
-  ]
-}
+[
+  {
+    "member1": "GOLDEN, Jared",
+    "member2": "PEREZ, Marie Gluesenkamp",
+    "state1": "ME",
+    "state2": "WA",
+    "co_betrayals": 209,
+    "overlap_percentage": 88.2
+  },
+  {
+    "member1": "CUELLAR, Henry",
+    "member2": "PEREZ, Marie Gluesenkamp",
+    "state1": "TX",
+    "state2": "WA",
+    "co_betrayals": 187,
+    "overlap_percentage": 78.9
+  },
+  {
+    "member1": "DAVIS, Don",
+    "member2": "CUELLAR, Henry",
+    "state1": "NC",
+    "state2": "TX",
+    "co_betrayals": 185,
+    "overlap_percentage": 86.0
+  },
+  {
+    "member1": "GONZALEZ, Vicente Jr.",
+    "member2": "CUELLAR, Henry",
+    "state1": "TX",
+    "state2": "TX",
+    "co_betrayals": 148,
+    "overlap_percentage": 89.7
+  },
+  {
+    "member1": "PAPPAS, Chris",
+    "member2": "DAVIS, Don",
+    "state1": "NH",
+    "state2": "NC",
+    "co_betrayals": 111,
+    "overlap_percentage": 95.7
+  },
+  {
+    "member1": "LEE, Susie",
+    "member2": "DAVIS, Don",
+    "state1": "NV",
+    "state2": "NC",
+    "co_betrayals": 102,
+    "overlap_percentage": 93.6
+  },
+  {
+    "member1": "MOSKOWITZ, Jared",
+    "member2": "DAVIS, Don",
+    "state1": "FL",
+    "state2": "NC",
+    "co_betrayals": 101,
+    "overlap_percentage": 96.2
+  },
+  {
+    "member1": "CRAIG, Angela",
+    "member2": "DAVIS, Don",
+    "state1": "MN",
+    "state2": "NC",
+    "co_betrayals": 97,
+    "overlap_percentage": 92.4
+  },
+  {
+    "member1": "HARDER, Josh",
+    "member2": "DAVIS, Don",
+    "state1": "CA",
+    "state2": "NC",
+    "co_betrayals": 95,
+    "overlap_percentage": 96.9
+  },
+  {
+    "member1": "LANDSMAN, Greg",
+    "member2": "DAVIS, Don",
+    "state1": "OH",
+    "state2": "NC",
+    "co_betrayals": 94,
+    "overlap_percentage": 94.9
+  },
+  {
+    "member1": "GOTTHEIMER, Josh S.",
+    "member2": "DAVIS, Don",
+    "state1": "NJ",
+    "state2": "NC",
+    "co_betrayals": 93,
+    "overlap_percentage": 96.9
+  },
+  {
+    "member1": "RYAN, Patrick",
+    "member2": "DAVIS, Don",
+    "state1": "NY",
+    "state2": "NC",
+    "co_betrayals": 93,
+    "overlap_percentage": 97.9
+  },
+  {
+    "member1": "PELTOLA, Mary Sattler",
+    "member2": "PEREZ, Marie Gluesenkamp",
+    "state1": "AK",
+    "state2": "WA",
+    "co_betrayals": 90,
+    "overlap_percentage": 86.5
+  },
+  {
+    "member1": "COSTA, Jim",
+    "member2": "CUELLAR, Henry",
+    "state1": "CA",
+    "state2": "TX",
+    "co_betrayals": 90,
+    "overlap_percentage": 90.9
+  },
+  {
+    "member1": "CARAVEO, Yadira",
+    "member2": "PEREZ, Marie Gluesenkamp",
+    "state1": "CO",
+    "state2": "WA",
+    "co_betrayals": 88,
+    "overlap_percentage": 90.7
+  },
+  {
+    "member1": "VASQUEZ, Gabriel",
+    "member2": "PEREZ, Marie Gluesenkamp",
+    "state1": "NM",
+    "state2": "WA",
+    "co_betrayals": 88,
+    "overlap_percentage": 92.6
+  },
+  {
+    "member1": "SCHRIER, Kim",
+    "member2": "PEREZ, Marie Gluesenkamp",
+    "state1": "WA",
+    "state2": "WA",
+    "co_betrayals": 87,
+    "overlap_percentage": 96.7
+  },
+  {
+    "member1": "SORENSEN, Eric",
+    "member2": "DAVIS, Don",
+    "state1": "IL",
+    "state2": "NC",
+    "co_betrayals": 85,
+    "overlap_percentage": 97.7
+  },
+  {
+    "member1": "PANETTA, James Varni",
+    "member2": "DAVIS, Don",
+    "state1": "CA",
+    "state2": "NC",
+    "co_betrayals": 85,
+    "overlap_percentage": 100.0
+  },
+  {
+    "member1": "KAPTUR, Marcia Carolyn (Marcy)",
+    "member2": "PEREZ, Marie Gluesenkamp",
+    "state1": "OH",
+    "state2": "WA",
+    "co_betrayals": 84,
+    "overlap_percentage": 95.5
+  },
+  {
+    "member1": "SUOZZI, Thomas",
+    "member2": "CUELLAR, Henry",
+    "state1": "NY",
+    "state2": "TX",
+    "co_betrayals": 79,
+    "overlap_percentage": 97.5
+  },
+  {
+    "member1": "SCHOLTEN, Hillary",
+    "member2": "DAVIS, Don",
+    "state1": "MI",
+    "state2": "NC",
+    "co_betrayals": 79,
+    "overlap_percentage": 96.3
+  },
+  {
+    "member1": "STANTON, Greg",
+    "member2": "DAVIS, Don",
+    "state1": "AZ",
+    "state2": "NC",
+    "co_betrayals": 78,
+    "overlap_percentage": 98.7
+  },
+  {
+    "member1": "BUDZINSKI, Nikki",
+    "member2": "DAVIS, Don",
+    "state1": "IL",
+    "state2": "NC",
+    "co_betrayals": 76,
+    "overlap_percentage": 97.4
+  },
+  {
+    "member1": "GALLEGO, Ruben",
+    "member2": "SLOTKIN, Elissa",
+    "state1": "AZ",
+    "state2": "MI",
+    "co_betrayals": 75,
+    "overlap_percentage": 65.8
+  },
+  {
+    "member1": "SHAHEEN, Jeanne",
+    "member2": "HASSAN, Margaret (Maggie)",
+    "state1": "NH",
+    "state2": "NH",
+    "co_betrayals": 74,
+    "overlap_percentage": 75.5
+  },
+  {
+    "member1": "MRVAN, Frank J.",
+    "member2": "DAVIS, Don",
+    "state1": "IN",
+    "state2": "NC",
+    "co_betrayals": 73,
+    "overlap_percentage": 98.6
+  },
+  {
+    "member1": "HORSFORD, Steven",
+    "member2": "CUELLAR, Henry",
+    "state1": "NV",
+    "state2": "TX",
+    "co_betrayals": 65,
+    "overlap_percentage": 98.5
+  },
+  {
+    "member1": "KING, Angus Stanley, Jr.",
+    "member2": "HASSAN, Margaret (Maggie)",
+    "state1": "ME",
+    "state2": "NH",
+    "co_betrayals": 64,
+    "overlap_percentage": 61.5
+  },
+  {
+    "member1": "GRAY, Adam",
+    "member2": "CUELLAR, Henry",
+    "state1": "CA",
+    "state2": "TX",
+    "co_betrayals": 63,
+    "overlap_percentage": 95.5
+  }
+]

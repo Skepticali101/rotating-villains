@@ -3,69 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Rotating Villains - Congressional Betrayal Tracker</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Rotating Villains Tracker | Congressional Betrayals</title>
+    <link rel="icon" type="image/png" href="favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Special+Elite&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="/favicon.png">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { 
-            font-family: 'Courier Prime', 'Courier New', monospace; 
-            background: #0a0a0a; 
-            color: #d4d4d4; 
+        
+        body {
+            font-family: 'Courier Prime', monospace;
+            background: #0a0a0a;
+            color: #d4d4d4;
             line-height: 1.6;
+            padding: 20px;
         }
-        .container { max-width: 1600px; margin: 0 auto; padding: 20px; }
         
-        /* Mobile First - Nuclear reset override */
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+        }
         
-        .header { 
-            background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
-            padding: 50px; 
-            border-radius: 0; 
-            margin-bottom: 30px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.8);
-            border-top: 4px solid #d4af37;
-            border-bottom: 4px solid #d4af37;
+        .header {
             text-align: center;
+            padding: 40px 20px;
+            border-top: 3px solid #d4af37;
+            border-bottom: 3px solid #d4af37;
+            margin-bottom: 40px;
+            background: linear-gradient(180deg, #141414 0%, #0a0a0a 100%);
         }
-        .header h1 { 
-            font-family: 'Special Elite', 'Courier Prime', monospace;
-            font-size: 3.5rem; 
-            margin-bottom: 10px; 
+        
+        .header h1 {
+            font-family: 'Special Elite', monospace;
+            font-size: 3.5rem;
             color: #d4af37;
-            text-transform: uppercase;
-            letter-spacing: 3px;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+            margin-bottom: 20px;
+            letter-spacing: 2px;
         }
-        .header .subtitle { 
-            font-size: 1.4rem; 
-            opacity: 0.85; 
-            line-height: 1.6;
+        
+        .header .subtitle {
+            font-size: 1.3rem;
             color: #a8a8a8;
-            font-style: italic;
-            letter-spacing: 1px;
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+        
+        .header .congress-info {
+            margin-top: 20px;
+            font-size: 1.1rem;
+            opacity: 0.85;
+            line-height: 1.6;
+        }
+        
+        .header .congress-info .explanation {
+            font-size: 0.95rem;
+            opacity: 0.75;
+        }
+        
+        .header .congress-info .last-updated {
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+        
+        .highlight { color: #d4af37; font-weight: 700; }
+        
+        .section {
+            background: #141414;
+            padding: 30px;
+            margin-bottom: 30px;
+            border: 1px solid #333;
+            border-left: 4px solid #d4af37;
+        }
+        
+        .section h2 {
+            color: #d4af37;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            font-family: 'Special Elite', monospace;
         }
         
         .alert-banner {
-            background: linear-gradient(135deg, #1a1200 0%, #0f0a00 100%);
-            padding: 35px;
-            border-radius: 0;
+            background: linear-gradient(135deg, #1a0000 0%, #0a0000 100%);
+            padding: 30px;
             margin-bottom: 30px;
-            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.2);
-            border: 3px solid #d4af37;
-            border-left: 8px solid #d4af37;
+            border: 2px solid #b22222;
+            border-left: 4px solid #b22222;
+            box-shadow: 0 4px 15px rgba(178, 34, 34, 0.2);
         }
-        .alert-banner h2 { 
+        
+        .alert-banner h2 {
+            color: #ff6b6b;
+            font-size: 2rem;
+            margin-bottom: 15px;
             font-family: 'Special Elite', monospace;
-            font-size: 2.2rem; 
-            margin-bottom: 15px; 
-            color: #d4af37;
-            text-transform: uppercase;
-            letter-spacing: 2px;
         }
-        .alert-banner .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-top: 25px; }
+        
+        .alert-banner p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #d4d4d4;
+        }
+        
+        .alert-banner .stats { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+            gap: 20px; 
+            margin-top: 25px; 
+        }
+        
         .alert-banner .stat { 
             background: linear-gradient(135deg, #1a0000 0%, #0a0000 100%);
             padding: 25px; 
@@ -74,6 +119,7 @@
             border-left: 4px solid #b22222;
             box-shadow: 0 4px 15px rgba(178, 34, 34, 0.2);
         }
+        
         .alert-banner .stat-value { 
             font-size: 3.5rem; 
             font-weight: 700; 
@@ -81,38 +127,13 @@
             font-family: 'Special Elite', monospace;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
         }
+        
         .alert-banner .stat-label { 
             font-size: 0.95rem; 
             text-transform: uppercase; 
             letter-spacing: 2px;
             color: #888;
             margin-top: 10px;
-        }
-            table {
-                min-width: 700px !important;
-                font-size: 0.85rem !important;
-            }
-            
-            th, td {
-                padding: 8px 6px !important;
-            }
-            
-            background: #141414; 
-            padding: 35px; 
-            border-radius: 0; 
-            margin-bottom: 25px; 
-            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
-            border: 1px solid #333;
-        }
-        .section h2 { 
-            font-family: 'Special Elite', monospace;
-            font-size: 2rem; 
-            margin-bottom: 25px; 
-            color: #d4af37;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            border-bottom: 2px solid #d4af37;
-            padding-bottom: 10px;
         }
         
         .controls { 
@@ -122,6 +143,7 @@
             flex-wrap: wrap;
             align-items: center;
         }
+        
         .controls select, .controls input {
             background: #0a0a0a;
             color: #d4d4d4;
@@ -133,10 +155,12 @@
             cursor: pointer;
             transition: all 0.2s;
         }
+        
         .controls select:hover, .controls input:hover {
             border-color: #d4af37;
             box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
         }
+        
         .controls label {
             font-weight: 600;
             font-size: 1.1rem;
@@ -145,25 +169,17 @@
             letter-spacing: 1px;
         }
         
-        .sector-legend {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-            margin-bottom: 25px;
-            padding: 20px;
-            background: #0a0a0a;
-            border-radius: 0;
-            border: 1px solid #333;
-        }
-        .sector-tag {
-            padding: 8px 15px;
-            border-radius: 0;
-            font-size: 0.9rem;
-            font-weight: 600;
-            border: 2px solid rgba(212, 175, 55, 0.3);
+        .scroll-container {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
         }
         
-        table { width: 100%; border-collapse: collapse; font-family: 'IBM Plex Mono', monospace; }
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            font-family: 'IBM Plex Mono', monospace; 
+        }
+        
         th { 
             background: #0a0a0a; 
             padding: 18px 15px; 
@@ -177,41 +193,54 @@
             text-transform: uppercase;
             letter-spacing: 1px;
         }
-        td { 
-            padding: 15px; 
-            border-bottom: 1px solid #333;
-            color: #c4c4c4;
-        }
-        tr:hover { background: #1a1a1a; }
         
-        .clickable { 
-            cursor: pointer; 
-            color: #d4af37;
+        td {
+            padding: 15px;
+            border-bottom: 1px solid #222;
+        }
+        
+        tr:hover {
+            background: #1a1a1a;
+        }
+        
+        .clickable {
+            cursor: pointer;
             text-decoration: underline;
-            font-weight: 700;
-            font-size: 1.2rem;
             transition: all 0.2s;
         }
-        .clickable:hover { 
-            color: #f4d88a;
-            text-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
+        
+        .clickable:hover {
+            opacity: 0.7;
+            text-shadow: 0 0 8px currentColor;
         }
         
-        .sector-breakdown {
-            display: flex;
-            gap: 8px;
-            flex-wrap: wrap;
-            margin-top: 5px;
-        }
-        .sector-mini {
-            padding: 4px 10px;
-            border-radius: 4px;
+        .badge {
+            padding: 8px 15px;
+            border-radius: 0;
             font-size: 0.85rem;
             font-weight: 600;
-            color: white;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
         
-        /* Modal */
+        .badge-danger { 
+            background: linear-gradient(135deg, #8b0000 0%, #5c0000 100%);
+            color: #ffcccb;
+            border: 2px solid #b22222;
+        }
+        
+        .badge-warning { 
+            background: linear-gradient(135deg, #8b6914 0%, #5c4609 100%);
+            color: #ffd700;
+            border: 2px solid #d4af37;
+        }
+        
+        .badge-info { 
+            background: linear-gradient(135deg, #1e3a8a 0%, #0f1f47 100%);
+            color: #60a5fa;
+            border: 2px solid #3b82f6;
+        }
+        
         .modal {
             display: none;
             position: fixed;
@@ -220,198 +249,93 @@
             top: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0,0,0,0.85);
+            background: rgba(0,0,0,0.9);
             overflow-y: auto;
         }
+        
         .modal.show { display: block; }
+        
         .modal-content {
-            background-color: #141414;
+            background: #141414;
             margin: 50px auto;
-            padding: 35px;
-            border: 3px solid #d4af37;
-            border-radius: 0;
+            padding: 0;
+            border: 2px solid #d4af37;
             width: 90%;
-            max-width: 1000px;
-            box-shadow: 0 10px 50px rgba(0,0,0,0.9);
+            max-width: 900px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.8);
         }
+        
         .modal-header {
+            background: #0a0a0a;
+            padding: 25px 30px;
+            border-bottom: 2px solid #d4af37;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 25px;
-            padding-bottom: 20px;
-            border-bottom: 2px solid #d4af37;
         }
-        .modal-header h2 { 
-            color: #d4af37; 
-            font-size: 2rem;
-            font-family: 'Special Elite', monospace;
-            text-transform: uppercase;
-            letter-spacing: 2px;
+        
+        .modal-header h2 {
+            color: #d4af37;
+            font-size: 1.5rem;
+            margin: 0;
         }
+        
         .close {
             color: #888;
-            font-size: 36px;
+            font-size: 2rem;
             font-weight: bold;
             cursor: pointer;
-            transition: color 0.2s;
+            transition: all 0.2s;
         }
+        
         .close:hover { color: #d4af37; }
         
+        .modal-body {
+            padding: 30px;
+            max-height: 70vh;
+            overflow-y: auto;
+        }
+        
         .vote-item {
-            background: #1a1a1a;
-            padding: 18px;
-            border-radius: 0;
-            margin-bottom: 15px;
-            border-left: 4px solid #d4af37;
-            border: 1px solid #333;
-        }
-        .vote-item:hover { 
-            background: #222;
-            box-shadow: 0 0 15px rgba(212, 175, 55, 0.15);
-        }
-        .vote-item-header { 
-            display: flex; 
-            justify-content: space-between; 
-            margin-bottom: 10px;
-            align-items: center;
-        }
-        .vote-item-title { 
-            font-weight: 600; 
-            color: #d4af37;
-            font-size: 1.2rem;
-            font-family: 'IBM Plex Mono', monospace;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        .vote-item-link {
-            color: #d4af37;
-            text-decoration: none;
-            font-size: 0.95rem;
-            border: 1px solid #d4af37;
-            padding: 4px 12px;
-            transition: all 0.2s;
-        }
-        .vote-item-link:hover { 
-            background: rgba(212, 175, 55, 0.1);
-            text-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
-        }
-        .vote-item-description {
-            color: #a8a8a8;
-            font-weight: 500;
-            margin: 10px 0;
-            font-size: 1rem;
-            font-style: italic;
-        }
-        .vote-item-details { 
-            color: #888; 
-            font-size: 0.95rem;
-            margin-top: 8px;
-            font-family: 'Courier Prime', monospace;
-        }
-        
-        .highlight { 
-            color: #d4af37; 
-            font-weight: 700; 
-            font-size: 1.05em;
-            text-shadow: 0 0 8px rgba(212, 175, 55, 0.3);
-        }
-        .scroll-container { max-height: 600px; overflow-y: auto; }
-        .scroll-container::-webkit-scrollbar { width: 12px; }
-        .scroll-container::-webkit-scrollbar-track { background: #0a0a0a; }
-        .scroll-container::-webkit-scrollbar-thumb { 
-            background: #d4af37; 
-            border-radius: 0;
-        }
-        .scroll-container::-webkit-scrollbar-thumb:hover { 
-            background: #f4d88a;
-        }
-        
-        .loading { 
-            text-align: center; 
-            padding: 100px; 
-            font-size: 1.8rem; 
-            color: #d4af37;
-            font-family: 'Special Elite', monospace;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-        }
-        
-        .badge {
-            display: inline-block;
-            padding: 6px 12px;
-            border-radius: 0;
-            font-size: 0.9rem;
-            font-weight: 600;
-            font-family: 'IBM Plex Mono', monospace;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-        .badge-danger { 
-            background: linear-gradient(135deg, #8b0000 0%, #5c0000 100%); 
-            color: #ffcccb; 
-            border: 2px solid #b22222;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-        }
-        .badge-warning { 
-            background: linear-gradient(135deg, #8b6914 0%, #5c4609 100%); 
-            color: #ffd700; 
-            border: 2px solid #d4af37;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-        }
-        .badge-info { 
-            background: linear-gradient(135deg, #2c4a5e 0%, #1a2d3d 100%); 
-            color: #87ceeb; 
-            border: 2px solid #4682b4;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-        }
-        
-        .closest-call-card {
-            background: #1a1a1a;
+            background: #0a0a0a;
             padding: 20px;
-            border-radius: 0;
-            margin-bottom: 15px;
-            transition: all 0.2s;
+            margin-bottom: 20px;
             border-left: 4px solid #d4af37;
-            border: 1px solid #333;
         }
-        .closest-call-card:hover {
-            background: #222;
-            transform: translateX(5px);
-            box-shadow: 0 0 15px rgba(212, 175, 55, 0.15);
-        }
-        .closest-call-header {
+        
+        .vote-item-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
         }
-        .closest-call-title {
-            font-size: 1.2rem;
-            font-weight: 700;
+        
+        .vote-item-title {
+            font-weight: 600;
             color: #d4af37;
-            font-family: 'IBM Plex Mono', monospace;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+            font-size: 1.1rem;
         }
-        .closest-call-margin {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #b22222;
-            font-family: 'IBM Plex Mono', monospace;
-            text-shadow: 0 0 10px rgba(178, 34, 34, 0.3);
+        
+        .vote-item-link {
+            color: #60a5fa;
+            text-decoration: none;
+            font-size: 0.9rem;
         }
-        .closest-call-description {
+        
+        .vote-item-link:hover { text-decoration: underline; }
+        
+        .vote-item-description {
             color: #a8a8a8;
-            margin: 10px 0;
-            font-size: 1rem;
-            font-style: italic;
+            margin-bottom: 10px;
+            line-height: 1.6;
         }
-        .closest-call-betrayers {
-            margin-top: 12px;
-            padding-top: 12px;
-            border-top: 1px solid #444;
+        
+        .vote-item-details {
+            color: #888;
+            font-size: 0.9rem;
+            line-height: 1.8;
         }
+        
         .betrayer-tag {
             display: inline-block;
             background: linear-gradient(135deg, #8b0000 0%, #5c0000 100%);
@@ -423,6 +347,7 @@
             border: 1px solid #b22222;
             font-family: 'Courier Prime', monospace;
         }
+        
         .betrayer-tag.absent {
             background: linear-gradient(135deg, #8b6914 0%, #5c4609 100%);
             color: #ffd700;
@@ -430,42 +355,29 @@
         }
         
         @media (max-width: 768px) {
-            /* NUCLEAR RESET - Override all desktop styles */
+            /* NUCLEAR RESET */
             * {
                 margin: 0 !important;
                 padding: 0 !important;
                 border: none !important;
                 position: static !important;
-                left: auto !important;
-                right: auto !important;
-                transform: none !important;
                 min-width: 0 !important;
                 max-width: none !important;
             }
             
-            html, body {
-                width: 100% !important;
-                overflow-x: hidden !important;
-                box-sizing: border-box !important;
-            }
-            
             body {
-                padding: 10px !important;
                 background: #0a0a0a !important;
+                padding: 10px !important;
             }
             
             .container {
                 width: 100% !important;
-                padding: 0 !important;
-                margin: 0 !important;
             }
             
-            .header,
-            .alert-banner,
-            .section {
+            .header, .section, .alert-banner {
                 width: 100% !important;
                 padding: 15px !important;
-                margin: 0 0 15px 0 !important;
+                margin-bottom: 20px !important;
                 background: #141414 !important;
                 border: 1px solid #d4af37 !important;
             }
@@ -479,7 +391,6 @@
             .header h1 {
                 font-size: 1.8rem !important;
                 margin-bottom: 10px !important;
-                padding: 0 !important;
                 color: #d4af37 !important;
             }
             
@@ -489,7 +400,6 @@
                 color: #a8a8a8 !important;
             }
             
-            /* Table container scrolls */
             .scroll-container {
                 width: 100% !important;
                 overflow-x: auto !important;
@@ -498,260 +408,225 @@
             
             table {
                 min-width: 700px !important;
-            
-            /* Make clickable numbers easier to tap on mobile */
-            .clickable {
-                padding: 12px !important;
-                display: inline-block !important;
-                min-width: 50px !important;
-                min-height: 44px !important;
-                text-align: center !important;
-                line-height: 44px !important;
-            }
-            
-            /* Make clickable numbers easier to tap on mobile */
-            .clickable {
-                padding: 12px !important;
-                display: inline-block !important;
-                min-width: 50px !important;
-                min-height: 44px !important;
-                text-align: center !important;
-                line-height: 44px !important;
-            }
                 font-size: 0.85rem !important;
+            }
+            
+            th, td {
                 padding: 8px 6px !important;
-                font-size: 0.85rem !important;
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .header h1 { 
-                font-size: 1.5rem !important;
             }
             
-            .alert-banner .stats { 
-                grid-template-columns: 1fr !important;
+            /* Hide click instruction on mobile */
+            .mobile-hide {
+                display: none !important;
             }
         }
     </style>
 </head>
 <body>
-    <div id="root" class="loading">Loading data...</div>
-    
+    <div class="container">
+        <div class="header">
+            <h1>📋 THE ROTATING VILLAINS TRACKER</h1>
+            <div class="subtitle">
+                Exposing the Democrats who strategically vote with Republicans or conveniently go missing—
+                allowing GOP bills to pass while maintaining plausible deniability.
+            </div>
+            <div class="congress-info">
+                📅 Covering <strong>2009-2010, 2019-2020, 2023-2026</strong> (Congresses 111, 116, 118-119)<br>
+                <span class="explanation">The years when Democrats had enough votes to win, making each betrayal a deliberate choice.</span><br>
+                <span class="last-updated">🔄 Last Updated: February 4, 2026</span>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin: 20px 0; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+            <a href="missing_agenda.html" style="display: inline-block; padding: 15px 30px; background: transparent; color: #d4af37; text-decoration: none; border: 2px solid #d4af37; font-size: 1.1rem; transition: all 0.3s; font-family: 'Courier Prime', monospace;">
+                View The Missing Agenda →
+            </a>
+            <a href="voting_blocs.html" style="display: inline-block; padding: 15px 30px; background: transparent; color: #d4af37; text-decoration: none; border: 2px solid #d4af37; font-size: 1.1rem; transition: all 0.3s; font-family: 'Courier Prime', monospace;">
+                View The Shadow Whip →
+            </a>
+        </div>
+
+        <div id="mainDashboard"></div>
+    </div>
+
     <div id="betrayalModal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
-                <h2 id="modalTitle">Betrayal Details</h2>
+                <h2 id="modalTitle"></h2>
                 <span class="close" onclick="closeModal()">&times;</span>
             </div>
-            <div id="modalBody"></div>
+            <div class="modal-body" id="modalBody"></div>
         </div>
     </div>
 
     <script>
-        const SECTOR_COLORS = {
-            'immigration': '#ef4444',
-            'military': '#f59e0b',
-            'justice': '#eab308',
-            'energy': '#84cc16',
-            'finance': '#06b6d4',
-            'corporate': '#3b82f6',
-            'education': '#8b5cf6',
-            'labor': '#ec4899',
-            'healthcare': '#10b981',
-            'surveillance': '#6366f1',
-            'other': '#64748b'
-        };
-        
         let fullData = null;
-        let sectorData = null;
-        let confirmationData = null;
-        let specialInterestsData = null;
-        let currentFilter = 'all';
         let enrichedVillains = [];
-        
-        fetch('rotating_villains_data.json')
-        .then(res => res.json())
-        .then(villainsData => {
-            fullData = villainsData;
-            renderDashboard();
-        })
-        .catch(err => {
-            document.getElementById('root').innerHTML = 
-                '<div class="loading" style="color: #d4af37;">Error loading data: ' + err.message + '</div>';
-        });
+        let currentSort = { column: 'betrayal_rate', direction: 'desc' };
+
+        async function loadData() {
+            try {
+                const response = await fetch('rotating_villains_data.json');
+                fullData = await response.json();
+                enrichedVillains = fullData.rotating_villains;
+                renderDashboard();
+            } catch (error) {
+                console.error('Error loading data:', error);
+                document.getElementById('mainDashboard').innerHTML = 
+                    '<div class="alert-banner"><h2>⚠️ Error Loading Data</h2><p>Failed to load the betrayals data. Please refresh the page.</p></div>';
+            }
+        }
 
         function renderDashboard() {
-            // Calculate Super Villains (using pattern field)
-            const superVillains = fullData.rotating_villains.filter(v => v.pattern === 'Super Villain');
+            const superVillains = enrichedVillains.filter(v => v.pattern === 'Super Villain');
+            const strategicRotators = enrichedVillains.filter(v => v.pattern === 'Strategic Rotator');
             
-            // Use sectors from villain data directly
-            enrichedVillains = fullData.rotating_villains.map(villain => {
-                return {
-                    ...villain,
-                    sectors: villain.sectors || {}
-                };
-            });
-            
-            // Default sort by pattern (Super Villain first)
-            const patternPriority = {'Super Villain': 3, 'Strategic Rotator': 2, 'Rare': 1};
-            enrichedVillains.sort((a, b) => {
-                const aPriority = patternPriority[a.pattern] || 0;
-                const bPriority = patternPriority[b.pattern] || 0;
-                return bPriority - aPriority; // Descending order
-            });
-            
-            // Calculate closest calls (showing all votes with margin <= 5)
-            const closestCalls = fullData.winnable_votes
-                .filter(v => v.margin <= 5)
-                .sort((a, b) => a.margin - b.margin)
-                .slice(0, 50);
-            
-            // Get unique states for filter
             const states = [...new Set(enrichedVillains.map(v => v.state))].sort();
-            const stateOptions = states.map(state => 
-                `<option value="${state}">${state}</option>`
-            ).join('');
-            
-            const html = `
-                <div class="container">
-                    <div class="header">
-                        <h1>The Rotating Villains</h1>
-                        <div class="subtitle">
-                            How Democrats take turns betraying their voters<br>
-                            Exposing Party-Line Crossovers and Strategic Absences
-                        </div>
-                        <div style="margin-top: 20px; font-size: 1.1rem; opacity: 0.85; line-height: 1.6;">
-                            📅 Covering <strong>2009-2010, 2019-2020, 2023-2026</strong> (Congresses 111, 116, 118-119)<br>
-                            <span style="font-size: 0.95rem; opacity: 0.75;">The years when Democrats had enough votes to win, making each betrayal a deliberate choice.</span><br>
-                            <span style="font-size: 0.9rem; opacity: 0.7;">🔄 Last Updated: January 28, 2025</span>
-                        </div>
-                    </div>
+            const stateOptions = states.map(s => `<option value="${s}">${s}</option>`).join('');
 
-                    <div style="text-align: center; margin: 20px 0; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
-                        <a href="missing_agenda.html" style="display: inline-block; padding: 15px 30px; background: transparent; color: #d4af37; text-decoration: none; border: 2px solid #d4af37; font-size: 1.1rem; transition: all 0.3s; font-family: 'Courier Prime', monospace;">
-                            View The Missing Agenda →
-                        </a>
-                        <a href="voting_blocs.html" style="display: inline-block; padding: 15px 30px; background: transparent; color: #d4af37; text-decoration: none; border: 2px solid #d4af37; font-size: 1.1rem; transition: all 0.3s; font-family: 'Courier Prime', monospace;">
-                            View The Shadow Whip →
-                        </a>
-                    </div>
-                    </div>
-
-                    <div class="alert-banner">
-                        <h2>⚠️ Total Betrayals</h2>
-                        <p style="font-size: 1.2rem; margin-top: 10px; line-height: 1.6;">
-                            Democrats had the votes to block <span class="highlight">${fullData.summary.total_winnable_votes_lost} Republican bills</span> 
-                            but chose not to — using a rotating cast of <span class="highlight">${fullData.summary.total_rotating_villains} members</span> 
-                            who strategically take turns voting with the GOP or being conveniently absent.
-                        </p>
-                        <div class="stats">
-                            <div class="stat">
-                                <div class="stat-value">${fullData.summary.total_winnable_votes_lost}</div>
-                                <div class="stat-label">Winnable Votes Lost</div>
-                            </div>
-                            <div class="stat">
-                                <div class="stat-value">${fullData.summary.total_rotating_villains}</div>
-                                <div class="stat-label">Total Members</div>
-                            </div>
-                            <div class="stat">
-                                <div class="stat-value">${superVillains.length}</div>
-                                <div class="stat-label">Super Villains</div>
-                            </div>
-                            <div class="stat">
-                                <div class="stat-value">${enrichedVillains.filter(v => v.pattern === "Strategic Rotator").length}</div>
-                                <div class="stat-label">Strategic Rotators</div>
-                            </div>
+            document.getElementById('mainDashboard').innerHTML = `
+                <div class="alert-banner">
+                    <h2>⚠️ Total Betrayals</h2>
+                    <p style="font-size: 1.2rem; margin-top: 10px; line-height: 1.6;">
+                        Democrats had the votes to block <span class="highlight">${fullData.summary.total_winnable_votes_lost} Republican bills</span> 
+                        but chose not to — using a rotating cast of <span class="highlight">${fullData.summary.total_rotating_villains} members</span> 
+                        who strategically take turns voting with the GOP or being conveniently absent.
+                    </p>
+                    <div class="stats">
+                        <div class="stat">
+                            <div class="stat-value">${fullData.summary.total_winnable_votes_lost}</div>
+                            <div class="stat-label">Winnable Votes Lost</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">${fullData.summary.total_rotating_villains}</div>
+                            <div class="stat-label">Total Members</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">${superVillains.length}</div>
+                            <div class="stat-label">Super Villains</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">${strategicRotators.length}</div>
+                            <div class="stat-label">Strategic Rotators</div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="section">
-                        <h2>🎯 The Full Roster</h2>
-                        
-                        <div class="controls">
-                            <div style="display: flex; gap: 15px; align-items: center; flex-wrap: wrap;">
-                                <label style="font-weight: 600; font-size: 1.1rem;">🔍 Find Your Rep:</label>
-                                <input type="text" id="searchBox" placeholder="Search by name..." 
-                                       oninput="filterTable()">
-                                
-                                <select id="stateFilter" onchange="filterTable()">
-                                    <option value="all">All States</option>
-                                    ${stateOptions}
-                                </select>
-                            </div>
+                <div class="section">
+                    <h2>🎯 The Full Roster</h2>
+                    
+                    <div class="controls">
+                        <div>
+                            <label for="searchBox">🔍 FIND YOUR REP:</label>
+                            <input type="text" id="searchBox" placeholder="Search by name..." onkeyup="filterTable()">
                         </div>
-                        
-                        <p class="mobile-hide" style="margin-bottom: 20px; opacity: 0.9; font-size: 1.05rem;">
-                            💡 <strong>Click the numbers</strong> to see exactly which votes each member betrayed on.
-                        </p>
-                        
-                        <div class="scroll-container">
-                            <table id="mainTable">
-                                <thead>
-                                    <tr>
-                                        <th style="cursor: pointer;" onclick="sortTable('name')">Member ↕</th>
-                                        <th style="cursor: pointer;" onclick="sortTable('state')">State ↕</th>
-                                        <th style="cursor: pointer;" onclick="sortTable('voted_with_gop')">Voted with GOP ↕</th>
-                                        <th style="cursor: pointer;" onclick="sortTable('absent')">Conveniently Absent ↕</th>
-                                        <th style="cursor: pointer;" onclick="sortTable('voted_against_dems')">Voted Against Dems ↕</th>
-                                        <th style="cursor: pointer;" onclick="sortTable('pattern')">Pattern ↕</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="tableBody">
-                                    ${renderTableRows(enrichedVillains, 'all')}
-                                </tbody>
-                            </table>
+                        <div>
+                            <label for="stateFilter">📍 STATE:</label>
+                            <select id="stateFilter" onchange="filterTable()">
+                                <option value="all">All States</option>
+                                ${stateOptions}
+                            </select>
                         </div>
                     </div>
-
-                    <div class="section">
-                        <h2>🔥 Closest Calls - Where 1-5 Dems Made the Difference</h2>
-                        <p style="margin-bottom: 20px; opacity: 0.9; font-size: 1.05rem;">
-                            These votes were decided by razor-thin margins. Just a few more Democrats voting NO would have stopped these bills.
-                        </p>
-                        <div class="scroll-container" style="max-height: 500px;">
-                            <div id="closestCalls"></div>
-                        </div>
+                    
+                    <p class="mobile-hide" style="margin-bottom: 20px; opacity: 0.9; font-size: 1.05rem;">
+                        💡 <strong>Click the numbers</strong> to see exactly which votes each member betrayed on.
+                    </p>
+                    
+                    <div class="scroll-container">
+                        <table id="mainTable">
+                            <thead>
+                                <tr>
+                                    <th style="cursor: pointer;" onclick="sortTable('name')">Member ↕</th>
+                                    <th style="cursor: pointer;" onclick="sortTable('state')">State ↕</th>
+                                    <th style="cursor: pointer;" onclick="sortTable('voted_with_gop')">Voted with GOP ↕</th>
+                                    <th style="cursor: pointer;" onclick="sortTable('absent')">Conveniently Absent ↕</th>
+                                    <th style="cursor: pointer;" onclick="sortTable('voted_against_dems')">Voted Against Dems ↕</th>
+                                    <th style="cursor: pointer;" onclick="sortTable('betrayal_rate')">Betrayal Rate ↕</th>
+                                    <th style="cursor: pointer;" onclick="sortTable('pattern')">Pattern ↕</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tableBody">
+                                ${renderTableRows(enrichedVillains)}
+                            </tbody>
+                        </table>
                     </div>
+                </div>
 
-                    <div style="text-align: center; margin-top: 40px; padding: 20px; opacity: 0.7;">
-                        <p style="font-size: 1rem;">The Rotating Villains Tracker | Congresses 111, 116, 118-119 (2009-2010, 2019-2020, 2023-2026)</p>
-                        <p style="font-size: 0.9rem; margin-top: 5px;">Data sources: Voteview.com, Congressional Record</p>
+                <div class="section">
+                    <h2>🔥 Closest Calls - Where 1-10 Dems Made the Difference</h2>
+                    <p style="margin-bottom: 20px; opacity: 0.9; font-size: 1.05rem;">
+                        These votes were decided by razor-thin margins. Just a few more Democrats voting NO would have stopped these bills.
+                    </p>
+                    <div class="scroll-container" style="max-height: 500px;">
+                        <div id="closestCalls"></div>
                     </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 40px; padding: 20px; opacity: 0.7;">
+                    <p style="font-size: 1rem;">The Rotating Villains Tracker | Congresses 111, 116, 118-119 (2009-2010, 2019-2020, 2023-2026)</p>
+                    <p style="font-size: 0.9rem; margin-top: 5px;">Data sources: Voteview.com, Congressional Record</p>
                 </div>
             `;
 
-            document.getElementById('root').innerHTML = html;
-            
-            // Render all sections after DOM is ready
-            renderClosestCalls(closestCalls);
+            renderClosestCalls(fullData.winnable_votes || []);
         }
-        
-        let currentSort = { column: 'betrayal_rate', direction: 'desc' };
-        
+
+        function renderTableRows(villains) {
+            return villains.map(v => {
+                const pattern = v.pattern;
+                const antiDem = v.voted_against_dems || 0;
+                
+                return `
+                    <tr>
+                        <td><strong style="font-size: 1.05rem;">${v.name}</strong></td>
+                        <td>${v.state}</td>
+                        <td>
+                            <span class="clickable" style="color: #b22222;" 
+                                  onclick="showBetrayals('${escapeHtml(v.name)}', 'voted_yes')">
+                                ${v.voted_with_gop}
+                            </span>
+                        </td>
+                        <td>
+                            <span class="clickable" style="color: #d4af37;" 
+                                  onclick="showBetrayals('${escapeHtml(v.name)}', 'absent')">
+                                ${v.absent}
+                            </span>
+                        </td>
+                        <td>
+                            <span class="clickable" style="color: #4682b4;" 
+                                  onclick="showAntiDemVotes('${escapeHtml(v.name)}')">
+                                ${antiDem}
+                            </span>
+                        </td>
+                        <td style="font-size: 1.1rem; color: #d4af37;"><strong>${v.betrayal_rate}%</strong></td>
+                        <td><span class="badge ${
+                            pattern === 'Rare' ? 'badge-info' : 
+                            pattern === 'Strategic Rotator' ? 'badge-warning' : 'badge-danger'
+                        }">${pattern}</span></td>
+                    </tr>
+                `;
+            }).join('');
+        }
+
         function sortTable(column) {
-            // Toggle direction if clicking same column
             if (currentSort.column === column) {
                 currentSort.direction = currentSort.direction === 'asc' ? 'desc' : 'asc';
             } else {
                 currentSort.column = column;
-                currentSort.direction = 'desc'; // Default to descending
+                currentSort.direction = 'desc';
             }
             
             const sortedVillains = [...enrichedVillains].sort((a, b) => {
                 let aVal, bVal;
                 
                 if (column === 'pattern') {
-                    // Sort by pattern priority: Super Villain > Strategic Rotator > Rare
                     const priority = {'Super Villain': 3, 'Strategic Rotator': 2, 'Rare': 1};
                     aVal = priority[a.pattern] || 0;
                     bVal = priority[b.pattern] || 0;
                 } else if (column === 'name' || column === 'state') {
                     aVal = (a[column] || '').toLowerCase();
                     bVal = (b[column] || '').toLowerCase();
-                } else if (column === 'total') {
-                    aVal = a.voted_with_gop + a.absent;
-                    bVal = b.voted_with_gop + b.absent;
                 } else {
                     aVal = a[column] || 0;
                     bVal = b[column] || 0;
@@ -764,288 +639,133 @@
                 }
             });
             
-            // Re-render table
-            document.getElementById('tableBody').innerHTML = renderTableRows(sortedVillains, 'all');
+            document.getElementById('tableBody').innerHTML = renderTableRows(sortedVillains);
         }
-        
-        function renderTableRows(villains, sector) {
-            return villains.map((v) => {
-                const total = v.voted_with_gop + v.absent;
-                const pattern = v.pattern;
-                const antiDem = v.voted_against_dems || 0;
-                
-                // Voting bloc badge
-                
-                return `
-                    <tr>
-                        <td><strong style="font-size: 1.05rem;">${v.name}</strong></td>
-                        <td>${v.state}</td>
-                        <td>
-                            <span class="clickable" style="color: #b22222;" 
-                                  onclick="showBetrayals('${escapeHtml(v.name)}', 'voted_yes', 'all')">
-                                ${v.voted_with_gop}
-                            </span>
-                        </td>
-                        <td>
-                            <span class="clickable" style="color: #d4af37;" 
-                                  onclick="showBetrayals('${escapeHtml(v.name)}', 'absent', 'all')">
-                                ${v.absent}
-                            </span>
-                        </td>
-                        <td>
-                            <span class="clickable" style="color: #4682b4;" 
-                                  onclick="showAntiDemVotes('${escapeHtml(v.name)}')">
-                                ${antiDem}
-                            </span>
-                        </td>
-                        <td><span class="badge ${
-                            pattern === 'Rare' ? 'badge-info' : 
-                            pattern === 'Strategic Rotator' ? 'badge-warning' : 'badge-danger'
-                        }">${pattern}</span></td>
-                    </tr>
-                `;
-            }).join('');
+
+        function filterTable() {
+            const searchText = document.getElementById('searchBox').value.toLowerCase();
+            const stateFilter = document.getElementById('stateFilter').value;
+            
+            let filtered = enrichedVillains;
+            
+            if (searchText) {
+                filtered = filtered.filter(v => 
+                    v.name.toLowerCase().includes(searchText) ||
+                    v.state.toLowerCase().includes(searchText)
+                );
+            }
+            
+            if (stateFilter !== 'all') {
+                filtered = filtered.filter(v => v.state === stateFilter);
+            }
+            
+            document.getElementById('tableBody').innerHTML = renderTableRows(filtered);
         }
-        let allConfirmations = { cabinet: [], judicial: [] };
-        
-        function renderSpecialInterests() {
-            if (!specialInterestsData) return;
-            
-            // Render in alphabetical order
-            
-            // Render Austerity
-            renderCategoryVotes(
-                'austerity', 
-                specialInterestsData.austerity,
-                '#7c3aed'
-            );
-            
-            // Render Big Pharma
-            renderCategoryVotes(
-                'bigPharma', 
-                specialInterestsData.big_pharma,
-                '#ec4899'
-            );
-            
-            // Render Corporate Giveaways
-            renderCategoryVotes(
-                'corporateGiveaways', 
-                specialInterestsData.corporate_giveaways,
-                '#f59e0b'
-            );
-            
-            // Render Union Busting
-            renderCategoryVotes(
-                'unionBusting', 
-                specialInterestsData.union_busting,
-                '#ef4444'
-            );
-            
-            // Render War Machine
-            renderCategoryVotes(
-                'warMachine', 
-                specialInterestsData.war_machine,
-                '#dc2626'
-            );
+
+        function escapeHtml(text) {
+            return text.replace(/'/g, "\\'");
         }
-        
-        function renderCategoryVotes(elementId, categoryData, borderColor) {
-            const votes = categoryData?.votes || [];
+
+        function showBetrayals(memberName, type) {
+            if (!fullData) return;
+            
+            const member = fullData.rotating_villains.find(v => v.name === memberName);
+            if (!member) return;
+            
+            const votes = type === 'voted_yes' ? (member.voted_yes || []) : (member.was_absent || []);
+            const actionLabel = type === 'voted_yes' ? 'Voted with GOP' : 'Was Absent';
+            const actionColor = type === 'voted_yes' ? '#b22222' : '#d4af37';
+            
+            document.getElementById('modalTitle').innerHTML = 
+                `${memberName} — ${actionLabel} (${votes.length} times)`;
+            
+            let modalContent = '';
             
             if (votes.length === 0) {
-                document.getElementById(elementId).innerHTML = 
-                    '<p style="color: #888; text-align: center; padding: 40px; font-family: Courier Prime, monospace;">No votes found in this category yet.</p>';
-                return;
-            }
-            
-            const html = votes.map(vote => {
-                const match = vote.vote_id.match(/([hs])(\d+)-(\d+)/);
-                if (!match) return '';
-                const chamber = match[1].toUpperCase();
-                const rollcall = match[2].padStart(4, '0');
-                const congress = match[3];
-                const voteviewUrl = `https://voteview.com/rollcall/R${chamber}${congress}${rollcall}`;
-                
-                return `
-                    <div class="closest-call-card" style="border-left-color: ${borderColor};">
-                        <div class="closest-call-header">
-                            <div class="closest-call-title" style="flex: 1;">${vote.vote_id}</div>
-                            <div style="text-align: right;">
-                                <span style="color: #b22222; font-size: 1.3rem; font-weight: 700;">GOP Won</span>
-                                <span style="color: #888; font-size: 1rem;"> ${vote.total_yes}-${vote.total_no}</span>
-                            </div>
-                        </div>
-                        ${vote.description ? `
-                            <div class="closest-call-description">
-                                ${vote.description}
-                            </div>
-                        ` : ''}
-                        <div style="margin: 15px 0;">
-                            <span style="font-size: 1.1rem; color: ${vote.dem_yes > 0 ? '#b22222' : '#6b8e23'}; font-weight: 600;">
-                                ${vote.dem_yes} Democrat${vote.dem_yes !== 1 ? 's' : ''} voted YES
-                            </span>
-                            <span style="color: #888; margin-left: 15px;">
-                                ${vote.dem_no} voted NO
-                            </span>
-                        </div>
-                        ${vote.dem_betrayers && vote.dem_betrayers.length > 0 ? `
-                            <div class="closest-call-betrayers">
-                                <strong style="color: #d4af37;">Democrats Who Voted YES:</strong><br>
-                                ${vote.dem_betrayers.map(d => 
-                                    `<span class="betrayer-tag">${d.name} (${d.state})</span>`
-                                ).join('')}
-                            </div>
-                        ` : ''}
-                        <div style="margin-top: 10px;">
-                            <a href="${voteviewUrl}" target="_blank" style="color: #d4af37; text-decoration: none; font-size: 0.9rem; border: 1px solid #d4af37; padding: 4px 12px; display: inline-block; transition: all 0.2s;">
-                                View Full Vote →
-                            </a>
-                        </div>
-                    </div>
-                `;
-            }).join('');
-            
-            document.getElementById(elementId).innerHTML = html;
-        }
-        
-        function renderConfirmations(filterType = 'all', searchText = '', demVotesFilter = 'all') {
-            if (!confirmationData) return;
-            
-            let cabinet = confirmationData.cabinet_confirmations || [];
-            let judicial = confirmationData.judicial_confirmations || [];
-            
-            // Store for filtering
-            if (filterType === 'all' && !searchText && demVotesFilter === 'all') {
-                allConfirmations = { cabinet, judicial };
-            }
-            
-            // Apply filters
-            if (searchText) {
-                const search = searchText.toLowerCase();
-                cabinet = cabinet.filter(c => (c.nominee || '').toLowerCase().includes(search));
-                judicial = judicial.filter(c => (c.nominee || '').toLowerCase().includes(search));
-            }
-            
-            if (demVotesFilter === 'withDems') {
-                cabinet = cabinet.filter(c => c.dem_yes > 0);
-                judicial = judicial.filter(c => c.dem_yes > 0);
-            } else if (demVotesFilter === 'unanimous') {
-                cabinet = cabinet.filter(c => c.dem_no === 0 && c.dem_yes > 0);
-                judicial = judicial.filter(c => c.dem_no === 0 && c.dem_yes > 0);
-            }
-            
-            let html = '';
-            
-            // Cabinet Confirmations
-            if ((filterType === 'all' || filterType === 'cabinet') && cabinet.length > 0) {
-                html += '<h3 style="color: #fbbf24; font-size: 1.5rem; margin-bottom: 15px;">Cabinet & Administration</h3>';
-                html += cabinet.map(conf => {
-                    const match = conf.vote_id.match(/([hs])(\d+)-(\d+)/);
+                modalContent = '<p style="text-align: center; padding: 40px; color: #888;">No betrayals found of this type.</p>';
+            } else {
+                modalContent = votes.map(vote => {
+                    const match = vote.vote_id.match(/([hs])(\d+)-(\d+)/);
                     if (!match) return '';
+                    
                     const chamber = match[1].toUpperCase();
                     const rollcall = match[2].padStart(4, '0');
                     const congress = match[3];
                     const voteviewUrl = `https://voteview.com/rollcall/R${chamber}${congress}${rollcall}`;
                     
                     return `
-                        <div class="closest-call-card" style="border-left-color: #dc2626;">
-                            <div class="closest-call-header">
-                                <div class="closest-call-title" style="flex: 1;">${conf.nominee}</div>
-                                <div style="text-align: right;">
-                                    <span style="color: #6b8e23; font-size: 1.3rem; font-weight: 700;">Confirmed</span>
-                                    <span style="color: #888; font-size: 1rem;"> ${conf.total_yes}-${conf.total_no}</span>
-                                </div>
+                        <div class="vote-item">
+                            <div class="vote-item-header">
+                                <span class="vote-item-title">${vote.vote_id.toUpperCase()}</span>
+                                <a href="${voteviewUrl}" target="_blank" class="vote-item-link">View Vote Details →</a>
                             </div>
-                            <div style="margin: 15px 0;">
-                                <span style="font-size: 1.1rem; color: ${conf.dem_yes > 0 ? '#b22222' : '#6b8e23'}; font-weight: 600;">
-                                    ${conf.dem_yes} Democrat${conf.dem_yes !== 1 ? 's' : ''} voted YES
-                                </span>
-                                <span style="color: #888; margin-left: 15px;">
-                                    ${conf.dem_no} voted NO
-                                </span>
-                            </div>
-                            ${conf.dem_supporters && conf.dem_supporters.length > 0 ? `
-                                <div class="closest-call-betrayers">
-                                    <strong style="color: #d4af37;">Democrats Who Confirmed:</strong><br>
-                                    ${conf.dem_supporters.map(d => 
-                                        `<span class="betrayer-tag">${d.name} (${d.state})</span>`
-                                    ).join('')}
+                            ${vote.description && vote.description !== vote.vote_id ? `
+                                <div class="vote-item-description">
+                                    ${vote.description}
                                 </div>
                             ` : ''}
-                            <div style="margin-top: 10px;">
-                                <a href="${voteviewUrl}" target="_blank" style="color: #d4af37; text-decoration: none; font-size: 0.9rem; border: 1px solid #d4af37; padding: 4px 12px; display: inline-block;">
-                                    View Full Vote →
-                                </a>
+                            <div class="vote-item-details">
+                                <span style="color: ${actionColor}; font-weight: 600;">${actionLabel}</span> on this vote
                             </div>
                         </div>
                     `;
-                }).join('');
+                }).filter(Boolean).join('');
             }
             
-            // Judicial Confirmations
-            if ((filterType === 'all' || filterType === 'judicial') && judicial.length > 0) {
-                html += '<h3 style="color: #8b5cf6; font-size: 1.5rem; margin: 30px 0 15px 0;">Judicial Confirmations</h3>';
-                const filteredJudicial = demVotesFilter === 'all' ? judicial : judicial.filter(j => j.dem_yes > 0);
-                html += filteredJudicial.slice(0, 50).map(conf => {
-                    const match = conf.vote_id.match(/([hs])(\d+)-(\d+)/);
+            document.getElementById('modalBody').innerHTML = modalContent;
+            document.getElementById('betrayalModal').classList.add('show');
+        }
+
+        function showAntiDemVotes(memberName) {
+            if (!fullData) return;
+            
+            const member = fullData.rotating_villains.find(v => v.name === memberName);
+            if (!member) return;
+            
+            const votes = member.anti_dem_votes || [];
+            
+            document.getElementById('modalTitle').innerHTML = 
+                `${memberName} — Voted Against Democratic Bills (${votes.length} times)`;
+            
+            let modalContent = '';
+            
+            if (votes.length === 0) {
+                modalContent = '<p style="text-align: center; padding: 40px; color: #888;">No anti-Dem votes found.</p>';
+            } else {
+                modalContent = votes.map(vote => {
+                    const match = vote.vote_id.match(/([hs])(\d+)-(\d+)/);
                     if (!match) return '';
+                    
                     const chamber = match[1].toUpperCase();
                     const rollcall = match[2].padStart(4, '0');
                     const congress = match[3];
                     const voteviewUrl = `https://voteview.com/rollcall/R${chamber}${congress}${rollcall}`;
                     
                     return `
-                        <div class="closest-call-card" style="border-left-color: #8b5cf6;">
-                            <div class="closest-call-header">
-                                <div class="closest-call-title" style="flex: 1; font-size: 1rem;">${conf.nominee}</div>
-                                <div style="text-align: right;">
-                                    <span style="color: #10b981; font-size: 1.1rem; font-weight: 700;">Confirmed</span>
-                                    <span style="color: #94a3b8;"> ${conf.total_yes}-${conf.total_no}</span>
-                                </div>
+                        <div class="vote-item">
+                            <div class="vote-item-header">
+                                <span class="vote-item-title">${vote.vote_id.toUpperCase()}</span>
+                                <a href="${voteviewUrl}" target="_blank" class="vote-item-link">View Vote Details →</a>
                             </div>
-                            <div style="margin: 10px 0;">
-                                <span style="font-size: 1rem; color: ${conf.dem_yes > 0 ? '#ef4444' : '#94a3b8'}; font-weight: 600;">
-                                    ${conf.dem_yes} Democrat${conf.dem_yes !== 1 ? 's' : ''} voted YES
-                                </span>
-                            </div>
-                            ${conf.dem_supporters && conf.dem_supporters.length > 0 && conf.dem_supporters.length <= 10 ? `
-                                <div class="closest-call-betrayers">
-                                    ${conf.dem_supporters.map(d => 
-                                        `<span class="betrayer-tag">${d.name} (${d.state})</span>`
-                                    ).join('')}
-                                </div>
-                            ` : conf.dem_supporters && conf.dem_supporters.length > 10 ? `
-                                <div style="color: #94a3b8; font-size: 0.9rem;">
-                                    ${conf.dem_supporters.slice(0, 3).map(d => d.name).join(', ')} and ${conf.dem_supporters.length - 3} others
+                            ${vote.description && vote.description !== vote.vote_id ? `
+                                <div class="vote-item-description">
+                                    ${vote.description}
                                 </div>
                             ` : ''}
-                            <div style="margin-top: 8px;">
-                                <a href="${voteviewUrl}" target="_blank" style="color: #60a5fa; text-decoration: none; font-size: 0.85rem;">
-                                    View Vote →
-                                </a>
+                            <div class="vote-item-details">
+                                <span style="color: #b22222; font-weight: 600;">Voted NO</span> on Democratic bill
                             </div>
                         </div>
                     `;
-                }).join('');
+                }).filter(Boolean).join('');
             }
             
-            if (!html) {
-                html = '<p style="color: #94a3b8; text-align: center; padding: 40px;">No confirmations match your filters.</p>';
-            }
-            
-            document.getElementById('confirmations').innerHTML = html;
+            document.getElementById('modalBody').innerHTML = modalContent;
+            document.getElementById('betrayalModal').classList.add('show');
         }
-        
-        function filterConfirmations() {
-            const type = document.getElementById('confirmationType').value;
-            const search = document.getElementById('confirmationSearch').value;
-            const demVotes = document.getElementById('confirmationDemVotes').value;
-            renderConfirmations(type, search, demVotes);
-        }
-        
+
         function renderClosestCalls(closestCalls) {
-            const html = closestCalls.map(vote => {
-                // Betrayers are now in vote.betrayers array
+            const html = closestCalls.slice(0, 50).map(vote => {
                 const betrayers = vote.betrayers || [];
                 const votedYes = betrayers.filter(b => b.action === 'Voted YES');
                 const absent = betrayers.filter(b => b.action === 'Absent');
@@ -1059,21 +779,18 @@
                 const voteviewUrl = `https://voteview.com/rollcall/R${chamber}${congress}${rollcall}`;
                 
                 return `
-                    <div class="closest-call-card">
-                        <div class="closest-call-header">
+                    <div style="background: #0a0a0a; padding: 20px; margin-bottom: 15px; border-left: 4px solid #d4af37;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
                             <div>
-                                <span class="closest-call-title">${vote.vote_id.toUpperCase()}</span>
-                                <span style="color: #94a3b8; margin-left: 10px; font-size: 0.9rem;">
-                                    GOP won ${vote.yes}-${vote.no}
-                                </span>
+                                <span style="color: #d4af37; font-weight: 600; font-size: 1.1rem;">${vote.vote_id.toUpperCase()}</span>
                             </div>
                             <div>
-                                <span class="closest-call-margin">Lost by ${vote.margin}</span>
-                                <span style="color: #94a3b8; font-size: 0.9rem;"> vote${vote.margin !== 1 ? 's' : ''}</span>
+                                <span style="color: #ff6b6b; font-weight: 600; font-size: 1.2rem;">Lost by ${vote.margin}</span>
+                                <span style="color: #888; font-size: 0.9rem;"> vote${vote.margin !== 1 ? 's' : ''}</span>
                             </div>
                         </div>
                         ${vote.description && vote.description !== vote.vote_id ? `
-                            <div class="closest-call-description">
+                            <div style="color: #a8a8a8; margin-bottom: 10px;">
                                 ${vote.description}
                             </div>
                         ` : ''}
@@ -1082,7 +799,7 @@
                                 View Full Vote Details →
                             </a>
                         </div>
-                        <div class="closest-call-betrayers">
+                        <div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid #444;">
                             <strong style="color: #e2e8f0;">The Betrayers:</strong><br>
                             ${votedYes.slice(0, 10).map(b => 
                                 `<span class="betrayer-tag">${b.name} - Voted YES</span>`
@@ -1091,194 +808,29 @@
                                 `<span class="betrayer-tag absent">${b.name} - Absent</span>`
                             ).join('')}
                             ${(votedYes.length + absent.length > 20) ? 
-                                `<span style="color: #94a3b8; margin-left: 10px;">+${(votedYes.length + absent.length - 20)} more</span>` 
+                                `<span style="color: #888; margin-left: 10px;">+${(votedYes.length + absent.length - 20)} more</span>` 
                                 : ''}
                         </div>
                     </div>
                 `;
             }).filter(Boolean).join('');
             
-            document.getElementById('closestCalls').innerHTML = html;
+            document.getElementById('closestCalls').innerHTML = html || '<p style="text-align: center; padding: 40px; color: #888;">No closest calls data available.</p>';
         }
-            
-        function filterTable() {
-            const searchText = document.getElementById('searchBox').value.toLowerCase();
-            const stateFilter = document.getElementById('stateFilter').value;
-            
-            let filtered = enrichedVillains;
-            
-            // Apply search filter
-            if (searchText) {
-                filtered = filtered.filter(v => 
-                    v.name.toLowerCase().includes(searchText) ||
-                    v.state.toLowerCase().includes(searchText)
-                );
-            }
-            
-            // Apply state filter
-            if (stateFilter !== 'all') {
-                filtered = filtered.filter(v => v.state === stateFilter);
-            }
-            
-            document.getElementById('tableBody').innerHTML = renderTableRows(filtered, 'all');
-        }
-        
-        function capitalizeFirst(str) {
-            return str.charAt(0).toUpperCase() + str.slice(1);
-        }
-        
-        function escapeHtml(text) {
-            return text.replace(/'/g, "\\'");
-        }
-        
-        function showBetrayals(memberName, type, sector) {
-            if (!fullData) return;
-            
-            // Find the member in the data
-            const member = fullData.rotating_villains.find(v => v.name === memberName);
-            if (!member) return;
-            
-            // Get the appropriate vote array
-            const votes = type === 'voted_yes' ? (member.voted_yes || []) : (member.was_absent || []);
-            
-            const actionLabel = type === 'voted_yes' ? 'Voted with GOP' : 'Was Absent';
-            const actionColor = type === 'voted_yes' ? '#b22222' : '#d4af37';
-            
-            document.getElementById('modalTitle').innerHTML = 
-                `${memberName} — ${actionLabel} (${votes.length} times)`;
-            
-            let modalContent = '';
-            
-            if (votes.length === 0) {
-                modalContent = '<p style="text-align: center; padding: 40px; color: #888; font-family: Courier Prime, monospace;">No betrayals found of this type.</p>';
-            } else {
-                modalContent = votes.map(vote => {
-                    const match = vote.vote_id.match(/([hs])(\d+)-(\d+)/);
-                    if (!match) return '';
-                    
-                    const chamber = match[1].toUpperCase();
-                    const rollcall = match[2].padStart(4, '0');
-                    const congress = match[3];
-                    const voteviewUrl = `https://voteview.com/rollcall/R${chamber}${congress}${rollcall}`;
-                    const margin = vote.yes - vote.no;
-                    
-                    return `
-                        <div class="vote-item">
-                            <div class="vote-item-header">
-                                <span class="vote-item-title">${vote.vote_id.toUpperCase()}</span>
-                                <a href="${voteviewUrl}" target="_blank" class="vote-item-link">View Vote Details →</a>
-                            </div>
-                            ${vote.description !== vote.vote_id ? `
-                                <div class="vote-item-description">
-                                    ${vote.description}
-                                </div>
-                            ` : ''}
-                            <div class="vote-item-details">
-                                GOP won ${vote.yes}-${vote.no} (margin: ${margin} vote${margin !== 1 ? 's' : ''})
-                                <br>
-                                <span style="color: ${actionColor}; font-weight: 600;">${actionLabel}</span> on this vote
-                            </div>
-                        </div>
-                    `;
-                }).filter(Boolean).join('');
-            }
-            
-            document.getElementById('modalBody').innerHTML = modalContent;
-            document.getElementById('betrayalModal').classList.add('show');
-        }
-        
-        function showAntiDemVotes(memberName) {
-            if (!fullData) return;
-            
-            const member = fullData.rotating_villains.find(v => v.name === memberName);
-            if (!member) return;
-            
-            const antiDemVotes = member.anti_dem_votes || [];
-            
-            document.getElementById('modalTitle').innerHTML = 
-                `${memberName} — Voted Against Democratic Bills (${antiDemVotes.length} times)`;
-            
-            let modalContent = '';
-            
-            if (antiDemVotes.length === 0) {
-                modalContent = '<p style="text-align: center; padding: 40px; color: #888; font-family: Courier Prime, monospace;">No anti-Dem votes found.</p>';
-            } else {
-                modalContent = antiDemVotes.map(vote => {
-                    const match = vote.vote_id.match(/([hs])(\d+)-(\d+)/);
-                    if (!match) return '';
-                    
-                    const chamber = match[1].toUpperCase();
-                    const rollcall = match[2].padStart(4, '0');
-                    const congress = match[3];
-                    const voteviewUrl = `https://voteview.com/rollcall/R${chamber}${congress}${rollcall}`;
-                    
-                    return `
-                        <div class="vote-item">
-                            <div class="vote-item-header">
-                                <span class="vote-item-title">${vote.vote_id.toUpperCase()}</span>
-                                <a href="${voteviewUrl}" target="_blank" class="vote-item-link">View Vote Details →</a>
-                            </div>
-                            ${vote.description !== vote.vote_id ? `
-                                <div class="vote-item-description">
-                                    ${vote.description}
-                                </div>
-                            ` : ''}
-                            <div class="vote-item-details">
-                                Vote result: ${vote.yes}-${vote.no}
-                                <br>
-                                <span style="color: #b22222; font-weight: 600;">Voted NO</span> on Democratic bill
-                            </div>
-                        </div>
-                    `;
-                }).filter(Boolean).join('');
-            }
-            
-            document.getElementById('modalBody').innerHTML = modalContent;
-            document.getElementById('betrayalModal').classList.add('show');
-        }
+
         function closeModal() {
             document.getElementById('betrayalModal').classList.remove('show');
         }
-        
+
         window.onclick = function(event) {
             const modal = document.getElementById('betrayalModal');
             if (event.target == modal) {
                 closeModal();
             }
         }
-        
-        document.addEventListener('keydown', function(event) {
-            if (event.key === 'Escape') {
-                closeModal();
-            }
-        });
-    </script>
-    
-    <script>
-        // Mobile overflow debugger
-        if (window.innerWidth <= 768) {
-            window.addEventListener('load', function() {
-                setTimeout(function() {
-                    const body = document.body;
-                    const html = document.documentElement;
-                    
-                    console.log('Viewport width:', window.innerWidth);
-                    console.log('Body width:', body.offsetWidth);
-                    console.log('Body scrollWidth:', body.scrollWidth);
-                    console.log('HTML scrollWidth:', html.scrollWidth);
-                    
-                    // Find elements wider than viewport
-                    const allElements = document.querySelectorAll('*');
-                    allElements.forEach(el => {
-                        if (el.scrollWidth > window.innerWidth + 20) {
-                            console.log('OVERFLOW ELEMENT:', el.className || el.tagName, 
-                                       'Width:', el.scrollWidth, 
-                                       'Offset:', el.offsetLeft);
-                        }
-                    });
-                }, 1000);
-            });
-        }
+
+        // Load data on page load
+        loadData();
     </script>
 </body>
 </html>

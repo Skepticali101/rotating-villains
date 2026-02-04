@@ -99366,12 +99366,10 @@
     {
       "vote_id": "h1007-118",
       "description": "HR8752",
-      "congress": 118,
       "yes": 207,
       "no": 206,
       "margin": 1,
-      "dem_yes": 0,
-      "dem_no": 205,
+      "congress": 118,
       "betrayers": [
         {
           "name": "GRIJALVA, Ra\u00fal M.",
@@ -99422,12 +99420,10 @@
     {
       "vote_id": "h1009-118",
       "description": "HR8752",
-      "congress": 118,
       "yes": 204,
       "no": 203,
       "margin": 1,
-      "dem_yes": 0,
-      "dem_no": 202,
+      "congress": 118,
       "betrayers": [
         {
           "name": "GRIJALVA, Ra\u00fal M.",
@@ -99478,23 +99474,19 @@
     {
       "vote_id": "h144-119",
       "description": "H144-119",
-      "congress": 119,
       "yes": 215,
       "no": 214,
       "margin": 1,
-      "dem_yes": 0,
-      "dem_no": 212,
+      "congress": 119,
       "betrayers": []
     },
     {
       "vote_id": "h185-119",
       "description": "H185-119",
-      "congress": 119,
       "yes": 212,
       "no": 211,
       "margin": 1,
-      "dem_yes": 0,
-      "dem_no": 211,
+      "congress": 119,
       "betrayers": [
         {
           "name": "LATIMER, George",
@@ -99505,12 +99497,10 @@
     {
       "vote_id": "h193-119",
       "description": "HRES580 - Providing for consideration of the bills (H.R. 4016) Department of Defense Appropriations Act, 2026; (H.R. 3633) CLARITY Act; (H.R. 1919) Anti-CBDC Surveillance State Act; and (S. 1582) GENIUS Act",
-      "congress": 119,
       "yes": 211,
       "no": 210,
       "margin": 1,
-      "dem_yes": 0,
-      "dem_no": 210,
+      "congress": 119,
       "betrayers": [
         {
           "name": "WILSON, Frederica",
@@ -99525,12 +99515,10 @@
     {
       "vote_id": "h220-118",
       "description": "H220-118",
-      "congress": 118,
       "yes": 218,
       "no": 217,
       "margin": 1,
-      "dem_yes": 0,
-      "dem_no": 214,
+      "congress": 118,
       "betrayers": [
         {
           "name": "PELTOLA, Mary Sattler",
@@ -99545,12 +99533,10 @@
     {
       "vote_id": "h238-119",
       "description": "H238-119",
-      "congress": 119,
       "yes": 214,
       "no": 213,
       "margin": 1,
-      "dem_yes": 0,
-      "dem_no": 209,
+      "congress": 119,
       "betrayers": [
         {
           "name": "QUIGLEY, Mike",
@@ -99569,12 +99555,10 @@
     {
       "vote_id": "h308-119",
       "description": "HRES916 - Providing for consideration of the bills (H.R. 4312) SCORE Act; (H.R. 1005) CLASS Act; (H.R. 1049) Transparency in Reporting of Adversarial Contributions to Education Act; (H.R. 1069) PROTECT Our Kids Act; (H.R. 2965) Small Business Regulatory Reduction Act; and (H.R. 4305) DUMP Red Tape Act",
-      "congress": 119,
       "yes": 210,
       "no": 209,
       "margin": 1,
-      "dem_yes": 0,
-      "dem_no": 206,
+      "congress": 119,
       "betrayers": [
         {
           "name": "GARAMENDI, John",
@@ -99609,12 +99593,10 @@
     {
       "vote_id": "h311-118",
       "description": "H311-118",
-      "congress": 118,
       "yes": 214,
       "no": 213,
       "margin": 1,
-      "dem_yes": 0,
-      "dem_no": 209,
+      "congress": 118,
       "betrayers": [
         {
           "name": "GALLEGO, Ruben",
@@ -99633,12 +99615,10 @@
     {
       "vote_id": "h325-118",
       "description": "H325-118",
-      "congress": 118,
       "yes": 217,
       "no": 216,
       "margin": 1,
-      "dem_yes": 0,
-      "dem_no": 213,
+      "congress": 118,
       "betrayers": [
         {
           "name": "EVANS, Dwight",
@@ -99653,12 +99633,10 @@
     {
       "vote_id": "h342-119",
       "description": "HRES953 - Providing for consideration of the bills (H.R. 6703) Lower Health Care Premiums for All Americans Act; (H.R. 498) Do No Harm in Medicaid Act; and (H.R. 3492) Protect Children\u2019s Innocence Act; and relating to consideration of the bill (H.R. 4776) SPEED Act",
-      "congress": 119,
       "yes": 204,
       "no": 203,
       "margin": 1,
-      "dem_yes": 0,
-      "dem_no": 203,
+      "congress": 119,
       "betrayers": [
         {
           "name": "MOORE, Gwendolynne S. (Gwen)",
@@ -99705,12 +99683,10 @@
     {
       "vote_id": "h376-119",
       "description": "HRES988 - Providing for consideration of (H.R. 2988) Protecting Prudent Investment of Retirement Savings Act; (H.R. 2262) Flexibility for Workers Education Act; (H.R. 2270) Empowering Employer Child and Elder Care Solutions Act; (H.R. 2312) Tipped Employee Protection Act; and (H.R. 4366) Save Local Business Act",
-      "congress": 119,
       "yes": 206,
       "no": 205,
       "margin": 1,
-      "dem_yes": 0,
-      "dem_no": 205,
+      "congress": 119,
       "betrayers": [
         {
           "name": "WILSON, Frederica",
@@ -99749,12 +99725,10 @@
     {
       "vote_id": "h427-118",
       "description": "H427-118",
-      "congress": 118,
       "yes": 217,
       "no": 216,
       "margin": 1,
-      "dem_yes": 0,
-      "dem_no": 213,
+      "congress": 118,
       "betrayers": [
         {
           "name": "BUSH, Cori",
@@ -99769,12 +99743,10 @@
     {
       "vote_id": "h428-118",
       "description": "H428-118",
-      "congress": 118,
       "yes": 217,
       "no": 216,
       "margin": 1,
-      "dem_yes": 0,
-      "dem_no": 213,
+      "congress": 118,
       "betrayers": [
         {
           "name": "BUSH, Cori",
@@ -99789,12 +99761,10 @@
     {
       "vote_id": "h570-118",
       "description": "HR4821",
-      "congress": 118,
       "yes": 213,
       "no": 212,
       "margin": 1,
-      "dem_yes": 4,
-      "dem_no": 204,
+      "congress": 118,
       "betrayers": [
         {
           "name": "COSTA, Jim",
@@ -99845,12 +99815,10 @@
     {
       "vote_id": "h590-118",
       "description": "HR4821",
-      "congress": 118,
       "yes": 208,
       "no": 207,
       "margin": 1,
-      "dem_yes": 0,
-      "dem_no": 201,
+      "congress": 118,
       "betrayers": [
         {
           "name": "SEWELL, Terri",
@@ -99913,12 +99881,10 @@
     {
       "vote_id": "h761-118",
       "description": "H761-118",
-      "congress": 118,
       "yes": 214,
       "no": 213,
       "margin": 1,
-      "dem_yes": 0,
-      "dem_no": 210,
+      "congress": 118,
       "betrayers": [
         {
           "name": "CHU, Judy",
@@ -99933,12 +99899,10 @@
     {
       "vote_id": "h825-118",
       "description": "HRES1125 - Providing for consideration of the bills H.R. 7888 and H.R. 529; and providing for consideration of the resolutions H. Res. 1112 and H. Res. 1117",
-      "congress": 118,
       "yes": 210,
       "no": 209,
       "margin": 1,
-      "dem_yes": 0,
-      "dem_no": 209,
+      "congress": 118,
       "betrayers": [
         {
           "name": "GRIJALVA, Ra\u00fal M.",
@@ -99961,12 +99925,10 @@
     {
       "vote_id": "h93-119",
       "description": "H93-119",
-      "congress": 119,
       "yes": 216,
       "no": 215,
       "margin": 1,
-      "dem_yes": 0,
-      "dem_no": 212,
+      "congress": 119,
       "betrayers": [
         {
           "name": "NORCROSS, Donald",
@@ -99977,12 +99939,10 @@
     {
       "vote_id": "h940-118",
       "description": "HRES1243 - Providing for consideration of the bills (H.R. 4763) Financial Innovation and Technology for the 21st Century Act; (H.R. 5403) CBDC Anti-Surveillance State Act; and (H.R. 192) to prohibit individuals who are not citizens of the United States from voting in elections in the District of Columbia",
-      "congress": 118,
       "yes": 204,
       "no": 203,
       "margin": 1,
-      "dem_yes": 0,
-      "dem_no": 203,
+      "congress": 118,
       "betrayers": [
         {
           "name": "GRIJALVA, Ra\u00fal M.",
@@ -100029,12 +99989,10 @@
     {
       "vote_id": "h969-118",
       "description": "HRES1287 - Providing for consideration of the bill (H.R. 8070) the Servicemember Quality of Life Improvement and National Defense Authorization Act for Fiscal Year 2025; and relating to the consideration of House Report 118-527 and an accompanying resolution; and for other purposes",
-      "congress": 118,
       "yes": 208,
       "no": 207,
       "margin": 1,
-      "dem_yes": 0,
-      "dem_no": 207,
+      "congress": 118,
       "betrayers": [
         {
           "name": "MFUME, Kweisi",
@@ -100065,12 +100023,10 @@
     {
       "vote_id": "s139-118",
       "description": "S139-118",
-      "congress": 118,
       "yes": 49,
       "no": 48,
       "margin": 1,
-      "dem_yes": 1,
-      "dem_no": 46,
+      "congress": 118,
       "betrayers": [
         {
           "name": "ROSEN, Jacklyn Sheryl",
@@ -100089,34 +100045,28 @@
     {
       "vote_id": "s162-117",
       "description": "S162-117",
-      "congress": 117,
       "yes": 49,
       "no": 48,
       "margin": 1,
-      "dem_yes": 0,
-      "dem_no": 46,
+      "congress": 117,
       "betrayers": []
     },
     {
       "vote_id": "s163-117",
       "description": "S163-117",
-      "congress": 117,
       "yes": 49,
       "no": 48,
       "margin": 1,
-      "dem_yes": 0,
-      "dem_no": 46,
+      "congress": 117,
       "betrayers": []
     },
     {
       "vote_id": "s204-118",
       "description": "S204-118",
-      "congress": 118,
       "yes": 50,
       "no": 49,
       "margin": 1,
-      "dem_yes": 1,
-      "dem_no": 46,
+      "congress": 118,
       "betrayers": [
         {
           "name": "DURBIN, Richard Joseph",
@@ -100131,12 +100081,10 @@
     {
       "vote_id": "s242-118",
       "description": "S242-118",
-      "congress": 118,
       "yes": 47,
       "no": 46,
       "margin": 1,
-      "dem_yes": 1,
-      "dem_no": 43,
+      "congress": 118,
       "betrayers": [
         {
           "name": "BROWN, Sherrod",
@@ -100163,45 +100111,37 @@
     {
       "vote_id": "s336-117",
       "description": "S336-117",
-      "congress": 117,
       "yes": 50,
       "no": 49,
       "margin": 1,
-      "dem_yes": 1,
-      "dem_no": 47,
+      "congress": 117,
       "betrayers": []
     },
     {
       "vote_id": "s342-117",
       "description": "S342-117",
-      "congress": 117,
       "yes": 50,
       "no": 49,
       "margin": 1,
-      "dem_yes": 1,
-      "dem_no": 47,
+      "congress": 117,
       "betrayers": []
     },
     {
       "vote_id": "s355-117",
       "description": "S355-117",
-      "congress": 117,
       "yes": 50,
       "no": 49,
       "margin": 1,
-      "dem_yes": 1,
-      "dem_no": 47,
+      "congress": 117,
       "betrayers": []
     },
     {
       "vote_id": "s418-119",
       "description": "S418-119",
-      "congress": 119,
       "yes": 44,
       "no": 43,
       "margin": 1,
-      "dem_yes": 0,
-      "dem_no": 41,
+      "congress": 119,
       "betrayers": [
         {
           "name": "DUCKWORTH, Tammy",
@@ -100224,34 +100164,28 @@
     {
       "vote_id": "s431-119",
       "description": "S431-119",
-      "congress": 119,
       "yes": 48,
       "no": 47,
       "margin": 1,
-      "dem_yes": 0,
-      "dem_no": 45,
+      "congress": 119,
       "betrayers": []
     },
     {
       "vote_id": "s448-119",
       "description": "S448-119",
-      "congress": 119,
       "yes": 50,
       "no": 49,
       "margin": 1,
-      "dem_yes": 0,
-      "dem_no": 45,
+      "congress": 119,
       "betrayers": []
     },
     {
       "vote_id": "s519-119",
       "description": "S519-119",
-      "congress": 119,
       "yes": 48,
       "no": 47,
       "margin": 1,
-      "dem_yes": 0,
-      "dem_no": 45,
+      "congress": 119,
       "betrayers": [
         {
           "name": "SANDERS, Bernard",
@@ -100262,89 +100196,73 @@
     {
       "vote_id": "s548-111",
       "description": "s548-111",
-      "congress": 111,
       "yes": 47,
       "no": 46,
       "margin": 1,
-      "dem_yes": 7,
-      "dem_no": 45,
+      "congress": 111,
       "betrayers": []
     },
     {
       "vote_id": "s695-116",
       "description": "s695-116",
-      "congress": 116,
       "yes": 48,
       "no": 47,
       "margin": 1,
-      "dem_yes": 0,
-      "dem_no": 45,
+      "congress": 116,
       "betrayers": []
     },
     {
       "vote_id": "s696-116",
       "description": "s696-116",
-      "congress": 116,
       "yes": 48,
       "no": 47,
       "margin": 1,
-      "dem_yes": 0,
-      "dem_no": 45,
+      "congress": 116,
       "betrayers": []
     },
     {
       "vote_id": "s7-116",
       "description": "s7-116",
-      "congress": 116,
       "yes": 48,
       "no": 47,
       "margin": 1,
-      "dem_yes": 2,
-      "dem_no": 43,
+      "congress": 116,
       "betrayers": []
     },
     {
       "vote_id": "s716-116",
       "description": "s716-116",
-      "congress": 116,
       "yes": 48,
       "no": 47,
       "margin": 1,
-      "dem_yes": 0,
-      "dem_no": 45,
+      "congress": 116,
       "betrayers": []
     },
     {
       "vote_id": "s76-117",
       "description": "S76-117",
-      "congress": 117,
       "yes": 50,
       "no": 49,
       "margin": 1,
-      "dem_yes": 1,
-      "dem_no": 47,
+      "congress": 117,
       "betrayers": []
     },
     {
       "vote_id": "s807-117",
       "description": "S807-117",
-      "congress": 117,
       "yes": 48,
       "no": 47,
       "margin": 1,
-      "dem_yes": 0,
-      "dem_no": 45,
+      "congress": 117,
       "betrayers": []
     },
     {
       "vote_id": "s98-118",
       "description": "S98-118",
-      "congress": 118,
       "yes": 50,
       "no": 49,
       "margin": 1,
-      "dem_yes": 1,
-      "dem_no": 46,
+      "congress": 118,
       "betrayers": [
         {
           "name": "MANCHIN, Joe, III",
@@ -100359,23 +100277,19 @@
     {
       "vote_id": "h1-119",
       "description": "H1-119",
-      "congress": 119,
       "yes": 218,
       "no": 216,
       "margin": 2,
-      "dem_yes": 0,
-      "dem_no": 215,
+      "congress": 119,
       "betrayers": []
     },
     {
       "vote_id": "h1081-118",
       "description": "HR8997",
-      "congress": 118,
       "yes": 199,
       "no": 197,
       "margin": 2,
-      "dem_yes": 0,
-      "dem_no": 195,
+      "congress": 118,
       "betrayers": [
         {
           "name": "GRIJALVA, Ra\u00fal M.",
@@ -100462,12 +100376,10 @@
     {
       "vote_id": "h134-119",
       "description": "HRES426 - Providing for consideration of the joint resolutions S.J. Res. 13 and S.J. Res. 31; and waiving a requirement of clause 6(a) of rule XIII with respect to consideration of certain resolutions reported from the Committee on Rules",
-      "congress": 119,
       "yes": 210,
       "no": 208,
       "margin": 2,
-      "dem_yes": 0,
-      "dem_no": 207,
+      "congress": 119,
       "betrayers": [
         {
           "name": "CLEAVER, Emanuel, II",
@@ -100498,12 +100410,10 @@
     {
       "vote_id": "h140-119",
       "description": "H140-119",
-      "congress": 119,
       "yes": 213,
       "no": 211,
       "margin": 2,
-      "dem_yes": 0,
-      "dem_no": 211,
+      "congress": 119,
       "betrayers": [
         {
           "name": "WATERS, Maxine",
@@ -100514,12 +100424,10 @@
     {
       "vote_id": "h167-119",
       "description": "H167-119",
-      "congress": 119,
       "yes": 214,
       "no": 212,
       "margin": 2,
-      "dem_yes": 0,
-      "dem_no": 208,
+      "congress": 119,
       "betrayers": [
         {
           "name": "BEATTY, Joyce",
@@ -100542,23 +100450,19 @@
     {
       "vote_id": "h186-119",
       "description": "H186-119",
-      "congress": 119,
       "yes": 214,
       "no": 212,
       "margin": 2,
-      "dem_yes": 0,
-      "dem_no": 212,
+      "congress": 119,
       "betrayers": []
     },
     {
       "vote_id": "h198-118",
       "description": "H198-118",
-      "congress": 118,
       "yes": 217,
       "no": 215,
       "margin": 2,
-      "dem_yes": 0,
-      "dem_no": 211,
+      "congress": 118,
       "betrayers": [
         {
           "name": "PETERS, Scott",
@@ -100573,12 +100477,10 @@
     {
       "vote_id": "h262-118",
       "description": "H262-118",
-      "congress": 118,
       "yes": 219,
       "no": 217,
       "margin": 2,
-      "dem_yes": 1,
-      "dem_no": 212,
+      "congress": 118,
       "betrayers": [
         {
           "name": "GOLDEN, Jared",
@@ -100597,12 +100499,10 @@
     {
       "vote_id": "h264-119",
       "description": "HJRES117 - Relating to a national emergency by the President on July 30, 2025",
-      "congress": 119,
       "yes": 200,
       "no": 198,
       "margin": 2,
-      "dem_yes": 0,
-      "dem_no": 196,
+      "congress": 119,
       "betrayers": [
         {
           "name": "HOYER, Steny Hamilton",
@@ -100677,12 +100577,10 @@
     {
       "vote_id": "h267-119",
       "description": "H267-119",
-      "congress": 119,
       "yes": 213,
       "no": 211,
       "margin": 2,
-      "dem_yes": 0,
-      "dem_no": 208,
+      "congress": 119,
       "betrayers": [
         {
           "name": "MFUME, Kweisi",
@@ -100709,12 +100607,10 @@
     {
       "vote_id": "h293-119",
       "description": "H293-119",
-      "congress": 119,
       "yes": 214,
       "no": 212,
       "margin": 2,
-      "dem_yes": 0,
-      "dem_no": 211,
+      "congress": 119,
       "betrayers": [
         {
           "name": "SWALWELL, Eric",
@@ -100733,12 +100629,10 @@
     {
       "vote_id": "h362-119",
       "description": "H362-119",
-      "congress": 119,
       "yes": 213,
       "no": 211,
       "margin": 2,
-      "dem_yes": 0,
-      "dem_no": 211,
+      "congress": 119,
       "betrayers": [
         {
           "name": "THOMPSON, Bennie",
@@ -100753,12 +100647,10 @@
     {
       "vote_id": "h363-119",
       "description": "H363-119",
-      "congress": 119,
       "yes": 214,
       "no": 212,
       "margin": 2,
-      "dem_yes": 0,
-      "dem_no": 212,
+      "congress": 119,
       "betrayers": [
         {
           "name": "THOMPSON, Bennie",
@@ -100769,12 +100661,10 @@
     {
       "vote_id": "h49-119",
       "description": "H49-119",
-      "congress": 119,
       "yes": 217,
       "no": 215,
       "margin": 2,
-      "dem_yes": 0,
-      "dem_no": 214,
+      "congress": 119,
       "betrayers": [
         {
           "name": "GRIJALVA, Ra\u00fal M.",
@@ -100785,12 +100675,10 @@
     {
       "vote_id": "h56-119",
       "description": "HRES177 - Providing for consideration of the joint resolutions H.J. Res 42, H.J. Res. 61, and S.J. Res. 11",
-      "congress": 119,
       "yes": 211,
       "no": 209,
       "margin": 2,
-      "dem_yes": 0,
-      "dem_no": 209,
+      "congress": 119,
       "betrayers": [
         {
           "name": "GRIJALVA, Ra\u00fal M.",
@@ -100821,12 +100709,10 @@
     {
       "vote_id": "h66-119",
       "description": "H66-119",
-      "congress": 119,
       "yes": 216,
       "no": 214,
       "margin": 2,
-      "dem_yes": 0,
-      "dem_no": 213,
+      "congress": 119,
       "betrayers": [
         {
           "name": "GRIJALVA, Ra\u00fal M.",
@@ -100837,12 +100723,10 @@
     {
       "vote_id": "h7-118",
       "description": "H7-118",
-      "congress": 118,
       "yes": 216,
       "no": 214,
       "margin": 2,
-      "dem_yes": 0,
-      "dem_no": 210,
+      "congress": 118,
       "betrayers": [
         {
           "name": "C\u00c1RDENAS, Tony",
@@ -100857,23 +100741,19 @@
     {
       "vote_id": "h85-119",
       "description": "H85-119",
-      "congress": 119,
       "yes": 215,
       "no": 213,
       "margin": 2,
-      "dem_yes": 0,
-      "dem_no": 213,
+      "congress": 119,
       "betrayers": []
     },
     {
       "vote_id": "h90-119",
       "description": "H90-119",
-      "congress": 119,
       "yes": 213,
       "no": 211,
       "margin": 2,
-      "dem_yes": 0,
-      "dem_no": 211,
+      "congress": 119,
       "betrayers": [
         {
           "name": "NORCROSS, Donald",
@@ -100888,12 +100768,10 @@
     {
       "vote_id": "h91-119",
       "description": "H91-119",
-      "congress": 119,
       "yes": 213,
       "no": 211,
       "margin": 2,
-      "dem_yes": 0,
-      "dem_no": 210,
+      "congress": 119,
       "betrayers": [
         {
           "name": "NORCROSS, Donald",
@@ -100912,12 +100790,10 @@
     {
       "vote_id": "h939-118",
       "description": "HRES1243 - Providing for consideration of the bills (H.R. 4763) Financial Innovation and Technology for the 21st Century Act; (H.R. 5403) CBDC Anti-Surveillance State Act; and (H.R. 192) to prohibit individuals who are not citizens of the United States from voting in elections in the District of Columbia",
-      "congress": 118,
       "yes": 205,
       "no": 203,
       "margin": 2,
-      "dem_yes": 0,
-      "dem_no": 203,
+      "congress": 118,
       "betrayers": [
         {
           "name": "GRIJALVA, Ra\u00fal M.",
@@ -100964,12 +100840,10 @@
     {
       "vote_id": "h99-119",
       "description": "H99-119",
-      "congress": 119,
       "yes": 216,
       "no": 214,
       "margin": 2,
-      "dem_yes": 0,
-      "dem_no": 212,
+      "congress": 119,
       "betrayers": [
         {
           "name": "NORCROSS, Donald",
@@ -100980,12 +100854,10 @@
     {
       "vote_id": "s110-118",
       "description": "S110-118",
-      "congress": 118,
       "yes": 50,
       "no": 48,
       "margin": 2,
-      "dem_yes": 1,
-      "dem_no": 45,
+      "congress": 118,
       "betrayers": [
         {
           "name": "SHAHEEN, Jeanne",
@@ -101004,12 +100876,10 @@
     {
       "vote_id": "s122-118",
       "description": "S122-118",
-      "congress": 118,
       "yes": 51,
       "no": 49,
       "margin": 2,
-      "dem_yes": 1,
-      "dem_no": 47,
+      "congress": 118,
       "betrayers": [
         {
           "name": "MANCHIN, Joe, III",
@@ -101024,12 +100894,10 @@
     {
       "vote_id": "s123-118",
       "description": "S123-118",
-      "congress": 118,
       "yes": 51,
       "no": 49,
       "margin": 2,
-      "dem_yes": 2,
-      "dem_no": 46,
+      "congress": 118,
       "betrayers": [
         {
           "name": "KLOBUCHAR, Amy",
@@ -101044,34 +100912,28 @@
     {
       "vote_id": "s14-119",
       "description": "S14-119",
-      "congress": 119,
       "yes": 51,
       "no": 49,
       "margin": 2,
-      "dem_yes": 0,
-      "dem_no": 45,
+      "congress": 119,
       "betrayers": []
     },
     {
       "vote_id": "s209-117",
       "description": "S209-117",
-      "congress": 117,
       "yes": 51,
       "no": 49,
       "margin": 2,
-      "dem_yes": 1,
-      "dem_no": 47,
+      "congress": 117,
       "betrayers": []
     },
     {
       "vote_id": "s243-118",
       "description": "S243-118",
-      "congress": 118,
       "yes": 47,
       "no": 45,
       "margin": 2,
-      "dem_yes": 2,
-      "dem_no": 42,
+      "congress": 118,
       "betrayers": [
         {
           "name": "BROWN, Sherrod",
@@ -101102,12 +100964,10 @@
     {
       "vote_id": "s291-119",
       "description": "S291-119",
-      "congress": 119,
       "yes": 48,
       "no": 46,
       "margin": 2,
-      "dem_yes": 0,
-      "dem_no": 44,
+      "congress": 119,
       "betrayers": [
         {
           "name": "OSSOFF, Thomas Jonathan (Jon)",
@@ -101118,12 +100978,10 @@
     {
       "vote_id": "s303-118",
       "description": "S303-118",
-      "congress": 118,
       "yes": 50,
       "no": 48,
       "margin": 2,
-      "dem_yes": 3,
-      "dem_no": 45,
+      "congress": 118,
       "betrayers": [
         {
           "name": "BROWN, Sherrod",
@@ -101146,111 +101004,91 @@
     {
       "vote_id": "s329-119",
       "description": "S329-119",
-      "congress": 119,
       "yes": 51,
       "no": 49,
       "margin": 2,
-      "dem_yes": 0,
-      "dem_no": 45,
+      "congress": 119,
       "betrayers": []
     },
     {
       "vote_id": "s377-111",
       "description": "s377-111",
-      "congress": 111,
       "yes": 51,
       "no": 49,
       "margin": 2,
-      "dem_yes": 27,
-      "dem_no": 32,
+      "congress": 111,
       "betrayers": []
     },
     {
       "vote_id": "s407-111",
       "description": "s407-111",
-      "congress": 111,
       "yes": 51,
       "no": 49,
       "margin": 2,
-      "dem_yes": 14,
-      "dem_no": 45,
+      "congress": 111,
       "betrayers": []
     },
     {
       "vote_id": "s422-119",
       "description": "S422-119",
-      "congress": 119,
       "yes": 50,
       "no": 48,
       "margin": 2,
-      "dem_yes": 0,
-      "dem_no": 45,
+      "congress": 119,
       "betrayers": []
     },
     {
       "vote_id": "s429-119",
       "description": "S429-119",
-      "congress": 119,
       "yes": 49,
       "no": 47,
       "margin": 2,
-      "dem_yes": 0,
-      "dem_no": 45,
+      "congress": 119,
       "betrayers": []
     },
     {
       "vote_id": "s43-117",
       "description": "S43-117",
-      "congress": 117,
       "yes": 51,
       "no": 49,
       "margin": 2,
-      "dem_yes": 1,
-      "dem_no": 47,
+      "congress": 117,
       "betrayers": []
     },
     {
       "vote_id": "s430-119",
       "description": "S430-119",
-      "congress": 119,
       "yes": 49,
       "no": 47,
       "margin": 2,
-      "dem_yes": 0,
-      "dem_no": 45,
+      "congress": 119,
       "betrayers": []
     },
     {
       "vote_id": "s432-119",
       "description": "S432-119",
-      "congress": 119,
       "yes": 49,
       "no": 47,
       "margin": 2,
-      "dem_yes": 0,
-      "dem_no": 45,
+      "congress": 119,
       "betrayers": []
     },
     {
       "vote_id": "s433-119",
       "description": "S433-119",
-      "congress": 119,
       "yes": 49,
       "no": 47,
       "margin": 2,
-      "dem_yes": 0,
-      "dem_no": 45,
+      "congress": 119,
       "betrayers": []
     },
     {
       "vote_id": "s437-119",
       "description": "S437-119",
-      "congress": 119,
       "yes": 50,
       "no": 48,
       "margin": 2,
-      "dem_yes": 0,
-      "dem_no": 44,
+      "congress": 119,
       "betrayers": [
         {
           "name": "GALLEGO, Ruben",
@@ -101261,45 +101099,37 @@
     {
       "vote_id": "s44-117",
       "description": "S44-117",
-      "congress": 117,
       "yes": 51,
       "no": 49,
       "margin": 2,
-      "dem_yes": 1,
-      "dem_no": 47,
+      "congress": 117,
       "betrayers": []
     },
     {
       "vote_id": "s457-116",
       "description": "s457-116",
-      "congress": 116,
       "yes": 51,
       "no": 49,
       "margin": 2,
-      "dem_yes": 0,
-      "dem_no": 45,
+      "congress": 116,
       "betrayers": []
     },
     {
       "vote_id": "s458-116",
       "description": "s458-116",
-      "congress": 116,
       "yes": 51,
       "no": 49,
       "margin": 2,
-      "dem_yes": 0,
-      "dem_no": 45,
+      "congress": 116,
       "betrayers": []
     },
     {
       "vote_id": "s474-118",
       "description": "S474-118",
-      "congress": 118,
       "yes": 50,
       "no": 48,
       "margin": 2,
-      "dem_yes": 1,
-      "dem_no": 46,
+      "congress": 118,
       "betrayers": [
         {
           "name": "MENENDEZ, Robert",
@@ -101322,45 +101152,37 @@
     {
       "vote_id": "s50-117",
       "description": "S50-117",
-      "congress": 117,
       "yes": 51,
       "no": 49,
       "margin": 2,
-      "dem_yes": 1,
-      "dem_no": 47,
+      "congress": 117,
       "betrayers": []
     },
     {
       "vote_id": "s503-116",
       "description": "s503-116",
-      "congress": 116,
       "yes": 50,
       "no": 48,
       "margin": 2,
-      "dem_yes": 2,
-      "dem_no": 43,
+      "congress": 116,
       "betrayers": []
     },
     {
       "vote_id": "s512-119",
       "description": "S512-119",
-      "congress": 119,
       "yes": 51,
       "no": 49,
       "margin": 2,
-      "dem_yes": 0,
-      "dem_no": 45,
+      "congress": 119,
       "betrayers": []
     },
     {
       "vote_id": "s529-119",
       "description": "S529-119",
-      "congress": 119,
       "yes": 47,
       "no": 45,
       "margin": 2,
-      "dem_yes": 3,
-      "dem_no": 42,
+      "congress": 119,
       "betrayers": [
         {
           "name": "SHAHEEN, Jeanne",
@@ -101379,45 +101201,37 @@
     {
       "vote_id": "s591-117",
       "description": "S591-117",
-      "congress": 117,
       "yes": 47,
       "no": 45,
       "margin": 2,
-      "dem_yes": 2,
-      "dem_no": 42,
+      "congress": 117,
       "betrayers": []
     },
     {
       "vote_id": "s61-119",
       "description": "S61-119",
-      "congress": 119,
       "yes": 51,
       "no": 49,
       "margin": 2,
-      "dem_yes": 0,
-      "dem_no": 45,
+      "congress": 119,
       "betrayers": []
     },
     {
       "vote_id": "s626-116",
       "description": "s626-116",
-      "congress": 116,
       "yes": 48,
       "no": 46,
       "margin": 2,
-      "dem_yes": 0,
-      "dem_no": 43,
+      "congress": 116,
       "betrayers": []
     },
     {
       "vote_id": "s630-119",
       "description": "S630-119",
-      "congress": 119,
       "yes": 49,
       "no": 47,
       "margin": 2,
-      "dem_yes": 0,
-      "dem_no": 44,
+      "congress": 119,
       "betrayers": [
         {
           "name": "COONS, Christopher A.",
@@ -101428,78 +101242,64 @@
     {
       "vote_id": "s679-116",
       "description": "s679-116",
-      "congress": 116,
       "yes": 49,
       "no": 47,
       "margin": 2,
-      "dem_yes": 0,
-      "dem_no": 45,
+      "congress": 116,
       "betrayers": []
     },
     {
       "vote_id": "s682-116",
       "description": "s682-116",
-      "congress": 116,
       "yes": 48,
       "no": 46,
       "margin": 2,
-      "dem_yes": 0,
-      "dem_no": 44,
+      "congress": 116,
       "betrayers": []
     },
     {
       "vote_id": "s683-116",
       "description": "s683-116",
-      "congress": 116,
       "yes": 49,
       "no": 47,
       "margin": 2,
-      "dem_yes": 0,
-      "dem_no": 45,
+      "congress": 116,
       "betrayers": []
     },
     {
       "vote_id": "s685-117",
       "description": "S685-117",
-      "congress": 117,
       "yes": 49,
       "no": 47,
       "margin": 2,
-      "dem_yes": 2,
-      "dem_no": 45,
+      "congress": 117,
       "betrayers": []
     },
     {
       "vote_id": "s70-119",
       "description": "S70-119",
-      "congress": 119,
       "yes": 51,
       "no": 49,
       "margin": 2,
-      "dem_yes": 0,
-      "dem_no": 45,
+      "congress": 119,
       "betrayers": []
     },
     {
       "vote_id": "s713-116",
       "description": "s713-116",
-      "congress": 116,
       "yes": 48,
       "no": 46,
       "margin": 2,
-      "dem_yes": 0,
-      "dem_no": 44,
+      "congress": 116,
       "betrayers": []
     },
     {
       "vote_id": "s714-116",
       "description": "s714-116",
-      "congress": 116,
       "yes": 48,
       "no": 46,
       "margin": 2,
-      "dem_yes": 0,
-      "dem_no": 44,
+      "congress": 116,
       "betrayers": []
     }
   ]
