@@ -214,6 +214,19 @@
             text-shadow: 0 0 8px currentColor;
         }
         
+        .badge {
+            display: inline-block;
+            padding: 8px 15px;
+            border-radius: 0;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            white-space: nowrap;
+            min-width: 150px;
+            text-align: center;
+        }
+        
         
         .badge-danger { 
             background: linear-gradient(135deg, #8b0000 0%, #5c0000 100%);
@@ -526,7 +539,6 @@
                                     <th style="cursor: pointer;" onclick="sortTable('voted_with_gop')">Voted with GOP ↕</th>
                                     <th style="cursor: pointer;" onclick="sortTable('absent')">Conveniently Absent ↕</th>
                                     <th style="cursor: pointer;" onclick="sortTable('voted_against_dems')">Voted Against Dems ↕</th>
-                                    <th style="cursor: pointer;" onclick="sortTable('betrayal_rate')">Betrayal Rate ↕</th>
                                     <th style="cursor: pointer;" onclick="sortTable('pattern')">Pattern ↕</th>
                                 </tr>
                             </thead>
@@ -583,7 +595,6 @@
                                 ${antiDem}
                             </span>
                         </td>
-                        <td style="font-size: 1.1rem; color: #d4af37;"><strong>${v.betrayal_rate}%</strong></td>
                         <td><span class="badge ${
                             pattern === 'Rare' ? 'badge-info' : 
                             pattern === 'Strategic Rotator' ? 'badge-warning' : 'badge-danger'
