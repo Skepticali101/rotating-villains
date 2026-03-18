@@ -1,0 +1,57 @@
+        function renderClosestCalls(closestCalls) {
+            const html = closestCalls.map(vote => {
+                // Betrayers are now in vote.betrayers array
+                const betrayers = vote.betrayers || [];
+                const votedYes = betrayers.filter(b => b.action === 'Voted YES');
+                const absent = betrayers.filter(b => b.action === 'Absent');
+                
+                const match = vote.vote_id.match(/([hs])(\d+)-(\d+)/);
+                if (!match) return '';
+                
+                const chamber = match[1].toUpperCase();
+                const rollcall = match[2].padStart(4, '0');
+                const congress = match[3];
+                const voteviewUrl = `https://voteview.com/rollcall/R${chamber}${congress}${rollcall}`;
+                
+                return `
+                    <div class="closest-call-card">
+                        <div class="closest-call-header">
+                            <div>
+                                <span class="closest-call-title">${vote.vote_id.toUpperCase()}</span>
+                                <span style="color: #94a3b8; margin-left: 10px; font-size: 0.9rem;">
+                                    GOP won ${vote.yes}-${vote.no}
+                                </span>
+                            </div>
+                            <div>
+                                <span class="closest-call-margin">Lost by ${vote.margin}</span>
+                                <span style="color: #94a3b8; font-size: 0.9rem;"> vote${vote.margin !== 1 ? 's' : ''}</span>
+                            </div>
+                        </div>
+                        ${vote.description && vote.description !== vote.vote_id ? `
+                            <div class="closest-call-description">
+                                ${vote.description}
+                            </div>
+                        ` : ''}
+                        <div style="margin-top: 10px;">
+                            <a href="${voteviewUrl}" target="_blank" style="color: #60a5fa; text-decoration: none;">
+                                View Full Vote Details →
+                            </a>
+                        </div>
+                        <div class="closest-call-betrayers">
+                            <strong style="color: #e2e8f0;">The Betrayers:</strong><br>
+                            ${votedYes.slice(0, 10).map(b => 
+                                `<span class="betrayer-tag">${b.name} - Voted YES</span>`
+                            ).join('')}
+                            ${absent.slice(0, 10).map(b => 
+                                `<span class="betrayer-tag absent">${b.name} - Absent</span>`
+                            ).join('')}
+                            ${(votedYes.length + absent.length > 20) ? 
+                                `<span style="color: #94a3b8; margin-left: 10px;">+${(votedYes.length + absent.length - 20)} more</span>` 
+                                : ''}
+                        </div>
+                    </div>
+                `;
+            }).filter(Boolean).join('');
+            
+            document.getElementById('closestCalls').innerHTML = html;
+        }

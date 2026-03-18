@@ -1,0 +1,10 @@
+            
+            /* Make clickable numbers easier to tap on mobile */
+            .clickable {
+                padding: 12px !important;
+                display: inline-block !important;
+                min-width: 50px !important;
+                min-height: 44px !important;
+                text-align: center !important;
+                line-height: 44px !important;
+            }

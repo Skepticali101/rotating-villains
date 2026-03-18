@@ -1,0 +1,20 @@
+            table {
+                min-width: 700px !important;
+                font-size: 0.85rem !important;
+            }
+            
+            th, td {
+                padding: 8px 6px !important;
+            }
+            
+            /* Disable clicking on mobile - cleaner UX */
+            .clickable {
+                pointer-events: none !important;
+                cursor: default !important;
+            }
+            
+            /* Hide the click instruction on mobile */
+            .mobile-hide {
+                display: none !important;
+            }
+        }

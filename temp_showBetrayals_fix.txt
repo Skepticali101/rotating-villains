@@ -1,0 +1,55 @@
+        function showBetrayals(memberName, type, sector) {
+            if (!fullData) return;
+            
+            // Find the member in the data
+            const member = fullData.rotating_villains.find(v => v.name === memberName);
+            if (!member) return;
+            
+            // Get the appropriate vote array
+            const votes = type === 'voted_yes' ? (member.voted_yes || []) : (member.was_absent || []);
+            
+            const actionLabel = type === 'voted_yes' ? 'Voted with GOP' : 'Was Absent';
+            const actionColor = type === 'voted_yes' ? '#b22222' : '#d4af37';
+            
+            document.getElementById('modalTitle').innerHTML = 
+                `${memberName} — ${actionLabel} (${votes.length} times)`;
+            
+            let modalContent = '';
+            
+            if (votes.length === 0) {
+                modalContent = '<p style="text-align: center; padding: 40px; color: #888; font-family: Courier Prime, monospace;">No betrayals found of this type.</p>';
+            } else {
+                modalContent = votes.map(vote => {
+                    const match = vote.vote_id.match(/([hs])(\d+)-(\d+)/);
+                    if (!match) return '';
+                    
+                    const chamber = match[1].toUpperCase();
+                    const rollcall = match[2].padStart(4, '0');
+                    const congress = match[3];
+                    const voteviewUrl = `https://voteview.com/rollcall/R${chamber}${congress}${rollcall}`;
+                    const margin = vote.yes - vote.no;
+                    
+                    return `
+                        <div class="vote-item">
+                            <div class="vote-item-header">
+                                <span class="vote-item-title">${vote.vote_id.toUpperCase()}</span>
+                                <a href="${voteviewUrl}" target="_blank" class="vote-item-link">View Vote Details →</a>
+                            </div>
+                            ${vote.description !== vote.vote_id ? `
+                                <div class="vote-item-description">
+                                    ${vote.description}
+                                </div>
+                            ` : ''}
+                            <div class="vote-item-details">
+                                GOP won ${vote.yes}-${vote.no} (margin: ${margin} vote${margin !== 1 ? 's' : ''})
+                                <br>
+                                <span style="color: ${actionColor}; font-weight: 600;">${actionLabel}</span> on this vote
+                            </div>
+                        </div>
+                    `;
+                }).filter(Boolean).join('');
+            }
+            
+            document.getElementById('modalBody').innerHTML = modalContent;
+            document.getElementById('betrayalModal').classList.add('show');
+        }

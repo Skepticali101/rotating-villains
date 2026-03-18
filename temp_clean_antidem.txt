@@ -1,0 +1,50 @@
+        
+        function showAntiDemVotes(memberName) {
+            if (!fullData) return;
+            
+            const member = fullData.rotating_villains.find(v => v.name === memberName);
+            if (!member) return;
+            
+            const antiDemVotes = member.anti_dem_votes || [];
+            
+            document.getElementById('modalTitle').innerHTML = 
+                `${memberName} — Voted Against Democratic Bills (${antiDemVotes.length} times)`;
+            
+            let modalContent = '';
+            
+            if (antiDemVotes.length === 0) {
+                modalContent = '<p style="text-align: center; padding: 40px; color: #888; font-family: Courier Prime, monospace;">No anti-Dem votes found.</p>';
+            } else {
+                modalContent = antiDemVotes.map(vote => {
+                    const match = vote.vote_id.match(/([hs])(\d+)-(\d+)/);
+                    if (!match) return '';
+                    
+                    const chamber = match[1].toUpperCase();
+                    const rollcall = match[2].padStart(4, '0');
+                    const congress = match[3];
+                    const voteviewUrl = `https://voteview.com/rollcall/R${chamber}${congress}${rollcall}`;
+                    
+                    return `
+                        <div class="vote-item">
+                            <div class="vote-item-header">
+                                <span class="vote-item-title">${vote.vote_id.toUpperCase()}</span>
+                                <a href="${voteviewUrl}" target="_blank" class="vote-item-link">View Vote Details →</a>
+                            </div>
+                            ${vote.description !== vote.vote_id ? `
+                                <div class="vote-item-description">
+                                    ${vote.description}
+                                </div>
+                            ` : ''}
+                            <div class="vote-item-details">
+                                Vote result: ${vote.yes}-${vote.no}
+                                <br>
+                                <span style="color: #b22222; font-weight: 600;">Voted NO</span> on Democratic bill
+                            </div>
+                        </div>
+                    `;
+                }).filter(Boolean).join('');
+            }
+            
+            document.getElementById('modalBody').innerHTML = modalContent;
+            document.getElementById('betrayalModal').classList.add('show');
+        }

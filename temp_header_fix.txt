@@ -1,0 +1,10 @@
+        .header { 
+            background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+            padding: 50px; 
+            border-radius: 0; 
+            margin-bottom: 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+            border-top: 4px solid #d4af37;
+            border-bottom: 4px solid #d4af37;
+            text-align: center;
+        }

@@ -1,0 +1,11 @@
+                    <div style="text-align: center; margin: 20px 0; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                        <a href="missing_agenda.html" style="display: inline-block; padding: 15px 30px; background: transparent; color: #d4af37; text-decoration: none; border: 2px solid #d4af37; font-size: 1.1rem; transition: all 0.3s; font-family: 'Courier Prime', monospace;">
+                            View The Missing Agenda →
+                        </a>
+                        <a href="voting_blocs.html" style="display: inline-block; padding: 15px 30px; background: transparent; color: #d4af37; text-decoration: none; border: 2px solid #d4af37; font-size: 1.1rem; transition: all 0.3s; font-family: 'Courier Prime', monospace;">
+                            View The Shadow Whip →
+                        </a>
+                        <a href="primary_targets.html" style="display: inline-block; padding: 15px 30px; background: transparent; color: #d4af37; text-decoration: none; border: 2px solid #d4af37; font-size: 1.1rem; transition: all 0.3s; font-family: 'Courier Prime', monospace;">
+                            View Primary Targets →
+                        </a>
+                    </div>

@@ -1,0 +1,19 @@
+            table {
+                min-width: 700px !important;
+                font-size: 0.85rem !important;
+            }
+            
+            th, td {
+                padding: 8px 6px !important;
+            }
+            
+            /* Make clickable numbers tappable - must come AFTER * reset */
+            span.clickable {
+                padding: 15px !important;
+                display: inline-block !important;
+                min-width: 60px !important;
+                min-height: 50px !important;
+                text-align: center !important;
+                line-height: 50px !important;
+            }
+        }

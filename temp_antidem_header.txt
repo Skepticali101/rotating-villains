@@ -1,0 +1,13 @@
+        function showAntiDemVotes(memberName) {
+            if (!fullData) return;
+            
+            const member = fullData.rotating_villains.find(v => v.name === memberName);
+            if (!member) return;
+            
+            const antiDemVotes = member.anti_dem_votes || [];
+            
+            document.getElementById('modalTitle').innerHTML = 
+                `${memberName} — Voted Against Democratic Bills (${antiDemVotes.length} times)`;
+            
+            let modalContent = '';
+            
