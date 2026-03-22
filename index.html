@@ -585,7 +585,9 @@
                             </span>
                         </td>
                         <td>
-                            <span title="Votes Dems could have blocked" style="color: #ff6b35; font-weight: bold;">
+                            <span class="clickable" title="Votes Dems could have blocked — click to see" 
+                                  style="color: #ff6b35; font-weight: bold;"
+                                  onclick="showBetrayals('${escapeHtml(v.name)}', 'decisive')">
                                 ${v.decisive_betrayals || 0}
                             </span>
                         </td>
@@ -673,9 +675,9 @@
             const member = fullData.rotating_villains.find(v => v.name === memberName);
             if (!member) return;
             
-            const votes = type === 'voted_yes' ? (member.voted_yes || []) : (member.was_absent || []);
-            const actionLabel = type === 'voted_yes' ? 'Voted with GOP' : 'Was Absent';
-            const actionColor = type === 'voted_yes' ? '#b22222' : '#d4af37';
+            const votes = type === 'voted_yes' ? (member.voted_yes || []) : type === 'decisive' ? (member.decisive_votes || []) : (member.was_absent || []);
+            const actionLabel = type === 'voted_yes' ? 'Voted with GOP' : type === 'decisive' ? '🎯 Decisive Betrayal' : 'Was Absent';
+            const actionColor = type === 'voted_yes' ? '#b22222' : type === 'decisive' ? '#ff6b35' : '#d4af37';
             
             document.getElementById('modalTitle').innerHTML = 
                 `${memberName} — ${actionLabel} (${votes.length} times)`;
