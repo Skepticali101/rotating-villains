@@ -5,7 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rotating Villains Tracker | Congressional Betrayals</title>
     <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Preload key fonts to prevent FOUT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Special+Elite&family=IBM+Plex+Mono:wght@400;600&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Special+Elite&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Hide text until fonts load to prevent flash */
+        .header h1, .section h2, .alert-banner h2 {
+            opacity: 0;
+            transition: opacity 0.15s ease;
+        }
+        .fonts-loaded .header h1, 
+        .fonts-loaded .section h2, 
+        .fonts-loaded .alert-banner h2 {
+            opacity: 1;
+        }
+    </style>
+    <script>
+        // Mark fonts as loaded
+        document.fonts.ready.then(() => {
+            document.documentElement.classList.add('fonts-loaded');
+        });
+        // Fallback - show text after 1s regardless
+        setTimeout(() => document.documentElement.classList.add('fonts-loaded'), 1000);
+    </script>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
