@@ -11,14 +11,12 @@
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Special+Elite&family=IBM+Plex+Mono:wght@400;600&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Special+Elite&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        /* Hide text until fonts load to prevent flash */
-        .header h1, .section h2, .alert-banner h2 {
+        /* Hide ALL text until fonts load to prevent flash */
+        body {
             opacity: 0;
             transition: opacity 0.15s ease;
         }
-        .fonts-loaded .header h1, 
-        .fonts-loaded .section h2, 
-        .fonts-loaded .alert-banner h2 {
+        .fonts-loaded body {
             opacity: 1;
         }
     </style>
