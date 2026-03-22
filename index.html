@@ -905,9 +905,19 @@ function showMemberPoster(memberName) {
                     
                     <!-- Key stat highlight -->
                     <div style="background:#0a0a0a; border:1px solid ${t.border}; padding:12px; margin-bottom:8px; text-align:center;">
-                        <div style="font-size:0.75rem; color:#666; letter-spacing:2px; margin-bottom:4px;">DECISIVE BETRAYALS</div>
-                        <div style="font-size:2.5rem; color:${t.accent}; font-weight:bold; line-height:1;">${decisive}</div>
-                        <div style="font-size:0.7rem; color:#555; margin-top:2px;">votes dems could have blocked</div>
+                        <div style="font-size:0.75rem; color:#666; letter-spacing:2px; margin-bottom:8px;">DECISIVE BETRAYALS</div>
+                        <div style="display:flex; justify-content:center; gap:20px;">
+                            <div>
+                                <div style="font-size:2rem; color:${t.accent}; font-weight:bold; line-height:1;">${decisive}</div>
+                                <div style="font-size:0.65rem; color:#555; margin-top:3px;">voted YES</div>
+                            </div>
+                            <div style="border-left:1px solid ${t.border}33;"></div>
+                            <div>
+                                <div style="font-size:2rem; color:#d4af37; font-weight:bold; line-height:1;">${member.decisive_absent || 0}</div>
+                                <div style="font-size:0.65rem; color:#555; margin-top:3px;">went missing</div>
+                            </div>
+                        </div>
+                        <div style="font-size:0.65rem; color:#444; margin-top:6px;">on votes dems could have blocked</div>
                     </div>
                 </div>
             </div>
