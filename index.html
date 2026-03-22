@@ -857,11 +857,10 @@ function showMemberPoster(memberName) {
     if (!member) return;
 
     const pattern = member.pattern || 'Rare';
-    // Use corsproxy.io to bypass CORS on congressional photo servers
+    // Local photos - no CORS issues
     const photoUrl = member.bioguide_id ? 
-        `https://corsproxy.io/?https://theunitedstates.io/images/congress/225x275/${member.bioguide_id}.jpg` : '';
-    const photoUrlFallback = member.bioguide_id ?
-        `https://corsproxy.io/?https://bioguide.congress.gov/bioguide/photo/${member.bioguide_id[0]}/${member.bioguide_id}.jpg` : '';
+        `photos/${member.bioguide_id}.jpg` : '';
+    const photoUrlFallback = '';
 
     // Theme by badge
     const themes = {
