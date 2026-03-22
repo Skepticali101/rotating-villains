@@ -426,6 +426,7 @@
             }
         }
     </style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 </head>
 <body>
     <div class="container">
@@ -842,7 +843,8 @@
         <button onclick="closePoster()" style="position:absolute; top:-35px; right:0; background:none; border:none; color:#d4af37; font-size:1.5rem; cursor:pointer; font-family:'Courier Prime',monospace;">✕ CLOSE</button>
         <div id="posterContent"></div>
         <div style="margin-top:20px; display:flex; gap:10px; justify-content:center; flex-wrap:wrap;">
-            <button onclick="copyPosterText()" style="background:#1a1a1a; border:2px solid #d4af37; color:#d4af37; padding:12px 25px; font-family:'Special Elite',monospace; font-size:1rem; cursor:pointer; letter-spacing:1px;">📋 COPY FOR SOCIAL MEDIA</button>
+            <button onclick="copyPosterText()" style="background:#1a1a1a; border:2px solid #d4af37; color:#d4af37; padding:12px 25px; font-family:'Special Elite',monospace; font-size:1rem; cursor:pointer; letter-spacing:1px;">📋 COPY TEXT</button>
+            <button onclick="copyPosterImage()" style="background:#1a1a1a; border:2px solid #b22222; color:#ff6b6b; padding:12px 25px; font-family:'Special Elite',monospace; font-size:1rem; cursor:pointer; letter-spacing:1px;">🖼 COPY CARD IMAGE</button>
             <button onclick="closePoster()" style="background:#1a1a1a; border:2px solid #555; color:#888; padding:12px 25px; font-family:'Special Elite',monospace; font-size:1rem; cursor:pointer;">CLOSE</button>
         </div>
     </div>
@@ -856,6 +858,8 @@ function showMemberPoster(memberName) {
 
     const pattern = member.pattern || 'Rare';
     const photoUrl = member.bioguide_id ? 
+        `https://bioguide.congress.gov/bioguide/photo/${member.bioguide_id[0]}/${member.bioguide_id}.jpg` : '';
+    const photoUrlFallback = member.bioguide_id ?
         `https://theunitedstates.io/images/congress/225x275/${member.bioguide_id}.jpg` : '';
 
     // Theme by badge
@@ -889,7 +893,8 @@ function showMemberPoster(memberName) {
                 <div style="flex-shrink:0;">
                     ${photoUrl ? `
                     <img src="${photoUrl}" 
-                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                         crossorigin="anonymous"
+                         onerror="this.src='${photoUrlFallback}'; this.onerror=function(){this.style.display='none'; this.nextElementSibling.style.display='flex';};"
                          style="width:140px; height:175px; object-fit:cover; border:3px solid ${t.border}; filter:grayscale(30%) contrast(1.1);">
                     ` : ''}
                     <div style="width:140px; height:175px; background:#1a1a1a; border:3px solid ${t.border}; display:${photoUrl ? 'none' : 'flex'}; align-items:center; justify-content:center; color:#555; font-size:3rem;">👤</div>
@@ -900,7 +905,7 @@ function showMemberPoster(memberName) {
                     <div style="color:#555; font-size:0.85rem; font-family:'Courier Prime',monospace; margin-bottom:16px;">CONGRESSES: ${(member.congresses || []).join(', ') || 'N/A'}</div>
                     
                     <!-- Key stat highlight -->
-                    <div style="background:#0a0a0a; border:1px solid ${t.border}; padding:12px; margin-bottom:8px;">
+                    <div style="background:#0a0a0a; border:1px solid ${t.border}; padding:12px; margin-bottom:8px; text-align:center;">
                         <div style="font-size:0.75rem; color:#666; letter-spacing:2px; margin-bottom:4px;">DECISIVE BETRAYALS</div>
                         <div style="font-size:2.5rem; color:${t.accent}; font-weight:bold; line-height:1;">${decisive}</div>
                         <div style="font-size:0.7rem; color:#555; margin-top:2px;">votes dems could have blocked</div>
@@ -928,7 +933,10 @@ function showMemberPoster(memberName) {
             <div style="border-top:1px solid ${t.border}33; padding:14px 20px; display:flex; justify-content:space-between; align-items:center;">
                 <div style="font-family:'Courier Prime',monospace; font-size:0.75rem; color:#444;">rotatingvillains.org</div>
                 <div style="font-size:0.75rem; color:#444; font-family:'Courier Prime',monospace;">TOTAL BETRAYALS: ${totalBetrayal}</div>
-                <div style="font-size:1.2rem; font-weight:bold; color:${t.accent}; border:2px solid ${t.accent}; padding:3px 10px; transform:rotate(-3deg); letter-spacing:2px;">${pattern.toUpperCase().split(' ')[0]}</div>
+                <div style="font-size:1.2rem; font-weight:bold; color:${t.accent}; border:2px solid ${t.accent}; padding:3px 10px; transform:rotate(-3deg); letter-spacing:2px;">${
+                pattern === 'Super Villain' ? 'VILLAIN' : 
+                pattern === 'Strategic Rotator' ? 'ROTATOR' : 'RARE'
+            }</div>
             </div>
         </div>
     `;
@@ -970,6 +978,41 @@ Track every betrayal → rotatingvillains.org`;
 document.getElementById('posterModal').addEventListener('click', function(e) {
     if (e.target === this) closePoster();
 });
+
+async function copyPosterImage() {
+    const btn = event.target;
+    btn.textContent = '⏳ CAPTURING...';
+    try {
+        const posterEl = document.getElementById('posterContent');
+        const canvas = await html2canvas(posterEl, {
+            backgroundColor: null,
+            scale: 2,
+            useCORS: true,
+            allowTaint: true,
+            logging: false
+        });
+        canvas.toBlob(async (blob) => {
+            try {
+                await navigator.clipboard.write([
+                    new ClipboardItem({ 'image/png': blob })
+                ]);
+                btn.textContent = '✅ IMAGE COPIED!';
+            } catch (e) {
+                // Fallback: download the image
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `${window._currentPosterMember?.name || 'member'}-betrayal-record.png`;
+                a.click();
+                btn.textContent = '✅ IMAGE SAVED!';
+            }
+            setTimeout(() => btn.textContent = '🖼 COPY CARD IMAGE', 2000);
+        }, 'image/png');
+    } catch(e) {
+        btn.textContent = '❌ FAILED';
+        setTimeout(() => btn.textContent = '🖼 COPY CARD IMAGE', 2000);
+    }
+}
 </script>
 
 </body>
