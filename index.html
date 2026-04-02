@@ -490,6 +490,7 @@
                 fullData = await response.json();
                 enrichedVillains = fullData.rotating_villains;
                 renderDashboard();
+                renderTrendChart();
             } catch (error) {
                 console.error('Error loading data:', error);
                 document.getElementById('mainDashboard').innerHTML = 
@@ -1027,6 +1028,175 @@ Track every betrayal → rotatingvillains.org`;
         btn.textContent = '✅ COPIED!';
         setTimeout(() => btn.textContent = '📋 COPY FOR SOCIAL MEDIA', 2000);
     });
+}
+
+
+function renderTrendChart() {
+    if (!fullData || !fullData.trend_data) return;
+    const trend = fullData.trend_data;
+    
+    const canvas = document.getElementById('betrayalCanvas');
+    if (!canvas) return;
+    
+    const W = canvas.parentElement.offsetWidth || 800;
+    const H = 420;
+    canvas.width = W;
+    canvas.height = H;
+    const ctx = canvas.getContext('2d');
+    
+    const PAD = { top: 40, right: 40, bottom: 80, left: 70 };
+    const chartW = W - PAD.left - PAD.right;
+    const chartH = H - PAD.top - PAD.bottom;
+    
+    // Background
+    ctx.fillStyle = '#0a0a0a';
+    ctx.fillRect(0, 0, W, H);
+    
+    // Grid
+    ctx.strokeStyle = '#1a1a1a';
+    ctx.lineWidth = 1;
+    for (let i = 0; i <= 5; i++) {
+        const y = PAD.top + (chartH / 5) * i;
+        ctx.beginPath();
+        ctx.moveTo(PAD.left, y);
+        ctx.lineTo(PAD.left + chartW, y);
+        ctx.stroke();
+    }
+    
+    const congresses = trend.map(t => t.congress);
+    const n = congresses.length;
+    const xStep = chartW / (n - 1);
+    
+    function xPos(i) { return PAD.left + i * xStep; }
+    function yPos(val, max) { return PAD.top + chartH - (val / max * chartH); }
+    
+    // Datasets
+    const datasets = [
+        {
+            label: 'Blockable Votes',
+            key: 'blockable',
+            color: '#b22222',
+            max: 500,
+            dash: []
+        },
+        {
+            label: 'Unique Betrayers',
+            key: 'unique_betrayers', 
+            color: '#d4af37',
+            max: 300,
+            dash: []
+        },
+        {
+            label: 'Avg Dem Crossovers',
+            key: 'avg_dem_crossovers',
+            color: '#4682b4',
+            max: 200,
+            dash: [5, 5]
+        }
+    ];
+    
+    // Draw each line
+    datasets.forEach(ds => {
+        const vals = trend.map(t => t[ds.key]);
+        const max = ds.max;
+        
+        // Line
+        ctx.beginPath();
+        ctx.strokeStyle = ds.color;
+        ctx.lineWidth = 2.5;
+        ctx.setLineDash(ds.dash);
+        vals.forEach((v, i) => {
+            const x = xPos(i);
+            const y = yPos(v, max);
+            i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+        });
+        ctx.stroke();
+        ctx.setLineDash([]);
+        
+        // Dots + values
+        vals.forEach((v, i) => {
+            const x = xPos(i);
+            const y = yPos(v, max);
+            ctx.beginPath();
+            ctx.arc(x, y, 5, 0, Math.PI * 2);
+            ctx.fillStyle = ds.color;
+            ctx.fill();
+            
+            // Value label
+            ctx.fillStyle = ds.color;
+            ctx.font = 'bold 13px Courier Prime, monospace';
+            ctx.textAlign = 'center';
+            ctx.fillText(typeof v === 'float' ? v.toFixed(1) : v, x, y - 12);
+        });
+    });
+    
+    // X axis labels
+    trend.forEach((t, i) => {
+        const x = xPos(i);
+        ctx.fillStyle = '#888';
+        ctx.font = '12px Courier Prime, monospace';
+        ctx.textAlign = 'center';
+        const lines = t.label.split('\n');
+        lines.forEach((line, li) => {
+            ctx.fillText(line, x, PAD.top + chartH + 20 + li * 16);
+        });
+        
+        // Vertical line at each congress
+        ctx.strokeStyle = '#222';
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        ctx.moveTo(x, PAD.top);
+        ctx.lineTo(x, PAD.top + chartH);
+        ctx.stroke();
+    });
+    
+    // Y axis label
+    ctx.save();
+    ctx.translate(15, PAD.top + chartH/2);
+    ctx.rotate(-Math.PI/2);
+    ctx.fillStyle = '#555';
+    ctx.font = '11px Courier Prime, monospace';
+    ctx.textAlign = 'center';
+    ctx.fillText('COUNT', 0, 0);
+    ctx.restore();
+    
+    // Legend
+    const legendY = H - 20;
+    datasets.forEach((ds, i) => {
+        const lx = PAD.left + i * (chartW / datasets.length) + 20;
+        ctx.beginPath();
+        ctx.strokeStyle = ds.color;
+        ctx.lineWidth = 2.5;
+        ctx.moveTo(lx, legendY);
+        ctx.lineTo(lx + 25, legendY);
+        ctx.stroke();
+        ctx.fillStyle = ds.color;
+        ctx.font = '11px Courier Prime, monospace';
+        ctx.textAlign = 'left';
+        ctx.fillText(ds.label, lx + 30, legendY + 4);
+    });
+    
+    // Title
+    ctx.fillStyle = '#d4af37';
+    ctx.font = 'bold 14px Special Elite, monospace';
+    ctx.textAlign = 'center';
+    ctx.fillText('DEMOCRATIC BETRAYALS BY CONGRESS', W/2, 20);
+    
+    // Render stat boxes
+    const statsDiv = document.getElementById('trendStats');
+    if (statsDiv) {
+        statsDiv.innerHTML = trend.map(t => `
+            <div style="background:#0a0a0a; border:1px solid #333; border-left:3px solid #d4af37; padding:15px;">
+                <div style="color:#d4af37; font-family:'Special Elite',monospace; font-size:1rem; margin-bottom:8px;">Congress ${t.congress}</div>
+                <div style="font-family:'Courier Prime',monospace; font-size:0.8rem; color:#888; line-height:1.8;">
+                    <div>GOP wins: <span style="color:#e2e8f0;">${t.total_gop_wins}</span></div>
+                    <div>Blockable: <span style="color:#b22222; font-weight:bold;">${t.blockable}</span></div>
+                    <div>Unique betrayers: <span style="color:#d4af37; font-weight:bold;">${t.unique_betrayers}</span></div>
+                    <div>Avg Dem crossovers: <span style="color:#4682b4;">${t.avg_dem_crossovers}</span></div>
+                </div>
+            </div>
+        `).join('');
+    }
 }
 
 // Close on backdrop click
