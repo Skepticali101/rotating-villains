@@ -943,7 +943,10 @@ function showMemberPoster(memberName) {
                 <div style="flex:1;">
                     <div style="font-size:2rem; color:${t.accent}; line-height:1.2; margin-bottom:8px;">${member.name}</div>
                     <div style="color:#888; font-size:1rem; margin-bottom:4px; font-family:'Courier Prime',monospace;">${chamber} · ${member.state} · Democrat</div>
-                    <div style="color:#555; font-size:0.85rem; font-family:'Courier Prime',monospace; margin-bottom:16px;">CONGRESSES: ${(member.congresses || []).join(', ') || 'N/A'}</div>
+                    <div style="color:#555; font-size:0.85rem; font-family:'Courier Prime',monospace; margin-bottom:4px;">
+                        ${member.first_elected ? `First elected: ${member.first_elected}` : ''}
+                        ${member.years_in_congress ? ` · <span style="color:#d4af37;">${member.years_in_congress} yrs in Congress</span>` : ''}
+                    </div>
                     
                     <!-- Key stat highlight -->
                     <div style="background:#0a0a0a; border:1px solid ${t.border}; padding:12px; margin-bottom:8px; text-align:center;">
