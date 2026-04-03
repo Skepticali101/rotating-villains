@@ -615,7 +615,7 @@
                 </div>
             `;
 
-            renderClosestCalls(fullData.winnable_votes || []);
+            renderClosestCalls((fullData.winnable_votes || []).filter(v => (v.dem_yes || 0) <= 10));
         }
 
         function renderTableRows(villains) {
