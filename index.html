@@ -449,6 +449,7 @@
         }
     </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 </head>
 <body>
     <div class="container">
@@ -491,6 +492,7 @@
                 enrichedVillains = fullData.rotating_villains;
                 renderDashboard();
                 renderTrendChart();
+                renderCategoryChart();
             } catch (error) {
                 console.error('Error loading data:', error);
                 document.getElementById('mainDashboard').innerHTML = 
@@ -574,7 +576,19 @@
                     </div>
                 </div>
 
-                <div class="section" id="trendSection">
+
+        <div class="section" id="categorySection">
+            <h2>🏭 Betrayals by Industry & Policy Area</h2>
+            <p style="margin-bottom: 20px; opacity: 0.9; font-size: 1.05rem;">
+                Which policy areas see the most Democratic crossovers? Education, Housing and Tech see the highest average — nearly every Dem caves when these come up.
+            </p>
+            <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:12px; margin-bottom:25px;" id="catStatBoxes"></div>
+            <div style="position:relative; width:100%; height:420px;">
+                <canvas id="categoryCanvas"></canvas>
+            </div>
+        </div>
+
+                        <div class="section" id="trendSection">
                     <h2>📈 Betrayal Trends Across Congresses</h2>
                     <p style="margin-bottom: 20px; opacity: 0.9; font-size: 1.05rem;">
                         Tracking how Democratic crossover voting has evolved — more Dems are betraying, but fewer per vote. The rotating villain pattern in action.
@@ -1208,6 +1222,127 @@ function renderTrendChart() {
             </div>
         `).join('');
     }
+}
+
+
+function renderCategoryChart() {
+    if (!fullData || !fullData.category_summary) return;
+    const summary = fullData.category_summary;
+
+    const entries = Object.entries(summary)
+        .filter(([cat]) => cat !== 'Other' && cat !== 'None')
+        .sort((a, b) => b[1].total_dem_yes - a[1].total_dem_yes);
+
+    const cats = entries.map(e => e[0]);
+    const totals = entries.map(e => e[1].total_dem_yes);
+    const avgs = entries.map(e => Math.round(e[1].total_dem_yes / e[1].votes));
+
+    const canvas = document.getElementById('categoryCanvas');
+    if (!canvas) return;
+
+    new Chart(canvas, {
+        type: 'bar',
+        data: {
+            labels: cats,
+            datasets: [
+                {
+                    label: 'Total Dem YES votes',
+                    data: totals,
+                    backgroundColor: 'rgba(178,34,34,0.75)',
+                    borderColor: '#b22222',
+                    borderWidth: 1,
+                    yAxisID: 'y',
+                    order: 2
+                },
+                {
+                    label: 'Avg Dem crossovers per vote',
+                    data: avgs,
+                    type: 'line',
+                    borderColor: '#d4af37',
+                    backgroundColor: 'transparent',
+                    borderWidth: 2.5,
+                    pointRadius: 5,
+                    pointBackgroundColor: '#d4af37',
+                    tension: 0.3,
+                    yAxisID: 'y2',
+                    order: 1
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            interaction: { mode: 'index', intersect: false },
+            plugins: {
+                legend: { display: false },
+                tooltip: {
+                    backgroundColor: '#111',
+                    titleColor: '#d4af37',
+                    bodyColor: '#ccc',
+                    borderColor: '#333',
+                    borderWidth: 1,
+                    padding: 10,
+                    callbacks: {
+                        label: (ctx) => {
+                            if (ctx.datasetIndex === 0) return ' Total Dem YES: ' + ctx.parsed.y.toLocaleString();
+                            return ' Avg per vote: ' + ctx.parsed.y;
+                        }
+                    }
+                }
+            },
+            scales: {
+                x: {
+                    grid: { color: 'rgba(128,128,128,0.1)' },
+                    ticks: { color: '#888', font: { size: 11 }, autoSkip: false, maxRotation: 45 }
+                },
+                y: {
+                    position: 'left',
+                    grid: { color: 'rgba(128,128,128,0.08)' },
+                    ticks: { color: '#b22222', font: { size: 11 } },
+                    title: { display: true, text: 'Total Dem YES', color: '#b22222', font: { size: 11 } }
+                },
+                y2: {
+                    position: 'right',
+                    grid: { drawOnChartArea: false },
+                    ticks: { color: '#d4af37', font: { size: 11 } },
+                    title: { display: true, text: 'Avg per vote', color: '#d4af37', font: { size: 11 } },
+                    min: 0
+                }
+            }
+        }
+    });
+
+    // Stat boxes
+    const top = entries.slice(0, 4);
+    const highest_avg = [...entries].sort((a,b) => (b[1].total_dem_yes/b[1].votes) - (a[1].total_dem_yes/a[1].votes))[0];
+    const lowest_avg = [...entries].sort((a,b) => (a[1].total_dem_yes/a[1].votes) - (b[1].total_dem_yes/b[1].votes))[0];
+
+    document.getElementById('catStatBoxes').innerHTML = `
+        <div style="background:#0a0a0a; border:1px solid #333; border-left:3px solid #b22222; padding:15px;">
+            <div style="font-size:0.7rem; color:#666; letter-spacing:2px; margin-bottom:4px;">MOST TOTAL BETRAYALS</div>
+            <div style="color:#b22222; font-size:1.1rem; font-weight:bold;">${entries[0][0]}</div>
+            <div style="font-size:1.8rem; color:#ff6b6b; font-weight:bold;">${entries[0][1].total_dem_yes.toLocaleString()}</div>
+            <div style="font-size:0.75rem; color:#555;">total Dem YES votes</div>
+        </div>
+        <div style="background:#0a0a0a; border:1px solid #333; border-left:3px solid #d4af37; padding:15px;">
+            <div style="font-size:0.7rem; color:#666; letter-spacing:2px; margin-bottom:4px;">HIGHEST AVG CROSSOVERS</div>
+            <div style="color:#d4af37; font-size:1.1rem; font-weight:bold;">${highest_avg[0]}</div>
+            <div style="font-size:1.8rem; color:#d4af37; font-weight:bold;">${Math.round(highest_avg[1].total_dem_yes/highest_avg[1].votes)}</div>
+            <div style="font-size:0.75rem; color:#555;">Dems per vote on average</div>
+        </div>
+        <div style="background:#0a0a0a; border:1px solid #333; border-left:3px solid #4682b4; padding:15px;">
+            <div style="font-size:0.7rem; color:#666; letter-spacing:2px; margin-bottom:4px;">MOST PARTISAN (FEWEST)</div>
+            <div style="color:#4682b4; font-size:1.1rem; font-weight:bold;">${lowest_avg[0]}</div>
+            <div style="font-size:1.8rem; color:#4682b4; font-weight:bold;">${Math.round(lowest_avg[1].total_dem_yes/lowest_avg[1].votes)}</div>
+            <div style="font-size:0.75rem; color:#555;">Dems per vote on average</div>
+        </div>
+        <div style="background:#0a0a0a; border:1px solid #333; border-left:3px solid #ff6b35; padding:15px;">
+            <div style="font-size:0.7rem; color:#666; letter-spacing:2px; margin-bottom:4px;">TOTAL CATEGORIES TRACKED</div>
+            <div style="color:#ff6b35; font-size:1.1rem; font-weight:bold;">Policy Areas</div>
+            <div style="font-size:1.8rem; color:#ff6b35; font-weight:bold;">${entries.length}</div>
+            <div style="font-size:0.75rem; color:#555;">industries analyzed</div>
+        </div>
+    `;
 }
 
 // Close on backdrop click
