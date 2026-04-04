@@ -974,7 +974,7 @@
         <div id="posterContent"></div>
         <div style="margin-top:20px; display:flex; gap:10px; justify-content:center; flex-wrap:wrap;">
             <button onclick="copyPosterText()" style="background:#1a1a1a; border:2px solid #d4af37; color:#d4af37; padding:12px 25px; font-family:'Special Elite',monospace; font-size:1rem; cursor:pointer; letter-spacing:1px;">📋 COPY TEXT</button>
-            <button onclick="showPosterDonors()" id="posterDonorBtn" style="background:#1a1a1a; border:2px solid #4a9; color:#4a9; padding:12px 25px; font-family:'Special Elite',monospace; font-size:1rem; cursor:pointer; letter-spacing:1px;">💰 TOP DONORS</button>
+            <button onclick="showPosterDonors()" id="posterDonorBtn" style="display:none;">💰 TOP DONORS</button>
             <button onclick="copyPosterImage()" style="background:#1a1a1a; border:2px solid #b22222; color:#ff6b6b; padding:12px 25px; font-family:'Special Elite',monospace; font-size:1rem; cursor:pointer; letter-spacing:1px;">🖼 COPY CARD IMAGE</button>
             <button onclick="closePoster()" style="background:#1a1a1a; border:2px solid #555; color:#888; padding:12px 25px; font-family:'Special Elite',monospace; font-size:1rem; cursor:pointer;">CLOSE</button>
         </div>
@@ -1074,7 +1074,7 @@ function showMemberPoster(memberName) {
             </div>
 
             <!-- Donor Section -->
-            <div id="posterDonorSection" style="border-top:1px solid ${t.border}33; padding:16px 20px; display:none;">
+            <div id="posterDonorSection" style="display:none; visibility:hidden; height:0; overflow:hidden;">
                 <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:10px;">
                     <div style="font-size:0.7rem; color:#666; letter-spacing:2px;">💰 TOP PAC DONORS — DURING SERVICE</div>
                     <div id="posterDonorTotal" style="font-size:0.85rem; color:#4a9; font-family:'Courier Prime',monospace; font-weight:bold;"></div>
