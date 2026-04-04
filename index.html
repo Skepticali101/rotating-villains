@@ -1078,7 +1078,7 @@ function showMemberPoster(memberName) {
                 <div style="font-size:0.7rem; color:#666; letter-spacing:2px; margin-bottom:10px;">💰 TOP PAC DONORS (2024 CYCLE)</div>
                 <div id="posterDonorContent"></div>
                 <div style="font-size:0.65rem; color:#444; margin-top:8px;">
-                    Source: FEC direct PAC contributions · cycle data: ${member.fec_cycle || 'N/A'} · 
+                    FEC direct PAC contributions · cycles: ${(member.fec_cycles||[]).join(', ') || 'N/A'} · 
                     <a href="https://www.fec.gov/data/candidate/${member.fec_candidate_id}/" 
                        target="_blank" style="color:#4682b4;">View full FEC profile →</a>
                 </div>
