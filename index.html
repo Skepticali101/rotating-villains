@@ -262,6 +262,11 @@
             border: 2px solid #d4af37;
         }
         
+        .badge-limited {
+            background: #1a1a1a;
+            color: #888888;
+            border: 1px solid #555555;
+        }
         .badge-info { 
             background: linear-gradient(135deg, #1e3a8a 0%, #0f1f47 100%);
             color: #60a5fa;
@@ -709,7 +714,8 @@
                             </span>
                         </td>
                         <td><span class="badge ${
-                            pattern === 'Rare' ? 'badge-info' : 
+                            pattern === 'Rare' ? 'badge-info' :
+                            pattern === 'Limited Record' ? 'badge-limited' :
                             pattern === 'Strategic Rotator' ? 'badge-warning' : 'badge-danger'
                         }">${pattern}</span></td>
                     </tr>
