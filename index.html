@@ -603,8 +603,14 @@
 
         <div class="section" id="killingTheirOwnSection">
             <h2>🗡️ Killing Their Own — Democrats Blocking Democratic Bills</h2>
-            <p style="margin-bottom: 20px; opacity: 0.9; font-size: 1.05rem;">
+            <p style="margin-bottom: 10px; opacity: 0.9; font-size: 1.05rem;">
                 The betrayal goes both ways. These Democrats voted NO on their own party's bills and progressive amendments — blocking meaningful legislation from passing.
+            </p>
+            <p style="margin-bottom: 20px; font-size: 0.85rem; color: #666; font-family: 'Courier Prime', monospace;">
+                📅 Data covers <span style="color:#d4af37;">Congresses 111, 116, 118 &amp; 119</span> 
+                (2009–2011, 2019–2021, 2023–2027) — the years when Democrats held enough seats to win, 
+                making each NO vote a deliberate choice. 
+                Last updated: <span style="color:#d4af37;" id="ktoLastUpdated"></span>
             </p>
             <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:12px; margin-bottom:25px;" id="ktoStatBoxes"></div>
             
@@ -1401,6 +1407,15 @@ function renderKillingTheirOwn() {
         `;
     }
     showKTO('bills');
+    renderKillingTheirOwnDate();
+}
+
+function renderKillingTheirOwnDate() {
+    const el = document.getElementById('ktoLastUpdated');
+    if (el) {
+        const now = new Date();
+        el.textContent = now.toLocaleDateString('en-US', {year:'numeric', month:'long', day:'numeric'});
+    }
 }
 
 function showKTO(type) {
