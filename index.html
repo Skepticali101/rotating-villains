@@ -518,10 +518,10 @@
                 <button style="background:#1a1a1a; border:2px solid #b22222; color:#ff6b6b; padding:12px 22px; font-family:'Special Elite',monospace; font-size:0.9rem; cursor:pointer; letter-spacing:1px;">🏭 BY INDUSTRY</button>
             </a>
             <a href="#trendSection" style="text-decoration:none;">
-                <button style="background:#1a1a1a; border:2px solid #4682b4; color:#6ab0ff; padding:12px 22px; font-family:'Special Elite',monospace; font-size:0.9rem; cursor:pointer; letter-spacing:1px;">📈 TRENDS</button>
+                <button style="background:#1a1a1a; border:2px solid #ff6b35; color:#ff6b35; padding:12px 22px; font-family:'Special Elite',monospace; font-size:0.9rem; cursor:pointer; letter-spacing:1px;">📈 TRENDS</button>
             </a>
             <a href="#killingTheirOwnSection" style="text-decoration:none;">
-                <button style="background:#1a1a1a; border:2px solid #ff6b35; color:#ff6b35; padding:12px 22px; font-family:'Special Elite',monospace; font-size:0.9rem; cursor:pointer; letter-spacing:1px;">🗡️ KILLING THEIR OWN</button>
+                <button style="background:#1a1a1a; border:2px solid #4682b4; color:#6ab0ff; padding:12px 22px; font-family:'Special Elite',monospace; font-size:0.9rem; cursor:pointer; letter-spacing:1px;">🗡️ KILLING THEIR OWN</button>
             </a>
             <a href="#closestCallsSection" style="text-decoration:none;">
                 <button style="background:#1a1a1a; border:2px solid #d4af37; color:#d4af37; padding:12px 22px; font-family:'Special Elite',monospace; font-size:0.9rem; cursor:pointer; letter-spacing:1px;">🔥 CLOSEST CALLS</button>
@@ -988,9 +988,10 @@ function showMemberPoster(memberName) {
 
     // Theme by badge
     const themes = {
-        'Super Villain':      { bg: '#1a0000', border: '#b22222', accent: '#ff4444', label: '⚠ SUPER VILLAIN',     stamp: '#ff4444' },
-        'Strategic Rotator':  { bg: '#1a1400', border: '#d4af37', accent: '#d4af37', label: '🔄 STRATEGIC ROTATOR', stamp: '#d4af37' },
-        'Rare':               { bg: '#001020', border: '#4682b4', accent: '#6ab0ff', label: '👁 RARE OFFENDER',      stamp: '#6ab0ff' }
+        'Super Villain':      { bg: '#1a0000', border: '#b22222', accent: '#ff4444', label: '⚠ SUPER VILLAIN',      stamp: '#ff4444' },
+        'Strategic Rotator':  { bg: '#1a1400', border: '#d4af37', accent: '#d4af37', label: '🔄 STRATEGIC ROTATOR',  stamp: '#d4af37' },
+        'Rare':               { bg: '#001020', border: '#4682b4', accent: '#6ab0ff', label: '👁 RARE OFFENDER',       stamp: '#6ab0ff' },
+        'Limited Record':     { bg: '#111111', border: '#555555', accent: '#888888', label: '📁 LIMITED RECORD',      stamp: '#888888' }
     };
     const t = themes[pattern] || themes['Rare'];
 
@@ -1071,7 +1072,8 @@ function showMemberPoster(memberName) {
                 <div style="font-size:0.75rem; color:#444; font-family:'Courier Prime',monospace;">TOTAL BETRAYALS: ${totalBetrayal}</div>
                 <div style="font-size:1.2rem; font-weight:bold; color:${t.accent}; border:2px solid ${t.accent}; padding:3px 10px; transform:rotate(-3deg); letter-spacing:2px;">${
                 pattern === 'Super Villain' ? 'VILLAIN' : 
-                pattern === 'Strategic Rotator' ? 'ROTATOR' : 'RARE'
+                pattern === 'Strategic Rotator' ? 'ROTATOR' :
+                pattern === 'Limited Record' ? 'LIMITED' : 'RARE'
             }</div>
             </div>
         </div>
