@@ -974,6 +974,7 @@
         <div id="posterContent"></div>
         <div style="margin-top:20px; display:flex; gap:10px; justify-content:center; flex-wrap:wrap;">
             <button onclick="copyPosterText()" style="background:#1a1a1a; border:2px solid #d4af37; color:#d4af37; padding:12px 25px; font-family:'Special Elite',monospace; font-size:1rem; cursor:pointer; letter-spacing:1px;">📋 COPY TEXT</button>
+            <button onclick="showPosterDonors()" id="posterDonorBtn" style="background:#1a1a1a; border:2px solid #4a9; color:#4a9; padding:12px 25px; font-family:'Special Elite',monospace; font-size:1rem; cursor:pointer; letter-spacing:1px;">💰 TOP DONORS</button>
             <button onclick="copyPosterImage()" style="background:#1a1a1a; border:2px solid #b22222; color:#ff6b6b; padding:12px 25px; font-family:'Special Elite',monospace; font-size:1rem; cursor:pointer; letter-spacing:1px;">🖼 COPY CARD IMAGE</button>
             <button onclick="closePoster()" style="background:#1a1a1a; border:2px solid #555; color:#888; padding:12px 25px; font-family:'Special Elite',monospace; font-size:1rem; cursor:pointer;">CLOSE</button>
         </div>
@@ -1072,6 +1073,17 @@ function showMemberPoster(memberName) {
                 </div>
             </div>
 
+            <!-- Donor Section -->
+            <div id="posterDonorSection" style="border-top:1px solid ${t.border}33; padding:16px 20px; display:none;">
+                <div style="font-size:0.7rem; color:#666; letter-spacing:2px; margin-bottom:10px;">💰 TOP PAC DONORS (2024 CYCLE)</div>
+                <div id="posterDonorContent"></div>
+                <div style="font-size:0.65rem; color:#444; margin-top:8px;">
+                    Source: FEC direct PAC contributions only · 
+                    <a href="https://www.fec.gov/data/candidate/${member.fec_candidate_id}/" 
+                       target="_blank" style="color:#4682b4;">View full FEC profile →</a>
+                </div>
+            </div>
+
             <!-- Footer stamp -->
             <div style="border-top:1px solid ${t.border}33; padding:14px 20px; display:flex; justify-content:space-between; align-items:center;">
                 <div style="font-family:'Courier Prime',monospace; font-size:0.75rem; color:#444;">rotatingvillains.org</div>
@@ -1089,6 +1101,10 @@ function showMemberPoster(memberName) {
     window._currentPosterMember = member;
     window._currentPosterTheme = t;
     document.getElementById('posterModal').style.display = 'block';
+    const ds = document.getElementById('posterDonorSection');
+    if (ds) ds.style.display = 'none';
+    const db = document.getElementById('posterDonorBtn');
+    if (db) { db.textContent = '💰 TOP DONORS'; }
     document.body.style.overflow = 'hidden';
 }
 
@@ -1499,6 +1515,60 @@ function showKTO(type) {
     }).join('');
     
     document.getElementById('ktoContent').innerHTML = html || '<p style="color:#888; padding:20px;">No data available.</p>';
+}
+
+
+function showPosterDonors() {
+    const member = window._currentPosterMember;
+    if (!member) return;
+
+    const section = document.getElementById('posterDonorSection');
+    const content = document.getElementById('posterDonorContent');
+    const btn = document.getElementById('posterDonorBtn');
+
+    // Toggle
+    if (section.style.display !== 'none') {
+        section.style.display = 'none';
+        btn.textContent = '💰 TOP DONORS';
+        return;
+    }
+
+    const donors = member.top_donors || [];
+    const note = member.fec_note || '';
+
+    if (donors.length === 0) {
+        content.innerHTML = `<div style="color:#666; font-size:0.85rem; font-family:'Courier Prime',monospace;">
+            ${note || 'No PAC donor data available for this member.'}
+        </div>`;
+    } else {
+        const maxAmt = Math.max(...donors.map(d => d.amount));
+        content.innerHTML = donors.map(d => {
+            const pct = Math.round((d.amount / maxAmt) * 100);
+            // Clean up PAC name
+            const name = d.name
+                .replace(/ POLITICAL ACTION COMMITTEE/gi, ' PAC')
+                .replace(/ COMMITTEE ON POLITICAL/gi, '')
+                .replace(/ POLITICAL CONTRIBUTIONS/gi, '')
+                .replace(/ POLITICAL EDUCATION/gi, '')
+                .trim();
+            return `
+                <div style="margin-bottom:8px;">
+                    <div style="display:flex; justify-content:space-between; margin-bottom:3px;">
+                        <span style="color:#ccc; font-size:0.78rem; font-family:'Courier Prime',monospace;">${name}</span>
+                        <span style="color:#4a9; font-size:0.78rem; font-weight:bold; margin-left:8px; white-space:nowrap;">
+                            $${Math.round(d.amount).toLocaleString()}
+                        </span>
+                    </div>
+                    <div style="background:#1a1a1a; height:5px; border-radius:2px;">
+                        <div style="background:#4a9; height:5px; width:${pct}%; border-radius:2px;"></div>
+                    </div>
+                </div>
+            `;
+        }).join('');
+    }
+
+    section.style.display = 'block';
+    btn.textContent = '💰 HIDE DONORS';
 }
 
 // Close on backdrop click
