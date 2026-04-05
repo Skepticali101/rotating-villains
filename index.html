@@ -387,69 +387,76 @@
         }
         
         @media (max-width: 768px) {
-            /* NUCLEAR RESET */
-            * {
-                margin: 0 !important;
-                padding: 0 !important;
-                border: none !important;
-                position: static !important;
-                min-width: 0 !important;
-                max-width: none !important;
-            }
-            
-            body {
-                background: #0a0a0a !important;
-                padding: 10px !important;
-            }
-            
-            .container {
-                width: 100% !important;
-            }
-            
+
+            body { background: #0a0a0a; padding: 10px; }
+
+            .container { width: 100%; }
+
             .header, .section, .alert-banner {
-                width: 100% !important;
-                padding: 15px !important;
-                margin-bottom: 20px !important;
-                background: #141414 !important;
-                border: 1px solid #d4af37 !important;
+                width: 100%;
+                padding: 15px;
+                margin-bottom: 20px;
+                background: #141414;
+                border: 1px solid #d4af37;
+                box-sizing: border-box;
             }
-            
+
             .header {
-                text-align: center !important;
-                border-top: 3px solid #d4af37 !important;
-                border-bottom: 3px solid #d4af37 !important;
+                text-align: center;
+                border-top: 3px solid #d4af37;
+                border-bottom: 3px solid #d4af37;
             }
-            
-            .header h1 {
-                font-size: 1.8rem !important;
-                margin-bottom: 10px !important;
-                color: #d4af37 !important;
-            }
-            
-            .header .subtitle {
-                font-size: 0.95rem !important;
-                line-height: 1.5 !important;
-                color: #a8a8a8 !important;
-            }
-            
+
+            .header h1 { font-size: 1.8rem; margin-bottom: 10px; color: #d4af37; }
+            .header .subtitle { font-size: 0.95rem; line-height: 1.5; color: #a8a8a8; }
+
             .scroll-container {
+                width: 100%;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            table { min-width: 700px; font-size: 0.85rem; }
+            th, td { padding: 8px 6px; }
+            .mobile-hide { display: none; }
+
+            .modal {
+                position: fixed !important;
+                z-index: 1000 !important;
+                top: 0 !important;
+                left: 0 !important;
                 width: 100% !important;
-                overflow-x: auto !important;
-                -webkit-overflow-scrolling: touch !important;
+                height: 100% !important;
+                overflow-y: auto !important;
             }
-            
-            table {
-                min-width: 700px !important;
-                font-size: 0.85rem !important;
+
+            .modal-content {
+                margin: 20px auto !important;
+                width: 95% !important;
+                max-width: 95% !important;
             }
-            
-            th, td {
-                padding: 8px 6px !important;
+
+            #posterModal {
+                position: fixed !important;
+                z-index: 2000 !important;
+                top: 0 !important;
+                left: 0 !important;
+                width: 100% !important;
+                height: 100% !important;
+                overflow-y: auto !important;
             }
-            
-            /* Hide click instruction on mobile */
-            .mobile-hide {
-                display: none !important;
+
+            button {
+                cursor: pointer;
+                -webkit-tap-highlight-color: rgba(212,175,55,0.3);
+                touch-action: manipulation;
+            }
+
+            .clickable {
+                display: inline-block;
+                padding: 4px 2px;
+                -webkit-tap-highlight-color: rgba(212,175,55,0.3);
+                touch-action: manipulation;
             }
         }
     </style>
@@ -689,29 +696,16 @@
                         <td><button style="font-size: 1.05rem; cursor: pointer; text-decoration: underline dotted; color: #d4af37; background:none; border:none; padding:0; font-family:inherit; font-weight:bold; text-align:left;" onclick="showMemberPoster('${escapeHtml(v.name)}')">${v.name}</button></td>
                         <td>${v.state}</td>
                         <td>
-                            <span class="clickable" style="color: #b22222;" 
-                                  onclick="showBetrayals('${escapeHtml(v.name)}', 'voted_yes')">
-                                ${v.voted_with_gop}
-                            </span>
+                            <button class="clickable" style="color:#b22222;background:none;border:none;padding:4px;font-family:inherit;font-size:inherit;cursor:pointer;font-weight:bold;" onclick="showBetrayals('${escapeHtml(v.name)}', 'voted_yes')">${v.voted_with_gop}</button>
                         </td>
                         <td>
-                            <span class="clickable" title="Votes Dems could have blocked — click to see" 
-                                  style="color: #ff6b35; font-weight: bold;"
-                                  onclick="showBetrayals('${escapeHtml(v.name)}', 'decisive')">
-                                ${v.decisive_betrayals || 0}
-                            </span>
+                            <button class="clickable" title="Votes Dems could have blocked" style="color:#ff6b35;background:none;border:none;padding:4px;font-family:inherit;font-size:inherit;cursor:pointer;font-weight:bold;" onclick="showBetrayals('${escapeHtml(v.name)}', 'decisive')">${v.decisive_betrayals || 0}</button>
                         </td>
                         <td>
-                            <span class="clickable" style="color: #d4af37;" 
-                                  onclick="showBetrayals('${escapeHtml(v.name)}', 'absent')">
-                                ${v.absent}
-                            </span>
+                            <button class="clickable" style="color:#d4af37;background:none;border:none;padding:4px;font-family:inherit;font-size:inherit;cursor:pointer;font-weight:bold;" onclick="showBetrayals('${escapeHtml(v.name)}', 'absent')">${v.absent}</button>
                         </td>
                         <td>
-                            <span class="clickable" style="color: #4682b4;" 
-                                  onclick="showAntiDemVotes('${escapeHtml(v.name)}')">
-                                ${antiDem}
-                            </span>
+                            <button class="clickable" style="color:#4682b4;background:none;border:none;padding:4px;font-family:inherit;font-size:inherit;cursor:pointer;font-weight:bold;" onclick="showAntiDemVotes('${escapeHtml(v.name)}')">${antiDem}</button>
                         </td>
                         <td><span class="badge ${
                             pattern === 'Rare' ? 'badge-info' :
