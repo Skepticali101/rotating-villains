@@ -597,7 +597,7 @@
                                     <th style="cursor: pointer;" onclick="sortTable('name')">Member ↕</th>
                                     <th style="cursor: pointer;" onclick="sortTable('state')">State ↕</th>
                                     <!-- VOTED_WITH_GOP_HEADER <th style="cursor: pointer;" onclick="sortTable('voted_with_gop')">Voted with GOP ↕</th> -->
-                                    <th style="cursor: pointer;" onclick="sortTable('decisive_betrayals')" title="Votes where Dems had the power to block the bill">🎯 Decisive ↕</th>
+                                    <th style="cursor: pointer;" onclick="sortTable('decisive_betrayals')" title="Votes where Dems had the power to block the bill">Deciding Votes ↕</th>
                                     <th style="cursor: pointer;" onclick="sortTable('absent')">Conveniently Absent ↕</th>
                                     <th style="cursor: pointer;" onclick="sortTable('voted_against_dems')">Voted Against Dems ↕</th>
                                     <th style="cursor: pointer;" onclick="sortTable('pattern')">Pattern ↕</th>
@@ -1060,15 +1060,14 @@ function showMemberPoster(memberName) {
                     <div style="font-size:2rem; color:#ff6b6b;">${member.voted_with_gop}</div>
                 </div>
             -->
-            <div style="display:grid; grid-template-columns:1fr 1fr; border-top:1px solid ${t.border}33;">
-                <div style="padding:16px; text-align:center; border-right:1px solid ${t.border}33;">
-                <div style="padding:16px; text-align:center; border-right:1px solid ${t.border}33;">
-                    <div style="font-size:0.7rem; color:#666; letter-spacing:2px; margin-bottom:6px;">WENT MISSING</div>
-                    <div style="font-size:2rem; color:#d4af37;">${member.absent}</div>
+            <div style="display:grid; grid-template-columns:1fr 1fr; border-top:1px solid ${t.border}33; position:relative;">
+                <div style="padding:20px 16px; text-align:center; border-right:1px solid ${t.border}33;">
+                    <div style="font-size:0.65rem; color:#888; letter-spacing:2px; margin-bottom:8px;">SKIPPED WORK</div>
+                    <div style="font-size:2.4rem; font-weight:bold; color:#d4af37;">${member.absent}</div>
                 </div>
-                <div style="padding:16px; text-align:center;">
-                    <div style="font-size:0.7rem; color:#666; letter-spacing:2px; margin-bottom:6px;">AGAINST DEM BILLS</div>
-                    <div style="font-size:2rem; color:#4682b4;">${member.voted_against_dems}</div>
+                <div style="padding:20px 16px; text-align:center;">
+                    <div style="font-size:0.65rem; color:#888; letter-spacing:2px; margin-bottom:8px;">AGAINST DEM BILLS</div>
+                    <div style="font-size:2.4rem; font-weight:bold; color:#4682b4;">${member.voted_against_dems}</div>
                 </div>
             </div>
 
@@ -1087,14 +1086,20 @@ function showMemberPoster(memberName) {
             </div>
 
             <!-- Footer stamp -->
-            <div style="border-top:1px solid ${t.border}33; padding:14px 20px; display:flex; justify-content:space-between; align-items:center;">
-                <div style="font-family:'Courier Prime',monospace; font-size:0.75rem; color:#444;">rotatingvillains.org</div>
-                <div style="font-size:0.75rem; color:#444; font-family:'Courier Prime',monospace;">TOTAL BETRAYALS: ${totalBetrayal}</div>
-                <div style="font-size:1.2rem; font-weight:bold; color:${t.accent}; border:2px solid ${t.accent}; padding:3px 10px; transform:rotate(-3deg); letter-spacing:2px;">${
+            <div style="position:relative; border-top:1px solid ${t.border}33; padding:16px 20px; text-align:center; overflow:hidden;">
+                <!-- Diagonal villain stamp -->
+                <div style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%) rotate(-18deg); font-size:3.2rem; font-weight:bold; color:${t.accent}; border:4px solid ${t.accent}; padding:4px 18px; letter-spacing:4px; opacity:0.18; pointer-events:none; white-space:nowrap;">${
                 pattern === 'Super Villain' ? 'VILLAIN' : 
                 pattern === 'Strategic Rotator' ? 'ROTATOR' :
                 pattern === 'Limited Record' ? 'LIMITED' : 'RARE'
             }</div>
+                <!-- Foreground stamp (smaller, solid) -->
+                <div style="display:inline-block; font-size:1.3rem; font-weight:bold; color:${t.accent}; border:3px solid ${t.accent}; padding:4px 16px; transform:rotate(-3deg); letter-spacing:3px; margin-bottom:10px;">${
+                pattern === 'Super Villain' ? 'VILLAIN' : 
+                pattern === 'Strategic Rotator' ? 'ROTATOR' :
+                pattern === 'Limited Record' ? 'LIMITED' : 'RARE'
+            }</div>
+                <div style="font-family:'Courier Prime',monospace; font-size:0.7rem; color:#555; letter-spacing:2px; margin-top:4px;">rotatingvillains.org</div>
             </div>
         </div>
     `;
