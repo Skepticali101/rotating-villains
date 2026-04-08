@@ -1037,16 +1037,16 @@ function showMemberPoster(memberName) {
                         ${member.first_elected ? `First elected: ${member.first_elected}` : ''}
                         ${member.years_in_congress ? ` · <span style="color:#d4af37;">${member.years_in_congress} yrs in Congress</span>` : ''}
                 <div style="margin-top:8px; display:flex; gap:6px; flex-wrap:wrap;">
-                    ${(member.tags||[]).includes('over_70') ? '<span style="font-size:0.7rem;background:#5a2d00;color:#ffaa44;border:1px solid #ffaa44;border-radius:4px;padding:2px 8px;">🦴 Age 70+</span>' : ''}
+                    ${(member.tags||[]).includes('over_70') ? `<span style="font-size:0.7rem;background:#5a2d00;color:#ffaa44;border:1px solid #ffaa44;border-radius:4px;padding:2px 8px;">🦴 Age ${member.age || '70+'}</span>` : ''}
                     ${(member.tags||[]).includes('retired') ? '<span style="font-size:0.7rem;background:#1a1a2e;color:#8888aa;border:1px solid #8888aa;border-radius:4px;padding:2px 8px;">🏛️ Retired</span>' : ''}
                 </div>
                     </div>
                     
                     <!-- Key stat highlight -->
                     <div style="background:#0a0a0a; border:1px solid ${t.border}; padding:12px; margin-bottom:8px; text-align:center;">
-                        <div style="font-size:0.75rem; color:#666; letter-spacing:2px; margin-bottom:8px;">DECISIVE BETRAYALS</div>
-                        <div style="display:flex; justify-content:center; gap:20px;">
-                            <div>
+                        <div style="font-size:0.75rem; color:#666; letter-spacing:2px; margin-bottom:8px; text-align:center;">DECISIVE BETRAYALS</div>
+                        <div style="display:flex; justify-content:center; align-items:flex-start; gap:0; width:100%;">
+                            <div style="flex:1; text-align:center; padding:0 8px;">
                                 <div style="font-size:2rem; color:${t.accent}; font-weight:bold; line-height:1;">${decisive}</div>
                                 <div style="font-size:0.65rem; color:#555; margin-top:3px;">voted YES</div>
                             </div>
