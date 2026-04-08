@@ -693,7 +693,11 @@
                 
                 return `
                     <tr>
-                        <td><button style="font-size: 1.05rem; cursor: pointer; text-decoration: underline dotted; color: #d4af37; background:none; border:none; padding:0; font-family:inherit; font-weight:bold; text-align:left;" onclick="showMemberPoster('${escapeHtml(v.name)}')">${v.name}</button></td>
+                        <td>
+                            <button style="font-size: 1.05rem; cursor: pointer; text-decoration: underline dotted; color: #d4af37; background:none; border:none; padding:0; font-family:inherit; font-weight:bold; text-align:left;" onclick="showMemberPoster('${escapeHtml(v.name)}')">${v.name}</button>
+                            ${(v.tags||[]).includes('over_70') ? '<span style="font-size:0.65rem;background:#5a2d00;color:#ffaa44;border:1px solid #ffaa44;border-radius:3px;padding:1px 5px;margin-left:5px;vertical-align:middle;">🦴 70+</span>' : ''}
+                            ${(v.tags||[]).includes('retired') ? '<span style="font-size:0.65rem;background:#1a1a2e;color:#8888aa;border:1px solid #8888aa;border-radius:3px;padding:1px 5px;margin-left:5px;vertical-align:middle;">🏛️ Retired</span>' : ''}
+                        </td>
                         <td>${v.state}</td>
                         <!-- VOTED_WITH_GOP_CELL
                         <td>
@@ -1032,6 +1036,10 @@ function showMemberPoster(memberName) {
                     <div style="color:#555; font-size:0.85rem; font-family:'Courier Prime',monospace; margin-bottom:4px;">
                         ${member.first_elected ? `First elected: ${member.first_elected}` : ''}
                         ${member.years_in_congress ? ` · <span style="color:#d4af37;">${member.years_in_congress} yrs in Congress</span>` : ''}
+                <div style="margin-top:8px; display:flex; gap:6px; flex-wrap:wrap;">
+                    ${(member.tags||[]).includes('over_70') ? '<span style="font-size:0.7rem;background:#5a2d00;color:#ffaa44;border:1px solid #ffaa44;border-radius:4px;padding:2px 8px;">🦴 Age 70+</span>' : ''}
+                    ${(member.tags||[]).includes('retired') ? '<span style="font-size:0.7rem;background:#1a1a2e;color:#8888aa;border:1px solid #8888aa;border-radius:4px;padding:2px 8px;">🏛️ Retired</span>' : ''}
+                </div>
                     </div>
                     
                     <!-- Key stat highlight -->
