@@ -1021,43 +1021,45 @@ function showMemberPoster(memberName) {
             </div>
 
             <!-- Photo + name block -->
-            <div style="display:flex; gap:25px; padding:25px; align-items:flex-start;">
-                <div style="flex-shrink:0;">
+            <div style="display:flex; flex-wrap:wrap; gap:20px; padding:20px; align-items:flex-start; justify-content:center;">
+                <div style="flex-shrink:0; text-align:center;">
                     ${photoUrl ? `
                     <img src="${photoUrl}" 
                          onerror="this.src='${photoUrlFallback}'; this.onerror=function(){this.style.display='none'; this.nextElementSibling.style.display='flex';};"
-                         style="width:140px; height:175px; object-fit:cover; border:3px solid ${t.border}; filter:grayscale(30%) contrast(1.1);">
+                         style="width:120px; height:150px; object-fit:cover; border:3px solid ${t.border}; filter:grayscale(30%) contrast(1.1); display:block;">
                     ` : ''}
-                    <div style="width:140px; height:175px; background:#1a1a1a; border:3px solid ${t.border}; display:${photoUrl ? 'none' : 'flex'}; align-items:center; justify-content:center; color:#555; font-size:3rem;">👤</div>
+                    <div style="width:120px; height:150px; background:#1a1a1a; border:3px solid ${t.border}; display:${photoUrl ? 'none' : 'flex'}; align-items:center; justify-content:center; color:#555; font-size:3rem;">👤</div>
                 </div>
-                <div style="flex:1;">
-                    <div style="font-size:2rem; color:${t.accent}; line-height:1.2; margin-bottom:8px;">${member.name}</div>
-                    <div style="color:#888; font-size:1rem; margin-bottom:4px; font-family:'Courier Prime',monospace;">${chamber} · ${member.state} · Democrat</div>
-                    <div style="color:#555; font-size:0.85rem; font-family:'Courier Prime',monospace; margin-bottom:4px;">
+                <div style="flex:1; min-width:180px;">
+                    <div style="font-size:1.8rem; color:${t.accent}; line-height:1.2; margin-bottom:6px;">${member.name}</div>
+                    <div style="color:#888; font-size:0.9rem; margin-bottom:4px; font-family:'Courier Prime',monospace;">${chamber} · ${member.state} · Democrat</div>
+                    <div style="color:#555; font-size:0.8rem; font-family:'Courier Prime',monospace; margin-bottom:6px;">
                         ${member.first_elected ? `First elected: ${member.first_elected}` : ''}
                         ${member.years_in_congress ? ` · <span style="color:#d4af37;">${member.years_in_congress} yrs in Congress</span>` : ''}
-                <div style="margin-top:8px; display:flex; gap:6px; flex-wrap:wrap;">
-                    ${(member.tags||[]).includes('over_70') ? `<span style="font-size:0.7rem;background:#5a2d00;color:#ffaa44;border:1px solid #ffaa44;border-radius:4px;padding:2px 8px;">🦴 Age ${member.age || '70+'}</span>` : ''}
-                    ${(member.tags||[]).includes('retired') ? '<span style="font-size:0.7rem;background:#1a1a2e;color:#8888aa;border:1px solid #8888aa;border-radius:4px;padding:2px 8px;">🏛️ Retired</span>' : ''}
+                    </div>
+                    <div style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:10px;">
+                        ${(member.tags||[]).includes('over_70') ? `<span style="font-size:0.7rem;background:#5a2d00;color:#ffaa44;border:1px solid #ffaa44;border-radius:4px;padding:2px 8px;">🦴 Age ${member.age || '70+'}</span>` : ''}
+                        ${(member.tags||[]).includes('retired') ? '<span style="font-size:0.7rem;background:#1a1a2e;color:#8888aa;border:1px solid #8888aa;border-radius:4px;padding:2px 8px;">🏛️ Retired</span>' : ''}
+                    </div>
                 </div>
+            </div>
+
+            <!-- Decisive Betrayals box — full width, always centered -->
+            <div style="margin:0 20px 12px; background:#0a0a0a; border:1px solid ${t.border}; padding:16px; text-align:center;">
+                <div style="font-size:0.75rem; color:#666; letter-spacing:2px; margin-bottom:10px;">DECISIVE BETRAYALS</div>
+                <div style="display:flex; justify-content:center; align-items:flex-start; width:100%;">
+                    <div style="flex:1; text-align:center; padding:0 12px;">
+                        <div style="font-size:2.2rem; color:${t.accent}; font-weight:bold; line-height:1;">${decisive}</div>
+                        <div style="font-size:0.65rem; color:#666; margin-top:4px; letter-spacing:1px;">VOTED YES</div>
                     </div>
-                    
-                    <!-- Key stat highlight -->
-                    <div style="background:#0a0a0a; border:1px solid ${t.border}; padding:12px; margin-bottom:8px; text-align:center;">
-                        <div style="font-size:0.75rem; color:#666; letter-spacing:2px; margin-bottom:8px; text-align:center;">DECISIVE BETRAYALS</div>
-                        <div style="display:flex; justify-content:center; align-items:flex-start; gap:0; width:100%;">
-                            <div style="flex:1; text-align:center; padding:0 8px;">
-                                <div style="font-size:2rem; color:${t.accent}; font-weight:bold; line-height:1;">${decisive}</div>
-                                <div style="font-size:0.65rem; color:#555; margin-top:3px;">voted YES</div>
-                            </div>
-                            <div style="border-left:1px solid ${t.border}33;"></div>
-                            <div>
-                                <div style="font-size:2rem; color:#d4af37; font-weight:bold; line-height:1;">${member.decisive_absent || 0}</div>
-                                <div style="font-size:0.65rem; color:#555; margin-top:3px;">went missing</div>
-                            </div>
-                        </div>
-                        <div style="font-size:0.65rem; color:#444; margin-top:6px;">on votes dems could have blocked</div>
+                    <div style="width:1px; background:${t.border}; opacity:0.3; align-self:stretch;"></div>
+                    <div style="flex:1; text-align:center; padding:0 12px;">
+                        <div style="font-size:2.2rem; color:#d4af37; font-weight:bold; line-height:1;">${member.decisive_absent || 0}</div>
+                        <div style="font-size:0.65rem; color:#666; margin-top:4px; letter-spacing:1px;">WENT MISSING</div>
                     </div>
+                </div>
+                <div style="font-size:0.65rem; color:#444; margin-top:8px; letter-spacing:1px;">ON VOTES DEMS COULD HAVE BLOCKED</div>
+            </div>
                 </div>
             </div>
 
