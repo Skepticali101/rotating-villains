@@ -694,7 +694,7 @@
                 return `
                     <tr>
                         <td>
-                            <button style="font-size: 1.05rem; cursor: pointer; text-decoration: underline dotted; color: #d4af37; background:none; border:none; padding:0; font-family:inherit; font-weight:bold; text-align:left;" onclick="showMemberPoster('${escapeHtml(v.name)}')">${v.name}</button>
+                            <button style="font-size: 1.05rem; cursor: pointer; text-decoration: underline dotted; color: #d4af37; background:none; border:none; padding:0; font-family:'Space Grotesk', sans-serif; font-weight:700; text-align:left;" onclick="showMemberPoster('${escapeHtml(v.name)}')">${v.name}</button>
                             ${(v.tags||[]).includes('over_70') ? '<span style="font-size:0.65rem;background:#5a2d00;color:#ffaa44;border:1px solid #ffaa44;border-radius:3px;padding:1px 5px;margin-left:5px;vertical-align:middle;">🦴 70+</span>' : ''}
                             ${(v.tags||[]).includes('retired') ? '<span style="font-size:0.65rem;background:#1a1a2e;color:#8888aa;border:1px solid #8888aa;border-radius:3px;padding:1px 5px;margin-left:5px;vertical-align:middle;">🏛️ Retired</span>' : ''}
                         </td>
@@ -1046,19 +1046,19 @@ function showMemberPoster(memberName) {
 
             <!-- Decisive Betrayals box — full width, always centered -->
             <div style="margin:0 20px 12px; background:#0a0a0a; border:1px solid ${t.border}; padding:16px; text-align:center;">
-                <div style="font-size:0.75rem; color:#666; letter-spacing:2px; margin-bottom:10px;">DECISIVE BETRAYALS</div>
+                <div style="font-size:0.85rem; color:#666; letter-spacing:2px; margin-bottom:10px; font-family:'JetBrains Mono',monospace;">DECIDING VOTES</div>
                 <div style="display:flex; justify-content:center; align-items:flex-start; width:100%;">
                     <div style="flex:1; text-align:center; padding:0 12px;">
                         <div style="font-size:2.2rem; color:${t.accent}; font-weight:bold; line-height:1;">${decisive}</div>
-                        <div style="font-size:0.65rem; color:#666; margin-top:4px; letter-spacing:1px;">VOTED YES</div>
+                        <div style="font-size:0.8rem; color:#666; margin-top:6px; letter-spacing:2px; font-family:'JetBrains Mono',monospace;">VOTED YES</div>
                     </div>
                     <div style="width:1px; background:${t.border}; opacity:0.3; align-self:stretch;"></div>
                     <div style="flex:1; text-align:center; padding:0 12px;">
                         <div style="font-size:2.2rem; color:#d4af37; font-weight:bold; line-height:1;">${member.decisive_absent || 0}</div>
-                        <div style="font-size:0.65rem; color:#666; margin-top:4px; letter-spacing:1px;">WENT MISSING</div>
+                        <div style="font-size:0.8rem; color:#666; margin-top:6px; letter-spacing:2px; font-family:'JetBrains Mono',monospace;">WENT MISSING</div>
                     </div>
                 </div>
-                <div style="font-size:0.65rem; color:#444; margin-top:8px; letter-spacing:1px;">ON VOTES DEMS COULD HAVE BLOCKED</div>
+                <div style="font-size:0.75rem; color:#666; margin-top:10px; letter-spacing:2px; font-family:'JetBrains Mono',monospace;">ON VOTES DEMS COULD HAVE BLOCKED</div>
             </div>
                 </div>
             </div>
@@ -1072,11 +1072,11 @@ function showMemberPoster(memberName) {
             -->
             <div style="display:grid; grid-template-columns:1fr 1fr; border-top:1px solid ${t.border}33; position:relative;">
                 <div style="padding:20px 16px; text-align:center; border-right:1px solid ${t.border}33;">
-                    <div style="font-size:0.65rem; color:#888; letter-spacing:2px; margin-bottom:8px;">SKIPPED WORK</div>
+                    <div style="font-size:0.8rem; color:#666; letter-spacing:2px; margin-bottom:8px; font-family:'JetBrains Mono',monospace;">SKIPPED WORK</div>
                     <div style="font-size:2.4rem; font-weight:bold; color:#d4af37;">${member.absent}</div>
                 </div>
                 <div style="padding:20px 16px; text-align:center;">
-                    <div style="font-size:0.65rem; color:#888; letter-spacing:2px; margin-bottom:8px;">AGAINST DEM BILLS</div>
+                    <div style="font-size:0.8rem; color:#666; letter-spacing:2px; margin-bottom:8px; font-family:'JetBrains Mono',monospace;">AGAINST DEM BILLS</div>
                     <div style="font-size:2.4rem; font-weight:bold; color:#4682b4;">${member.voted_against_dems}</div>
                 </div>
             </div>
