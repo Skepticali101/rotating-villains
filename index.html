@@ -1136,13 +1136,11 @@ function copyPosterText() {
     const text = `🚨 ${m.pattern.toUpperCase()}: ${m.name} (${m.state})
 
 📊 Congressional Betrayal Record:
-- Conveniently Absent: ${m.absent} times
-- 🎯 Decisive YES Betrayals: ${m.decisive_betrayals || 0} (votes Dems could have blocked)
-- 🎯 Decisive Absences: ${m.decisive_absent || 0} (went missing on key votes)
+- 🎯 Deciding Votes: ${m.decisive_betrayals || 0} YES votes on bills Dems could have blocked
+- 🎯 Went Missing: ${m.decisive_absent || 0} absences on key votes
 - Voted AGAINST Dem bills: ${m.voted_against_dems} times
 
-This Democrat helped Republicans pass their agenda.
-Track every betrayal → rotatingvillains.org`;
+rotatingvillains.org`;
 
     navigator.clipboard.writeText(text).then(() => {
         const btn = event.target;
