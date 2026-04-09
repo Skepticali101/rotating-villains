@@ -1138,9 +1138,7 @@ function copyPosterText() {
 📊 Congressional Betrayal Record:
 - 🎯 Deciding Votes: ${m.decisive_betrayals || 0} YES votes on bills Dems could have blocked
 - 🎯 Went Missing: ${m.decisive_absent || 0} absences on key votes
-- Voted AGAINST Dem bills: ${m.voted_against_dems} times
-
-rotatingvillains.org`;
+- Voted AGAINST Dem bills: ${m.voted_against_dems} times`;
 
     navigator.clipboard.writeText(text).then(() => {
         const btn = event.target;
