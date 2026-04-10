@@ -718,9 +718,10 @@
                             <button class="clickable" style="color:#4682b4;background:none;border:none;padding:4px;font-family:inherit;font-size:inherit;cursor:pointer;font-weight:bold;" onclick="showAntiDemVotes('${escapeHtml(v.name)}')">${antiDem}</button>
                         </td>
                         <td><span class="badge ${
+                            pattern === 'Super Villain' ? 'badge-danger' :
+                            pattern === 'Strategic Rotator' ? 'badge-warning' :
                             pattern === 'Rarely Rotates' ? 'badge-info' :
-                            pattern === 'Limited Record' ? 'badge-limited' :
-                            pattern === 'Strategic Rotator' ? 'badge-warning' : 'badge-danger'
+                            pattern === 'Limited Record' ? 'badge-limited' : 'badge-info'
                         }">${pattern}</span></td>
                     </tr>
                 `;
@@ -1105,13 +1106,15 @@ function showMemberPoster(memberName) {
                 <div style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%) rotate(-18deg); font-size:3.2rem; font-weight:bold; color:${t.accent}; border:4px solid ${t.accent}; padding:4px 18px; letter-spacing:4px; opacity:0.18; pointer-events:none; white-space:nowrap;">${
                 pattern === 'Super Villain' ? 'VILLAIN' : 
                 pattern === 'Strategic Rotator' ? 'ROTATOR' :
-                pattern === 'Rarely Rotates' ? 'ROTATES' : pattern === 'Limited Record' ? 'LIMITED' : pattern === 'Strategic Rotator' ? 'ROTATOR' : 'VILLAIN'
+                pattern === 'Rarely Rotates' ? 'ROTATES' :
+                pattern === 'Limited Record' ? 'LIMITED' : 'ROTATES'
             }</div>
                 <!-- Foreground stamp (smaller, solid) -->
                 <div style="display:inline-block; font-size:1.3rem; font-weight:bold; color:${t.accent}; border:3px solid ${t.accent}; padding:4px 16px; transform:rotate(-3deg); letter-spacing:3px; margin-bottom:10px;">${
                 pattern === 'Super Villain' ? 'VILLAIN' : 
                 pattern === 'Strategic Rotator' ? 'ROTATOR' :
-                pattern === 'Rarely Rotates' ? 'ROTATES' : pattern === 'Limited Record' ? 'LIMITED' : pattern === 'Strategic Rotator' ? 'ROTATOR' : 'VILLAIN'
+                pattern === 'Rarely Rotates' ? 'ROTATES' :
+                pattern === 'Limited Record' ? 'LIMITED' : 'ROTATES'
             }</div>
                 <div style="font-family:'JetBrains Mono',monospace; font-size:0.7rem; color:#555; letter-spacing:2px; margin-top:4px;">rotatingvillains.org</div>
             </div>
