@@ -699,7 +699,9 @@
                                 <div style="display:flex; gap:4px; flex-wrap:wrap;">
                                     ${(v.tags||[]).includes('over_70') ? '<span style="font-size:0.65rem;background:#5a2d00;color:#ffaa44;border:1px solid #ffaa44;border-radius:3px;padding:1px 5px;">🦴 70+</span>' : ''}
                                     ${(v.tags||[]).includes('retired') ? '<span style="font-size:0.65rem;background:#1a1a2e;color:#8888aa;border:1px solid #8888aa;border-radius:3px;padding:1px 5px;">🏛️ Retired</span>' : ''}
+                                    <!-- DONOR_BADGE_ROSTER disabled until full data verified
                                     ${v.top_donors && v.top_donors[0] ? '<span style="font-size:0.65rem;background:#0d1f0d;color:#4a9;border:1px solid #4a9;border-radius:3px;padding:1px 5px;">💰 ' + getShortDonorName(v.top_donors[0].name) + '</span>' : ''}
+                                    -->
                                 </div>
                             </div>
                         </td>
@@ -1179,7 +1181,8 @@ function showMemberPoster(memberName) {
                 </div>
             </div>
 
-            <!-- Top Donors Section -->
+            <!-- DONOR_CARD_SECTION disabled until full data verified
+            Top Donors Section — re-enable when OpenSecrets or full committee data added
             ${member.top_donors && member.top_donors.length > 0 ? `
             <div style="padding:14px 20px; border-top:1px solid ${t.border}33;">
                 <div style="font-size:0.7rem; color:#666; letter-spacing:2px; margin-bottom:10px; font-family:'JetBrains Mono',monospace;">💰 ALL-TIME TOP DONORS</div>
@@ -1190,6 +1193,7 @@ function showMemberPoster(memberName) {
                 </div>`).join('')}
                 <div style="font-size:0.65rem; color:#333; margin-top:6px; font-family:'JetBrains Mono',monospace;">All-time PAC contributions • FEC verified</div>
             </div>` : ''}
+            -->
 
             <!-- Footer stamp -->
             <div style="position:relative; border-top:1px solid ${t.border}33; padding:16px 20px; text-align:center; overflow:hidden;">
