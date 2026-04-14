@@ -699,6 +699,7 @@
                                 <div style="display:flex; gap:4px; flex-wrap:wrap;">
                                     ${(v.tags||[]).includes('over_70') ? '<span style="font-size:0.65rem;background:#5a2d00;color:#ffaa44;border:1px solid #ffaa44;border-radius:3px;padding:1px 5px;">🦴 70+</span>' : ''}
                                     ${(v.tags||[]).includes('retired') ? '<span style="font-size:0.65rem;background:#1a1a2e;color:#8888aa;border:1px solid #8888aa;border-radius:3px;padding:1px 5px;">🏛️ Retired</span>' : ''}
+                                    ${v.top_donors && v.top_donors[0] ? '<span style="font-size:0.65rem;background:#0d1f0d;color:#4a9;border:1px solid #4a9;border-radius:3px;padding:1px 5px;">💰 ' + getShortDonorName(v.top_donors[0].name) + '</span>' : ''}
                                 </div>
                             </div>
                         </td>
@@ -786,7 +787,80 @@
             document.getElementById('tableBody').innerHTML = renderTableRows(filtered);
         }
 
-        function escapeHtml(text) {
+        function getShortDonorName(name) {
+    if (!name) return '';
+    const map = {
+        'INTERNATIONAL BROTHERHOOD OF ELECTRICAL WORKERS': 'IBEW',
+        'AMERICAN FEDERATION OF STATE COUNTY': 'AFSCME',
+        'MACHINISTS NON PARTISAN POLITICAL LEAGUE': 'Machinists',
+        'AMERICAN ASSOCIATION FOR JUSTICE': 'Trial Lawyers',
+        'NATIONAL ASSOCIATION OF REALTORS': 'Realtors',
+        'AMERICAN ISRAEL PUBLIC AFFAIRS COMMITTEE': 'AIPAC',
+        'NEA FUND FOR CHILDREN': 'NEA',
+        'JSTREETPAC': 'JStreet',
+        'INTERNATIONAL ASSOCIATION OF SHEET METAL': 'SMART Union',
+        'INTERNATIONAL ASSOCIATION OF FIREFIGHTERS': 'Firefighters',
+        'SEIU COPE': 'SEIU',
+        'NATIONAL RIFLE ASSOCIATION': 'NRA',
+        'NATIONAL AUTOMOBILE DEALERS': 'Auto Dealers',
+        'COMMUNICATIONS WORKERS OF AMERICA': 'CWA',
+        'UNITED FOOD AND COMMERCIAL WORKERS': 'UFCW',
+        'AMERICA'S CREDIT UNIONS': 'Credit Unions',
+        'LEAGUE OF CONSERVATION VOTERS': 'LCV',
+        'AMERICAN COLLEGE OF RADIOLOGY': 'Radiologists',
+        'AMERICAN MEDICAL ASSOCIATION': 'AMA',
+        'NATIONAL ASSOCIATION OF INSURANCE': 'Insurance PAC',
+        'LABORERS' INTERNATIONAL UNION': 'LIUNA',
+        'CARPENTERS LEGISLATIVE': 'Carpenters',
+        'UNITED STEELWORKERS': 'Steelworkers',
+        'NATIONAL BEER WHOLESALERS': 'Beer Wholesalers',
+        'AMERICAN BANKERS ASSOCIATION': 'Bank PAC',
+        'NATIONAL RURAL ELECTRIC': 'Rural Electric',
+        'TRANSPORT WORKERS UNION': 'Transport Workers',
+        'UAW': 'UAW',
+        'AMERICAN FEDERATION OF TEACHERS': 'AFT',
+        'SERVICE EMPLOYEES INTERNATIONAL': 'SEIU',
+        'FIRSTENERGY': 'FirstEnergy',
+        'DOMINION ENERGY': 'Dominion Energy',
+        'AT&T': 'AT&T',
+        'WALMART': 'Walmart',
+        'COMCAST': 'Comcast',
+        'AMERICAN CRYSTAL SUGAR': 'Sugar Industry',
+        'FARM CREDIT': 'Farm Credit',
+        'TEXAS FARM BUREAU': 'Farm Bureau',
+        'SAFARI CLUB': 'Safari Club',
+        'MGM RESORTS': 'MGM',
+        'NEXTGEN CLIMATE': 'NextGen Climate',
+        'SIERRA CLUB': 'Sierra Club',
+        'HONEYWELL': 'Honeywell',
+        'NORTHROP GRUMMAN': 'Northrop Grumman',
+        'AMGEN': 'Amgen',
+        'GENENTECH': 'Genentech',
+        'AMERICAN HOSPITAL ASSOCIATION': 'Hospitals PAC',
+        'NATIONAL ASSOCIATION OF LETTER CARRIERS': 'Letter Carriers',
+        'TEAMSTERS': 'Teamsters',
+        'D.R.I.V.E': 'Teamsters',
+        'BUILD POLITICAL ACTION': 'NAHB',
+        'NATIONAL ASSOCIATION OF HOME BUILDERS': 'NAHB',
+        'END CITIZENS UNITED': 'End Citizens United',
+        'EMILY': "Emily's List",
+        'AMERIPAC': 'AmeriPAC',
+        'AMALGAMATED TRANSIT': 'Transit Union',
+        'ENGINEERS POLITICAL': 'Engineers PAC',
+        'BOILERMAKERS': 'Boilermakers',
+        'OPERATING ENGINEERS': 'Engineers PAC',
+    };
+    const upper = name.toUpperCase();
+    for (const [key, short] of Object.entries(map)) {
+        if (upper.includes(key.toUpperCase())) return short;
+    }
+    // Fallback: strip common PAC words, take first 18 chars
+    const cleaned = name.replace(/POLITICAL ACTION COMMITTEE|POLITICAL ACTION|PAC|FUND|THE|COMMITTEE|ASSOCIATION|INTERNATIONAL|NATIONAL|AMERICAN|UNITED|OF|AND|FOR|IN/gi, ' ')
+                        .replace(/\s+/g, ' ').trim();
+    return cleaned.substring(0, 18).trim();
+}
+
+function escapeHtml(text) {
             return text.replace(/'/g, "\\'");
         }
 
@@ -1104,6 +1178,18 @@ function showMemberPoster(memberName) {
                        target="_blank" style="color:#4682b4;">View full FEC profile →</a>
                 </div>
             </div>
+
+            <!-- Top Donors Section -->
+            ${member.top_donors && member.top_donors.length > 0 ? `
+            <div style="padding:14px 20px; border-top:1px solid ${t.border}33;">
+                <div style="font-size:0.7rem; color:#666; letter-spacing:2px; margin-bottom:10px; font-family:'JetBrains Mono',monospace;">💰 ALL-TIME TOP DONORS</div>
+                ${member.top_donors.slice(0,3).map(d => `
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
+                    <div style="font-size:0.8rem; color:#aaa; font-family:'JetBrains Mono',monospace;">${getShortDonorName(d.name)}</div>
+                    <div style="font-size:0.8rem; color:#4a9; font-weight:600; font-family:'JetBrains Mono',monospace;">$${d.amount.toLocaleString()}</div>
+                </div>`).join('')}
+                <div style="font-size:0.65rem; color:#333; margin-top:6px; font-family:'JetBrains Mono',monospace;">All-time PAC contributions • FEC verified</div>
+            </div>` : ''}
 
             <!-- Footer stamp -->
             <div style="position:relative; border-top:1px solid ${t.border}33; padding:16px 20px; text-align:center; overflow:hidden;">
