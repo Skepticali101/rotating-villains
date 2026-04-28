@@ -151,6 +151,19 @@ td{padding:8px 10px;vertical-align:middle}td.n{text-align:right;font-family:var(
 .ov{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:150}.ov.on{display:block}
 footer{background:var(--mid);border-top:1px solid var(--border);padding:12px 24px;font-family:var(--mono);font-size:10px;color:var(--muted);display:flex;gap:28px;flex-wrap:wrap}
 footer a{color:var(--muted);text-decoration:none}footer a:hover{color:var(--text)}
+
+@media(max-width:600px){
+  .drw{width:100%;right:-100%;top:56px}
+  .drw.open{right:0}
+  .tp{padding:8px 10px}
+  .ind-card{padding:12px 10px}
+  .state-card{padding:10px}
+  .dpanel{padding:12px 14px}
+  .kv-grid{grid-template-columns:1fr 1fr}
+  header{padding:0 12px}
+  .filters{flex-direction:column;gap:8px}
+  .filters select,.filters input{width:100%}
+}
 </style>
 </head>
 <body>
