@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WageWatch — Employer Wage Theft Tracker</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,400&display=swap');
+:root{--red:#c8102e;--amber:#e8a000;--green:#1a7a4a;--blue:#4a9eff;--dark:#0e0e0e;--mid:#1c1c1c;--card:#232323;--border:#333;--text:#e8e8e8;--muted:#888;--mono:'IBM Plex Mono',monospace;--sans:'IBM Plex Sans',sans-serif;--display:'Bebas Neue',sans-serif;--dem:#4a9eff;--rep:#ff5555}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--dark);color:var(--text);font-family:var(--sans);font-size:14px}
+header{background:var(--mid);border-bottom:3px solid var(--red);padding:0 24px;display:flex;align-items:center;gap:24px;height:64px;position:sticky;top:0;z-index:100}
+.logo{font-family:var(--display);font-size:28px;letter-spacing:2px;white-space:nowrap}.logo span{color:var(--red)}
+.tagline{font-family:var(--mono);font-size:10px;color:var(--muted);letter-spacing:1px;text-transform:uppercase;border-left:1px solid var(--border);padding-left:16px}
+.src{margin-left:auto;font-family:var(--mono);font-size:9px;color:var(--muted);text-align:right;line-height:1.6}
+.hero{background:repeating-linear-gradient(-45deg,var(--mid) 0,var(--mid) 12px,#191919 12px,#191919 24px);border-bottom:1px solid var(--border);padding:24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px}
+.sc{background:var(--dark);border:1px solid var(--border);border-top:3px solid var(--red);padding:16px 14px 12px}
+.sc.a{border-top-color:var(--amber)}.sc.g{border-top-color:var(--green)}.sc.b{border-top-color:var(--blue)}
+.sv{font-family:var(--display);font-size:32px;line-height:1;letter-spacing:1px}
+.sl{font-family:var(--mono);font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-top:5px}
+.ss{font-size:11px;color:var(--muted);margin-top:3px;font-style:italic}
+.notice{background:rgba(232,160,0,.08);border:1px solid rgba(232,160,0,.3);border-left:3px solid var(--amber);padding:10px 20px;margin:12px 24px;font-size:12px;color:var(--muted);line-height:1.6;font-family:var(--mono)}
+.notice strong{color:var(--amber)}
+.main-tabs{display:flex;border-bottom:2px solid var(--border);padding:0 24px;background:var(--mid)}
+.main-tab{font-family:var(--display);font-size:18px;letter-spacing:1px;padding:12px 20px;cursor:pointer;color:var(--muted);border-bottom:3px solid transparent;margin-bottom:-2px;transition:color .15s}
+.main-tab:hover{color:var(--text)}.main-tab.on{color:var(--text);border-bottom-color:var(--red)}
+.main-panel{display:none}.main-panel.on{display:block;min-height:60vh}
+.mg{display:grid;grid-template-columns:220px 1fr;min-height:60vh}
+.sb{background:var(--mid);border-right:1px solid var(--border);padding:16px}
+.sb h3{font-family:var(--mono);font-size:10px;text-transform:uppercase;letter-spacing:2px;color:var(--muted);margin-bottom:10px}
+.fg{margin-bottom:14px}
+.fg label{font-family:var(--mono);font-size:11px;color:var(--muted);display:block;margin-bottom:5px;text-transform:uppercase;letter-spacing:1px}
+select,input{width:100%;background:var(--card);border:1px solid var(--border);color:var(--text);font-family:var(--mono);font-size:12px;padding:7px 10px;appearance:none;outline:none}
+select:focus,input:focus{border-color:var(--red)}
+.chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:7px}
+.chip{font-family:var(--mono);font-size:10px;padding:3px 8px;border:1px solid var(--border);cursor:pointer;text-transform:uppercase;letter-spacing:.5px;background:transparent;color:var(--muted)}
+.chip:hover,.chip.on{border-color:var(--red);color:var(--red);background:rgba(200,16,46,.08)}
+.chip.all.on{border-color:var(--text);color:var(--text);background:rgba(255,255,255,.05)}
+.dbs{margin-top:16px;padding-top:12px;border-top:1px solid var(--border);font-family:var(--mono);font-size:10px;color:var(--muted);line-height:2.2}
+.dbs span{color:var(--text);display:block}.dbs .r{color:var(--red)}
+.tp{padding:16px 20px;overflow-x:auto}
+.ph{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.pt{font-family:var(--display);font-size:20px;letter-spacing:1px}
+.pc{font-family:var(--mono);font-size:11px;color:var(--muted);margin-left:auto}
+table{width:100%;border-collapse:collapse;font-size:13px}
+thead th{font-family:var(--mono);font-size:9px;text-transform:uppercase;letter-spacing:1.5px;color:var(--muted);padding:7px 10px;text-align:left;border-bottom:2px solid var(--border);white-space:nowrap}
+thead th.n{text-align:right}
+tbody tr{border-bottom:1px solid #1e1e1e;cursor:pointer;transition:background .1s}
+tbody tr:hover{background:var(--card)}
+tbody tr.sel{background:rgba(200,16,46,.12);border-left:3px solid var(--red)}
+td{padding:8px 10px;vertical-align:middle}td.n{text-align:right;font-family:var(--mono);font-size:12px}
+.bn{font-weight:600;font-size:14px}.bs{font-size:11px;color:var(--muted);font-style:italic}
+.bww{display:flex;align-items:center;gap:7px}
+.bbb{flex:1;height:6px;background:#333;min-width:40px}.bbi{height:100%;background:var(--red)}
+.bvv{font-family:var(--mono);font-size:12px;white-space:nowrap}
+.badge{display:inline-block;font-family:var(--mono);font-size:9px;padding:2px 5px;border-radius:2px;text-transform:uppercase;letter-spacing:.5px;margin:1px;white-space:nowrap}
+.b-r{background:rgba(200,16,46,.2);color:var(--red);border:1px solid var(--red)}
+.b-w{background:rgba(232,160,0,.2);color:var(--amber);border:1px solid var(--amber)}
+.b-c{background:rgba(180,0,200,.2);color:#d46cff;border:1px solid #d46cff}
+.b-f{background:rgba(74,158,255,.2);color:var(--blue);border:1px solid var(--blue)}
+/* INDUSTRY */
+.ind-panel-wrap{padding:16px 24px}
+.ind-panel-head{display:flex;align-items:center;gap:16px;margin-bottom:16px;flex-wrap:wrap}
+.ind-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}
+.ind-card{background:var(--card);border:1px solid var(--border);border-top:3px solid var(--amber);padding:16px;position:relative}
+.ind-rank{position:absolute;top:10px;right:12px;font-family:var(--mono);font-size:10px;color:var(--muted)}
+.ind-name{font-size:13px;font-weight:600;margin-bottom:8px;line-height:1.3;padding-right:24px}
+.ind-bw{font-family:var(--display);font-size:28px;color:var(--amber);letter-spacing:1px;margin-bottom:2px}
+.ind-bar{height:4px;background:#333;margin:8px 0}
+.ind-bar-fill{height:100%;background:var(--amber)}
+.ind-stats{font-family:var(--mono);font-size:10px;color:var(--muted);line-height:1.9}
+.ind-stats .r{color:var(--red)}.ind-stats .w{color:#ff9900}
+.ind-compare{background:rgba(200,16,46,.06);border-left:2px solid var(--red);padding:6px 10px;margin-top:10px;font-size:11px;color:var(--muted);line-height:1.6;font-style:italic}
+.ind-compare strong{color:var(--red);font-style:normal}
+/* STATES */
+.state-panel-wrap{padding:16px 24px}
+.state-panel-head{display:flex;align-items:center;gap:16px;margin-bottom:16px;flex-wrap:wrap}
+.state-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px}
+.state-card{background:var(--card);border:1px solid var(--border);border-left:4px solid var(--red);padding:14px;cursor:pointer;transition:all .15s}
+.state-card:hover{background:#2a2a2a;border-left-color:var(--amber)}
+.state-abbr{font-family:var(--display);font-size:24px;letter-spacing:1px;display:inline}
+.state-fullname{font-size:12px;color:var(--muted);margin-left:6px}
+.state-bw{font-family:var(--mono);font-size:15px;font-weight:600;color:var(--red);margin-top:4px}
+.state-sub{font-family:var(--mono);font-size:10px;color:var(--muted);margin-top:3px;line-height:1.7}
+.state-bar{height:3px;background:#333;margin:8px 0 4px}
+.state-bar-fill{height:100%;background:var(--red)}
+.state-pac-mini{display:flex;gap:8px;margin-top:6px;font-family:var(--mono);font-size:10px}
+.state-pac-d{color:var(--dem)}.state-pac-r{color:var(--rep)}
+/* DRAWER — fixed close button */
+.drw{position:fixed;right:-560px;top:64px;bottom:0;width:540px;background:var(--mid);border-left:2px solid var(--red);z-index:200;overflow:hidden;transition:right .25s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column}
+.drw.open{right:0}
+.drw-topbar{display:flex;align-items:center;border-bottom:1px solid var(--border);flex-shrink:0;padding:0 16px;height:44px;gap:0}
+.dtabs{display:flex;flex:1;height:100%}
+.dtab{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:1px;padding:0 16px;cursor:pointer;color:var(--muted);border-bottom:2px solid transparent;display:flex;align-items:center;height:100%}
+.dtab:hover{color:var(--text)}.dtab.on{color:var(--text);border-bottom-color:var(--red)}
+.dclose{background:none;border:1px solid var(--border);color:var(--muted);font-family:var(--mono);font-size:11px;padding:5px 12px;cursor:pointer;white-space:nowrap;flex-shrink:0}
+.dclose:hover{border-color:var(--red);color:var(--red)}
+.dpanel{display:none;flex:1;overflow-y:auto;padding:18px 22px}.dpanel.on{display:block}
+.dbrand{font-family:var(--display);font-size:30px;letter-spacing:1px;line-height:1.1;margin-bottom:4px}
+.dsub{font-family:var(--mono);font-size:11px;color:var(--muted);margin-bottom:14px}
+.kvg{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:14px}
+.kvi{padding:9px 11px;background:var(--card);border:1px solid var(--border)}
+.kvv{font-family:var(--mono);font-size:18px;font-weight:600;line-height:1}
+.kvv.r{color:var(--red)}.kvv.a{color:var(--amber)}.kvv.b{color:var(--blue)}
+.kvl{font-size:10px;color:var(--muted);margin-top:3px;text-transform:uppercase;letter-spacing:.5px}
+.hcost{background:rgba(200,16,46,.08);border:1px solid rgba(200,16,46,.3);padding:13px 15px;margin:10px 0;font-size:13px;line-height:1.7}
+.hcost strong{color:var(--red)}
+.sechead{font-family:var(--mono);font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:var(--muted);margin:14px 0 8px;padding-top:14px;border-top:1px solid var(--border)}
+.vbar{margin:7px 0}.vbarl{display:flex;justify-content:space-between;margin-bottom:3px;font-size:12px}
+.vbarl span:last-child{font-family:var(--mono);color:var(--amber)}
+.vbart{height:7px;background:#333}.vbarf{height:100%;background:linear-gradient(90deg,var(--red),var(--amber))}
+.split-wrap{margin-bottom:16px}
+.split-label{display:flex;justify-content:space-between;margin-bottom:6px;font-size:12px}
+.split-d{color:var(--dem);font-family:var(--mono);font-weight:600}
+.split-r{color:var(--rep);font-family:var(--mono);font-weight:600}
+.split-bar{height:26px;display:flex;overflow:hidden;margin-bottom:6px}
+.split-bar-d{background:var(--dem);display:flex;align-items:center;padding:0 6px;font-family:var(--mono);font-size:10px;color:#fff;font-weight:600;min-width:0}
+.split-bar-r{background:var(--rep);display:flex;align-items:center;justify-content:flex-end;padding:0 6px;font-family:var(--mono);font-size:10px;color:#fff;font-weight:600;min-width:0}
+.split-bar-i{background:#555;display:flex;align-items:center;justify-content:center;padding:0 4px;font-family:var(--mono);font-size:10px;color:#fff;min-width:0}
+.split-tots{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:14px}
+.split-tot{padding:8px 10px;border:1px solid var(--border);background:var(--card)}
+.stv{font-family:var(--mono);font-size:15px;font-weight:600}
+.stv.d{color:var(--dem)}.stv.r{color:var(--rep)}.stv.i{color:var(--muted)}
+.stl{font-size:10px;color:var(--muted);margin-top:2px;text-transform:uppercase;letter-spacing:.5px}
+.cand-filter{display:flex;gap:6px;margin-bottom:10px}
+.cand-chip{font-family:var(--mono);font-size:10px;padding:4px 10px;border:1px solid var(--border);cursor:pointer;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);background:transparent}
+.cand-chip:hover{color:var(--text);border-color:var(--text)}
+.cand-chip.on-all{color:var(--text);border-color:var(--text);background:rgba(255,255,255,.05)}
+.cand-chip.on-d{color:var(--dem);border-color:var(--dem);background:rgba(74,158,255,.08)}
+.cand-chip.on-r{color:var(--rep);border-color:var(--rep);background:rgba(255,85,85,.08)}
+.cand-chip.on-i{color:var(--muted);border-color:var(--muted)}
+.cand-list{display:flex;flex-direction:column;gap:2px}
+.cand-row{display:grid;grid-template-columns:22px 1fr auto auto auto;gap:6px;align-items:center;padding:6px 8px;border-left:3px solid transparent}
+.cand-row.party-d{border-left-color:var(--dem);background:rgba(74,158,255,.04)}
+.cand-row.party-r{border-left-color:var(--rep);background:rgba(255,85,85,.04)}
+.cand-row.party-i{border-left-color:#555;background:rgba(255,255,255,.02)}
+.cand-row:hover{background:var(--card)}
+.pdot{width:18px;height:18px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:9px;font-weight:700;flex-shrink:0}
+.pdot.d{background:rgba(74,158,255,.2);color:var(--dem)}.pdot.r{background:rgba(255,85,85,.2);color:var(--rep)}.pdot.i{background:rgba(255,255,255,.1);color:var(--muted)}
+.cname{font-size:12px;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cstate{font-family:var(--mono);font-size:10px;color:var(--muted)}
+.coffice{font-family:var(--mono);font-size:9px;padding:1px 4px;border:1px solid var(--border);color:var(--muted)}
+.camt{font-family:var(--mono);font-size:12px;font-weight:600;white-space:nowrap}
+.camt.d{color:var(--dem)}.camt.r{color:var(--rep)}.camt.i{color:var(--muted)}
+.show-more{font-family:var(--mono);font-size:11px;color:var(--muted);text-align:center;padding:10px;cursor:pointer;border:1px solid var(--border);margin-top:6px}
+.show-more:hover{color:var(--text);border-color:var(--text)}
+.fecnote{font-family:var(--mono);font-size:10px;color:var(--muted);line-height:1.7;padding:10px;background:var(--card);border:1px solid var(--border);margin-top:14px}
+.no-fec{color:var(--muted);font-size:13px;padding:16px 0;line-height:1.8}
+.stat-compare{background:rgba(232,160,0,.06);border:1px solid rgba(232,160,0,.2);border-left:3px solid var(--amber);padding:12px 14px;margin:12px 0;font-size:12px;line-height:1.8;color:var(--muted)}
+.stat-compare strong{color:var(--amber)}
+.ov{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:150}.ov.on{display:block}
+footer{background:var(--mid);border-top:1px solid var(--border);padding:12px 24px;font-family:var(--mono);font-size:10px;color:var(--muted);display:flex;gap:28px;flex-wrap:wrap}
+footer a{color:var(--muted);text-decoration:none}footer a:hover{color:var(--text)}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo"><span>Wage</span>Watch</div>
+  <div class="tagline">Employer Wage Theft<br>Accountability Tracker</div>
+  <div class="src">DOL WHD WHISARD + FEC PAC Data<br>365,390 cases · Real bipartisan PAC data</div>
+</header>
+<div class="hero" id="hero"></div>
+<div class="notice"><strong>What you're looking at:</strong> Back wages employers agreed to pay in concluded federal WHD enforcement actions (FY2005–2024), cross-referenced with verified FEC PAC contributions. Total U.S. wage theft estimated at <strong>$50B+/year</strong> (EPI).</div>
+
+<div class="main-tabs">
+  <div class="main-tab on"  onclick="switchMain('brands')">Brand Leaderboard</div>
+  <div class="main-tab"     onclick="switchMain('industry')">By Industry</div>
+  <div class="main-tab"     onclick="switchMain('states')">By State</div>
+</div>
+
+<!-- BRANDS -->
+<div class="main-panel on" id="panel-brands">
+<div class="mg">
+  <div class="sb">
+    <h3>Filter &amp; Sort</h3>
+    <div class="fg"><label>Search Brand</label><input id="srch" placeholder="e.g. Subway, Disney…" oninput="renderBrands()"></div>
+    <div class="fg"><label>Sort By</label>
+      <select id="srt" onchange="renderBrands()">
+        <option value="total_back_wages">Back Wages (Total)</option>
+        <option value="total_workers_cheated">Workers Cheated</option>
+        <option value="total_cases">Enforcement Cases</option>
+        <option value="repeat_cases">Repeat Violations</option>
+        <option value="location_count">Locations Caught</option>
+        <option value="fec_total">PAC Spending</option>
+      </select>
+    </div>
+    <div class="fg"><label>Show Only</label>
+      <div class="chips">
+        <div class="chip all on" onclick="flagB(this,'all')">All</div>
+        <div class="chip" onclick="flagB(this,'fec')">Has FEC</div>
+        <div class="chip" onclick="flagB(this,'repeat')">Repeat</div>
+        <div class="chip" onclick="flagB(this,'willful')">Willful</div>
+        <div class="chip" onclick="flagB(this,'child')">Child Labor</div>
+      </div>
+    </div>
+    <div class="dbs">Total WHD Cases:<span>365,390</span>Total Back Wages:<span class="r">$4,734,004,352</span>Employer Profiles:<span>201,246</span>FEC Cycles:<span>2000–2026</span></div>
+  </div>
+  <div class="tp">
+    <div class="ph"><div class="pt">Brand Leaderboard</div><div class="pc" id="bpc"></div></div>
+    <table><thead><tr><th>#</th><th>Brand</th><th class="n">Back Wages</th><th class="n">Workers</th><th class="n">Locations</th><th class="n">Cases</th><th class="n">Repeat</th><th class="n">PAC $</th><th>Flags</th></tr></thead><tbody id="btb"></tbody></table>
+  </div>
+</div>
+</div>
+
+<!-- INDUSTRY -->
+<div class="main-panel" id="panel-industry">
+  <div class="ind-panel-wrap">
+    <div class="ind-panel-head">
+      <div style="font-family:var(--display);font-size:20px;letter-spacing:1px">By Industry Sector</div>
+      <div style="font-family:var(--mono);font-size:11px;color:var(--muted)">Top 50 NAICS industries · back wages owed to workers</div>
+      <input id="ind-srch" placeholder="Search industry…" oninput="renderIndustry()" style="width:200px;margin-left:auto">
+    </div>
+    <div class="ind-grid" id="ind-grid"></div>
+  </div>
+</div>
+
+<!-- STATES -->
+<div class="main-panel" id="panel-states">
+  <div class="state-panel-wrap">
+    <div class="state-panel-head">
+      <div style="font-family:var(--display);font-size:20px;letter-spacing:1px">By State</div>
+      <div style="font-family:var(--mono);font-size:11px;color:var(--muted)">56 states &amp; territories · click any state for full detail</div>
+      <select id="state-srt" onchange="renderStates()" style="width:200px;margin-left:auto">
+        <option value="total_bw">Back Wages (Total)</option>
+        <option value="workers_cheated">Workers Cheated</option>
+        <option value="employer_count">Employers Caught</option>
+        <option value="total_cases">Enforcement Cases</option>
+        <option value="repeat_cases">Repeat Violations</option>
+      </select>
+    </div>
+    <div class="state-grid" id="state-grid"></div>
+  </div>
+</div>
+
+<footer><span>WageWatch · A RotatingVillains.org sister project</span><span>Wage: DOL WHD WHISARD FY2005–2024 · PAC: FEC verified committee data</span><a href="https://rotatingvillains.org">↗ RotatingVillains.org</a></footer>
+<div class="ov" id="ov" onclick="closeD()"></div>
+<div class="drw" id="drw">
+  <div class="drw-topbar">
+    <div class="dtabs" id="dtabs"></div>
+    <button class="dclose" onclick="closeD()">✕ Close</button>
+  </div>
+  <div id="p-wages" class="dpanel"></div>
+  <div id="p-fec"   class="dpanel"></div>
+</div>
+
+<script>
+var BRANDS_DATA=null,FEC_DATA=null,INDUSTRY_DATA=null,STATE_DATA=null,STATE_PAC=null;
+</script>
+<script src="data_dump.js" onerror="console.warn('data_dump.js not found — using fallback data')"></script>
+<script>
+if(!BRANDS_DATA)BRANDS_DATA=[];
+if(!FEC_DATA)FEC_DATA={};
+if(!INDUSTRY_DATA)INDUSTRY_DATA=[];
+if(!STATE_DATA)STATE_DATA=[];
+if(!STATE_PAC)STATE_PAC=[];
+
+// Build state PAC lookup
+const STATE_PAC_MAP={};
+(STATE_PAC||[]).forEach(s=>{STATE_PAC_MAP[s.state]=s;});
+
+const FEC_TOTALS={
+  "McDonald's":{candidates:137,total:986700},"Walmart":{candidates:50,total:265000},
+  "Amazon":{candidates:116,total:1040000},"Hilton":{candidates:167,total:1026390},
+  "Marriott":{candidates:173,total:1037500},"Disney":{candidates:156,total:1273272},
+  "Yum! Brands":{candidates:226,total:763436},"Darden (Olive Garden)":{candidates:180,total:1309535},
+  "Target":{candidates:125,total:922800},"Domino's":{candidates:30,total:72066},
+  "7-Eleven":{candidates:357,total:418277},"National Restaurant Assoc.":{candidates:264,total:1555000},
+  "Verizon":{candidates:115,total:705000},"Wells Fargo":{candidates:110,total:930000},
+  "Citigroup":{candidates:95,total:665000},"JPMorgan Chase":{candidates:145,total:1143000},
+  "Wyndham":{candidates:2,total:5000},"Holiday Inn / IHG":{candidates:145,total:144957},
+  "Dunkin'":{candidates:138,total:488300},"Waffle House":{candidates:77,total:148000},
+  "Cracker Barrel":{candidates:268,total:673000},"Kroger":{candidates:201,total:765950},
+  "CVS":{candidates:70,total:520000},"Walgreens":{candidates:134,total:814000},
+  "Rite Aid":{candidates:163,total:659000},"AutoZone":{candidates:169,total:497100},
+  "FedEx":{candidates:126,total:781000},"Pilgrim's Pride":{candidates:169,total:548718},
+};
+
+const STATE_NAMES={TX:"Texas",CA:"California",NY:"New York",FL:"Florida",PA:"Pennsylvania",IL:"Illinois",OH:"Ohio",GA:"Georgia",NC:"North Carolina",MI:"Michigan",NJ:"New Jersey",VA:"Virginia",WA:"Washington",AZ:"Arizona",MA:"Massachusetts",TN:"Tennessee",IN:"Indiana",MO:"Missouri",MD:"Maryland",WI:"Wisconsin",CO:"Colorado",MN:"Minnesota",SC:"South Carolina",AL:"Alabama",LA:"Louisiana",KY:"Kentucky",OR:"Oregon",OK:"Oklahoma",CT:"Connecticut",UT:"Utah",IA:"Iowa",NV:"Nevada",AR:"Arkansas",MS:"Mississippi",KS:"Kansas",NM:"New Mexico",NE:"Nebraska",WV:"West Virginia",ID:"Idaho",HI:"Hawaii",NH:"New Hampshire",ME:"Maine",MT:"Montana",RI:"Rhode Island",DE:"Delaware",SD:"South Dakota",ND:"North Dakota",AK:"Alaska",VT:"Vermont",WY:"Wyoming",DC:"Washington D.C.",PR:"Puerto Rico",GU:"Guam",VI:"U.S. Virgin Islands",AS:"American Samoa",MP:"N. Mariana Islands"};
+
+// Street crime comparison data (FBI UCR 2022)
+const CRIME_COMPARE={
+  "Full-Service Restaurants":"More than ALL robberies, burglaries and auto theft combined in the U.S. ($13B) — every year.",
+  "Home Health Care Services":"More than the entire annual cost of shoplifting losses reported by major retailers.",
+  "Security Guards and Patrol Services":"The workers hired to protect property are themselves being robbed by their employers.",
+  "Nursing Care Facilities":"Stolen from the people caring for America's elderly and disabled — $65M/year.",
+  "Limited-Service Restaurants":"Fast food workers — already earning minimum wage — cheated out of $60M more.",
+  "Temporary Help Services":"Staffing agencies profit twice: once on the markup, once by skimming wages.",
+  "State Correctional Institutions":"Government itself is one of the largest wage thieves — $65M from corrections officers.",
+  "Janitorial Services":"The people cleaning America's buildings are among its most exploited workers.",
+};
+
+let bFlags=new Set(['all']),selRow=null,activeTab='wages',candFilter='all',showAll=false,currentBrand='';
+
+function coerce(b){return{...b,total_back_wages:+b.total_back_wages||0,total_workers_cheated:+b.total_workers_cheated||0,total_cases:+b.total_cases||0,location_count:+b.location_count||0,repeat_cases:+b.repeat_cases||0,willful_cases:+b.willful_cases||0,child_labor_cases:+b.child_labor_cases||0,child_labor_minors:+b.child_labor_minors||0,min_wage_back_wages:+b.min_wage_back_wages||0,overtime_back_wages:+b.overtime_back_wages||0,fec_total:(FEC_TOTALS[b.brand]||{total:0}).total,fec_candidates:(FEC_TOTALS[b.brand]||{candidates:0}).candidates};}
+
+const BRANDS=BRANDS_DATA.map(coerce);
+const FEC=FEC_DATA;
+
+function f$(n){n=+n||0;if(n>=1e9)return'$'+(n/1e9).toFixed(2)+'B';if(n>=1e6)return'$'+(n/1e6).toFixed(2)+'M';if(n>=1e3)return'$'+(n/1e3).toFixed(0)+'K';return'$'+Math.round(n).toLocaleString();}
+function fN(n){n=+n||0;if(n>=1e6)return(n/1e6).toFixed(1)+'M';if(n>=1e3)return(n/1e3).toFixed(0)+'K';return n.toLocaleString();}
+function tc(s){return(s||'').split(',').map(p=>p.trim().toLowerCase().replace(/\b\w/g,c=>c.toUpperCase())).join(', ');}
+
+// HERO
+(function(){
+  const totalBW=BRANDS.reduce((s,b)=>s+b.total_back_wages,0);
+  const totalEE=BRANDS.reduce((s,b)=>s+b.total_workers_cheated,0);
+  const totalR=BRANDS.reduce((s,b)=>s+b.repeat_cases,0);
+  const totalFEC=Object.values(FEC_TOTALS).reduce((s,v)=>s+v.total,0);
+  document.getElementById('hero').innerHTML=`
+    <div class="sc"><div class="sv">$4.73B</div><div class="sl">Total DB Back Wages</div><div class="ss">All 365,390 WHD cases · FY2005–2024</div></div>
+    <div class="sc a"><div class="sv">${f$(totalBW)}</div><div class="sl">Back Wages · 74 Brands</div><div class="ss">Named employers in DOL record</div></div>
+    <div class="sc"><div class="sv">${fN(totalEE)}</div><div class="sl">Workers Cheated</div><div class="ss">Employees owed back wages</div></div>
+    <div class="sc a"><div class="sv">${fN(totalR)}</div><div class="sl">Repeat Violations</div><div class="ss">Caught, fined, did it again</div></div>
+    <div class="sc b"><div class="sv">${f$(totalFEC)}</div><div class="sl">PAC Money to Politicians</div><div class="ss">FEC verified · cycles 2000–2026</div></div>
+    <div class="sc g"><div class="sv">78.6%</div><div class="sl">Caught Only Once</div><div class="ss">Of 201K employer profiles — no repeat flag</div></div>
+  `;
+})();
+
+function switchMain(tab){
+  document.querySelectorAll('.main-tab').forEach((t,i)=>t.classList.toggle('on',['brands','industry','states'][i]===tab));
+  document.querySelectorAll('.main-panel').forEach(p=>p.classList.toggle('on',p.id==='panel-'+tab));
+  if(tab==='industry')renderIndustry();
+  if(tab==='states')renderStates();
+}
+
+function flagB(el,f){
+  if(f==='all'){bFlags=new Set(['all']);document.querySelectorAll('#panel-brands .chip').forEach(c=>c.classList.remove('on'));el.classList.add('on');}
+  else{bFlags.delete('all');document.querySelector('#panel-brands .chip.all').classList.remove('on');bFlags.has(f)?(bFlags.delete(f),el.classList.remove('on')):(bFlags.add(f),el.classList.add('on'));if(!bFlags.size){bFlags.add('all');document.querySelector('#panel-brands .chip.all').classList.add('on');}}
+  renderBrands();
+}
+
+function renderBrands(){
+  const q=(document.getElementById('srch').value||'').toLowerCase();
+  const sk=document.getElementById('srt').value;
+  let data=BRANDS.filter(b=>{
+    if(q&&!b.brand.toLowerCase().includes(q))return false;
+    if(!bFlags.has('all')){
+      if(bFlags.has('fec')&&!FEC_TOTALS[b.brand])return false;
+      if(bFlags.has('repeat')&&!b.repeat_cases)return false;
+      if(bFlags.has('willful')&&!b.willful_cases)return false;
+      if(bFlags.has('child')&&!b.child_labor_cases)return false;
+    }
+    return true;
+  });
+  data.sort((a,b)=>(b[sk]||0)-(a[sk]||0));
+  document.getElementById('bpc').textContent=`${data.length} brands`;
+  const mx=Math.max(...data.map(b=>b.total_back_wages),1);
+  const tb=document.getElementById('btb');tb.innerHTML='';
+  data.forEach((b,i)=>{
+    const bw=Math.round(b.total_back_wages/mx*100);
+    const ft=FEC_TOTALS[b.brand];
+    const badges=[b.repeat_cases?'<span class="badge b-r">Repeat</span>':'',b.willful_cases?'<span class="badge b-w">Willful</span>':'',b.child_labor_cases?'<span class="badge b-c">Child Labor</span>':'',ft&&ft.total>0?'<span class="badge b-f">FEC Data</span>':''].filter(Boolean).join('');
+    const tr=document.createElement('tr');
+    tr.innerHTML=`<td><span style="font-family:var(--mono);color:var(--muted);font-size:11px">${i+1}</span></td>
+      <td><div class="bn">${b.brand}</div><div class="bs">${b.location_count?b.location_count.toLocaleString()+' locations in DOL record':ft&&ft.total>0?'PAC data only':''}</div></td>
+      <td class="n"><div class="bww"><div class="bbb"><div class="bbi" style="width:${bw}%"></div></div><span class="bvv">${f$(b.total_back_wages)}</span></div></td>
+      <td class="n">${b.total_workers_cheated?fN(b.total_workers_cheated):'—'}</td>
+      <td class="n">${b.location_count?b.location_count.toLocaleString():'—'}</td>
+      <td class="n">${b.total_cases||'—'}</td>
+      <td class="n" style="color:${b.repeat_cases>20?'var(--red)':b.repeat_cases?'var(--amber)':'var(--muted)'}">${b.repeat_cases||'—'}</td>
+      <td class="n">${ft&&ft.total>0?`<span style="color:var(--amber);font-family:var(--mono)">${f$(ft.total)}</span>`:'<span style="color:var(--muted)">—</span>'}</td>
+      <td>${badges||'<span style="color:var(--muted);font-size:11px">—</span>'}</td>`;
+    tr.onclick=()=>openD(b,tr);tb.appendChild(tr);
+  });
+}
+
+function renderIndustry(){
+  const q=(document.getElementById('ind-srch').value||'').toLowerCase();
+  const data=(INDUSTRY_DATA||[]).filter(r=>!q||(r.naics_description||'').toLowerCase().includes(q));
+  const mx=Math.max(...data.map(r=>+r.total_bw||0),1);
+  document.getElementById('ind-grid').innerHTML=data.map((r,i)=>{
+    const bw=+r.total_bw||0;
+    const ec=+r.employer_count||0;
+    const wc=+r.workers_cheated||0;
+    const tc2=+r.total_cases||0;
+    const rc=+r.repeat_cases||0;
+    const avg=+r.avg_bw_per_employer||0;
+    const pct=Math.round(bw/mx*100);
+    const compare=CRIME_COMPARE[r.naics_description]||'';
+    const avgPerWorker=wc>0?Math.round(bw/wc):0;
+    return `<div class="ind-card">
+      <div class="ind-rank">#${i+1}</div>
+      <div class="ind-name">${r.naics_description}</div>
+      <div class="ind-bw">${f$(bw)}</div>
+      <div class="ind-bar"><div class="ind-bar-fill" style="width:${pct}%"></div></div>
+      <div class="ind-stats">
+        <span class="w">${fN(ec)} employers</span> caught · <span class="w">${fN(wc)}</span> workers cheated<br>
+        ${fN(tc2)} enforcement cases · avg <strong style="color:var(--text)">${f$(avg)}</strong> per employer<br>
+        ${avgPerWorker>0?`avg <strong style="color:var(--text)">${f$(avgPerWorker)}</strong> stolen per worker<br>`:''}
+        ${rc>0?`<span class="r">${fN(rc)} repeat violation cases</span>`:''}
+      </div>
+      ${compare?`<div class="ind-compare"><strong>Context:</strong> ${compare}</div>`:''}
+    </div>`;
+  }).join('');
+}
+
+function renderStates(){
+  const sk=document.getElementById('state-srt').value;
+  const data=[...(STATE_DATA||[])].sort((a,b)=>(+b[sk]||0)-(+a[sk]||0));
+  const mx=Math.max(...data.map(r=>+r.total_bw||0),1);
+  document.getElementById('state-grid').innerHTML=data.map(r=>{
+    const pac=STATE_PAC_MAP[r.state];
+    const pacHtml=pac&&pac.pac_total>1000?`<div class="state-pac-mini">
+      <span class="state-pac-d">D ${f$(pac.pac_d)}</span>
+      <span style="color:var(--muted)">·</span>
+      <span class="state-pac-r">R ${f$(pac.pac_r)}</span>
+      <span style="color:var(--muted);font-size:9px;margin-left:2px">PAC to politicians</span>
+    </div>`:'';
+    return `<div class="state-card" onclick="openStateDrawer('${r.state}')">
+      <div><span class="state-abbr">${r.state}</span><span class="state-fullname">${STATE_NAMES[r.state]||''}</span></div>
+      <div class="state-bw">${f$(+r.total_bw||0)}</div>
+      <div class="state-sub">${fN(+r.employer_count||0)} employers · ${fN(+r.workers_cheated||0)} workers cheated</div>
+      <div class="state-bar"><div class="state-bar-fill" style="width:${Math.round((+r.total_bw||0)/mx*100)}%"></div></div>
+      <div class="state-sub">${fN(+r.total_cases||0)} cases · ${fN(+r.repeat_cases||0)} repeat violations</div>
+      ${pacHtml}
+    </div>`;
+  }).join('');
+}
+
+function openStateDrawer(state){
+  const r=STATE_DATA.find(x=>x.state===state);
+  if(!r)return;
+  const pac=STATE_PAC_MAP[state];
+  const bw=+r.total_bw||0;
+  const wc=+r.workers_cheated||0;
+  const ec=+r.employer_count||0;
+  const rc=+r.repeat_cases||0;
+  const tc2=+r.total_cases||0;
+  const cl=+r.child_labor_cases||0;
+  const avgPerWorker=wc>0?Math.round(bw/wc):0;
+
+  document.getElementById('dtabs').innerHTML=`<div class="dtab on">${STATE_NAMES[state]||state}</div>`;
+  const pw=document.getElementById('p-wages');
+  pw.className='dpanel on';
+  document.getElementById('p-fec').className='dpanel';
+
+  let pacSection='';
+  if(pac&&pac.pac_total>1000){
+    const pt=pac.pac_total,pd=pac.pac_d,pr=pac.pac_r,pi=pac.pac_i||0;
+    const dPct=Math.round(pd/pt*100),rPct=Math.round(pr/pt*100),iPct=100-dPct-rPct;
+    pacSection=`
+      <div class="sechead">PAC Money to ${state} Politicians — From Wage-Theft Brands</div>
+      <div class="stat-compare">
+        Employers with active WHD wage theft violations have funneled
+        <strong>${f$(pt)}</strong> in PAC money to federal candidates in ${STATE_NAMES[state]||state}.
+        ${pr>pd?`Republicans received <strong>${f$(pr)}</strong> vs Democrats <strong>${f$(pd)}</strong>.`
+               :`Democrats received <strong>${f$(pd)}</strong> vs Republicans <strong>${f$(pr)}</strong>.`}
+      </div>
+      <div class="split-wrap">
+        <div class="split-label"><span class="split-d">◀ D ${dPct}% · ${f$(pd)}</span><span class="split-r">${f$(pr)} · ${rPct}% R ▶</span></div>
+        <div class="split-bar">
+          <div class="split-bar-d" style="width:${dPct}%">${dPct>8?dPct+'%':''}</div>
+          ${iPct>0?`<div class="split-bar-i" style="width:${iPct}%">${iPct>4?iPct+'%':''}</div>`:''}
+          <div class="split-bar-r" style="width:${rPct}%">${rPct>8?rPct+'%':''}</div>
+        </div>
+        <div class="split-tots">
+          <div class="split-tot"><div class="stv d">${f$(pd)}</div><div class="stl">To Democrats</div></div>
+          <div class="split-tot"><div class="stv r">${f$(pr)}</div><div class="stl">To Republicans</div></div>
+          <div class="split-tot"><div class="stv i">${f$(pi)}</div><div class="stl">Other / Ind.</div></div>
+        </div>
+      </div>`;
+  }
+
+  pw.innerHTML=`
+    <div class="dbrand">${state}</div>
+    <div class="dsub">${STATE_NAMES[state]||''} · DOL WHD Enforcement Data FY2005–2024</div>
+    <div class="hcost">
+      <strong>${f$(bw)}</strong> in back wages owed by employers in ${STATE_NAMES[state]||state}.<br>
+      <strong>${fN(wc)} workers</strong> documented as cheated out of wages they earned.
+      ${avgPerWorker>0?`<br>That's an average of <strong>${f$(avgPerWorker)} per worker</strong> stolen.`:''}
+      ${rc>0?`<br><strong>${fN(rc)} repeat violation cases</strong> — employers caught and did it again.`:''}
+    </div>
+    <div class="kvg">
+      <div class="kvi"><div class="kvv r">${f$(bw)}</div><div class="kvl">Total Back Wages</div></div>
+      <div class="kvi"><div class="kvv">${fN(ec)}</div><div class="kvl">Employers Caught</div></div>
+      <div class="kvi"><div class="kvv a">${fN(rc)}</div><div class="kvl">Repeat Violations</div></div>
+      <div class="kvi"><div class="kvv">${fN(tc2)}</div><div class="kvl">Enforcement Cases</div></div>
+      <div class="kvi"><div class="kvv">${fN(wc)}</div><div class="kvl">Workers Cheated</div></div>
+      <div class="kvi"><div class="kvv">${fN(cl)}</div><div class="kvl">Child Labor Cases</div></div>
+    </div>
+    ${pacSection}
+    <div class="fecnote">Wage data: DOL WHD WHISARD FY2005–2024 · All employer types.<br>PAC data: FEC verified committee disbursements · cycles 2000–2026.<br>Note: IL PAC total is elevated due to 7-Eleven PAC recipient concentration.</div>
+  `;
+
+  document.getElementById('drw').classList.add('open');
+  document.getElementById('ov').classList.add('on');
+}
+
+function openD(b,tr){
+  if(selRow)selRow.classList.remove('sel');
+  selRow=tr;tr.classList.add('sel');
+  candFilter='all';showAll=false;currentBrand=b.brand;
+  const ft=FEC_TOTALS[b.brand];
+  const fd=FEC[b.brand]||[];
+  document.getElementById('dtabs').innerHTML=`
+    <div class="dtab ${activeTab==='wages'?'on':''}" onclick="swTab('wages')">Wage Theft</div>
+    <div class="dtab ${activeTab==='fec'?'on':''}" onclick="swTab('fec')">Politicians Paid${ft&&ft.total>0?' <span style="color:var(--amber);font-size:10px">('+ft.candidates+')</span>':''}</div>
+  `;
+  buildWages(b);buildFEC(b,fd,ft);
+  document.getElementById('drw').classList.add('open');
+  document.getElementById('ov').classList.add('on');
+  swTab(activeTab);
+}
+
+function swTab(t){
+  activeTab=t;
+  document.querySelectorAll('.dtab').forEach(el=>{el.classList.toggle('on',(t==='wages'&&el.textContent.startsWith('Wage'))||(t==='fec'&&el.textContent.startsWith('Pol')));});
+  document.getElementById('p-wages').classList.toggle('on',t==='wages');
+  document.getElementById('p-fec').classList.toggle('on',t==='fec');
+}
+
+function buildWages(b){
+  const p=document.getElementById('p-wages');
+  const aw=b.total_workers_cheated?Math.round(b.total_back_wages/b.total_workers_cheated):0;
+  const al=b.location_count?Math.round(b.total_back_wages/b.location_count):0;
+  const rp=b.total_cases?Math.round(b.repeat_cases/b.total_cases*100):0;
+  const mwp=b.total_back_wages?Math.round(b.min_wage_back_wages/b.total_back_wages*100):0;
+  const otp=b.total_back_wages?Math.round(b.overtime_back_wages/b.total_back_wages*100):0;
+  p.innerHTML=`
+    <div class="dbrand">${b.brand}</div>
+    <div class="dsub">${b.location_count?b.location_count.toLocaleString()+' locations · ':''}${b.total_cases?b.total_cases.toLocaleString()+' WHD cases · ':''}FY2005–2024</div>
+    ${b.total_back_wages?`<div class="hcost">
+      ${b.total_workers_cheated?`<strong>${fN(b.total_workers_cheated)} workers</strong> documented as owed back wages.<br>Average <strong>${f$(aw)} per worker</strong> stolen.<br>`:''}
+      ${b.location_count?`Average <strong>${f$(al)} per location</strong> caught.<br>`:''}
+      ${b.repeat_cases?`<strong>${b.repeat_cases} locations (${rp}%)</strong> were repeat offenders — caught, fined, did it again.`:''}
+      ${b.child_labor_minors?`<br><strong>${b.child_labor_minors} minors</strong> found illegally employed.`:''}
+    </div>`:'<div style="color:var(--muted);font-size:12px;padding:12px 0">No direct WHD enforcement record — appears in FEC data as a PAC donor.</div>'}
+    <div class="kvg">
+      <div class="kvi"><div class="kvv r">${f$(b.total_back_wages)}</div><div class="kvl">Total Back Wages</div></div>
+      <div class="kvi"><div class="kvv">${b.total_cases||'—'}</div><div class="kvl">Enforcement Cases</div></div>
+      <div class="kvi"><div class="kvv a">${b.repeat_cases||'—'}</div><div class="kvl">Repeat Violations</div></div>
+      <div class="kvi"><div class="kvv a">${b.willful_cases||'—'}</div><div class="kvl">Willful Violations</div></div>
+      <div class="kvi"><div class="kvv">${b.location_count||'—'}</div><div class="kvl">Locations Caught</div></div>
+      <div class="kvi"><div class="kvv">${b.child_labor_cases||'—'}</div><div class="kvl">Child Labor Cases</div></div>
+    </div>
+    ${mwp||otp?`<div class="sechead">Violation Breakdown</div>
+      ${mwp?`<div class="vbar"><div class="vbarl"><span>Minimum Wage</span><span>${f$(b.min_wage_back_wages)} (${mwp}%)</span></div><div class="vbart"><div class="vbarf" style="width:${mwp}%"></div></div></div>`:''}
+      ${otp?`<div class="vbar"><div class="vbarl"><span>Overtime</span><span>${f$(b.overtime_back_wages)} (${otp}%)</span></div><div class="vbart"><div class="vbarf" style="width:${otp}%"></div></div></div>`:''}
+    `:''}
+  `;
+}
+
+function buildFEC(b,fd,ft){
+  const p=document.getElementById('p-fec');
+  if(!ft||!ft.total||!fd.length){
+    p.innerHTML=`<div class="dbrand">${b.brand}</div><div class="no-fec">No verified PAC contribution data found for <strong>${b.brand}</strong>.<br><br>They may donate through a trade association rather than a direct corporate PAC.</div>`;return;
+  }
+  const dT=fd.reduce((s,m)=>s+(m.party==='D'?m.amount:0),0);
+  const rT=fd.reduce((s,m)=>s+(m.party==='R'?m.amount:0),0);
+  const iT=fd.reduce((s,m)=>s+(m.party!=='D'&&m.party!=='R'?m.amount:0),0);
+  const gT=dT+rT+iT||1;
+  const dP=Math.round(dT/gT*100),rP=Math.round(rT/gT*100),iP=100-dP-rP;
+  p.innerHTML=`
+    <div class="dbrand">${b.brand}</div>
+    <div class="dsub">${ft.candidates} federal candidates · PAC contributions · FEC verified</div>
+    <div class="split-wrap">
+      <div class="split-label"><span class="split-d">◀ Democrat ${dP}% · ${f$(dT)}</span><span class="split-r">${f$(rT)} · ${rP}% Republican ▶</span></div>
+      <div class="split-bar">
+        <div class="split-bar-d" style="width:${dP}%">${dP>8?dP+'%':''}</div>
+        ${iP>0?`<div class="split-bar-i" style="width:${iP}%">${iP>4?iP+'%':''}</div>`:''}
+        <div class="split-bar-r" style="width:${rP}%">${rP>8?rP+'%':''}</div>
+      </div>
+      <div class="split-tots">
+        <div class="split-tot"><div class="stv d">${f$(dT)}</div><div class="stl">Democrat</div></div>
+        <div class="split-tot"><div class="stv r">${f$(rT)}</div><div class="stl">Republican</div></div>
+        <div class="split-tot"><div class="stv i">${f$(iT)}</div><div class="stl">Other / Ind.</div></div>
+      </div>
+    </div>
+    <div class="cand-filter" id="cand-filter">
+      <div class="cand-chip on-all" onclick="filterCands(this,'all')">All</div>
+      <div class="cand-chip" onclick="filterCands(this,'D')">Democrats</div>
+      <div class="cand-chip" onclick="filterCands(this,'R')">Republicans</div>
+      ${iT>0?'<div class="cand-chip" onclick="filterCands(this,\'I\')">Other</div>':''}
+    </div>
+    <div class="cand-list" id="cand-list"></div>
+    <div class="fecnote">Source: FEC PAC disbursements · Verified committee IDs · cycles 2000–2026<br>PAC-to-candidate contributions only — no independent expenditures or dark money.<br><a href="https://rotatingvillains.org" style="color:var(--muted)">↗ RotatingVillains.org</a></div>
+  `;
+  renderCandList(fd,'all');
+}
+
+function filterCands(el,party){
+  document.getElementById('cand-filter').querySelectorAll('.cand-chip').forEach(c=>c.className='cand-chip');
+  el.className=party==='all'?'cand-chip on-all':party==='D'?'cand-chip on-d':party==='R'?'cand-chip on-r':'cand-chip on-i';
+  candFilter=party;showAll=false;
+  renderCandList(FEC[currentBrand]||[],party);
+}
+
+function renderCandList(fd,party){
+  const el=document.getElementById('cand-list');if(!el)return;
+  let filtered=party==='all'?fd:party==='I'?fd.filter(m=>m.party!=='D'&&m.party!=='R'):fd.filter(m=>m.party===party);
+  const limit=showAll?filtered.length:50;
+  el.innerHTML=filtered.slice(0,limit).map(m=>`
+    <div class="cand-row party-${(m.party||'i').toLowerCase()}">
+      <div class="pdot ${(m.party||'i').toLowerCase()}">${m.party||'?'}</div>
+      <div class="cname">${tc(m.member)}</div>
+      <div class="cstate">${m.state||''}</div>
+      <div class="coffice">${m.office||''}</div>
+      <div class="camt ${(m.party||'i').toLowerCase()}">${f$(m.amount)}</div>
+    </div>`).join('');
+  if(filtered.length>limit) el.innerHTML+=`<div class="show-more" onclick="showAllCands()">Show all ${filtered.length} candidates ↓</div>`;
+  else if(!filtered.length) el.innerHTML='<div style="color:var(--muted);font-size:12px;padding:12px 0">No candidates for this filter.</div>';
+}
+
+function showAllCands(){showAll=true;renderCandList(FEC[currentBrand]||[],candFilter);}
+
+function closeD(){
+  document.getElementById('drw').classList.remove('open');
+  document.getElementById('ov').classList.remove('on');
+  if(selRow)selRow.classList.remove('sel');selRow=null;
+  document.getElementById('p-wages').innerHTML='';
+  document.getElementById('p-fec').innerHTML='';
+  document.getElementById('dtabs').innerHTML='';
+}
+
+renderBrands();
+</script>
+</body>
+</html>
