@@ -1,0 +1,9 @@
+# Backup files
+*_backup*
+*_staging*
+
+# OS files
+.DS_Store
+
+# Data files that shouldn't be in deploy
+primary_candidates.json
