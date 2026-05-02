@@ -602,6 +602,7 @@
                                     <th style="cursor: pointer;" onclick="sortTable('absent')">Conveniently Absent ↕</th>
                                     <th style="cursor: pointer;" onclick="sortTable('voted_against_dems')">Voted Against Dems ↕</th>
                                     <th style="cursor: pointer;" onclick="sortTable('pattern')">Pattern ↕</th>
+                                    <th style="cursor: pointer;" onclick="sortTable('age')">Age ↕</th>
                                 </tr>
                             </thead>
                             <tbody id="tableBody">
@@ -721,6 +722,7 @@
                         <td>
                             <button class="clickable" style="color:#4682b4;background:none;border:none;padding:4px;font-family:inherit;font-size:inherit;cursor:pointer;font-weight:bold;" onclick="showAntiDemVotes('${escapeHtml(v.name)}')">${antiDem}</button>
                         </td>
+                        <td style="color:#ffaa44; font-family:'JetBrains Mono',monospace; font-size:0.9rem;">${v.age || ''}</td>
                         <td><span class="badge ${
                             pattern === 'Super Villain' ? 'badge-danger' :
                             pattern === 'Strategic Rotator' ? 'badge-warning' :
