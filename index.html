@@ -722,7 +722,6 @@
                         <td>
                             <button class="clickable" style="color:#4682b4;background:none;border:none;padding:4px;font-family:inherit;font-size:inherit;cursor:pointer;font-weight:bold;" onclick="showAntiDemVotes('${escapeHtml(v.name)}')">${antiDem}</button>
                         </td>
-                        <td style="color:#ffaa44; font-family:'JetBrains Mono',monospace; font-size:0.9rem;">${v.age || ''}</td>
                         <td><span class="badge ${
                             pattern === 'Super Villain' ? 'badge-danger' :
                             pattern === 'Strategic Rotator' ? 'badge-warning' :
@@ -734,6 +733,7 @@
                             pattern === 'Rarely Rotates' ? 'RARELY ROTATES' :
                             pattern === 'Limited Record' ? 'LIMITED RECORD' : pattern
                         }</span></td>
+                        <td style="color:#ffaa44; font-family:'JetBrains Mono',monospace; font-size:0.9rem;">${v.age || ''}</td>
                     </tr>
                 `;
             }).join('');
@@ -762,8 +762,12 @@
                     bVal = b[column] || 0;
                 }
 
-                // Always push nulls/zeros to bottom for age column
+                // Always push retired/deceased to bottom for age sort
                 if (column === 'age') {
+                    const aRetired = (a.tags||[]).includes('retired');
+                    const bRetired = (b.tags||[]).includes('retired');
+                    if (aRetired && !bRetired) return 1;
+                    if (!aRetired && bRetired) return -1;
                     if (!a[column] && b[column]) return 1;
                     if (a[column] && !b[column]) return -1;
                 }
