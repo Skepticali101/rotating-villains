@@ -761,7 +761,13 @@
                     aVal = a[column] || 0;
                     bVal = b[column] || 0;
                 }
-                
+
+                // Always push nulls/zeros to bottom for age column
+                if (column === 'age') {
+                    if (!a[column] && b[column]) return 1;
+                    if (a[column] && !b[column]) return -1;
+                }
+
                 if (currentSort.direction === 'asc') {
                     return aVal > bVal ? 1 : aVal < bVal ? -1 : 0;
                 } else {
