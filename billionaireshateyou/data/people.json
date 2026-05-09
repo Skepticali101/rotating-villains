@@ -1145,5 +1145,67 @@
     "known_for": [
       "Dallas Cowboys (NFL)"
     ]
+  },
+  "Steve Cohen": {
+    "wiki": "Steve_Cohen_(businessman)",
+    "net_worth": "$20B+",
+    "tier": 4,
+    "blurb": "SAC Capital founder whose firm pleaded guilty to the largest insider trading settlement in US history ($1.8B) while simultaneously issuing a statement that it 'never encouraged or tolerated insider trading.' Eight employees convicted. Cohen never personally charged. Returned managing billions through Point72 in 2018 and bought the New York Mets for $2.4B in 2020.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "known_for": [
+      "SAC Capital Advisors",
+      "Point72",
+      "New York Mets"
+    ]
+  },
+  "Rex Tillerson": {
+    "wiki": "Rex_Tillerson",
+    "net_worth": "$300M+",
+    "tier": 2,
+    "blurb": "ExxonMobil CEO who publicly argued humanity should 'adapt' to climate change rather than prevent it \u2014 while his own company's scientists were accurately modelling catastrophic warming. Funded climate denial organizations. Trump's Secretary of State. First act: eliminating the climate envoy. Fired by tweet.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "known_for": [
+      "ExxonMobil",
+      "US State Department"
+    ]
+  },
+  "Stan Kroenke": {
+    "wiki": "Stan_Kroenke",
+    "net_worth": "$15B+",
+    "tier": 4,
+    "blurb": "Sports franchise owner who moved the Rams out of St. Louis after secretly negotiating an LA stadium deal \u2014 leaving fans with nothing. Led Arsenal into the 2021 Super League breakaway that would have destroyed European football's open competition model. Refused to apologize when it collapsed. A jury later awarded St. Louis $790M against the NFL.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "known_for": [
+      "LA Rams (NFL)",
+      "Arsenal FC",
+      "Denver Nuggets",
+      "Colorado Avalanche"
+    ]
+  },
+  "John Tyson": {
+    "wiki": "John_Tyson",
+    "net_worth": "$5B+",
+    "tier": 3,
+    "blurb": "Tyson Foods chairman who published a Washington Post op-ed about worker safety four days before 1,031 of his Waterloo, Iowa workers tested positive for COVID-19 \u2014 58% of the plant. Five died. Managers had organized an internal betting pool on how many workers would get infected.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "known_for": [
+      "Tyson Foods"
+    ]
   }
 }
