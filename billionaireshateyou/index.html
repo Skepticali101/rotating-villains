@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Billionaires Hate You | RotatingVillains.org</title>
+  <meta name="description" content="They actually said this. Verified quotes from billionaires against workers, democracy, and the public good.">
+
+  <!--
+    Font strategy: display=swap with close system fallbacks.
+    Bebas Neue  → Impact (near-identical weight/width)
+    Courier Prime → Courier New (standard monospace serif)
+    JetBrains Mono → Consolas / Menlo (standard mono)
+    The fallbacks are close enough that the swap is imperceptible.
+    Body starts visible — no flash, no hidden content on slow connections.
+  -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤑</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+  <style>
+    /* ── DESIGN TOKENS ── */
+    :root {
+      --bg:        #0d0d0d;
+      --bg2:       #141414;
+      --bg3:       #1a1a1a;
+      --border:    #2a2a2a;
+      --red:       #e74c3c;
+      --red-light: #ff6b6b;
+      --gold:      #d4af37;
+      --text:      #d0d0d0;
+      --text-dim:  #666;
+      --green:     #2ecc71;
+      --yellow:    #f39c12;
+
+      /* Font stacks — custom first, close system fallback second */
+      --font-display: 'Bebas Neue', Impact, 'Arial Narrow', sans-serif;
+      --font-body:    'Courier Prime', 'Courier New', Courier, monospace;
+      --font-mono:    'JetBrains Mono', Consolas, Menlo, monospace;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-body);
+      min-height: 100vh;
+    }
+
+    /* ── HEADER ── */
+    .site-header {
+      background: var(--bg2);
+      border-bottom: 2px solid var(--red);
+      padding: 28px 24px 20px;
+      text-align: center;
+    }
+    .back-link {
+      display: inline-block;
+      color: var(--gold);
+      text-decoration: none;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      letter-spacing: 2px;
+      margin-bottom: 16px;
+      opacity: 0.7;
+      transition: opacity 0.2s;
+    }
+    .back-link:hover { opacity: 1; }
+
+    .site-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.8rem, 8vw, 5rem);
+      letter-spacing: 6px;
+      color: #fff;
+      line-height: 1;
+    }
+    .site-title span { color: var(--red-light); }
+
+    .site-subtitle {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-top: 10px;
+    }
+    .header-stats {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+    .stat { text-align: center; }
+    .stat-num {
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      color: var(--red-light);
+    }
+    .stat-label {
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      color: var(--text-dim);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    /* ── BADGE TALLY ── */
+    .badge-tally {
+      background: var(--bg2);
+      border-bottom: 1px solid var(--border);
+      padding: 10px 20px;
+    }
+    .badge-tally-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+    .tally-label {
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      color: var(--text-dim);
+      letter-spacing: 2px;
+      flex-shrink: 0;
+      margin-right: 4px;
+    }
+    .badge-tally-btn {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--font-mono);
+      font-size: 0.62rem;
+      letter-spacing: 1px;
+      padding: 5px 12px;
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--text-dim);
+      cursor: pointer;
+      transition: all 0.15s;
+      white-space: nowrap;
+    }
+    .badge-tally-btn:hover { border-color: var(--red); color: var(--text); }
+    .badge-tally-btn.active { color: #fff; }
+    /* Per-badge active colours */
+    .badge-tally-btn[data-badge="epstein"].active  { background: rgba(155,89,182,0.25); border-color: #9b59b6; }
+    .badge-tally-btn[data-badge="bunker"].active   { background: rgba(211,84,0,0.25);   border-color: #d35400; }
+    .badge-tally-btn[data-badge="island"].active   { background: rgba(52,152,219,0.25); border-color: #2980b9; }
+    .badge-tally-btn[data-badge="tax_exile"].active{ background: rgba(39,174,96,0.25);  border-color: #27ae60; }
+    .badge-tally-btn[data-badge="dark_money"].active{ background: rgba(80,80,80,0.5);   border-color: #888; }
+    .tally-count {
+      background: var(--bg3);
+      border-radius: 2px;
+      padding: 1px 5px;
+      font-size: 0.6rem;
+      letter-spacing: 0;
+      min-width: 18px;
+      text-align: center;
+    }
+    .badge-tally-btn.active .tally-count {
+      background: rgba(255,255,255,0.15);
+    }
+
+    /* ── CONTROLS (sticky) ── */
+    .controls {
+      background: var(--bg2);
+      border-bottom: 1px solid var(--border);
+      padding: 14px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .controls-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+    }
+    .filter-label {
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      color: var(--text-dim);
+      letter-spacing: 2px;
+      flex-shrink: 0;
+    }
+    .category-filters { display: flex; gap: 6px; flex-wrap: wrap; }
+    .cat-btn {
+      font-family: var(--font-mono);
+      font-size: 0.62rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 5px 10px;
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--text-dim);
+      cursor: pointer;
+      transition: all 0.15s;
+      white-space: nowrap;
+    }
+    .cat-btn:hover  { border-color: var(--red); color: var(--red-light); }
+    .cat-btn.active { background: var(--red); border-color: var(--red); color: #fff; }
+
+    .controls-right {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      margin-left: auto;
+      flex-wrap: wrap;
+    }
+    .person-select,
+    .sort-select {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 1px;
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 5px 10px;
+      cursor: pointer;
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    .person-select:focus,
+    .sort-select:focus { border-color: var(--red); }
+
+    .count-display {
+      font-family: var(--font-mono);
+      font-size: 0.62rem;
+      color: var(--text-dim);
+      letter-spacing: 1px;
+      white-space: nowrap;
+    }
+
+    /* ── PERSON HERO ── */
+    .person-hero {
+      display: none;
+      background: var(--bg2);
+      border-bottom: 2px solid var(--red);
+      padding: 28px 24px;
+    }
+    .person-hero.visible { display: block; }
+    .person-hero-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+    }
+    .person-hero-photo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--red);
+      flex-shrink: 0;
+      background: var(--bg3);
+    }
+    .person-hero-photo-placeholder {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 2px solid var(--border);
+      flex-shrink: 0;
+      background: var(--bg3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      color: var(--text-dim);
+    }
+    .person-hero-info { flex: 1; }
+    .person-hero-name {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      letter-spacing: 3px;
+      color: #fff;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .person-hero-worth {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--gold);
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+    .person-hero-blurb {
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      color: var(--text-dim);
+      line-height: 1.6;
+      max-width: 600px;
+    }
+    .person-hero-badges {
+      display: flex;
+      gap: 8px;
+      margin-top: 12px;
+      flex-wrap: wrap;
+    }
+
+    /* ── QUOTE GRID ── */
+    .grid-wrap {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 24px 20px 60px;
+    }
+    .quotes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 16px;
+    }
+
+    /* ── QUOTE CARD ── */
+    .quote-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      transition: border-color 0.2s, transform 0.15s;
+    }
+    .quote-card:hover   { border-color: var(--red); transform: translateY(-1px); }
+    .quote-card.expanded { border-color: var(--red); }
+
+    /* Card: header row */
+    .card-header {
+      padding: 14px 16px 10px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    .card-header-left {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      flex: 1;
+      min-width: 0;
+    }
+    .card-photo {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+    .card-photo-placeholder {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid var(--border);
+      flex-shrink: 0;
+      background: var(--bg3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      color: var(--text-dim);
+    }
+    .card-name-block { min-width: 0; }
+    .card-person {
+      font-family: var(--font-display);
+      font-size: 1rem;
+      letter-spacing: 2px;
+      color: #fff;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .card-title {
+      font-family: var(--font-mono);
+      font-size: 0.55rem;
+      color: var(--text-dim);
+      letter-spacing: 0.5px;
+      margin-top: 2px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .card-tax {
+      font-family: var(--font-mono);
+      font-size: 0.5rem;
+      letter-spacing: 0.5px;
+      margin-top: 3px;
+      color: var(--text-dim);
+    }
+    .card-tax-rate { color: var(--red-light); font-weight: 600; }
+    .card-meta {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 4px;
+      flex-shrink: 0;
+    }
+    .card-date {
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      color: var(--text-dim);
+      letter-spacing: 1px;
+    }
+    .verify-badge {
+      font-family: var(--font-mono);
+      font-size: 0.5rem;
+      letter-spacing: 1px;
+      padding: 2px 5px;
+      border: 1px solid;
+      text-transform: uppercase;
+    }
+    .verify-badge.verified    { color: var(--green);  border-color: var(--green); }
+    .verify-badge.secondhand  { color: var(--yellow); border-color: var(--yellow); }
+    .verify-badge.needs_source{ color: var(--text-dim); border-color: var(--border); }
+
+    /* Card: badge pills (Epstein / Bunker / Disputed) */
+    .card-badges {
+      display: flex;
+      gap: 4px;
+      flex-wrap: wrap;
+      padding: 6px 16px 2px;
+    }
+    .badge-pill {
+      font-family: var(--font-mono);
+      font-size: 0.52rem;
+      letter-spacing: 1px;
+      padding: 2px 7px;
+      border-radius: 2px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    .badge-epstein { background: rgba(155,89,182,0.2); color: #c39bd3; border: 1px solid #7d3c98; }
+    .badge-bunker  { background: rgba(211,84,0,0.2);  color: #e59866; border: 1px solid #a04000; }
+    .badge-disputed{ background: rgba(243,156,18,0.15); color: var(--yellow); border: 1px solid var(--yellow); }
+
+    /* Card: quote body */
+    .card-quote {
+      padding: 14px 16px 10px;
+      flex: 1;
+    }
+    .quote-text {
+      font-family: var(--font-body);
+      font-size: 1.05rem;
+      font-style: italic;
+      color: var(--text);
+      line-height: 1.65;
+      position: relative;
+      padding-left: 22px;
+    }
+    /* Opening curly quote — CSS pseudo-element */
+    .quote-text::before {
+      content: '\201C';
+      position: absolute;
+      left: 0;
+      top: -4px;
+      font-size: 2.2rem;
+      color: var(--red);
+      line-height: 1;
+      font-style: normal;
+    }
+    /* Closing curly quote — injected as <span> by JS so it flows inline */
+    .quote-end-mark {
+      font-size: 2rem;
+      color: var(--red);
+      line-height: 0;
+      vertical-align: -0.45em;
+      font-style: normal;
+      margin-left: 3px;
+    }
+    /* Clamp to 4 lines when card is collapsed */
+    .quote-card:not(.expanded) .quote-text {
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    /* Card: footer (category + expand hint) */
+    .card-footer {
+      padding: 8px 16px 10px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+    }
+    .card-category {
+      font-family: var(--font-mono);
+      font-size: 0.55rem;
+      letter-spacing: 1.5px;
+      color: var(--red);
+      text-transform: uppercase;
+      flex: 1;
+    }
+    .expand-indicator {
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      color: var(--text-dim);
+      letter-spacing: 1px;
+      flex-shrink: 0;
+      transition: color 0.15s;
+    }
+    .quote-card:hover .expand-indicator,
+    .quote-card.expanded .expand-indicator { color: var(--red-light); }
+
+    /* Card: share buttons */
+    .card-share {
+      display: flex;
+      gap: 6px;
+      padding: 8px 16px 12px;
+      border-top: 1px solid var(--border);
+    }
+    .share-btn {
+      font-family: var(--font-mono);
+      font-size: 0.58rem;
+      letter-spacing: 1px;
+      padding: 5px 10px;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--text-dim);
+      cursor: pointer;
+      transition: all 0.15s;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .share-btn:hover  { border-color: var(--red); color: var(--red-light); }
+    .share-btn.copied { border-color: var(--green); color: var(--green); }
+
+    /* Card: expanded context panel */
+    .expanded-panel {
+      display: none;
+      background: var(--bg);
+      border-top: 1px solid var(--border);
+      padding: 16px;
+    }
+    .quote-card.expanded .expanded-panel { display: block; }
+
+    .context-label {
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      color: var(--red);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .context-text {
+      font-family: var(--font-body);
+      font-size: 0.82rem;
+      color: var(--text-dim);
+      line-height: 1.65;
+      margin-bottom: 14px;
+    }
+    .disputed-note {
+      background: rgba(243,156,18,0.08);
+      border-left: 3px solid var(--yellow);
+      padding: 8px 12px;
+      margin-bottom: 14px;
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      color: var(--yellow);
+      letter-spacing: 0.5px;
+      line-height: 1.5;
+    }
+    .source-meta {
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      color: #555;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+    .source-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: transparent;
+      border: 1px solid var(--red);
+      color: var(--red-light);
+      padding: 7px 14px;
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: background 0.15s;
+    }
+    .source-link:hover { background: var(--red); color: #fff; }
+    .source-link.pending { opacity: 0.35; cursor: default; }
+
+    /* ── EMPTY / LOADING STATES ── */
+    .empty-state {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--text-dim);
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      letter-spacing: 2px;
+    }
+    .loading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 80px 20px;
+      color: var(--text-dim);
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      letter-spacing: 3px;
+    }
+
+    /* ── SHARE CARD (off-screen render target for html2canvas) ── */
+    .share-card-render {
+      position: fixed;
+      left: -9999px;
+      top: -9999px;
+      width: 680px;
+      background: #111;
+      border: 1px solid #2a2a2a;
+      font-family: var(--font-body);
+      padding: 0;
+      z-index: -1;
+    }
+    .sc-top-bar { background: #e74c3c; height: 4px; }
+    .sc-body    { padding: 28px 32px 24px; }
+
+    .sc-eyebrow {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 4px;
+      color: #e74c3c;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .sc-person-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 14px;
+    }
+    .sc-photo {
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #e74c3c;
+      flex-shrink: 0;
+    }
+    .sc-photo-placeholder {
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      border: 2px solid #2a2a2a;
+      flex-shrink: 0;
+      background: #1a1a1a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      color: #444;
+    }
+    .sc-name {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      letter-spacing: 3px;
+      color: #fff;
+      line-height: 1;
+    }
+    .sc-title {
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      color: #555;
+      letter-spacing: 0.5px;
+      margin-top: 4px;
+    }
+    .sc-tax-line {
+      font-family: var(--font-mono);
+      font-size: 0.58rem;
+      letter-spacing: 0.5px;
+      margin-top: 6px;
+      color: #888;
+      display: none; /* shown by JS only when data exists */
+    }
+    .sc-tax-rate {
+      color: #e74c3c;
+      font-weight: 600;
+    }
+    .sc-tax-avg { color: #555; }
+    .sc-meta-row {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+    .sc-category-pill {
+      font-family: var(--font-mono);
+      font-size: 0.55rem;
+      letter-spacing: 1.5px;
+      color: #e74c3c;
+      border: 1px solid #e74c3c;
+      padding: 2px 8px;
+      text-transform: uppercase;
+    }
+    .sc-badge-pill {
+      font-family: var(--font-mono);
+      font-size: 0.52rem;
+      letter-spacing: 1px;
+      padding: 2px 7px;
+      border-radius: 2px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    .sc-badge-epstein   { background: rgba(155,89,182,0.25); color: #c39bd3; border: 1px solid #7d3c98; }
+    .sc-badge-bunker    { background: rgba(211,84,0,0.25);   color: #e59866; border: 1px solid #a04000; }
+    .sc-badge-island    { background: rgba(52,152,219,0.25); color: #85c1e9; border: 1px solid #1a6fa0; }
+    .sc-badge-tax-exile { background: rgba(39,174,96,0.25);  color: #82e0aa; border: 1px solid #1e8449; }
+    .sc-badge-dark-money{ background: rgba(44,62,80,0.8);    color: #aab7b8; border: 1px solid #566573; }
+
+    .sc-quote-wrap {
+      position: relative;
+      padding-left: 22px;
+      margin-bottom: 20px;
+    }
+    .sc-open-quote {
+      position: absolute;
+      left: 0;
+      top: -8px;
+      font-size: 2.8rem;
+      color: #e74c3c;
+      line-height: 1;
+      font-family: var(--font-body);
+    }
+    .sc-quote-text {
+      font-family: var(--font-body);
+      font-size: 1rem;
+      font-style: italic;
+      color: #d0d0d0;
+      line-height: 1.65;
+    }
+    .sc-close-quote {
+      font-size: 2rem;
+      color: #e74c3c;
+      line-height: 0;
+      vertical-align: -0.45em;
+      font-style: normal;
+    }
+    .sc-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid #2a2a2a;
+      padding-top: 14px;
+    }
+    .sc-date {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      color: #555;
+      letter-spacing: 1px;
+    }
+    .sc-branding {
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      color: #e74c3c;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 700px) {
+      .quotes-grid       { grid-template-columns: 1fr; }
+      .controls-inner    { flex-direction: column; align-items: flex-start; }
+      .controls-right    { margin-left: 0; }
+      .person-hero-inner { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── HEADER ── -->
+<header class="site-header">
+  <a class="back-link" href="../">← ROTATINGVILLAINS.ORG</a>
+  <div class="site-title">BILLIONAIRES <span>HATE YOU</span></div>
+  <div class="site-subtitle">Verified receipts</div>
+  <div class="header-stats">
+    <div class="stat">
+      <div class="stat-num" id="stat-quotes">—</div>
+      <div class="stat-label">Quotes on record</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num" id="stat-people">—</div>
+      <div class="stat-label">Billionaires</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num" id="stat-verified">—</div>
+      <div class="stat-label">Verified sources</div>
+    </div>
+  </div>
+</header>
+
+<!-- ── BADGE TALLY ── -->
+<div class="badge-tally">
+  <div class="badge-tally-inner">
+    <span class="tally-label">EXPOSE:</span>
+    <div id="badgeTallyBtns"></div>
+  </div>
+</div>
+
+<!-- ── FILTERS + SORT (sticky) ── -->
+<div class="controls">
+  <div class="controls-inner">
+    <span class="filter-label">FILTER:</span>
+    <div class="category-filters" id="categoryFilters"></div>
+    <div class="controls-right">
+      <select class="person-select" id="personSelect">
+        <option value="">All people</option>
+      </select>
+      <select class="sort-select" id="sortSelect">
+        <option value="date-desc">Newest first</option>
+        <option value="date-asc">Oldest first</option>
+        <option value="wealth-desc">Richest first</option>
+        <option value="person-asc">A → Z</option>
+      </select>
+      <div class="count-display">Showing <span id="countDisplay">—</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ── PERSON HERO (shown when one person selected) ── -->
+<div class="person-hero" id="personHero">
+  <div class="person-hero-inner">
+    <div id="heroPhotoWrap"></div>
+    <div class="person-hero-info">
+      <div class="person-hero-name"  id="heroName"></div>
+      <div class="person-hero-worth" id="heroWorth"></div>
+      <div class="person-hero-blurb" id="heroBlurb"></div>
+      <div class="person-hero-badges" id="heroBadges"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ── QUOTE GRID ── -->
+<div class="grid-wrap">
+  <div class="quotes-grid" id="quotesGrid">
+    <div class="loading">LOADING RECEIPTS...</div>
+  </div>
+</div>
+
+<!-- ── SHARE CARD (off-screen, rendered to PNG by html2canvas) ── -->
+<div class="share-card-render" id="shareCardRender">
+  <div class="sc-top-bar"></div>
+  <div class="sc-body">
+    <div class="sc-eyebrow">THIS B SAID</div>
+    <div class="sc-person-row">
+      <div id="scPhotoWrap"></div>
+      <div>
+        <div class="sc-name"  id="scName"></div>
+        <div class="sc-title" id="scTitle"></div>
+        <div class="sc-tax-line" id="scTaxLine">
+          TRUE TAX RATE: <span class="sc-tax-rate" id="scTaxRate"></span>
+          <span class="sc-tax-avg"> · avg American paid 14%</span>
+        </div>
+      </div>
+    </div>
+    <div class="sc-meta-row">
+      <span id="scCategory" class="sc-category-pill"></span>
+      <span id="scBadges"></span>
+    </div>
+    <div class="sc-quote-wrap">
+      <span class="sc-open-quote">"</span>
+      <span class="sc-quote-text" id="scQuote"></span>
+    </div>
+    <div class="sc-footer">
+      <div class="sc-date"    id="scDate"></div>
+      <div class="sc-branding">BILLIONAIRES HATE YOU</div>
+    </div>
+  </div>
+</div>
+
+<script>
+  'use strict';
+
+  // ── State ──────────────────────────────────────────────────────────────────
+  let allQuotes  = [];
+  let peopleData = {};
+  let photoCache = {};    // person name → HTMLImageElement (pre-loaded)
+  let activeFilter = 'all';
+  let activePerson = '';
+  let activeBadge  = '';   // epstein | bunker | island | tax_exile | dark_money | ''
+  let activeSort   = 'date-desc';
+
+  // ── Filter definitions ─────────────────────────────────────────────────────
+  // cats: which DB category values map to this filter button
+  const FILTERS = [
+    { key: 'all',          label: '⚡ ALL RECEIPTS',       cats: null },
+    { key: 'workers',      label: '🔨 HATES WORKERS',      cats: ['anti-worker'] },
+    { key: 'public',       label: '🗑 DESPISES THE PUBLIC', cats: ['classism', 'anti-public'] },
+    { key: 'democracy',    label: '🏴 ENEMY OF DEMOCRACY',  cats: ['anti-democracy', 'extremism'] },
+    { key: 'law',          label: '⚖ ABOVE THE LAW',       cats: ['corporate-impunity', 'fraud'] },
+    { key: 'surveillance', label: '👁 BIG BROTHER',         cats: ['surveillance'] },
+  ];
+
+  // ── Bootstrap: load data then build UI ────────────────────────────────────
+  Promise.all([
+    fetch('./data/quotes.json').then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }),
+    fetch('./data/people.json').then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }),
+  ])
+  .then(([quotes, people]) => {
+    allQuotes  = quotes;
+    peopleData = people;
+    initUI();
+    render();
+    preloadPhotos(); // async, updates cards as images arrive
+  })
+  .catch(err => {
+    console.error('Data load failed:', err);
+    document.getElementById('quotesGrid').innerHTML =
+      '<div class="empty-state">FAILED TO LOAD DATA<br><small style="font-size:0.6rem;margin-top:8px;display:block">Check console — data files must be served over HTTP</small></div>';
+  });
+
+  // ── Wikipedia photo preload ────────────────────────────────────────────────
+  function preloadPhotos() {
+    Object.keys(peopleData).forEach(name => {
+      const wiki = peopleData[name]?.wiki;
+      if (!wiki) return;
+      fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(wiki)}`)
+        .then(r => r.json())
+        .then(data => {
+          const src = data?.thumbnail?.source;
+          if (!src) return;
+          const img = new Image();
+          img.crossOrigin = 'anonymous';
+          img.onload = () => {
+            photoCache[name] = img;
+            // Swap placeholder → photo in any currently rendered cards
+            document.querySelectorAll(`.quote-card[data-person="${CSS.escape(name)}"]`)
+              .forEach(card => swapCardPhoto(card, name));
+            // Also update hero if this person is selected
+            if (activePerson === name) updateHeroPhoto(name);
+          };
+          img.src = src;
+        })
+        .catch(() => {}); // fail silently; placeholder stays
+    });
+  }
+
+  function swapCardPhoto(card, name) {
+    const img = photoCache[name];
+    if (!img) return;
+    const placeholder = card.querySelector('.card-photo-placeholder');
+    if (!placeholder) return;
+    const el = document.createElement('img');
+    el.src       = img.src;
+    el.className = 'card-photo';
+    el.alt       = name;
+    placeholder.replaceWith(el);
+  }
+
+  function updateHeroPhoto(name) {
+    const img = photoCache[name];
+    if (!img) return;
+    const wrap = document.getElementById('heroPhotoWrap');
+    if (!wrap || !wrap.querySelector('.person-hero-photo-placeholder')) return;
+    wrap.innerHTML = '';
+    const el = document.createElement('img');
+    el.src       = img.src;
+    el.className = 'person-hero-photo';
+    el.alt       = name;
+    wrap.appendChild(el);
+  }
+
+  // ── UI initialisation ─────────────────────────────────────────────────────
+  function initUI() {
+    // Stats
+    document.getElementById('stat-quotes').textContent   = allQuotes.length;
+    document.getElementById('stat-people').textContent   = new Set(allQuotes.map(q => q.person)).size;
+    document.getElementById('stat-verified').textContent = allQuotes.filter(q => q.verification === 'verified').length;
+
+    // Category filter buttons
+    const cf = document.getElementById('categoryFilters');
+    FILTERS.forEach(f => {
+      const btn = document.createElement('button');
+      btn.className   = 'cat-btn' + (f.key === 'all' ? ' active' : '');
+      btn.textContent = f.label;
+      btn.dataset.key = f.key;
+      btn.addEventListener('click', () => {
+        activeFilter = f.key;
+        document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        render();
+      });
+      cf.appendChild(btn);
+    });
+
+    // Person dropdown — sorted by wealth tier desc then alpha
+    const ps = document.getElementById('personSelect');
+    [...new Set(allQuotes.map(q => q.person))]
+      .sort((a, b) => {
+        const ta = peopleData[a]?.tier || 0;
+        const tb = peopleData[b]?.tier || 0;
+        return tb - ta || a.localeCompare(b);
+      })
+      .forEach(name => {
+        const opt = document.createElement('option');
+        opt.value       = name;
+        opt.textContent = name;
+        ps.appendChild(opt);
+      });
+    ps.addEventListener('change', () => {
+      activePerson = ps.value;
+      updateHero();
+      render();
+    });
+
+    // Sort dropdown
+    document.getElementById('sortSelect').addEventListener('change', e => {
+      activeSort = e.target.value;
+      render();
+    });
+
+    // Badge tally — build buttons with live counts
+    buildBadgeTally();
+  }
+
+  // ── Person hero ───────────────────────────────────────────────────────────
+  function updateHero() {
+    const hero = document.getElementById('personHero');
+    if (!activePerson) { hero.classList.remove('visible'); return; }
+
+    const p = peopleData[activePerson] || {};
+    hero.classList.add('visible');
+    document.getElementById('heroName').textContent  = activePerson;
+    document.getElementById('heroWorth').textContent = p.net_worth || '';
+    document.getElementById('heroBlurb').textContent = p.blurb    || '';
+
+    const badges = document.getElementById('heroBadges');
+    badges.innerHTML = '';
+    if (p.epstein)    badges.insertAdjacentHTML('beforeend', '<span class="badge-pill badge-epstein">🏝 Epstein Connection</span>');
+    if (p.bunker)     badges.insertAdjacentHTML('beforeend', '<span class="badge-pill badge-bunker">🏔 Has a Bunker</span>');
+    if (p.island)     badges.insertAdjacentHTML('beforeend', '<span class="badge-pill badge-island">🚢 Owns an Island</span>');
+    if (p.tax_exile)  badges.insertAdjacentHTML('beforeend', '<span class="badge-pill badge-tax-exile">✈️ Tax Exile</span>');
+    if (p.dark_money) badges.insertAdjacentHTML('beforeend', '<span class="badge-pill badge-dark-money">🌑 Dark Money</span>');
+
+    const wrap = document.getElementById('heroPhotoWrap');
+    wrap.innerHTML = '';
+    if (photoCache[activePerson]) {
+      const el = document.createElement('img');
+      el.src       = photoCache[activePerson].src;
+      el.className = 'person-hero-photo';
+      el.alt       = activePerson;
+      wrap.appendChild(el);
+    } else {
+      const ph = document.createElement('div');
+      ph.className   = 'person-hero-photo-placeholder';
+      ph.textContent = activePerson[0];
+      wrap.appendChild(ph);
+    }
+  }
+
+  // ── Filter + sort ─────────────────────────────────────────────────────────
+  function getFiltered() {
+    const def = FILTERS.find(f => f.key === activeFilter);
+    return allQuotes
+      .filter(q => {
+        if (def?.cats && !def.cats.includes(q.category))       return false;
+        if (activePerson && q.person !== activePerson)            return false;
+        if (activeBadge && !peopleData[q.person]?.[activeBadge]) return false;
+        return true;
+      })
+      .sort((a, b) => {
+        switch (activeSort) {
+          case 'date-desc':   return b.date_sort.localeCompare(a.date_sort);
+          case 'date-asc':    return a.date_sort.localeCompare(b.date_sort);
+          case 'wealth-desc': return (b.net_worth_tier || 0) - (a.net_worth_tier || 0);
+          case 'person-asc':  return a.person.localeCompare(b.person);
+          default:            return 0;
+        }
+      });
+  }
+
+  // ── Badge tally builder ─────────────────────────────────────────────────
+  const BADGE_DEFS = [
+    { key: 'epstein',    emoji: '🏝', label: 'EPSTEIN' },
+    { key: 'bunker',     emoji: '🏔', label: 'BUNKER' },
+    { key: 'island',     emoji: '🚢', label: 'ISLAND' },
+    { key: 'tax_exile',  emoji: '✈️',  label: 'TAX EXILE' },
+    { key: 'dark_money', emoji: '🌑', label: 'DARK MONEY' },
+  ];
+
+  function buildBadgeTally() {
+    const container = document.getElementById('badgeTallyBtns');
+    container.style.cssText = 'display:flex;gap:8px;flex-wrap:wrap;';
+
+    BADGE_DEFS.forEach(({ key, emoji, label }) => {
+      // Count distinct people with this badge who have at least one quote
+      const count = [...new Set(
+        allQuotes
+          .filter(q => peopleData[q.person]?.[key])
+          .map(q => q.person)
+      )].length;
+
+      const btn = document.createElement('button');
+      btn.className = 'badge-tally-btn';
+      btn.dataset.badge = key;
+      btn.innerHTML = `${emoji} ${label} <span class="tally-count">${count}</span>`;
+      const BADGE_TOOLTIPS = {
+        epstein:    'Documented connection to Jeffrey Epstein — meetings, emails, financial ties, or island visits',
+        bunker:     'Has a private doomsday compound, fortified retreat, or survivalist installation',
+        island:     'Owns a private island or controls an island compound',
+        tax_exile:  'Relocated citizenship, residence, or headquarters specifically to avoid taxes',
+        dark_money: 'Known funder of anonymous political operations, undisclosed super PACs, or dark money networks',
+      };
+      btn.title = `${BADGE_TOOLTIPS[key]} · ${count} in this database`;
+
+      btn.addEventListener('click', () => {
+        if (activeBadge === key) {
+          activeBadge = '';
+          btn.classList.remove('active');
+        } else {
+          activeBadge = key;
+          container.querySelectorAll('.badge-tally-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+        }
+        render();
+      });
+
+      container.appendChild(btn);
+    });
+  }
+
+  // ── Render grid ───────────────────────────────────────────────────────────
+  function render() {
+    const data = getFiltered();
+    const grid = document.getElementById('quotesGrid');
+    document.getElementById('countDisplay').textContent =
+      data.length === 1 ? '1 quote' : `${data.length} quotes`;
+
+    if (!data.length) {
+      grid.innerHTML = '<div class="empty-state">NO RECEIPTS MATCH</div>';
+      return;
+    }
+
+    grid.innerHTML = data.map(q => buildCard(q)).join('');
+
+    // Expand / collapse on card click (ignore clicks inside .card-share)
+    grid.querySelectorAll('.quote-card').forEach(card => {
+      card.addEventListener('click', e => {
+        if (e.target.closest('.card-share')) return;
+        card.classList.toggle('expanded');
+        const ind = card.querySelector('.expand-indicator');
+        if (ind) ind.textContent = card.classList.contains('expanded') ? '− CONTEXT' : '+ CONTEXT';
+      });
+    });
+
+    // Copy text button
+    grid.querySelectorAll('.share-btn[data-action="copy-text"]').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.stopPropagation();
+        const q = allQuotes.find(x => x.id === btn.closest('.quote-card').dataset.id);
+        if (!q) return;
+        navigator.clipboard.writeText(`"${q.quote}" — ${q.person}, ${q.date_str}`)
+          .then(() => flashBtn(btn, '✓ COPIED'));
+      });
+    });
+
+    // Copy card (image) button
+    grid.querySelectorAll('.share-btn[data-action="copy-card"]').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.stopPropagation();
+        const q = allQuotes.find(x => x.id === btn.closest('.quote-card').dataset.id);
+        if (q) generateCardImage(q, btn);
+      });
+    });
+
+    // Swap in any already-loaded photos
+    grid.querySelectorAll('.quote-card').forEach(card => {
+      if (photoCache[card.dataset.person]) swapCardPhoto(card, card.dataset.person);
+    });
+  }
+
+  // ── Build card HTML string ────────────────────────────────────────────────
+  function buildCard(q) {
+    const p = peopleData[q.person] || {};
+
+    const verifyLabel = { verified: 'VERIFIED', secondhand: 'SECONDHAND', needs_source: 'PENDING' }[q.verification] || q.verification;
+
+    // Map DB category → filter label (strip leading emoji + space)
+    const catLabel = (FILTERS.find(f => f.cats?.includes(q.category))?.label.replace(/^\S+\s/, '') || q.category).toUpperCase();
+
+    const badges = [
+      p.epstein    ? '<span class="badge-pill badge-epstein">🏝 EPSTEIN CONNECTION</span>'  : '',
+      p.bunker     ? '<span class="badge-pill badge-bunker">🏔 HAS A BUNKER</span>'          : '',
+      p.island     ? '<span class="badge-pill badge-island">🚢 OWNS AN ISLAND</span>'        : '',
+      p.tax_exile  ? '<span class="badge-pill badge-tax-exile">✈️ TAX EXILE</span>'           : '',
+      p.dark_money ? '<span class="badge-pill badge-dark-money">🌑 DARK MONEY</span>'        : '',
+      q.disputed   ? '<span class="badge-pill badge-disputed">⚠ DISPUTED</span>'             : '',
+    ].filter(Boolean).join('');
+
+    const disputedNote = (q.disputed && q.disputed_note)
+      ? `<div class="disputed-note">⚠ ${esc(q.disputed_note)}</div>` : '';
+
+    const sourceBtn = (q.source_url && !q.source_url.startsWith('#'))
+      ? `<a class="source-link" href="${esc(q.source_url)}" target="_blank" rel="noopener">📎 VIEW SOURCE →</a>`
+      : `<span class="source-link pending">SOURCE PENDING</span>`;
+
+    return `
+<div class="quote-card" data-id="${esc(q.id)}" data-person="${esc(q.person)}">
+  <div class="card-header">
+    <div class="card-header-left">
+      <div class="card-photo-placeholder">${q.person[0]}</div>
+      <div class="card-name-block">
+        <div class="card-person">${esc(q.person)}</div>
+        <div class="card-title">${esc(q.title)}</div>
+        ${p.true_tax_rate ? `<div class="card-tax">TRUE TAX RATE: <span class="card-tax-rate">${p.true_tax_rate}</span> · avg American 14%</div>` : ''}
+      </div>
+    </div>
+    <div class="card-meta">
+      <div class="card-date">${esc(q.date_str || '')}</div>
+      <span class="verify-badge ${q.verification}">${verifyLabel}</span>
+    </div>
+  </div>
+  ${badges ? `<div class="card-badges">${badges}</div>` : ''}
+  <div class="card-quote">
+    <div class="quote-text">${esc(q.quote)}<span class="quote-end-mark">\u201D</span></div>
+  </div>
+  <div class="card-footer">
+    <div class="card-category">${esc(catLabel)}</div>
+    <div class="expand-indicator">+ CONTEXT</div>
+  </div>
+  <div class="card-share">
+    <button class="share-btn" data-action="copy-text">📋 COPY TEXT</button>
+    <button class="share-btn" data-action="copy-card">📸 COPY CARD</button>
+  </div>
+  <div class="expanded-panel">
+    <div class="context-label">Context</div>
+    <div class="context-text">${esc(q.context || '')}</div>
+    ${disputedNote}
+    <div class="context-label" style="margin-bottom:6px;">Source</div>
+    <div class="source-meta">${esc(q.source_label || '')}</div>
+    ${sourceBtn}
+  </div>
+</div>`;
+  }
+
+  // ── Share card image generation ───────────────────────────────────────────
+  function generateCardImage(q, btn) {
+    const renderEl = document.getElementById('shareCardRender');
+    const p        = peopleData[q.person] || {};
+
+    // Populate render target fields
+    document.getElementById('scName').textContent  = q.person;
+    document.getElementById('scTitle').textContent = q.title;
+    document.getElementById('scDate').textContent  = q.date_str || '';
+
+    // Tax rate line — show only when data exists for this person
+    const taxLine = document.getElementById('scTaxLine');
+    const taxRate = document.getElementById('scTaxRate');
+    if (p.true_tax_rate) {
+      taxRate.textContent = p.true_tax_rate;
+      taxLine.style.display = 'block';
+    } else {
+      taxLine.style.display = 'none';
+    }
+
+    // Category
+    const catLabel = (FILTERS.find(f => f.cats?.includes(q.category))?.label.replace(/^\S+\s/, '') || q.category).toUpperCase();
+    document.getElementById('scCategory').textContent = catLabel;
+
+    // Badges
+    const scBadges = document.getElementById('scBadges');
+    scBadges.innerHTML = '';
+    const scBadgeDefs = [
+      [p.epstein,    'sc-badge-epstein',   '🏝 EPSTEIN'],
+      [p.bunker,     'sc-badge-bunker',    '🏔 BUNKER'],
+      [p.island,     'sc-badge-island',    '🚢 ISLAND'],
+      [p.tax_exile,  'sc-badge-tax-exile', '✈️ TAX EXILE'],
+      [p.dark_money, 'sc-badge-dark-money','🌑 DARK MONEY'],
+    ];
+    scBadgeDefs.forEach(([flag, cls, label]) => {
+      if (!flag) return;
+      const b = document.createElement('span');
+      b.className = `sc-badge-pill ${cls}`;
+      b.textContent = label;
+      scBadges.appendChild(b);
+    });
+
+    // Quote text (closing " inline via unicode)
+    const scQt = document.getElementById('scQuote');
+    scQt.innerHTML = esc(q.quote) + '<span class="sc-close-quote">\u201D</span>';
+
+    // Photo
+    const scPhotoWrap = document.getElementById('scPhotoWrap');
+    scPhotoWrap.innerHTML = '';
+    if (photoCache[q.person]) {
+      const img = document.createElement('img');
+      img.src = photoCache[q.person].src;
+      img.className = 'sc-photo';
+      img.alt = q.person;
+      scPhotoWrap.appendChild(img);
+    } else {
+      const ph = document.createElement('div');
+      ph.className   = 'sc-photo-placeholder';
+      ph.textContent = q.person[0];
+      scPhotoWrap.appendChild(ph);
+    }
+
+    // Move render target into viewport for html2canvas
+    renderEl.style.top = '0';
+    flashBtn(btn, '⏳ RENDERING…');
+
+    html2canvas(renderEl, { scale: 2, useCORS: true, allowTaint: false, backgroundColor: '#111' })
+      .then(canvas => {
+        renderEl.style.top = '-9999px';
+        canvas.toBlob(blob => {
+          if (!blob) { flashBtn(btn, '✗ FAILED'); return; }
+          if (navigator.clipboard?.write && window.ClipboardItem) {
+            navigator.clipboard.write([new ClipboardItem({ 'image/png': blob })])
+              .then(() => flashBtn(btn, '✓ COPIED'))
+              .catch(() => { downloadBlob(blob, q); flashBtn(btn, '✓ SAVED'); });
+          } else {
+            downloadBlob(blob, q);
+            flashBtn(btn, '✓ SAVED');
+          }
+        }, 'image/png');
+      })
+      .catch(() => { renderEl.style.top = '-9999px'; flashBtn(btn, '✗ FAILED'); });
+  }
+
+  // ── Helpers ───────────────────────────────────────────────────────────────
+  function downloadBlob(blob, q) {
+    const url = URL.createObjectURL(blob);
+    const a   = Object.assign(document.createElement('a'), {
+      href:     url,
+      download: `${q.person.replace(/\s+/g, '_')}_quote.png`,
+    });
+    a.click();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+  }
+
+  function flashBtn(btn, msg) {
+    const orig = btn.textContent;
+    btn.textContent = msg;
+    btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = orig; btn.classList.remove('copied'); }, 2000);
+  }
+
+  function esc(s) {
+    return String(s ?? '')
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#039;');
+  }
+</script>
+</body>
+</html>

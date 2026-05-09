@@ -1,0 +1,995 @@
+{
+  "Adam Neumann": {
+    "wiki": "Adam_Neumann",
+    "net_worth": "$1.5B+",
+    "tier": 2,
+    "blurb": "Co-founder of WeWork, the co-working company that burned through $47 billion in valuation after Neumann's management chaos, self-dealing, and erratic behavior forced him out.",
+    "epstein": false,
+    "bunker": false,
+    "known_for": [
+      "WeWork"
+    ],
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false
+  },
+  "Bill Ackman": {
+    "wiki": "Bill_Ackman",
+    "net_worth": "$9B+",
+    "tier": 3,
+    "blurb": "Hedge fund billionaire and Harvard alum who coordinated a CEO campaign to dox and blacklist student protesters, then used donor leverage to oust a university president.",
+    "epstein": false,
+    "bunker": false,
+    "known_for": [
+      "Pershing Square"
+    ],
+    "island": false,
+    "tax_exile": false,
+    "dark_money": true
+  },
+  "Bill Gates": {
+    "wiki": "Bill_Gates",
+    "net_worth": "$130B+",
+    "tier": 5,
+    "blurb": "Microsoft co-founder and philanthropist who cultivated a multi-year relationship with Jeffrey Epstein after his sex trafficking conviction, attending private dinners and flying on his plane.",
+    "epstein": true,
+    "bunker": false,
+    "known_for": [
+      "Microsoft",
+      "Gates Foundation"
+    ],
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false
+  },
+  "Carl Icahn": {
+    "wiki": "Carl_Icahn",
+    "net_worth": "$6B+",
+    "tier": 3,
+    "blurb": "The original corporate raider. Icahn built a $6B fortune by buying into companies, gutting their workforces, raiding their pension funds, and walking away with the proceeds.",
+    "epstein": false,
+    "bunker": true,
+    "known_for": [
+      "Icahn Enterprises",
+      "Corporate raiding"
+    ],
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "true_tax_rate": "1.48%",
+    "tax_note": "paid $0 twice \u2014 ProPublica IRS files"
+  },
+  "Chamath Palihapitiya": {
+    "wiki": "Chamath_Palihapitiya",
+    "net_worth": "$1.5B+",
+    "tier": 2,
+    "blurb": "Venture capitalist, SPAC king, and All-In podcast host who told the world he doesn't care about the Uyghur genocide. Co-owned a stake in the Golden State Warriors.",
+    "epstein": false,
+    "bunker": false,
+    "known_for": [
+      "Social Capital",
+      "All-In Podcast"
+    ],
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false
+  },
+  "Charles Koch": {
+    "wiki": "Charles_Koch",
+    "net_worth": "$65B+",
+    "tier": 4,
+    "blurb": "The quiet architect of the modern anti-regulatory movement. Spent over $145 million funding climate denial, union busting, and anti-voter legislation while collecting hundreds of millions in government subsidies.",
+    "epstein": false,
+    "bunker": false,
+    "known_for": [
+      "Koch Industries",
+      "Americans for Prosperity"
+    ],
+    "island": false,
+    "tax_exile": false,
+    "dark_money": true
+  },
+  "David Koch": {
+    "wiki": "David_Koch",
+    "net_worth": "$50B+ (at death)",
+    "tier": 5,
+    "blurb": "Co-owner of Koch Industries and the largest individual funder of climate change denial in history \u2014 outspending ExxonMobil 3:1. Died in 2019 as the planet hit record temperatures.",
+    "epstein": false,
+    "bunker": false,
+    "known_for": [
+      "Koch Industries",
+      "Americans for Prosperity"
+    ],
+    "island": false,
+    "tax_exile": false,
+    "dark_money": true
+  },
+  "Elon Musk": {
+    "wiki": "Elon_Musk",
+    "net_worth": "$300B+",
+    "tier": 5,
+    "blurb": "The world's richest person. Bought Twitter to silence critics, used DOGE to dismantle consumer protections that regulated his own companies, and called for abolishing Social Security.",
+    "epstein": true,
+    "bunker": true,
+    "known_for": [
+      "Tesla",
+      "SpaceX",
+      "X (Twitter)",
+      "DOGE"
+    ],
+    "island": false,
+    "tax_exile": true,
+    "dark_money": true,
+    "true_tax_rate": "3.27%",
+    "tax_note": "paid $0 in 2018 \u2014 ProPublica IRS files"
+  },
+  "Jack Ma": {
+    "wiki": "Jack_Ma",
+    "net_worth": "$30B+",
+    "tier": 4,
+    "blurb": "Alibaba founder who told workers that 12-hour, 6-day weeks were a 'blessing.' Disappeared from public life for three months after criticizing Chinese regulators.",
+    "epstein": false,
+    "bunker": false,
+    "known_for": [
+      "Alibaba"
+    ],
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false
+  },
+  "Jamie Dimon": {
+    "wiki": "Jamie_Dimon",
+    "net_worth": "$2.7B+",
+    "tier": 2,
+    "blurb": "CEO of JPMorgan \u2014 the most profitable bank in US history on his watch. Has told workers to 'get over it,' described recessions as 'hurricanes,' and ordered everyone back to the office while Zooming in himself.",
+    "epstein": false,
+    "bunker": false,
+    "known_for": [
+      "JPMorgan Chase"
+    ],
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false
+  },
+  "Jeff Bezos": {
+    "wiki": "Jeff_Bezos",
+    "net_worth": "$200B+",
+    "tier": 5,
+    "blurb": "Amazon founder who described work-life balance as 'debilitating,' called workers 'sickly gazelles,' and built a distribution empire on poverty wages, union busting, and surveillance of bathroom breaks.",
+    "epstein": true,
+    "bunker": true,
+    "known_for": [
+      "Amazon",
+      "Blue Origin",
+      "Washington Post"
+    ],
+    "island": true,
+    "tax_exile": true,
+    "dark_money": false,
+    "true_tax_rate": "1.1%",
+    "tax_note": "paid $0 in 2007 & 2011 \u2014 ProPublica IRS files"
+  },
+  "Ken Griffin": {
+    "wiki": "Ken_Griffin",
+    "net_worth": "$51B+",
+    "tier": 4,
+    "blurb": "Citadel hedge fund founder and Republican mega-donor who relocated his firm from Chicago to escape progressive governance. Spent record sums trying to buy elections while calling others 'entitled.'",
+    "epstein": false,
+    "bunker": false,
+    "known_for": [
+      "Citadel LLC"
+    ],
+    "island": false,
+    "tax_exile": true,
+    "dark_money": true
+  },
+  "Ken Langone": {
+    "wiki": "Ken_Langone",
+    "net_worth": "$7B+",
+    "tier": 3,
+    "blurb": "Home Depot co-founder who warned the Pope that criticizing wealth inequality would cost the Church its billionaire donors.",
+    "epstein": false,
+    "bunker": false,
+    "known_for": [
+      "Home Depot"
+    ],
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false
+  },
+  "Kevin O'Leary": {
+    "wiki": "Kevin_O'Leary",
+    "net_worth": "$400M+",
+    "tier": 1,
+    "blurb": "'Mr. Wonderful.' Reality TV investor on Shark Tank who openly celebrates the brutal mechanics of capitalism and has called money an 'unfeeling' entity that eats the weak.",
+    "epstein": false,
+    "bunker": false,
+    "known_for": [
+      "Shark Tank",
+      "O'Leary Financial"
+    ],
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false
+  },
+  "Larry Ellison": {
+    "wiki": "Larry_Ellison",
+    "net_worth": "$150B+",
+    "tier": 5,
+    "blurb": "Oracle founder who told investors in 2024 that AI surveillance would keep 'citizens on their best behavior' through constant recording. Now involved in TikTok's US operations.",
+    "epstein": false,
+    "bunker": false,
+    "known_for": [
+      "Oracle"
+    ],
+    "island": true,
+    "tax_exile": false,
+    "dark_money": false
+  },
+  "Lloyd Blankfein": {
+    "wiki": "Lloyd_Blankfein",
+    "net_worth": "$2B+",
+    "tier": 2,
+    "blurb": "Goldman Sachs CEO who received a $10B taxpayer bailout in 2008, paid out the largest bonuses in Goldman's history two weeks later, and told the Sunday Times he was 'doing God's work.'",
+    "epstein": false,
+    "bunker": false,
+    "known_for": [
+      "Goldman Sachs"
+    ],
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false
+  },
+  "Marc Andreessen": {
+    "wiki": "Marc_Andreessen",
+    "net_worth": "$1.7B+",
+    "tier": 2,
+    "blurb": "Co-founder of the most powerful VC firm in Silicon Valley. Wrote a 5,000-word 'Techno-Optimist Manifesto' listing scientists, regulators, and safety researchers as 'enemies.' Allegedly told a journalist he was glad OxyContin existed to keep rural Americans quiet.",
+    "epstein": false,
+    "bunker": false,
+    "known_for": [
+      "Andreessen Horowitz (a16z)",
+      "Netscape"
+    ],
+    "island": false,
+    "tax_exile": false,
+    "dark_money": true
+  },
+  "Mark Zuckerberg": {
+    "wiki": "Mark_Zuckerberg",
+    "net_worth": "$200B+",
+    "tier": 5,
+    "blurb": "Meta CEO who eliminated fact-checkers two weeks before Trump's inauguration, after years of allowing Facebook to be weaponized for genocide and election interference. Now training in MMA.",
+    "epstein": true,
+    "bunker": true,
+    "known_for": [
+      "Meta",
+      "Facebook",
+      "Instagram"
+    ],
+    "island": true,
+    "tax_exile": true,
+    "dark_money": false
+  },
+  "Michael Bloomberg": {
+    "wiki": "Michael_Bloomberg",
+    "net_worth": "$100B+",
+    "tier": 4,
+    "blurb": "Bloomberg LP founder and former NYC mayor whose own staff compiled a booklet of his workplace philosophy \u2014 the opening line was 'make the customer think he's getting laid when he's getting f*cked.'",
+    "epstein": false,
+    "bunker": false,
+    "known_for": [
+      "Bloomberg LP",
+      "NYC Mayor"
+    ],
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "true_tax_rate": "1.3%",
+    "tax_note": "paid $0 in multiple years \u2014 ProPublica IRS files"
+  },
+  "Paul Singer": {
+    "wiki": "Paul_Singer_(businessman)",
+    "net_worth": "$5B+",
+    "tier": 3,
+    "blurb": "Elliott Management founder and 'vulture capitalist' who bought up the debt of struggling nations and companies, then sued them into bankruptcy to extract maximum profit.",
+    "epstein": false,
+    "bunker": false,
+    "known_for": [
+      "Elliott Management"
+    ],
+    "island": false,
+    "tax_exile": false,
+    "dark_money": true
+  },
+  "Peter Thiel": {
+    "wiki": "Peter_Thiel",
+    "net_worth": "$9B+",
+    "tier": 3,
+    "blurb": "PayPal and Palantir co-founder who said in 2009 that 'freedom and democracy are incompatible,' bankrolled the careers of JD Vance and Blake Masters, and secretly funded the lawsuit that destroyed Gawker. Has New Zealand citizenship and a compound there.",
+    "epstein": true,
+    "bunker": true,
+    "known_for": [
+      "PayPal",
+      "Palantir",
+      "Founders Fund"
+    ],
+    "island": false,
+    "tax_exile": true,
+    "dark_money": true,
+    "true_tax_rate": "~0%",
+    "tax_note": "grew Roth IRA $2K \u2192 $5B tax-free \u2014 ProPublica IRS files"
+  },
+  "Ray Dalio": {
+    "wiki": "Ray_Dalio",
+    "net_worth": "$15B+",
+    "tier": 4,
+    "blurb": "Bridgewater Associates founder who built the world's largest hedge fund on a philosophy that employees are 'machines' to be optimized, and ran a workplace he called 'radical transparency' \u2014 critics called it a surveillance cult.",
+    "epstein": false,
+    "bunker": false,
+    "known_for": [
+      "Bridgewater Associates"
+    ],
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false
+  },
+  "Richard Liu": {
+    "wiki": "Richard_Liu",
+    "net_worth": "$12B+",
+    "tier": 4,
+    "blurb": "JD.com founder who told employees that workers who don't put in extreme hours are 'slackers who are not my brothers.' Was acquitted of rape charges in the US after a $250M settlement.",
+    "epstein": false,
+    "bunker": false,
+    "known_for": [
+      "JD.com"
+    ],
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false
+  },
+  "Robert Mercer": {
+    "wiki": "Robert_Mercer_(businessman)",
+    "net_worth": "$800M+",
+    "tier": 2,
+    "blurb": "Renaissance Technologies co-CEO and dark-money billionaire who bankrolled Breitbart, Cambridge Analytica, and Trump's 2016 campaign. Former colleagues say he believes people are only worth what they earn \u2014 welfare recipients have 'negative value.'",
+    "epstein": false,
+    "bunker": false,
+    "known_for": [
+      "Renaissance Technologies",
+      "Breitbart"
+    ],
+    "island": false,
+    "tax_exile": false,
+    "dark_money": true
+  },
+  "Sam Altman": {
+    "wiki": "Sam_Altman",
+    "net_worth": "$2B+",
+    "tier": 2,
+    "blurb": "OpenAI CEO who has said a catastrophic AI event 'might be the end of the world' \u2014 and also 'great for OpenAI.' Has reportedly purchased guns, gold, and land as insurance against the collapse of civilization.",
+    "epstein": false,
+    "bunker": true,
+    "known_for": [
+      "OpenAI",
+      "Y Combinator"
+    ],
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false
+  },
+  "Sam Bankman-Fried": {
+    "wiki": "Sam_Bankman-Fried",
+    "net_worth": "$0 (convicted)",
+    "tier": 3,
+    "blurb": "FTX founder who built his brand as a philanthropy-driven 'effective altruist,' then admitted it was 'a front' after collapsing the exchange and wiping out $8 billion in customer funds. Sentenced to 25 years in prison.",
+    "epstein": false,
+    "bunker": false,
+    "known_for": [
+      "FTX",
+      "Alameda Research"
+    ],
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false
+  },
+  "Sam Walton": {
+    "wiki": "Sam_Walton",
+    "net_worth": "$8.6B (at death)",
+    "tier": 5,
+    "blurb": "Walmart founder whose low-wage business model became the template for modern retail. Said openly: 'I pay low wages. I can take advantage of that.' The Walton family today has a combined net worth exceeding $250 billion.",
+    "epstein": false,
+    "bunker": false,
+    "known_for": [
+      "Walmart"
+    ],
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false
+  },
+  "Stephen Schwarzman": {
+    "wiki": "Stephen_A._Schwarzman",
+    "net_worth": "$40B+",
+    "tier": 4,
+    "blurb": "Blackstone co-founder who compared Obama's proposal to raise taxes on hedge funds to 'when Hitler invaded Poland.' Personal chef reportedly spent $3,000 per weekend on food including $40-per-claw stone crabs.",
+    "epstein": false,
+    "bunker": false,
+    "known_for": [
+      "Blackstone"
+    ],
+    "island": false,
+    "tax_exile": false,
+    "dark_money": true
+  },
+  "Steven Roth": {
+    "wiki": "Steven_Roth",
+    "net_worth": "$1B+",
+    "tier": 2,
+    "blurb": "Vornado Realty chairman who told a 2026 earnings call that 'tax the rich' is 'just as hateful as some disgusting racial slurs.' One of New York's largest commercial landlords.",
+    "epstein": false,
+    "bunker": false,
+    "known_for": [
+      "Vornado Realty"
+    ],
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false
+  },
+  "Tom Perkins": {
+    "wiki": "Tom_Perkins_(businessman)",
+    "net_worth": "$8B+",
+    "tier": 3,
+    "blurb": "Kleiner Perkins co-founder who compared progressive criticism of the wealthy to 'Nazi Germany's war on its 1 percent, namely its Jews.' The WSJ letter prompted his own VC firm to disavow him.",
+    "epstein": false,
+    "bunker": false,
+    "known_for": [
+      "Kleiner Perkins"
+    ],
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false
+  },
+  "Travis Kalanick": {
+    "wiki": "Travis_Kalanick",
+    "net_worth": "$1B+",
+    "tier": 2,
+    "blurb": "Uber co-founder who built the gig economy's flagship company through regulatory evasion, driver exploitation, and a toxic internal culture. Forced out as CEO in 2017 after a cascade of scandals.",
+    "epstein": false,
+    "bunker": false,
+    "known_for": [
+      "Uber"
+    ],
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false
+  },
+  "Vivek Ramaswamy": {
+    "wiki": "Vivek_Ramaswamy",
+    "net_worth": "$1B+",
+    "tier": 2,
+    "blurb": "Pharma entrepreneur and DOGE co-chair who argued at Harvard that janitors shouldn't get raises, and told 116 million people in 2024 that American workers are too lazy and mediocre for the tech industry.",
+    "epstein": false,
+    "bunker": false,
+    "known_for": [
+      "Roivant Sciences",
+      "DOGE"
+    ],
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false
+  },
+  "Prince Andrew (Duke of York)": {
+    "wiki": "Prince_Andrew,_Duke_of_York",
+    "net_worth": "est. \u00a35M+ (stripped of income)",
+    "tier": 1,
+    "blurb": "King Charles III's disgraced younger brother, stripped of titles in 2022. Had a years-long friendship with Jeffrey Epstein and stayed at his mansion after Epstein's sex crimes conviction, calling it 'convenient.' His 2019 BBC Newsnight interview defending himself became one of the most catastrophic PR failures in royal history.",
+    "epstein": true,
+    "bunker": false,
+    "known_for": [
+      "British Royal Family",
+      "Epstein scandal"
+    ],
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false
+  },
+  "Mohammed bin Salman": {
+    "wiki": "Mohammed_bin_Salman",
+    "net_worth": "$2T+ (Saudi sovereign wealth fund control)",
+    "tier": 5,
+    "blurb": "Saudi Crown Prince and de facto ruler who, per US intelligence, ordered the murder and dismemberment of Washington Post journalist Jamal Khashoggi in 2018. Has imprisoned thousands of dissidents, overseen a catastrophic war in Yemen, and spent hundreds of billions buying global legitimacy through sport and investment.",
+    "epstein": false,
+    "bunker": false,
+    "known_for": [
+      "Saudi Arabia",
+      "PIF (Saudi wealth fund)",
+      "Aramco",
+      "LIV Golf"
+    ],
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false
+  },
+  "Leslie Wexner": {
+    "wiki": "Les_Wexner",
+    "net_worth": "$7B+",
+    "tier": 3,
+    "blurb": "L Brands (Victoria's Secret, Bath & Body Works) founder who gave Jeffrey Epstein near-total power of attorney over his finances and estate for years. Wexner later claimed he'd been 'defrauded' by Epstein \u2014 but the arrangement had made Epstein one of the most powerful men in New York.",
+    "epstein": true,
+    "bunker": false,
+    "known_for": [
+      "L Brands",
+      "Victoria's Secret",
+      "Bath & Body Works"
+    ],
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false
+  },
+  "Sergey Brin": {
+    "wiki": "Sergey_Brin",
+    "net_worth": "$130B+",
+    "tier": 5,
+    "blurb": "Google co-founder named in Epstein files, with documents showing email correspondence with Ghislaine Maxwell. Multiple sources previously claimed he visited Epstein's island.",
+    "epstein": true,
+    "bunker": false,
+    "known_for": [
+      "Google",
+      "Alphabet"
+    ],
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false
+  },
+  "Gina Rinehart": {
+    "wiki": "Gina_Rinehart",
+    "net_worth": "$30B+",
+    "tier": 4,
+    "blurb": "Australia's richest person \u2014 an heiress who inherited mining tenements from her father and became worth $30B+ while publicly calling for workers to drink less and work more, and arguing Australian wages should compete with African workers earning $2/day.",
+    "epstein": false,
+    "bunker": false,
+    "known_for": [
+      "Hancock Prospecting"
+    ],
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false
+  },
+  "Jensen Huang": {
+    "wiki": "Jensen_Huang",
+    "net_worth": "$120B+",
+    "tier": 5,
+    "blurb": "Nvidia co-founder whose AI chip monopoly minted him $120B+ in personal wealth. Has publicly attacked AI safety researchers as spreading a 'doomer narrative' \u2014 while his chips power autonomous weapons systems and have repeatedly been found supplying Chinese military AI programs.",
+    "epstein": false,
+    "bunker": false,
+    "known_for": [
+      "Nvidia"
+    ],
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false
+  },
+  "Bernard Arnault": {
+    "wiki": "Bernard_Arnault",
+    "net_worth": "$180B+",
+    "tier": 5,
+    "blurb": "LVMH chairman and Europe's richest person, who applied for Belgian citizenship when France proposed a wealth tax. His luxury empire \u2014 Dior, Vuitton, Loro Piana \u2014 has been repeatedly investigated for labor exploitation. Received $3.8B in personal compensation in 2025.",
+    "epstein": false,
+    "bunker": false,
+    "known_for": [
+      "LVMH",
+      "Louis Vuitton",
+      "Dior",
+      "Loro Piana"
+    ],
+    "island": false,
+    "tax_exile": true,
+    "dark_money": false
+  },
+  "Warren Buffett": {
+    "wiki": "Warren_Buffett",
+    "net_worth": "$160B+",
+    "tier": 5,
+    "blurb": "Berkshire Hathaway chairman who openly admitted 'my class is winning' the class war \u2014 then structured his own fortune to minimize taxes for decades while advocating in public for higher rates on the wealthy. Often cast as the 'good billionaire' for his folksy persona and pledge to give away wealth.",
+    "epstein": false,
+    "bunker": false,
+    "known_for": [
+      "Berkshire Hathaway"
+    ],
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "true_tax_rate": "0.1%",
+    "tax_note": "$23.7M on $24.3B wealth gain \u2014 ProPublica IRS files"
+  },
+  "Larry Page": {
+    "wiki": "Larry_Page",
+    "net_worth": "$140B+",
+    "tier": 5,
+    "blurb": "Google co-founder who publicly said he'd rather give his fortune to Elon Musk than to traditional charity. Has largely withdrawn from public life to a remote private island in Fiji, while Alphabet's ad dominance reshapes democracy and journalism.",
+    "epstein": false,
+    "bunker": true,
+    "known_for": [
+      "Google",
+      "Alphabet"
+    ],
+    "island": true,
+    "tax_exile": true,
+    "dark_money": false
+  },
+  "Dan Loeb": {
+    "wiki": "Daniel_S._Loeb",
+    "net_worth": "$5B+",
+    "tier": 3,
+    "blurb": "Third Point hedge fund founder and Wall Street's self-described 'merchant of venom' \u2014 built a billion-dollar fortune by humiliating corporate executives in public SEC filings, calling them lazy socialites and members of the 'Lucky Sperm Club.'",
+    "epstein": false,
+    "bunker": false,
+    "known_for": [
+      "Third Point LLC"
+    ],
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false
+  },
+  "Howard Lutnick": {
+    "wiki": "Howard_Lutnick",
+    "net_worth": "$2B+",
+    "tier": 2,
+    "blurb": "Cantor Fitzgerald CEO and current US Commerce Secretary who claimed he cut ties with Jeffrey Epstein in 2005, then was shown by Epstein files to have visited his private island in 2012, co-invested with him in 2013, and emailed him through 2018. Called Epstein 'the greatest blackmailer ever' before changing his story.",
+    "epstein": true,
+    "bunker": false,
+    "known_for": [
+      "Cantor Fitzgerald",
+      "US Commerce Department"
+    ],
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false
+  },
+  "Alex Karp": {
+    "wiki": "Alex_Karp",
+    "net_worth": "$12B+",
+    "tier": 4,
+    "blurb": "Palantir CEO who built the world's most powerful private surveillance company, generating AI kill lists for the Israeli military, powering ICE's deportation machine, and consolidating Americans' private data for the Trump administration \u2014 all while earning $6.8B in personal compensation in 2024, the most of any US public company CEO.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "known_for": [
+      "Palantir Technologies"
+    ]
+  },
+  "Rupert Murdoch": {
+    "wiki": "Rupert_Murdoch",
+    "net_worth": "$20B+",
+    "tier": 3,
+    "blurb": "News Corp and Fox Corporation founder who built a global media empire on disinformation, phone hacking, and propaganda. Under oath in the Dominion defamation case, he admitted Fox hosts 'endorsed' election lies he privately called 'bullsh*t,' and admitted he could have stopped it but chose not to. Fox settled for $787.5 million \u2014 the largest defamation settlement in US media history.",
+    "epstein": true,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "known_for": [
+      "Fox News",
+      "News Corp",
+      "Wall Street Journal",
+      "The Sun",
+      "New York Post"
+    ]
+  },
+  "Reid Hoffman": {
+    "wiki": "Reid_Hoffman",
+    "net_worth": "$3B+",
+    "tier": 2,
+    "blurb": "LinkedIn co-founder and Greylock partner who confirmed that Silicon Valley billionaires use 'buying a house in New Zealand' as code for apocalypse insurance. Named in Epstein files for visiting the island and attending multiple Epstein dinners with Musk, Thiel, and Zuckerberg. Later called the association 'a mistake.'",
+    "epstein": true,
+    "bunker": true,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "known_for": [
+      "LinkedIn",
+      "Greylock Ventures",
+      "OpenAI board"
+    ]
+  },
+  "Leon Black": {
+    "wiki": "Leon_Black",
+    "net_worth": "$10B+",
+    "tier": 3,
+    "blurb": "Apollo Global Management founder who paid Jeffrey Epstein over $158 million between 2012 and 2017 \u2014 making him Epstein's single largest known source of funds \u2014 years after Epstein's conviction for soliciting a minor. Black called it 'estate planning.' DOJ files (2026) showed the relationship extended far beyond that.",
+    "epstein": true,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "known_for": [
+      "Apollo Global Management"
+    ]
+  },
+  "Nelson Peltz": {
+    "wiki": "Nelson_Peltz",
+    "net_worth": "$2B+",
+    "tier": 2,
+    "blurb": "Trian Fund Management activist investor who asked 'why do I need an all-Black cast?' about Black Panther \u2014 which grossed $1.35 billion and was nominated for Best Picture. Peltz lost his proxy battle for Disney board seats. His $2B+ fortune is built on aggressive corporate raids that have gutted companies and their workforces.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "known_for": [
+      "Trian Fund Management"
+    ]
+  },
+  "Kim Kardashian": {
+    "wiki": "Kim_Kardashian",
+    "net_worth": "$1.7B+",
+    "tier": 2,
+    "blurb": "Reality TV billionaire who told struggling women 'get your f***ing ass up and work \u2014 nobody wants to work these days' in a Variety interview, while simultaneously being sued by seven household staff for unpaid wages and denied breaks. Her family's fame was launched by a leaked sex tape.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "known_for": [
+      "SKIMS",
+      "SKKN",
+      "Keeping Up with the Kardashians"
+    ]
+  },
+  "Oprah Winfrey": {
+    "wiki": "Oprah_Winfrey",
+    "net_worth": "$2.8B+",
+    "tier": 3,
+    "blurb": "Media billionaire who told a Baltimore fundraising crowd that she didn't feel guilty about her wealth after visiting sub-Saharan Africa, saying she would go home to sleep on her $3,000 Pratesi sheets 'and feel good about it.'",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "known_for": [
+      "The Oprah Winfrey Show",
+      "OWN",
+      "O Magazine"
+    ]
+  },
+  "Ellen DeGeneres": {
+    "wiki": "Ellen_DeGeneres",
+    "net_worth": "$500M+",
+    "tier": 1,
+    "blurb": "Comedian and talk show host who compared quarantining in her $27 million Montecito mansion to 'being in jail' as essential workers died on the job and prisoners contracted COVID-19 without protective equipment. Simultaneously, her show staff were going public with accounts of its toxic workplace.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "known_for": [
+      "The Ellen DeGeneres Show"
+    ]
+  },
+  "Harold Hamm": {
+    "wiki": "Harold_Hamm",
+    "net_worth": "$15B+",
+    "tier": 4,
+    "blurb": "Continental Resources founder and fracking billionaire who told the RNC that 'climate change isn't our biggest problem \u2014 it's Islamic terrorism,' organized a $1 billion quid-pro-quo pledge to Trump in exchange for gutting environmental protections, and reported more oil spills than any other North Dakota operator.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": true,
+    "known_for": [
+      "Continental Resources",
+      "Bakken Shale fracking"
+    ]
+  },
+  "Lee Raymond": {
+    "wiki": "Lee_Raymond",
+    "net_worth": "$200M+",
+    "tier": 1,
+    "blurb": "ExxonMobil CEO who publicly denied climate change for 12 years while his own scientists accurately tracked and predicted it since 1977. Funded $19M in climate denial organizations. Retired in 2005 with a $400M exit package \u2014 one of the largest in US corporate history.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "known_for": [
+      "ExxonMobil"
+    ]
+  },
+  "Richard Sackler": {
+    "wiki": "Richard_Sackler",
+    "net_worth": "$1B+ (extracted before bankruptcy)",
+    "tier": 2,
+    "blurb": "Purdue Pharma president who called the 500,000+ Americans killed by OxyContin 'victimizers' and 'criminals.' His family extracted $11 billion from Purdue before declaring bankruptcy to dodge liability. He privately said he wanted to 'hammer on the abusers' while publicly insisting OxyContin was not addictive.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "known_for": [
+      "Purdue Pharma",
+      "OxyContin"
+    ]
+  },
+  "Martin Shkreli": {
+    "wiki": "Martin_Shkreli",
+    "net_worth": "est. $70M (assets seized)",
+    "tier": 1,
+    "blurb": "Hedge fund manager and 'Pharma Bro' who raised a life-saving AIDS drug's price 5,455% overnight, then said at a Forbes conference that he 'probably should have raised it higher.' Convicted of securities fraud and sentenced to 7 years in prison.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "known_for": [
+      "Turing Pharmaceuticals",
+      "Daraprim price hike"
+    ]
+  },
+  "Jonathan Gray": {
+    "wiki": "Jonathan_Gray_(investor)",
+    "net_worth": "$7B+",
+    "tier": 3,
+    "blurb": "Blackstone's President and real estate chief, who explained the firm's housing strategy to Bloomberg in two words: 'Less supply is key.' Blackstone is one of the largest private landlords in America, concentrating housing ownership to drive up rents.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "known_for": [
+      "Blackstone Group"
+    ]
+  },
+  "George Zoley": {
+    "wiki": "George_Zoley",
+    "net_worth": "$200M+",
+    "tier": 1,
+    "blurb": "GEO Group founder and CEO who celebrated record profits from ICE detention on investor calls while children in his facilities were reportedly denied food and water. His company's entire business model depends on locking up more human beings.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "known_for": [
+      "GEO Group",
+      "ICE detention"
+    ]
+  },
+  "Patrick Swindle": {
+    "wiki": "CoreCivic",
+    "net_worth": "est. $10M+",
+    "tier": 1,
+    "blurb": "CoreCivic COO who called his company's detention facilities 'the most humane' on an investor earnings call \u2014 while his Dilley, Texas facility was simultaneously reported to be denying children medical care, clean water, and food, with a measles outbreak in progress.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "known_for": [
+      "CoreCivic",
+      "ICE detention"
+    ]
+  },
+  "Howard Schultz": {
+    "wiki": "Howard_Schultz",
+    "net_worth": "$3.8B+",
+    "tier": 3,
+    "blurb": "Starbucks founder who returned as CEO specifically to crush the company's union drive, faced nearly 100 NLRB violations, and was found by a federal judge to have broken labor law by telling a pro-union barista to 'go work somewhere else.' Became $800M richer in a single year while baristas organized over low wages.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "known_for": [
+      "Starbucks"
+    ]
+  },
+  "RealPage / Dana Jones": {
+    "wiki": "RealPage",
+    "net_worth": "$9.6B (acquisition value)",
+    "tier": 3,
+    "blurb": "Algorithmic rent-setting company owned by private equity firm Thoma Bravo that the DOJ sued for running an illegal landlord pricing cartel. Its software manages over 24 million housing units globally and was found to coordinate rent increases across competing landlords using shared non-public data.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "known_for": [
+      "YieldStar",
+      "AI Revenue Management",
+      "algorithmic rent-fixing"
+    ]
+  },
+  "Angelo Mozilo": {
+    "wiki": "Angelo_Mozilo",
+    "net_worth": "$600M+",
+    "tier": 2,
+    "blurb": "Countrywide Financial CEO who privately called his own mortgage products 'the most toxic product I've ever seen in my years in the business' and 'the poison of ours' in 2006 \u2014 while publicly assuring investors, homebuyers and regulators they were sound. Millions of families lost their homes. He settled SEC fraud charges for $67.5 million. No criminal charges.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "known_for": [
+      "Countrywide Financial",
+      "2008 mortgage crisis"
+    ]
+  },
+  "William Campbell": {
+    "wiki": "Philip_Morris_USA",
+    "net_worth": "est. $50M+",
+    "tier": 1,
+    "blurb": "Philip Morris CEO who swore to Congress in 1994 that nicotine is not addictive \u2014 while his company's own scientists had known since the 1960s that it was, and had been designing products to deliver it more efficiently. Philip Morris was later convicted under the RICO Act.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "known_for": [
+      "Philip Morris USA"
+    ]
+  },
+  "Seven Tobacco CEOs (1994)": {
+    "wiki": "Tobacco_Master_Settlement_Agreement",
+    "net_worth": "combined billions",
+    "tier": 4,
+    "blurb": "Seven tobacco company CEOs who swore to Congress in 1994 that nicotine is not addictive \u2014 while all of their companies had internal documents going back to 1963 confirming it was. All were investigated for perjury. The tobacco industry killed approximately 100 million people in the 20th century.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": true,
+    "known_for": [
+      "Philip Morris",
+      "RJ Reynolds",
+      "Lorillard",
+      "Brown & Williamson",
+      "US Tobacco",
+      "Liggett",
+      "American Tobacco"
+    ]
+  },
+  "Addison Yeaman": {
+    "wiki": "Brown_&_Williamson",
+    "net_worth": "N/A",
+    "tier": 1,
+    "blurb": "Brown & Williamson general counsel who wrote in 1963 that the tobacco company was 'in the business of selling nicotine, an addictive drug' \u2014 31 years before his industry's CEOs swore to Congress the opposite. The document was suppressed for decades.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "known_for": [
+      "Brown & Williamson"
+    ]
+  },
+  "Roger Goodell": {
+    "wiki": "Roger_Goodell",
+    "net_worth": "$300M+",
+    "tier": 2,
+    "blurb": "NFL Commissioner who said in a 2022 deposition that there was 'still a great deal of uncertainty' about whether concussions cause brain damage \u2014 while the NFL had already paid $1.3 billion to former players with CTE, and BU's brain bank had found CTE in 96% of the NFL players' brains they had studied. Earns $60\u201370M/year.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "known_for": [
+      "NFL"
+    ]
+  },
+  "Dan Snyder": {
+    "wiki": "Dan_Snyder",
+    "net_worth": "$3B+",
+    "tier": 3,
+    "blurb": "Washington Commanders owner who presided over a 20-year culture of sexual harassment, hired private investigators to intimidate witnesses, gave misleading Congressional testimony, and improperly hid $11 million from NFL revenue sharing. Fined $60M \u2014 less than 1% of his $6B sale price.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "known_for": [
+      "Washington Commanders (NFL)"
+    ]
+  }
+}
