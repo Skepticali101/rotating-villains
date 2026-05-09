@@ -785,7 +785,21 @@
       .controls-right    { margin-left: 0; }
       .person-hero-inner { flex-direction: column; }
     }
-  </style>
+  
+@media (max-width: 600px) {
+  .container { padding: 0 12px; }
+  .controls-inner { gap: 6px; padding: 0 8px; }
+  .quote-card { margin: 0; }
+  .card-header { padding: 10px 12px 8px; gap: 8px; }
+  .card-person { font-size: 0.85rem; letter-spacing: 1px; }
+  .card-title { font-size: 0.5rem; }
+  .quote-body { padding: 12px; font-size: 0.9rem; }
+  .quote-text { font-size: 0.9rem; line-height: 1.6; }
+  .card-photo { width: 32px; height: 32px; }
+  .card-photo-placeholder { width: 32px; height: 32px; }
+  main { padding: 12px 0; }
+}
+</style>
 </head>
 <body>
 
