@@ -991,5 +991,159 @@
     "known_for": [
       "Washington Commanders (NFL)"
     ]
+  },
+  "Elizabeth Holmes": {
+    "wiki": "Elizabeth_Holmes",
+    "net_worth": "$0 (convicted)",
+    "tier": 1,
+    "blurb": "Theranos founder who told investors, doctors, and patients she had invented a revolutionary blood-testing device. She had not. Patients received false diagnoses. Engineers were silenced. Holmes was convicted of four counts of fraud in 2022 and sentenced to 11 years in prison.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "known_for": [
+      "Theranos"
+    ]
+  },
+  "Bernie Madoff": {
+    "wiki": "Bernie_Madoff",
+    "net_worth": "$0 (convicted, assets seized)",
+    "tier": 1,
+    "blurb": "Ran the largest Ponzi scheme in history \u2014 $65 billion in fictitious returns, 37,000 victims. Said from prison that he wasn't 'some kind of ogre.' His son Mark killed himself on the second anniversary of his arrest. Madoff died in prison in 2021.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "known_for": [
+      "Madoff Investment Securities"
+    ]
+  },
+  "John Paulson": {
+    "wiki": "John_Paulson",
+    "net_worth": "$5B+",
+    "tier": 3,
+    "blurb": "Paulson & Co. founder who allegedly helped Goldman Sachs design CDOs specifically structured to fail, then shorted them \u2014 earning $4 billion in a single year while pension funds lost the same amount. No charges were filed against Paulson. Goldman settled for $550 million.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "known_for": [
+      "Paulson & Co.",
+      "2008 housing short"
+    ]
+  },
+  "Robert Kraft": {
+    "wiki": "Robert_Kraft",
+    "net_worth": "$11B+",
+    "tier": 4,
+    "blurb": "New England Patriots owner charged with soliciting prostitution at a Florida spa linked to a human trafficking investigation. Spent $61,000 fighting the charges on constitutional grounds. All charges dropped when court ruled evidence inadmissible. Donated $20M to Harvard Medical School the following year.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "known_for": [
+      "New England Patriots",
+      "Kraft Group"
+    ]
+  },
+  "David Geffen": {
+    "wiki": "David_Geffen",
+    "net_worth": "$9B+",
+    "tier": 3,
+    "blurb": "DreamWorks co-founder and music mogul who posted a sunset photo from his $590M superyacht to Instagram on March 28, 2020, as New York City was becoming the COVID-19 epicenter. Caption: 'Isolated at sea. Thinking of all those who are suffering.' He deleted it within hours.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "known_for": [
+      "Geffen Records",
+      "DreamWorks",
+      "Rising Sun (superyacht)"
+    ]
+  },
+  "Bob Iger": {
+    "wiki": "Bob_Iger",
+    "net_worth": "$690M+",
+    "tier": 2,
+    "blurb": "Disney CEO who told CNBC he 'probably didn't raise prices enough' at Disneyland, called striking writers' expectations 'not realistic' from a $4,000/night resort conference, and earned $31.6M \u2014 556 times the median Disney worker's pay \u2014 the same year.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "known_for": [
+      "The Walt Disney Company",
+      "ESPN",
+      "Marvel",
+      "Lucasfilm"
+    ]
+  },
+  "George Soros": {
+    "wiki": "George_Soros",
+    "net_worth": "$8B+",
+    "tier": 3,
+    "blurb": "Hedge fund billionaire and Open Society Foundations funder who paid zero federal income taxes three years in a row, per ProPublica's IRS files. Has been the target of antisemitic conspiracy theories for decades, used by the right as shorthand for 'global liberal elite.'",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "true_tax_rate": "~0%",
+    "tax_note": "paid $0 federal income tax 3 years in a row \u2014 ProPublica IRS files",
+    "known_for": [
+      "Soros Fund Management",
+      "Open Society Foundations"
+    ]
+  },
+  "Michael Milken": {
+    "wiki": "Michael_Milken",
+    "net_worth": "$6B+",
+    "tier": 3,
+    "blurb": "The 'Junk Bond King' who earned $550M in a single year while running an insider trading and securities fraud operation at Drexel Burnham Lambert. Pleaded guilty to six felonies, served 22 months of a 10-year sentence. Pardoned by Trump in 2020. Now worth $6 billion.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "known_for": [
+      "Drexel Burnham Lambert",
+      "junk bonds",
+      "leveraged buyouts"
+    ]
+  },
+  "Wilbur Ross": {
+    "wiki": "Wilbur_Ross",
+    "net_worth": "$700M+",
+    "tier": 2,
+    "blurb": "Private equity billionaire who built his fortune buying bankrupt companies and stripping their workers' pensions \u2014 eliminating $12B in steel worker retirement obligations alone. Owned the Sago Mine when 12 miners died, having bought it with knowledge of 208 safety violations. Served as Trump's Commerce Secretary while secretly retaining financial conflicts of interest, including ties to Putin's inner circle.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "known_for": [
+      "WL Ross & Co.",
+      "US Department of Commerce",
+      "International Coal Group"
+    ]
+  },
+  "Jerry Jones": {
+    "wiki": "Jerry_Jones",
+    "net_worth": "$15B+",
+    "tier": 4,
+    "blurb": "Dallas Cowboys owner and general manager who told players to stand 'toe on the line' at the anthem or not play, has never hired a Black head coach in 33 years of ownership, and was photographed in 1957 among white students blocking Black students from entering a desegregated school. He called himself a 'curious kid' and did not apologize.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "known_for": [
+      "Dallas Cowboys (NFL)"
+    ]
   }
 }
