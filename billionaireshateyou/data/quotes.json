@@ -4734,5 +4734,101 @@
     "net_worth_tier": 3,
     "disputed": false,
     "verification": "verified"
+  },
+  {
+    "id": "combs-001",
+    "person": "Sean 'Diddy' Combs",
+    "title": "Founder, Bad Boy Records / Music Mogul (arrested 2024)",
+    "net_worth_approx": "$1B+ (at arrest)",
+    "quote": "My behavior on that video is inexcusable. I take full responsibility for my actions in that video. I was disgusted then when I did it. I'm disgusted now. I'm not asking for forgiveness. I am truly sorry.",
+    "context": "Instagram video apology, May 19, 2024 \u2014 posted 48 hours after CNN published hotel surveillance footage from 2016 showing Combs grabbing, throwing, kicking, stomping and dragging his then-girlfriend Cassie Ventura in a hotel hallway. For eight years Combs had denied the incident, called Ventura's lawsuit 'lies,' and his lawyers had dismissed her November 2023 allegations as 'a payday.' The apology came only after the footage made denial impossible. Cassie Ventura's attorney: 'Combs' most recent statement is more about himself than the many people he has hurt. That he was only compelled to apologize once his repeated denials were proven false shows his pathetic desperation.' In September 2024, Combs was arrested by Homeland Security on federal charges of racketeering conspiracy, sex trafficking, and transportation to engage in prostitution. Over 30 civil lawsuits subsequently filed. He is currently incarcerated at the Metropolitan Detention Center in Brooklyn awaiting trial.",
+    "date_str": "May 19, 2024",
+    "date_sort": "2024-05-19",
+    "source_url": "https://www.cnn.com/2024/05/19/entertainment/diddy-combs-apology-video-cassie",
+    "source_type": "social_media_post",
+    "source_label": "Sean Combs Instagram (May 19, 2024, primary) / CNN / Billboard / NPR / Rolling Stone",
+    "category": "corporate-impunity",
+    "tags": [
+      "corporate-impunity",
+      "fraud",
+      "contempt-for-public",
+      "disinformation",
+      "anti-worker"
+    ],
+    "net_worth_tier": 2,
+    "disputed": true,
+    "disputed_note": "Combs pleaded not guilty to all federal charges. The apology confirms the hotel assault. He denies all allegations of sex trafficking and the dozens of civil lawsuits. Trial pending.",
+    "verification": "verified"
+  },
+  {
+    "id": "combs-002",
+    "person": "Sean 'Diddy' Combs",
+    "title": "Founder, Bad Boy Records / Music Mogul (arrested 2024)",
+    "net_worth_approx": "$1B+ (at arrest)",
+    "quote": "Let me be absolutely clear: I did not do any of the awful things being alleged. I will fight for my name, my family and for the truth.",
+    "context": "Social media statement, December 6, 2023 \u2014 denying Cassie Ventura's lawsuit alleging rape, years of abuse, and that Combs paid $50,000 to the hotel to obtain and destroy the 2016 surveillance footage of himself beating her. Within six months CNN published that same surveillance footage and Combs issued the apology above. He was arrested in September 2024. The federal indictment accused him of 'abusing, threatening and coercing women and others around him to fulfill his sexual desires, protect his reputation, and conceal his conduct.' His companies \u2014 Bad Boy Entertainment and Combs Enterprises \u2014 were alleged to have functioned as instruments of his crimes, with employees directed to solicit drugs and sex workers, clean crime scenes, and pay for silence.",
+    "date_str": "Dec 6, 2023",
+    "date_sort": "2023-12-06",
+    "source_url": "https://www.npr.org/2024/09/17/nx-s1-5116080/sean-diddy-combs-is-arrested-and-indicted-on-counts-of-racketeering-sex-trafficking",
+    "source_type": "social_media_post",
+    "source_label": "Combs social media statement (Dec 6, 2023) / NPR / Billboard / Rolling Stone / federal indictment",
+    "category": "corporate-impunity",
+    "tags": [
+      "corporate-impunity",
+      "fraud",
+      "disinformation",
+      "contempt-for-public"
+    ],
+    "net_worth_tier": 2,
+    "disputed": true,
+    "disputed_note": "Combs pleaded not guilty. Six months after this denial, hotel surveillance footage contradicted it directly regarding the 2016 assault. Trial pending on federal sex trafficking and racketeering charges.",
+    "verification": "verified"
+  },
+  {
+    "id": "sterling-001",
+    "person": "Donald Sterling",
+    "title": "Owner, Los Angeles Clippers NBA franchise (1981\u20132014)",
+    "net_worth_approx": "$1.9B+",
+    "quote": "Don't bring black people, and don't come.",
+    "context": "Recorded private phone call with then-girlfriend V. Stiviano, released by TMZ and Deadspin, April 2014. Sterling was instructing Stiviano not to post photos on Instagram with Black people \u2014 specifically outraged by a photo of her with Magic Johnson. NBA Commissioner Adam Silver authenticated the recording and banned Sterling for life \u2014 the strongest sanction in NBA history. Sterling was simultaneously the owner of a team whose roster was over 70% Black. He received revenue, championships, and public goodwill from those players while instructing his girlfriend that Black people should not be seen at his games. President Obama: 'When ignorant folks want to advertise their ignorance, you don't really have to do anything. You just let them talk.' Sterling's lawyers unsuccessfully challenged the ban. His wife Shelly sold the team for $2 billion.",
+    "date_str": "Apr 2014",
+    "date_sort": "2014-04-26",
+    "source_url": "https://deadspin.com/exclusive-the-extended-donald-sterling-tape-1568291249",
+    "source_type": "reported_statement",
+    "source_label": "Recorded phone call (TMZ/Deadspin, Apr 2014) / authenticated by NBA / PBS / Salon / BET / NPR",
+    "category": "extremism",
+    "tags": [
+      "anti-diversity",
+      "dehumanization",
+      "contempt-for-public",
+      "corporate-impunity"
+    ],
+    "net_worth_tier": 2,
+    "disputed": false,
+    "verification": "verified"
+  },
+  {
+    "id": "sterling-002",
+    "person": "Donald Sterling",
+    "title": "Owner, Los Angeles Clippers NBA franchise (1981\u20132014)",
+    "net_worth_approx": "$1.9B+",
+    "quote": "I support them and give them food, and clothes, and cars, and houses. Who gives it to them? Does someone else give it to them?",
+    "context": "Same recorded call, in response to being told he has 'a whole team that's Black, that plays for you.' The framing \u2014 of NBA players as dependents who should be grateful for their owner's provision rather than employees generating billions in revenue \u2014 echoed the language of plantation ownership. Indiana Pacers forward David West tweeted: 'Sterling basically articulated Plantation Politics... Make money off the Bucks / Lay with the Women / No Association in Public good or bad.' Sterling had previously settled a $2.73 million federal housing discrimination lawsuit for refusing to rent to Black and Latino tenants, and a $2.725 million lawsuit brought by the Clippers' former GM Elgin Baylor for discrimination and wrongful termination. Despite all of this, the NAACP's Los Angeles chapter was scheduled to give Sterling a lifetime achievement award the same week this tape was released.",
+    "date_str": "Apr 2014",
+    "date_sort": "2014-04-26",
+    "source_url": "https://deadspin.com/exclusive-the-extended-donald-sterling-tape-1568291249",
+    "source_type": "reported_statement",
+    "source_label": "Recorded phone call (Deadspin extended version, Apr 2014) / Salon / NPR / BET / Code Switch",
+    "category": "extremism",
+    "tags": [
+      "anti-diversity",
+      "dehumanization",
+      "classism",
+      "contempt-for-public",
+      "historical-trivialization"
+    ],
+    "net_worth_tier": 2,
+    "disputed": false,
+    "verification": "verified"
   }
 ]

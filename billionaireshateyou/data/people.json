@@ -1350,5 +1350,36 @@
       "BET",
       "Nickelodeon"
     ]
+  },
+  "Sean 'Diddy' Combs": {
+    "wiki": "Sean_Combs",
+    "net_worth": "$1B+ (at arrest)",
+    "tier": 2,
+    "blurb": "Bad Boy Records founder arrested in September 2024 on federal sex trafficking and racketeering charges. Admitted on Instagram to the 2016 hotel assault of Cassie Ventura only after CNN published the surveillance footage \u2014 eight months after his lawyers called her lawsuit 'lies.' Over 30 civil lawsuits filed. Currently incarcerated pending trial.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "known_for": [
+      "Bad Boy Records",
+      "Making the Band",
+      "Revolt Media"
+    ]
+  },
+  "Donald Sterling": {
+    "wiki": "Donald_Sterling",
+    "net_worth": "$1.9B+",
+    "tier": 2,
+    "blurb": "Los Angeles Clippers owner who was recorded telling his girlfriend not to bring Black people to his games \u2014 while owning a team whose roster was over 70% Black. Banned for life by the NBA in 2014. Previously settled a $2.73M federal housing discrimination lawsuit for refusing to rent to Black and Latino tenants. His wife sold the team for $2 billion.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "known_for": [
+      "Los Angeles Clippers (NBA)",
+      "Sterling real estate portfolio"
+    ]
   }
 }
