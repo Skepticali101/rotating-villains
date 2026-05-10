@@ -1207,5 +1207,39 @@
     "known_for": [
       "Tyson Foods"
     ]
+  },
+  "Sheldon Adelson": {
+    "wiki": "Sheldon_Adelson",
+    "net_worth": "$35B+ (at death)",
+    "tier": 5,
+    "blurb": "Las Vegas Sands founder who spent $600M+ on Republican politics and Trump's campaigns, demanded the US Embassy move to Jerusalem as a condition of his 2016 donation, and publicly proposed the US nuke Iran's desert as an opening negotiating tactic. Largest single US political donor of his era. His wife Miriam donated $106M to Trump's 2024 campaign.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": true,
+    "known_for": [
+      "Las Vegas Sands",
+      "Venetian",
+      "Israel Hayom",
+      "Republican mega-donor"
+    ]
+  },
+  "Steve Wynn": {
+    "wiki": "Steve_Wynn",
+    "net_worth": "$3.2B+",
+    "tier": 3,
+    "blurb": "Wynn Resorts founder who called decades of documented sexual misconduct allegations from 150 employees 'preposterous,' resigned after the Wall Street Journal investigation, and was permanently barred from the casino industry after paying $10M to Nevada regulators. Was simultaneously the RNC's finance chairman.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": true,
+    "known_for": [
+      "Wynn Resorts",
+      "Bellagio",
+      "Mirage",
+      "RNC finance chair"
+    ]
   }
 }

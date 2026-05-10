@@ -4399,5 +4399,100 @@
     "net_worth_tier": 3,
     "disputed": false,
     "verification": "verified"
+  },
+  {
+    "id": "adelson-001",
+    "person": "Sheldon Adelson",
+    "title": "Founder & CEO, Las Vegas Sands Corporation / Republican Mega-Donor",
+    "net_worth_approx": "$35B+ (at death)",
+    "quote": "You pick up your cell phone and you call somewhere in Nebraska and you say 'OK, let it go.' And so there's an atomic weapon, goes over ballistic missiles, the middle of the desert, that doesn't hurt a soul. Maybe a couple of rattlesnakes, and scorpions, or whatever. And then you say, 'See? The next one is in the middle of Tehran. You want to be wiped out? Go ahead.'",
+    "context": "Panel discussion at Yeshiva University, New York City, October 22, 2013 \u2014 on camera, proposing the US detonate a nuclear weapon in the Iranian desert as an opening negotiation tactic, then threaten Tehran with the next one. The audience applauded. His spokesman later said Adelson was 'using hyperbole.' Adelson was, at the time, the single largest donor to the Republican Party \u2014 having spent $92.8 million on the 2012 election cycle. He had given $20 million to Trump's 2016 campaign on the condition that Trump announce the relocation of the US Embassy to Jerusalem. He and his wife Miriam gave over $600 million total to Republican causes and Trump's campaigns. He also owned Israel Hayom, a free newspaper distributed across Israel designed to support Benjamin Netanyahu's political career. He died in January 2021 at 87. His wife Miriam subsequently donated $106 million to Trump's 2024 campaign.",
+    "date_str": "Oct 22, 2013",
+    "date_sort": "2013-10-22",
+    "source_url": "https://www.timesofisrael.com/sheldon-adelson-calls-on-us-to-nuke-iranian-desert/",
+    "source_type": "live_event",
+    "source_label": "Yeshiva University panel (Oct 22, 2013, on video) / Times of Israel / Newsweek / TIME / Mondoweiss",
+    "category": "extremism",
+    "tags": [
+      "anti-democracy",
+      "authoritarianism",
+      "contempt-for-public",
+      "anti-public-safety",
+      "imperialism"
+    ],
+    "net_worth_tier": 5,
+    "disputed": false,
+    "verification": "verified"
+  },
+  {
+    "id": "adelson-002",
+    "person": "Sheldon Adelson",
+    "title": "Founder & CEO, Las Vegas Sands Corporation / Republican Mega-Donor",
+    "net_worth_approx": "$35B+ (at death)",
+    "quote": "I'm against very wealthy people attempting to influence elections. But as long as it's doable I'm going to do it. Because I know that guys like Soros have been doing it for years. I have my own philosophy and I'm not ashamed of it.",
+    "context": "Forbes magazine interview, February 2012 \u2014 Adelson simultaneously condemning wealthy election influence while declaring he would keep doing it. That year he spent $92.8 million on outside political groups \u2014 more than any other single donor in US history to that point. His investment was explicit: he told Mitt Romney's team he would 'spare no expense' and asked for specific policy commitments in return, including the US Embassy move to Jerusalem (later delivered by Trump). The Las Vegas Sands simultaneously acknowledged in 2013 that it had likely violated the Foreign Corrupt Practices Act by bribing Chinese officials to obtain its Macau casino license \u2014 charges settled for $9 million without admission of guilt.",
+    "date_str": "Feb 2012",
+    "date_sort": "2012-02-01",
+    "source_url": "https://en.wikipedia.org/wiki/Sheldon_Adelson",
+    "source_type": "interview",
+    "source_label": "Forbes magazine (Feb 2012) / Wikipedia / Center for Responsive Politics",
+    "category": "anti-democracy",
+    "tags": [
+      "anti-democracy",
+      "contempt-for-public",
+      "conflict-of-interest",
+      "billionaire-victimhood"
+    ],
+    "net_worth_tier": 5,
+    "disputed": false,
+    "verification": "verified"
+  },
+  {
+    "id": "wynn-001",
+    "person": "Steve Wynn",
+    "title": "Founder & CEO, Wynn Resorts (resigned 2018)",
+    "net_worth_approx": "$3.2B+",
+    "quote": "The idea that I ever assaulted any woman is preposterous.",
+    "context": "Official statement to the Wall Street Journal, January 26, 2018, when the paper published allegations \u2014 based on interviews with 150 current and former Wynn employees \u2014 of decades of sexual misconduct including harassment, coercion, indecent exposure, and an alleged rape for which he paid a $7.5 million settlement. Wynn blamed the allegations on his ex-wife Elaine Wynn. The Massachusetts Gaming Commission later released a report confirming the allegations and finding that Wynn Resorts executives had deliberately concealed misconduct to protect Wynn's position. He resigned as CEO two weeks after the story broke, resigned as RNC finance chairman, and divested his company shares. Wynn Resorts paid $20M to settle shareholder suits. He paid $10M to Nevada gaming regulators and was permanently barred from the casino industry. His personal net worth increased by $100M+ in the months after his resignation.",
+    "date_str": "Jan 26, 2018",
+    "date_sort": "2018-01-26",
+    "source_url": "https://www.nbcnews.com/storyline/sexual-misconduct/vegas-casino-king-steve-wynn-accused-pattern-sexual-misconduct-wall-n841441",
+    "source_type": "published_essay",
+    "source_label": "WSJ statement (Jan 26, 2018) / NBC News / NPR / Massachusetts Gaming Commission report / CNN",
+    "category": "corporate-impunity",
+    "tags": [
+      "corporate-impunity",
+      "fraud",
+      "contempt-for-public",
+      "disinformation"
+    ],
+    "net_worth_tier": 3,
+    "disputed": true,
+    "disputed_note": "Wynn denied all allegations. Massachusetts Gaming Commission and independent investigations confirmed a pattern of misconduct and a culture of concealment at Wynn Resorts. He settled with Nevada regulators without admission of guilt.",
+    "verification": "verified"
+  },
+  {
+    "id": "wynn-002",
+    "person": "Steve Wynn",
+    "title": "Founder & CEO, Wynn Resorts (resigned 2018)",
+    "net_worth_approx": "$3.2B+",
+    "quote": "We find ourselves in a world where people can make allegations, regardless of the truth, and whether it's inquiries or boards considering what to do.",
+    "context": "Statement attributed to Wynn, February 2018, as reported by NPR \u2014 framing the 150 employees who went on record about his behavior as part of an environment where truth no longer matters. He also said Elaine Wynn's lawsuit was the 'instigation' of all the allegations. The employees who spoke to the Wall Street Journal had asked to remain anonymous because of Wynn's 'significant stature' in Las Vegas \u2014 many feared losing their jobs. One former executive testified that Wynn had 'routinely received complaints from various department heads regarding Wynn's chronic sexual harassment of female employees' \u2014 dating back to his time at the Golden Nugget. Wynn continued to live in a private residence inside the Wynn Las Vegas hotel after his resignation.",
+    "date_str": "Feb 2018",
+    "date_sort": "2018-02-01",
+    "source_url": "https://www.npr.org/2018/03/15/592318034/after-sexual-misconduct-claims-vegas-mogul-steve-wynn-fell-fast",
+    "source_type": "published_essay",
+    "source_label": "NPR (March 2018) / WSJ / NBC News / Massachusetts Gaming Commission",
+    "category": "corporate-impunity",
+    "tags": [
+      "corporate-impunity",
+      "disinformation",
+      "contempt-for-public",
+      "anti-press"
+    ],
+    "net_worth_tier": 3,
+    "disputed": true,
+    "disputed_note": "Wynn denied all misconduct allegations. Massachusetts Gaming Commission investigation found the allegations credible and the company's culture of concealment documented. Wynn settled with Nevada regulators without admitting guilt.",
+    "verification": "verified"
   }
 ]
