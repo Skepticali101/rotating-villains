@@ -14,7 +14,6 @@
     The fallbacks are close enough that the swap is imperceptible.
     Body starts visible — no flash, no hidden content on slow connections.
   -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤑</text></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -108,6 +107,29 @@
       letter-spacing: 2px;
       text-transform: uppercase;
     }
+
+    /* ── SEARCH ── */
+    .search-bar {
+      background: var(--bg2);
+      border-bottom: 1px solid var(--border);
+      padding: 8px 20px;
+    }
+    .search-inner { max-width: 1400px; margin: 0 auto; }
+    .search-input {
+      width: 100%;
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 0;
+      color: var(--text);
+      font-family: var(--font-body);
+      font-size: 0.85rem;
+      padding: 8px 14px;
+      outline: none;
+      box-sizing: border-box;
+      transition: border-color 0.15s;
+    }
+    .search-input::placeholder { color: var(--text-dim); }
+    .search-input:focus { border-color: var(--red); }
 
     /* ── BADGE TALLY ── */
     .badge-tally {
@@ -785,23 +807,7 @@
       .controls-right    { margin-left: 0; }
       .person-hero-inner { flex-direction: column; }
     }
-  
-@media (max-width: 600px) {
-  .container { padding: 0 12px; }
-  .controls-inner { gap: 6px; padding: 0 8px; }
-  .quotes-grid { grid-template-columns: 1fr; min-width: 0; }
-  .quote-card { margin: 0; min-width: 0; max-width: 100%; box-sizing: border-box; }
-  .card-header { padding: 10px 12px 8px; gap: 8px; }
-  .card-person { font-size: 0.85rem; letter-spacing: 1px; }
-  .card-title { font-size: 0.5rem; }
-  .quote-body { padding: 12px; font-size: 0.9rem; }
-  .quote-text { font-size: 0.9rem; line-height: 1.6; word-break: break-word; }
-  .card-photo { width: 32px; height: 32px; }
-  .card-photo-placeholder { width: 32px; height: 32px; }
-  main { padding: 12px 0; overflow-x: hidden; }
-  body { overflow-x: hidden; }
-}
-</style>
+  </style>
 </head>
 <body>
 
@@ -831,6 +837,14 @@
   <div class="badge-tally-inner">
     <span class="tally-label">EXPOSE:</span>
     <div id="badgeTallyBtns"></div>
+  </div>
+</div>
+
+<!-- ── SEARCH ── -->
+<div class="search-bar">
+  <div class="search-inner">
+    <input class="search-input" id="searchInput" type="text"
+           placeholder="Search quotes, names, companies…" autocomplete="off">
   </div>
 </div>
 
@@ -914,7 +928,8 @@
   let photoCache = {};    // person name → HTMLImageElement (pre-loaded)
   let activeFilter = 'all';
   let activePerson = '';
-  let activeBadge  = '';   // epstein | bunker | island | tax_exile | dark_money | ''
+  let activeBadge  = '';
+  let activeSearch = '';   // epstein | bunker | island | tax_exile | dark_money | ''
   let activeSort   = 'date-desc';
 
   // ── Filter definitions ─────────────────────────────────────────────────────
@@ -1020,14 +1035,10 @@
       cf.appendChild(btn);
     });
 
-    // Person dropdown — sorted by wealth tier desc then alpha
+    // Person dropdown — sorted alphabetically
     const ps = document.getElementById('personSelect');
     [...new Set(allQuotes.map(q => q.person))]
-      .sort((a, b) => {
-        const ta = peopleData[a]?.tier || 0;
-        const tb = peopleData[b]?.tier || 0;
-        return tb - ta || a.localeCompare(b);
-      })
+      .sort((a, b) => a.localeCompare(b))
       .forEach(name => {
         const opt = document.createElement('option');
         opt.value       = name;
@@ -1043,6 +1054,12 @@
     // Sort dropdown
     document.getElementById('sortSelect').addEventListener('change', e => {
       activeSort = e.target.value;
+      render();
+    });
+
+    // Search input
+    document.getElementById('searchInput').addEventListener('input', e => {
+      activeSearch = e.target.value.trim().toLowerCase();
       render();
     });
 
@@ -1093,6 +1110,10 @@
         if (def?.cats && !def.cats.includes(q.category))       return false;
         if (activePerson && q.person !== activePerson)            return false;
         if (activeBadge && !peopleData[q.person]?.[activeBadge]) return false;
+        if (activeSearch) {
+          const hay = `${q.quote} ${q.person} ${q.context || ''}`.toLowerCase();
+          if (!hay.includes(activeSearch)) return false;
+        }
         return true;
       })
       .sort((a, b) => {
@@ -1186,7 +1207,7 @@
         e.stopPropagation();
         const q = allQuotes.find(x => x.id === btn.closest('.quote-card').dataset.id);
         if (!q) return;
-        navigator.clipboard.writeText(`"${q.quote}" — ${q.person}, ${q.date_str}`)
+        navigator.clipboard.writeText(`"${q.quote}" ${q.person}, ${q.date_str}`)
           .then(() => flashBtn(btn, '✓ COPIED'));
       });
     });
