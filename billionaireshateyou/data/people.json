@@ -1303,5 +1303,52 @@
     "known_for": [
       "Murray Energy Corporation"
     ]
+  },
+  "Bob McNair": {
+    "wiki": "Bob_McNair",
+    "net_worth": "$4B+ (at death)",
+    "tier": 3,
+    "blurb": "Houston Texans founder who called kneeling NFL players 'inmates running the prison' at a private owners' meeting in 2017, then walked back his apology six months later saying 'I really didn't have anything to apologize for.' His majority-Black roster generated the billions his estate sold the team for in 2023.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "known_for": [
+      "Houston Texans (NFL)"
+    ]
+  },
+  "Phil Knight": {
+    "wiki": "Phil_Knight",
+    "net_worth": "$40B+",
+    "tier": 4,
+    "blurb": "Nike co-founder who built a $40B fortune on a business model explicitly designed around the cheapest possible Asian labor, defended $1/day Indonesian wages as 'giving people hope,' then in 1998 admitted Nike had become 'synonymous with slave wages, forced overtime and arbitrary abuse' \u2014 only after a global consumer boycott hit sales.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "known_for": [
+      "Nike Inc."
+    ]
+  },
+  "Sumner Redstone": {
+    "wiki": "Sumner_Redstone",
+    "net_worth": "$4.9B+",
+    "tier": 3,
+    "blurb": "Viacom and CBS founder who ran a near-continuous stream of litigation against employees, ex-wives, and rivals, called lawsuits 'my favorite sport,' and was caught on tape at age 87 attempting to bribe a journalist to reveal a source inside MTV \u2014 confirmed by his own spokesman.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "known_for": [
+      "Viacom",
+      "CBS",
+      "Paramount Pictures",
+      "MTV",
+      "BET",
+      "Nickelodeon"
+    ]
   }
 }
