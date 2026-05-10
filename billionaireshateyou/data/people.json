@@ -1547,5 +1547,21 @@
       "Massey Energy",
       "Upper Big Branch mine disaster"
     ]
+  },
+  "Tim Gurner": {
+    "wiki": "Tim_Gurner",
+    "net_worth": "~$700M+ (near-billionaire)",
+    "tier": 2,
+    "blurb": "Australian luxury property developer who told an industry summit in September 2023 that unemployment 'needs to jump 40-50%' to 'kill' workers' post-COVID 'arrogance' and 'remind people they work for the employer.' Viral backlash followed globally. He apologised two days later. Previously went viral in 2017 for blaming millennials' housing affordability problems on avocado toast \u2014 while having received a $34,000 family loan to start his own business.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "known_for": [
+      "Gurner Group",
+      "avocado toast quote",
+      "AFR Property Summit 2023"
+    ]
   }
 }

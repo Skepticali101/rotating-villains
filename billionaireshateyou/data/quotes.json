@@ -5094,5 +5094,54 @@
     "net_worth_tier": 1,
     "disputed": false,
     "verification": "verified"
+  },
+  {
+    "id": "gurner-001",
+    "person": "Tim Gurner",
+    "title": "Founder & CEO, Gurner Group / Luxury Property Developer",
+    "net_worth_approx": "~$700M+ (near-billionaire)",
+    "quote": "We need to see pain in the economy. We need to remind people that they work for the employer, not the other way around. Unemployment has to jump 40, 50 per cent in the economy. We've got to kill that attitude \u2014 and that has to come through hurting the economy.",
+    "context": "Australian Financial Review Property Summit, Sydney, September 12, 2023 \u2014 on video, to a room of property industry executives. Gurner complained that post-COVID workers had developed 'arrogance' by expecting better pay and conditions, and that the solution was mass unemployment \u2014 suggesting a 40-50% jump in the jobless rate. He said: 'Employees feel the employer is extremely lucky to have them, as opposed to the other way around. We've got to kill that attitude.' AOC shared the video on X, writing it was a 'reminder that major CEOs have skyrocketed their own pay so much that the ratio of CEO-to-worker pay is now at some of the highest levels ever recorded.' Australia's AMA president said higher unemployment was 'associated with a range of adverse health outcomes including suicide.' A Labor MP called Gurner 'self-interested.' He apologised two days later, calling the remarks 'deeply insensitive and wrong' \u2014 an apology he made only after global viral backlash. In 2017, Gurner had previously told millennials their housing affordability problems were caused by buying smashed avocado on toast and $4 coffees.",
+    "date_str": "Sep 12, 2023",
+    "date_sort": "2023-09-12",
+    "source_url": "https://fortune.com/2023/09/13/australia-real-estate-ceo-tim-gurner-pain-in-economy-avocado-toast/",
+    "source_type": "live_event",
+    "source_label": "AFR Property Summit (Sep 12, 2023, on video) / Fortune / SBS News / New Statesman / Jacobin / AOC on X",
+    "category": "anti-worker",
+    "tags": [
+      "anti-worker",
+      "labor-coercion",
+      "dehumanization",
+      "contempt-for-public",
+      "classism"
+    ],
+    "net_worth_tier": 2,
+    "disputed": false,
+    "verification": "verified"
+  },
+  {
+    "id": "gurner-002",
+    "person": "Tim Gurner",
+    "title": "Founder & CEO, Gurner Group / Luxury Property Developer",
+    "net_worth_approx": "~$700M+ (near-billionaire)",
+    "quote": "When I was trying to buy my first home, I wasn't buying smashed avocado for $19 and four coffees at $4 each.",
+    "context": "Australian '60 Minutes,' 2017 \u2014 Gurner's explanation for why millennials couldn't afford homes: their spending on small luxuries. It became one of the most mocked quotes of the decade and spawned the global 'avocado toast' discourse. Post-viral backlash, Australian Financial Review reported that Gurner had in fact received a $34,000 loan from his grandfather and backing from his former employer to start his business \u2014 not the pure bootstrap origin story his comments implied. He was then worth approximately $400M. In 2023 he returned to form at the AFR Property Summit with the mass unemployment remarks. His Gurner Group, which builds luxury apartments starting at $1M+ in Melbourne and Sydney, had a development portfolio exceeding $9.5 billion AUD by 2024.",
+    "date_str": "2017",
+    "date_sort": "2017-01-01",
+    "source_url": "https://jacobin.com/2023/09/tim-gurner-capitalists-neoliberalism-unemployment-precarity",
+    "source_type": "live_event",
+    "source_label": "Australian 60 Minutes (2017) / AFR / Jacobin / Fortune",
+    "category": "classism",
+    "tags": [
+      "classism",
+      "anti-poor",
+      "contempt-for-public",
+      "billionaire-victimhood",
+      "dehumanization"
+    ],
+    "net_worth_tier": 2,
+    "disputed": true,
+    "disputed_note": "Gurner presented himself as a self-made bootstrap success. AFR reporting revealed he received a $34,000 loan from his grandfather and backing from a former employer to start his business.",
+    "verification": "verified"
   }
 ]
