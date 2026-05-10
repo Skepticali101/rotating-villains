@@ -1381,5 +1381,171 @@
       "Los Angeles Clippers (NBA)",
       "Sterling real estate portfolio"
     ]
+  },
+  "John Schnatter": {
+    "wiki": "John_Schnatter",
+    "net_worth": "$1B+",
+    "tier": 2,
+    "blurb": "Papa John's founder who resigned as chairman in 2018 after a recorded conference call revealed him using a racial slur, days after Forbes published the story. He had previously blamed NFL players taking a knee for hurting his pizza sales. He sued the marketing agency that leaked the recording.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "known_for": [
+      "Papa John's Pizza"
+    ]
+  },
+  "Bob Parsons": {
+    "wiki": "Bob_Parsons",
+    "net_worth": "$2B+",
+    "tier": 2,
+    "blurb": "GoDaddy founder who filmed himself shooting an elephant in Zimbabwe with AC/DC blaring, posted the video online, and defended it by saying killing elephants was 'no different than eating beef.' When asked why he didn't just give the Zimbabweans money, he said: 'I don't know that one has to do anything with the other.'",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "known_for": [
+      "GoDaddy",
+      "PXG Golf"
+    ]
+  },
+  "Roger Ailes": {
+    "wiki": "Roger_Ailes",
+    "net_worth": "$100M+",
+    "tier": 2,
+    "blurb": "Fox News founder who resigned in 2016 after over 20 women came forward with sexual harassment allegations \u2014 including Gretchen Carlson, who had secretly recorded him on her iPhone. Fox settled for $20 million. Ailes had also installed secret CCTV cameras throughout Fox News offices. He died in 2017 before any criminal charges.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": true,
+    "known_for": [
+      "Fox News"
+    ]
+  },
+  "Carly Fiorina": {
+    "wiki": "Carly_Fiorina",
+    "net_worth": "$120M+",
+    "tier": 2,
+    "blurb": "HP CEO who told Congress in 2004 that 'there is no job that is America's God-given right' while offshoring tens of thousands of American jobs. Laid off 30,000 US workers. Received a $21.4M severance when fired. HP's stock jumped 6.9% the day she was fired. She ran for president on her HP record.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "known_for": [
+      "Hewlett-Packard",
+      "2016 presidential campaign"
+    ]
+  },
+  "Mukesh Ambani": {
+    "wiki": "Mukesh_Ambani",
+    "net_worth": "$99B+",
+    "tier": 5,
+    "blurb": "India's richest person who built a 27-story, $1-2 billion private residence in Mumbai \u2014 staffed by 600, with 3 helipads and a 168-car garage \u2014 in a city where 65% of residents live in slums. His wealth equals 5% of India's entire annual GDP. The land was originally an orphanage sold to him at 14% of market value.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": true,
+    "dark_money": false,
+    "known_for": [
+      "Reliance Industries",
+      "Jio Telecom",
+      "Antilia mansion"
+    ]
+  },
+  "Larry Fink": {
+    "wiki": "Larry_Fink",
+    "net_worth": "$1.1B+",
+    "tier": 2,
+    "blurb": "BlackRock CEO who declared at Davos that 'force is the only way' to change corporate behavior on sustainability \u2014 while simultaneously holding $85 billion in coal stocks and opposing shareholder climate resolutions at energy companies. The world's largest asset manager with $10 trillion under management.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "known_for": [
+      "BlackRock"
+    ]
+  },
+  "Jack Dorsey": {
+    "wiki": "Jack_Dorsey",
+    "net_worth": "$4B+",
+    "tier": 2,
+    "blurb": "Twitter and Square co-founder who promoted Bitcoin as the 'native currency of the internet' while it consumed more electricity than many countries and enabled ransomware attacks on hospitals. Tweeted he was moving to Africa for months to champion Bitcoin. Never did. Ran Twitter as a platform for election interference while hosting meditation retreats.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "known_for": [
+      "Twitter",
+      "Square/Block",
+      "Bitcoin advocacy"
+    ]
+  },
+  "Dietrich Mateschitz": {
+    "wiki": "Dietrich_Mateschitz",
+    "net_worth": "$27B+ (at death)",
+    "tier": 4,
+    "blurb": "Red Bull co-founder who dismissed COVID-19 masks and lockdowns as the real problem, not the virus, while using his Servus TV network to platform COVID skeptics throughout the pandemic. Used his media empire to build far-right influence in Austria. Died of prostate cancer in October 2022 at age 78.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": true,
+    "dark_money": true,
+    "known_for": [
+      "Red Bull GmbH",
+      "Servus TV",
+      "Formula 1 teams"
+    ]
+  },
+  "Dick Fuld": {
+    "wiki": "Dick_Fuld",
+    "net_worth": "$250M+",
+    "tier": 2,
+    "blurb": "Lehman Brothers CEO who said he wanted to 'rip out the heart' of short sellers \u2014 weeks before presiding over the largest bankruptcy in US history ($613 billion). Paid himself $500 million in the eight years before the collapse. No criminal charges. Has not returned the money.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "known_for": [
+      "Lehman Brothers",
+      "2008 financial crisis"
+    ]
+  },
+  "John Thain": {
+    "wiki": "John_Thain",
+    "net_worth": "$100M+",
+    "tier": 2,
+    "blurb": "Merrill Lynch CEO who spent $1.22M redecorating his office in 2008 \u2014 including an $87,000 rug and a $35,000 'commode on legs' \u2014 while Merrill received government bailout funds and he secretly accelerated $3.6B in executive bonuses before Bank of America's oversight took effect. He was fired and repaid the renovation costs.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "known_for": [
+      "Merrill Lynch",
+      "2008 financial crisis",
+      "$87,000 rug"
+    ]
+  },
+  "Don Blankenship": {
+    "wiki": "Don_Blankenship",
+    "net_worth": "$30M+",
+    "tier": 1,
+    "blurb": "Massey Energy CEO whose attitude of 'I don't care what people think' toward mine safety regulations contributed to the Upper Big Branch disaster that killed 29 miners in 2010. Convicted in 2015 of criminal conspiracy to violate mine safety laws \u2014 the first major US coal executive convicted over a mine disaster.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "known_for": [
+      "Massey Energy",
+      "Upper Big Branch mine disaster"
+    ]
   }
 }
