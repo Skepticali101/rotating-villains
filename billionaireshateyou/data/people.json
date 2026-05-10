@@ -1241,5 +1241,67 @@
       "Mirage",
       "RNC finance chair"
     ]
+  },
+  "Ivan Boesky": {
+    "wiki": "Ivan_Boesky",
+    "net_worth": "$0 (assets seized)",
+    "tier": 1,
+    "blurb": "Wall Street arbitrageur who told UC Berkeley graduates in 1986 that 'greed is healthy' \u2014 six months before being arrested for paying briefcases of cash to corporate insiders for stock tips. His speech directly inspired Gordon Gekko's 'Greed is good' monologue in Wall Street (1987). He died in 2024.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "known_for": [
+      "Ivan Boesky Corp.",
+      "Wall Street (inspiration for Gordon Gekko)"
+    ]
+  },
+  "Ike Perlmutter": {
+    "wiki": "Isaac_Perlmutter",
+    "net_worth": "$2B+",
+    "tier": 2,
+    "blurb": "Marvel Entertainment chairman who used leaked emails to argue against female-led superhero films, was reported to have said Black actors 'look the same,' fired three Black female Disney executives, and donated $10M to Trump's 2024 campaign before being fired by Disney after a failed board coup.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": true,
+    "known_for": [
+      "Marvel Entertainment",
+      "Trump Mar-a-Lago circle",
+      "VA shadow influence"
+    ]
+  },
+  "Carlos Slim": {
+    "wiki": "Carlos_Slim",
+    "net_worth": "$99B+",
+    "tier": 5,
+    "blurb": "Mexico's richest person and periodically world's richest, whose Telmex telecom monopoly overcharged Mexican consumers $13.4B per year above competitive rates while 17% of Mexicans lived in poverty. His wealth equals 5% of Mexico's entire GDP. He dismissed charitable giving as having 'not solved anything.'",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "known_for": [
+      "Telmex",
+      "Am\u00e9rica M\u00f3vil",
+      "Grupo Carso",
+      "New York Times (16% stake)"
+    ]
+  },
+  "Robert Murray": {
+    "wiki": "Robert_E._Murray",
+    "net_worth": "est. $100M+",
+    "tier": 1,
+    "blurb": "Murray Energy founder who publicly denied climate change, had the worst safety record of any major US coal operator, sued John Oliver for a comedy segment about mine safety, lobbied Trump to cut his own workers' environmental protections, then cut his miners' healthcare benefits when his company filed for bankruptcy in 2019. He died in 2020.",
+    "epstein": false,
+    "bunker": false,
+    "island": false,
+    "tax_exile": false,
+    "dark_money": false,
+    "known_for": [
+      "Murray Energy Corporation"
+    ]
   }
 }
