@@ -474,7 +474,7 @@
             <div class="congress-info">
                 📅 Covering <strong>2009-2010, 2019-2020, 2023-2026</strong> (Congresses 111, 116, 118-119)<br>
                 <span class="explanation">The years when Democrats had enough votes to win, making each betrayal a deliberate choice.</span><br>
-                <span class="last-updated">🔄 Last Updated: April 16, 2026</span>
+                <span class="last-updated">🔄 Last Updated: September 3, 2026</span>
             </div>
         </div>
 
@@ -527,15 +527,21 @@
                 <a href="#membersSection" style="text-decoration:none;">
                     <button style="background:#1a1a1a; border:2px solid #d4af37; color:#d4af37; padding:16px 32px; font-family:'Bebas Neue',sans-serif; font-size:1.3rem; cursor:pointer; letter-spacing:2px;">👥 MEMBERS</button>
                 </a>
+<!-- BY INDUSTRY hidden
                 <a href="#categorySection" style="text-decoration:none;">
                     <button style="background:#1a1a1a; border:2px solid #b22222; color:#ff6b6b; padding:16px 32px; font-family:'Bebas Neue',sans-serif; font-size:1.3rem; cursor:pointer; letter-spacing:2px;">🏭 BY INDUSTRY</button>
                 </a>
+                -->
+<!-- TRENDS hidden
                 <a href="#trendSection" style="text-decoration:none;">
                     <button style="background:#1a1a1a; border:2px solid #ff6b35; color:#ff6b35; padding:16px 32px; font-family:'Bebas Neue',sans-serif; font-size:1.3rem; cursor:pointer; letter-spacing:2px;">📈 TRENDS</button>
                 </a>
+                -->
+<!-- KILLING THEIR OWN hidden
                 <a href="#killingTheirOwnSection" style="text-decoration:none;">
                     <button style="background:#1a1a1a; border:2px solid #4682b4; color:#6ab0ff; padding:16px 32px; font-family:'Bebas Neue',sans-serif; font-size:1.3rem; cursor:pointer; letter-spacing:2px;">🗡️ KILLING THEIR OWN</button>
                 </a>
+                -->
                 <a href="#closestCallsSection" style="text-decoration:none;">
                     <button style="background:#1a1a1a; border:2px solid #d4af37; color:#d4af37; padding:16px 32px; font-family:'Bebas Neue',sans-serif; font-size:1.3rem; cursor:pointer; letter-spacing:2px;">🔥 CLOSEST CALLS</button>
                 </a>
@@ -735,12 +741,12 @@
                         <td><span class="badge ${
                             pattern === 'Super Villain' ? 'badge-danger' :
                             pattern === 'Strategic Rotator' ? 'badge-warning' :
-                            pattern === 'Rarely Rotates' ? 'badge-info' :
+                            pattern === 'Rarely Rotates' || pattern === 'Rare' ? 'badge-info' :
                             pattern === 'Limited Record' ? 'badge-limited' : 'badge-info'
                         }">${
                             pattern === 'Super Villain' ? 'SUPER VILLAIN' :
                             pattern === 'Strategic Rotator' ? 'STRATEGIC ROTATOR' :
-                            pattern === 'Rarely Rotates' ? 'RARELY ROTATES' :
+                            pattern === 'Rarely Rotates' || pattern === 'Rare' ? 'RARELY ROTATES' :
                             pattern === 'Limited Record' ? 'LIMITED RECORD' : pattern
                         }</span></td>
                     </tr>
