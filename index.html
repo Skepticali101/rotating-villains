@@ -8,8 +8,8 @@
     <!-- Preload key fonts to prevent FOUT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;400;500;700&family=JetBrains+Mono:wght@400;600&display=swap">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Anton&family=Big+Shoulders+Display:wght@800&family=Bebas+Neue&family=Oswald:wght@700&family=Space+Grotesk:wght@300;400;500;700&family=JetBrains+Mono:wght@400;600&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Big+Shoulders+Display:wght@800&family=Bebas+Neue&family=Oswald:wght@700&family=Space+Grotesk:wght@300;400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
     <style>
         /* Hide ALL text until fonts load to prevent flash */
         body {
@@ -459,14 +459,153 @@
                 touch-action: manipulation;
             }
         }
-    </style>
+    
+        /* ============================================================
+           THEME v2 (preview) — matches the new member card.
+           Scoped overrides only; remove this block to revert the look.
+           Tan = banners/titles, gold = highlights, Oswald = numbers,
+           Big Shoulders = display, JetBrains Mono = labels/data.
+           ============================================================ */
+        :root {
+            --tan: #cdbb8c; --tan-dim: rgba(205,187,140,0.45); --tan-faint: rgba(205,187,140,0.18);
+            --ink: #0a0b0b; --panel: #0e0e0e; --hud-line: rgba(255,255,255,0.20);
+        }
+        body {
+            background:
+                radial-gradient(ellipse at 50% 0%, rgba(70,66,56,0.28) 0%, rgba(0,0,0,0) 55%),
+                repeating-linear-gradient(0deg, rgba(255,255,255,0.018) 0px, rgba(255,255,255,0.018) 1px, rgba(0,0,0,0) 1px, rgba(0,0,0,0) 38px),
+                repeating-linear-gradient(90deg, rgba(255,255,255,0.018) 0px, rgba(255,255,255,0.018) 1px, rgba(0,0,0,0) 1px, rgba(0,0,0,0) 38px),
+                var(--ink);
+            background-attachment: fixed;
+        }
+        /* corner-bracket frame, reusable: set --bk (color) and --bl (length) */
+        .header, .section, .alert-banner, #mainDashboard > div:first-child button, #mainDashboard > div:first-child a[href^="./"] {
+            --bk: #f2f2f2; --bl: 22px; --bw: 3px;
+            background-repeat: no-repeat;
+        }
+        .header, .section, .alert-banner {
+            border: 1px solid var(--hud-line);
+            background-image:
+                linear-gradient(var(--bk), var(--bk)), linear-gradient(var(--bk), var(--bk)),
+                linear-gradient(var(--bk), var(--bk)), linear-gradient(var(--bk), var(--bk)),
+                linear-gradient(var(--bk), var(--bk)), linear-gradient(var(--bk), var(--bk)),
+                linear-gradient(var(--bk), var(--bk)), linear-gradient(var(--bk), var(--bk)),
+                linear-gradient(180deg, #131313 0%, #0d0d0d 100%);
+            background-size:
+                var(--bl) var(--bw), var(--bw) var(--bl), var(--bl) var(--bw), var(--bw) var(--bl),
+                var(--bl) var(--bw), var(--bw) var(--bl), var(--bl) var(--bw), var(--bw) var(--bl), 100% 100%;
+            background-position:
+                0 0, 0 0, 100% 0, 100% 0,
+                0 100%, 0 100%, 100% 100%, 100% 100%, 0 0;
+        }
+        /* ---- hero ---- */
+        .header { border-left: 1px solid var(--hud-line); border-right: 1px solid var(--hud-line); --bk: var(--tan); --bl: 34px; }
+        .header h1 {
+            font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; color: var(--tan);
+            font-size: 7.2rem; line-height: 1; letter-spacing: 3px;
+            text-shadow: 0 3px 0 rgba(0,0,0,0.7), 0 0 28px rgba(205,187,140,0.16);
+        }
+        .header .subtitle { color: #b4b4ae; }
+        .header .congress-info { font-family: 'JetBrains Mono', monospace; font-size: 0.95rem; color: #c9bd9a; opacity: 1; }
+        .header .congress-info .explanation, .header .congress-info .last-updated { color: #8e8a7c; opacity: 1; }
+        .highlight { color: #d4af37; }
+        /* ---- section panels ---- */
+        .section { border-left: 1px solid var(--hud-line); }
+        .section h2, .alert-banner h2 {
+            font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; color: var(--tan);
+            font-size: 2.3rem; letter-spacing: 2px; line-height: 1.1;
+            padding-bottom: 10px; border-bottom: 1px solid var(--tan-faint);
+            text-shadow: 0 2px 0 rgba(0,0,0,0.6);
+        }
+        .alert-banner { background-color: transparent; box-shadow: none; border-left: 1px solid var(--hud-line); }
+        .alert-banner p { color: #cfcfc8; }
+        .alert-banner .stat {
+            background: linear-gradient(180deg, #151515, #0e0e0e); border: 1px solid var(--hud-line);
+            border-left: 1px solid var(--hud-line); box-shadow: inset 0 0 30px rgba(0,0,0,0.5);
+        }
+        .alert-banner .stat-value { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 3.4rem; line-height: 1.05; text-shadow: 0 0 16px currentColor; }
+        .alert-banner .stat:nth-child(1) .stat-value { color: #ff3b30; }
+        .alert-banner .stat:nth-child(2) .stat-value { color: #f5c90a; }
+        .alert-banner .stat:nth-child(3) .stat-value { color: #ff3b30; }
+        .alert-banner .stat:nth-child(4) .stat-value { color: #d4af37; }
+        .alert-banner .stat-label { font-family: 'JetBrains Mono', monospace; color: var(--tan); font-size: 0.82rem; letter-spacing: 2px; }
+        /* ---- nav + sister buttons (inline-styled in the JS template, so !important) ---- */
+        #mainDashboard > div:first-child button, #mainDashboard > div:first-child a[href^="./"] {
+            --bk: currentColor; --bl: 12px; --bw: 2px;
+            font-family: 'Big Shoulders Display', sans-serif !important; font-weight: 800 !important;
+            letter-spacing: 2.5px !important; font-size: 1.35rem !important; border-radius: 0 !important;
+            background-color: #0e0e0e !important; background-repeat: no-repeat !important; border-width: 1px !important; padding: 14px 30px !important;
+            background-image:
+                linear-gradient(var(--bk), var(--bk)), linear-gradient(var(--bk), var(--bk)),
+                linear-gradient(var(--bk), var(--bk)), linear-gradient(var(--bk), var(--bk)),
+                linear-gradient(var(--bk), var(--bk)), linear-gradient(var(--bk), var(--bk)),
+                linear-gradient(var(--bk), var(--bk)), linear-gradient(var(--bk), var(--bk)) !important;
+            background-size: var(--bl) var(--bw), var(--bw) var(--bl), var(--bl) var(--bw), var(--bw) var(--bl),
+                var(--bl) var(--bw), var(--bw) var(--bl), var(--bl) var(--bw), var(--bw) var(--bl) !important;
+            background-position: 0 0, 0 0, 100% 0, 100% 0, 0 100%, 0 100%, 100% 100%, 100% 100% !important;
+            transition: box-shadow 0.2s, background-color 0.2s;
+        }
+        #mainDashboard > div:first-child a[href="#membersSection"] button,
+        #mainDashboard > div:first-child a[href="#closestCallsSection"] button { color: var(--tan) !important; border-color: var(--tan-dim) !important; }
+        #mainDashboard > div:first-child button:hover, #mainDashboard > div:first-child a[href^="./"]:hover {
+            background-color: #181714 !important; box-shadow: 0 0 18px rgba(205,187,140,0.18);
+        }
+        #mainDashboard > div:first-child > div:nth-child(2) { font-family: 'JetBrains Mono', monospace !important; color: #6d695d !important; border-color: var(--tan-faint) !important; letter-spacing: 4px !important; }
+        /* ---- controls ---- */
+        .controls label { font-family: 'JetBrains Mono', monospace; font-weight: 400; font-size: 0.9rem; letter-spacing: 1.5px; color: var(--tan); }
+        .controls select, .controls input { background: #0b0b0b; border: 1px solid var(--tan-dim); font-size: 0.95rem; }
+        .controls select:hover, .controls input:hover, .controls input:focus, .controls select:focus { border-color: var(--tan); box-shadow: 0 0 12px rgba(205,187,140,0.18); outline: none; }
+        /* ---- roster table ---- */
+        th {
+            background: #0b0b0b; font-family: 'JetBrains Mono', monospace; font-weight: 600; font-size: 0.78rem;
+            color: var(--tan); letter-spacing: 1.5px; border-bottom: 2px solid var(--tan-dim);
+        }
+        td { border-bottom: 1px solid rgba(255,255,255,0.07); }
+        tr:hover { background: #16150f; }
+        #mainTable td .clickable { font-family: 'Oswald', sans-serif !important; font-weight: 700 !important; font-size: 1.25rem !important; text-decoration: underline dotted; text-underline-offset: 4px; }
+        #mainTable td:first-child button { font-family: 'JetBrains Mono', monospace !important; font-weight: 600 !important; font-size: 0.95rem !important; color: var(--tan) !important; }
+        #mainTable td:first-child span { border-radius: 0 !important; background: transparent !important; font-family: 'JetBrains Mono', monospace; letter-spacing: 1px; }
+        #mainTable td:nth-child(3) { font-family: 'Oswald', sans-serif !important; font-weight: 700; font-size: 1.1rem !important; }
+        /* ---- pattern badges become small stamps ---- */
+        .badge {
+            font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 1rem; letter-spacing: 2px;
+            padding: 5px 12px; min-width: 160px; background: transparent; border-width: 2px; transform: rotate(-2deg);
+            text-shadow: none;
+        }
+        .badge-danger  { background: rgba(255,59,48,0.08);  color: #ff3b30; border-color: #ff3b30; }
+        .badge-warning { background: rgba(212,175,55,0.08); color: #d4af37; border-color: #d4af37; }
+        .badge-info    { background: rgba(106,176,255,0.08); color: #6ab0ff; border-color: #4a90d0; }
+        .badge-limited { background: rgba(160,160,160,0.06); color: #a0a0a0; border-color: #666; }
+        @media (max-width: 768px) {
+            body { background-attachment: scroll; }
+            .header h1 { font-size: 3.6rem; color: var(--tan); }
+            .header, .section, .alert-banner { background-color: transparent; border: 1px solid var(--hud-line); }
+            .section h2, .alert-banner h2 { font-size: 1.9rem; }
+            .alert-banner .stat-value { font-size: 2.6rem; }
+            #mainDashboard > div:first-child button, #mainDashboard > div:first-child a[href^="./"] { padding: 12px 20px !important; font-size: 1.15rem !important; }
+            .badge { min-width: 140px; font-size: 0.9rem; }
+        }
+        /* ============ end THEME v2 ============ */
+    
+/* ===== TITLE CASE OVERRIDES (remove block to revert) ===== */
+/* Bebas Neue is an all-caps face, so swap to a face that has real lowercase */
+#mainDashboard button, #mainDashboard a[href^="./"], #mainDashboard > div:first-child div {
+    font-family: 'Big Shoulders Display', sans-serif !important;
+    font-weight: 800 !important;
+}
+.stat-label, .controls label, th, .badge, [class^="badge-"], #mainDashboard div[style*="text-transform:uppercase"] {
+    text-transform: none !important;
+}
+.header h1, .section h2, .alert-banner h2 { text-transform: none !important; }
+/* ===== END TITLE CASE OVERRIDES ===== */
+</style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1>ROTATING VILLAINS</h1>
+            <h1>Rotating Villains</h1>
             <div class="subtitle">
                 Exposing the Democrats who strategically vote with Republicans or conveniently go missing—
                 allowing GOP bills to pass while maintaining plausible deniability.
@@ -526,7 +665,7 @@
         <div style="display:flex; flex-direction:column; gap:10px; margin-bottom:30px; align-items:center; padding:0 20px;">
             <div style="display:flex; flex-wrap:wrap; gap:10px; justify-content:center;">
                 <a href="#membersSection" style="text-decoration:none;">
-                    <button style="background:#1a1a1a; border:2px solid #d4af37; color:#d4af37; padding:16px 32px; font-family:'Bebas Neue',sans-serif; font-size:1.3rem; cursor:pointer; letter-spacing:2px;">👥 MEMBERS</button>
+                    <button style="background:#1a1a1a; border:2px solid #d4af37; color:#d4af37; padding:16px 32px; font-family:'Bebas Neue',sans-serif; font-size:1.3rem; cursor:pointer; letter-spacing:2px;">👥 Members</button>
                 </a>
 <!-- BY INDUSTRY hidden
                 <a href="#categorySection" style="text-decoration:none;">
@@ -544,16 +683,16 @@
                 </a>
                 -->
                 <a href="#closestCallsSection" style="text-decoration:none;">
-                    <button style="background:#1a1a1a; border:2px solid #d4af37; color:#d4af37; padding:16px 32px; font-family:'Bebas Neue',sans-serif; font-size:1.3rem; cursor:pointer; letter-spacing:2px;">🔥 CLOSEST CALLS</button>
+                    <button style="background:#1a1a1a; border:2px solid #d4af37; color:#d4af37; padding:16px 32px; font-family:'Bebas Neue',sans-serif; font-size:1.3rem; cursor:pointer; letter-spacing:2px;">🔥 Closest Calls</button>
                 </a>
             </div>
             <div style="font-family:'Bebas Neue',sans-serif; font-size:0.75rem; letter-spacing:3px; color:#444; text-transform:uppercase; padding:4px 0; border-top:1px solid #2a2a2a; border-bottom:1px solid #2a2a2a; width:100%; text-align:center;">
                 ── Sister Sites ──
             </div>
             <div style="display:flex; flex-wrap:wrap; gap:10px; justify-content:center;">
-                <a href="./wagewatch/" style="background:#1a1a1a; border:2px solid #2e8b57; color:#3cb371; padding:16px 32px; font-family:'Bebas Neue',sans-serif; font-size:1.3rem; cursor:pointer; letter-spacing:2px; text-decoration:none; display:inline-block;">💰 WAGE WATCH</a>
-                <a href="./nepodepot/" style="background:#1a1a1a; border:2px solid #9b59b6; color:#c39bd3; padding:16px 32px; font-family:'Bebas Neue',sans-serif; font-size:1.3rem; cursor:pointer; letter-spacing:2px; text-decoration:none; display:inline-block;">👑 NEPO DEPOT</a>
-                <a href="./billionaireshateyou/" style="background:#1a1a1a; border:2px solid #cc0000; color:#ff4444; padding:16px 32px; font-family:'Bebas Neue',sans-serif; font-size:1.3rem; cursor:pointer; letter-spacing:2px; text-decoration:none; display:inline-block;">🤑 BILLIONAIRES HATE YOU</a>
+                <a href="./wagewatch/" style="background:#1a1a1a; border:2px solid #2e8b57; color:#3cb371; padding:16px 32px; font-family:'Bebas Neue',sans-serif; font-size:1.3rem; cursor:pointer; letter-spacing:2px; text-decoration:none; display:inline-block;">💰 Wage Watch</a>
+                <a href="./nepodepot/" style="background:#1a1a1a; border:2px solid #9b59b6; color:#c39bd3; padding:16px 32px; font-family:'Bebas Neue',sans-serif; font-size:1.3rem; cursor:pointer; letter-spacing:2px; text-decoration:none; display:inline-block;">👑 Nepo Depot</a>
+                <a href="./billionaireshateyou/" style="background:#1a1a1a; border:2px solid #cc0000; color:#ff4444; padding:16px 32px; font-family:'Bebas Neue',sans-serif; font-size:1.3rem; cursor:pointer; letter-spacing:2px; text-decoration:none; display:inline-block;">🤑 Billionaires Hate You</a>
             </div>
         </div>
 
@@ -591,11 +730,11 @@
                     
                     <div class="controls">
                         <div>
-                            <label for="searchBox">🔍 FIND YOUR REP:</label>
+                            <label for="searchBox">🔍 Find Your Rep:</label>
                             <input type="text" id="searchBox" placeholder="Search by name..." onkeyup="filterTable()">
                         </div>
                         <div>
-                            <label for="stateFilter">📍 STATE:</label>
+                            <label for="stateFilter">📍 State:</label>
                             <select id="stateFilter" onchange="filterTable()">
                                 <option value="all">All States</option>
                                 ${stateOptions}
@@ -745,10 +884,10 @@
                             pattern === 'Rarely Rotates' || pattern === 'Rare' ? 'badge-info' :
                             pattern === 'Limited Record' ? 'badge-limited' : 'badge-info'
                         }">${
-                            pattern === 'Super Villain' ? 'SUPER VILLAIN' :
-                            pattern === 'Strategic Rotator' ? 'STRATEGIC ROTATOR' :
-                            pattern === 'Rarely Rotates' || pattern === 'Rare' ? 'RARELY ROTATES' :
-                            pattern === 'Limited Record' ? 'LIMITED RECORD' : pattern
+                            pattern === 'Super Villain' ? 'Super Villain' :
+                            pattern === 'Strategic Rotator' ? 'Strategic Rotator' :
+                            pattern === 'Rarely Rotates' || pattern === 'Rare' ? 'Rarely Rotates' :
+                            pattern === 'Limited Record' ? 'Limited Record' : pattern
                         }</span></td>
                     </tr>
                 `;
@@ -1096,8 +1235,411 @@ function escapeHtml(text) {
     </div>
 </div>
 
+<style id="rv-card-styles">
+.rv-card { position: relative; width: 600px; height: 750px; overflow: hidden; box-sizing: border-box; background: #0a0b0b;
+    border: 1px solid #2a2a26; font-family: 'JetBrains Mono', monospace; color: #d4d4d4; }
+.rv-card * { box-sizing: border-box; }
+/* ---- atmosphere ---- */
+.rv-bg { position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    background:
+        radial-gradient(ellipse at 50% 36%, rgba(70,66,56,0.32) 0%, rgba(0,0,0,0) 62%),
+        repeating-linear-gradient(0deg, rgba(255,255,255,0.022) 0px, rgba(255,255,255,0.022) 1px, rgba(0,0,0,0) 1px, rgba(0,0,0,0) 38px),
+        repeating-linear-gradient(90deg, rgba(255,255,255,0.022) 0px, rgba(255,255,255,0.022) 1px, rgba(0,0,0,0) 1px, rgba(0,0,0,0) 38px); }
+.rv-smudge { position: absolute; top: 0; left: 0; width: 600px; height: 750px; z-index: 1; opacity: 0.30; pointer-events: none; }
+.rv-grain  { position: absolute; top: 0; left: 0; width: 600px; height: 750px; z-index: 2; opacity: 0.13; pointer-events: none; }
+.rv-vig { position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 8; pointer-events: none;
+    background: radial-gradient(ellipse at 50% 46%, rgba(0,0,0,0) 58%, rgba(0,0,0,0.55) 100%); }
+/* ---- banner title ---- */
+.rv-title { position: absolute; top: 22px; left: 0; right: 0; padding: 0 22px; text-align: center; z-index: 3; white-space: nowrap;
+    font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 60px; line-height: 1.05; letter-spacing: 1px;
+    color: #cdbb8c; text-shadow: 0 2px 0 rgba(0,0,0,0.65), 0 0 18px rgba(205,187,140,0.18); }
+/* ---- photo frame ---- */
+.rv-frame { position: absolute; left: 167px; top: 98px; width: 266px; height: 283px; z-index: 3; }
+.rv-ph { position: absolute; left: 12px; top: 12px; right: 12px; bottom: 12px; border: 1px solid rgba(205,187,140,0.55); background: #141414; }
+.rv-photo { width: 100%; height: 100%; background-color: #141414; background-size: cover; background-position: center top; }
+.rv-photo-empty { display: flex; align-items: center; justify-content: center; color: #444; font-size: 54px; }
+.rv-scan { position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    background: repeating-linear-gradient(0deg, rgba(0,0,0,0.14) 0px, rgba(0,0,0,0.14) 1px, rgba(0,0,0,0) 1px, rgba(0,0,0,0) 3px), linear-gradient(180deg, rgba(190,150,90,0.30), rgba(110,80,40,0.30)); }
+.rv-br { position: absolute; width: 26px; height: 26px; border: 0 solid #bfae82; }
+.rv-br.tl { top: 0; left: 0; border-top-width: 3px; border-left-width: 3px; }
+.rv-br.tr { top: 0; right: 0; border-top-width: 3px; border-right-width: 3px; }
+.rv-br.bl { bottom: 0; left: 0; border-bottom-width: 3px; border-left-width: 3px; }
+.rv-br.brr { bottom: 0; right: 0; border-bottom-width: 3px; border-right-width: 3px; }
+/* ---- tier stamp (on the photo) ---- */
+.rv-stamp { position: absolute; left: 50%; top: 282px; width: 300px; height: 90px; margin-left: -142px; z-index: 4;
+    transform: rotate(-10deg); opacity: 0.92; border: 4px solid; text-align: center; }
+.rv-stamp-in { position: absolute; top: 4px; left: 4px; right: 4px; bottom: 4px; border: 2px solid; }
+.rv-stamp-txt { position: absolute; top: 0; left: 0; right: 0; bottom: 0; display: flex; align-items: center; justify-content: center; white-space: nowrap;
+    font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 62px; line-height: 1; letter-spacing: 2px; }
+.rv-stamp .rv-erode { position: absolute; left: -4px; top: -4px; width: 300px; height: 90px; }
+/* ---- identity ---- */
+.rv-namebox { position: absolute; left: 40px; right: 40px; top: 390px; height: 70px; z-index: 5; }
+.rv-name { position: absolute; top: 0; left: 0; right: 0; text-align: center; white-space: nowrap;
+    font-family: 'Anton', sans-serif; font-size: 62px; line-height: 70px; color: #f2f2ee; text-shadow: 0 3px 0 rgba(0,0,0,0.6); }
+.rv-speck { position: absolute; top: 11px; left: 0; width: 520px; height: 50px; }
+.rv-meta { position: absolute; top: 458px; left: 0; right: 0; text-align: center; z-index: 5; font-size: 16px; font-weight: 600; letter-spacing: 0.5px; color: #e6c98f; text-shadow: 0 1px 4px #000; }
+.rv-since { position: absolute; top: 480px; left: 0; right: 0; text-align: center; z-index: 5; font-size: 14.5px; letter-spacing: 0; color: #9c9a92; text-shadow: 0 1px 4px #000; }
+.rv-since .o { color: #e0953f; } .rv-since .o2 { color: #c08850; }
+.rv-tag { display: inline-block; margin-left: 8px; padding: 1px 7px; font-size: 11px; border-radius: 3px; vertical-align: 1px; }
+.rv-tag.age { background: #5a2d00; color: #ffaa44; border: 1px solid #ffaa44; }
+.rv-tag.ret { background: #1a1a2e; color: #8888aa; border: 1px solid #8888aa; }
+.rv-flag { position: absolute; top: 176px; width: 100px; height: 74px; z-index: 6; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.rv-flag img { position: absolute; top: 0; left: 0; width: 100px; height: 74px; }
+.rv-flag span { position: relative; display: block; text-align: center; }
+.rv-flag.age { right: 40px; }
+.rv-flag.ret { left: 40px; }
+.rv-flag .k { font-size: 11.5px; letter-spacing: 3px; margin-bottom: 2px; }
+.rv-flag .v { font-family: 'Oswald', sans-serif; font-weight: 700; line-height: 1; }
+.rv-flag.age .k { color: #d9923a; }
+.rv-flag.age .v { font-size: 42px; color: #ffb54a; text-shadow: 0 0 12px rgba(255,166,61,0.75); }
+.rv-flag.ret .k { color: #8f98bb; }
+.rv-flag.ret .v { font-size: 21px; letter-spacing: 1px; color: #b4bde0; text-shadow: 0 0 8px rgba(150,165,220,0.45); }
+/* ---- HUD ---- */
+.rv-hud { position: absolute; left: 48px; right: 48px; top: 500px; height: 164px; z-index: 3; text-align: center;
+    background: repeating-linear-gradient(45deg, rgba(255,255,255,0.022) 0px, rgba(255,255,255,0.022) 1px, rgba(0,0,0,0) 1px, rgba(0,0,0,0) 4px), linear-gradient(180deg, #151515, #0e0e0e);
+    border: 1px solid rgba(255,255,255,0.42); box-shadow: 0 0 24px rgba(0,0,0,0.8), inset 0 0 30px rgba(0,0,0,0.5); }
+.rv-hud .rv-br { border-color: #f2f2f2; width: 22px; height: 22px; }
+.rv-hud .rv-br.tl { top: -3px; left: -3px; } .rv-hud .rv-br.tr { top: -3px; right: -3px; }
+.rv-hud .rv-br.bl { bottom: -3px; left: -3px; } .rv-hud .rv-br.brr { bottom: -3px; right: -3px; }
+.rv-tab { position: absolute; top: 8px; left: 50%; margin-left: -72px; width: 144px; height: 26px; line-height: 26px; text-align: center;
+    font-size: 13px; letter-spacing: 1.2px; color: #d9c79a; }
+.rv-tab img { position: absolute; top: 0; left: 0; width: 144px; height: 26px; }
+.rv-tab span { position: relative; }
+.rv-hud-row { position: absolute; top: 42px; left: 0; right: 0; display: flex; }
+.rv-hud-cell { flex: 1; }
+.rv-hud-div { width: 1px; height: 46px; margin-top: 6px; background: rgba(255,255,255,0.30); }
+.rv-num { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 34px; line-height: 1; }
+.rv-num.a { color: var(--accent); text-shadow: 0 0 14px var(--glow); }
+.rv-num.y { color: #f5c90a; text-shadow: 0 0 14px rgba(245,201,10,0.5); }
+.rv-num.b { color: #4a8fe0; text-shadow: 0 0 14px rgba(74,143,224,0.55); }
+.rv-lbl { margin-top: 5px; font-size: 13.5px; letter-spacing: 0.5px; color: #d9a45a; }
+.rv-lbl.a { color: #e8855a; } .rv-lbl.y { color: #e9b94a; }
+.rv-hud-cap { position: absolute; top: 108px; left: 0; right: 0; font-size: 13.5px; letter-spacing: 0.5px; color: #d9c79a; }
+.rv-hud-fine { position: absolute; top: 134px; left: 16px; right: 16px; font-size: 10.5px; line-height: 1.2; color: #e8e8e4; }
+/* ---- bottom stats ---- */
+.rv-stats { position: absolute; left: 30px; right: 30px; top: 672px; height: 58px; display: flex; z-index: 3; }
+.rv-stat { flex: 1; text-align: center; }
+.rv-stat + .rv-stat { border-left: 1px solid rgba(190,60,50,0.45); }
+.rv-stat .rv-lbl { margin-top: 0; font-size: 15px; color: #c8b78a; }
+.rv-stat .rv-num { font-size: 32px; margin-top: 5px; }
+.rv-foot { position: absolute; left: 0; right: 0; bottom: 5px; text-align: center; z-index: 4; font-size: 10px; letter-spacing: 1.5px; color: #6f6a5e; }
+</style>
 <script>
-function showMemberPoster(memberName) {
+/* ============================================================================
+   MEMBER CARD v2 (new template). Styles above, builder below.
+   The previous card is kept further down as showMemberPoster_legacy_v1 (unused).
+   ============================================================================ */
+
+/* ============================================================
+   RV CARD (portable) — this block moves into index.html.
+   Needs: a member object from rotating_villains_data.json,
+          and PHOTO_BASE (folder that holds <bioguide_id>.jpg).
+   ============================================================ */
+const RV_CARD_PHOTO_BASE = 'photos/';
+
+/* Theme per tier. Colors are literal (not var()) because inline SVG
+   is serialized to an image by html2canvas and can't see CSS variables. */
+const RV_CARD_THEMES = {
+    'Super Villain':     { label: 'Super Villain',     stamp: 'Villain', icon: 'warn',  silhouette: 'mask',
+                           accent: '#ff3b30', mid: '#9e1b1b', dark: '#2a0606', glow: 'rgba(255,59,48,0.55)' },
+    'Strategic Rotator': { label: 'Strategic Rotator', stamp: 'Rotator', icon: 'cycle', silhouette: null,
+                           accent: '#d4af37', mid: '#8b6914', dark: '#241c04', glow: 'rgba(212,175,55,0.5)' },
+    'Rarely Rotates':    { label: 'Rarely Rotates',    stamp: 'Rare',    icon: 'check', silhouette: null,
+                           accent: '#6ab0ff', mid: '#3a6f9e', dark: '#071a2b', glow: 'rgba(106,176,255,0.5)' },
+    'Limited Record':    { label: 'Limited Record',    stamp: 'Limited', icon: 'file',  silhouette: null,
+                           accent: '#a0a0a0', mid: '#555555', dark: '#161616', glow: 'rgba(160,160,160,0.35)' }
+};
+
+/* The data has 'Rare' (92 members) as well as 'Rarely Rotates' (8). The roster
+   already treats them as the same badge; the old poster did not (stamp fell
+   through to "ROTATES"). Normalize here so both get the same card. */
+function rvCardTier(pattern) {
+    if (pattern === 'Rare') return 'Rarely Rotates';
+    return RV_CARD_THEMES[pattern] ? pattern : 'Rarely Rotates';
+}
+
+function rvEsc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+function rvNum(n) {                       // null-safe integer for display
+    const v = Number(n);
+    return Number.isFinite(v) ? v.toLocaleString('en-US') : '0';
+}
+
+function rvIconSVG(kind, c) {
+    const common = `width="52" height="52" viewBox="0 0 48 48"`;
+    if (kind === 'warn')  return `<svg ${common}><path d="M24 5 L45 41 H3 Z" fill="none" stroke="${c}" stroke-width="3.5" stroke-linejoin="round"/><rect x="22" y="17" width="4" height="13" fill="${c}"/><rect x="22" y="33" width="4" height="4" fill="${c}"/></svg>`;
+    if (kind === 'cycle') return `<svg ${common}><path d="M10 22 A14 14 0 0 1 36 14 M38 26 A14 14 0 0 1 12 34" fill="none" stroke="${c}" stroke-width="3.5" stroke-linecap="round"/><path d="M36 6 V15 H27 M12 42 V33 H21" fill="none" stroke="${c}" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+    if (kind === 'check') return `<svg ${common}><circle cx="24" cy="24" r="18" fill="none" stroke="${c}" stroke-width="3.5"/><path d="M14 25 L21 32 L34 17" fill="none" stroke="${c}" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+    return `<svg ${common}><path d="M8 12 H20 L24 17 H40 V38 H8 Z" fill="none" stroke="${c}" stroke-width="3.5" stroke-linejoin="round"/></svg>`;
+}
+
+/* ---------- data-URI helpers ----------
+   Images (not inline SVG / CSS filters) are used for every texture because
+   html2canvas draws <img> reliably but ignores SVG filters and CSS filters. */
+function rvURI(svg) { return 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg); }
+function rvSeed(str) { let h = 7; for (const ch of String(str)) h = (h * 31 + ch.charCodeAt(0)) % 997; return h; }
+
+/* Film-grain specks + dirty smudges, unique per member (seeded from name). */
+function rvGrainSVG(seed) {
+    return `<svg xmlns="http://www.w3.org/2000/svg" width="600" height="750"><filter id="g" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="${seed}"/><feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 1.6 -0.62"/></filter><rect width="600" height="750" filter="url(#g)"/></svg>`;
+}
+function rvSmudgeSVG(seed) {
+    return `<svg xmlns="http://www.w3.org/2000/svg" width="600" height="750"><filter id="s" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.03 0.045" numOctaves="3" seed="${seed + 11}"/><feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 2.4 -1.05"/></filter><rect width="600" height="750" filter="url(#s)"/></svg>`;
+}
+/* Worn-ink erosion laid over the stamp (same color as the card background). */
+/* Worn-ink specks over the tier stamp. w/h = stamp outer size. */
+function rvErodeSVG(seed, w, h) {
+    w = w || 300; h = h || 90;
+    return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}"><filter id="e" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.42" numOctaves="3" seed="${seed + 5}"/><feColorMatrix type="matrix" values="0 0 0 0 0.04  0 0 0 0 0.04  0 0 0 0 0.04  0 0 0 5 -2.85"/></filter><rect width="${w}" height="${h}" filter="url(#e)"/></svg>`;
+}
+/* Distressed-ink specks over the name (background-coloured holes in the lettering). */
+function rvSpeckSVG(seed, w, h) {
+    return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}"><filter id="k" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.55 0.8" numOctaves="2" seed="${seed + 21}"/><feColorMatrix type="matrix" values="0 0 0 0 0.04  0 0 0 0 0.04  0 0 0 0 0.04  0 0 0 9 -5.6"/></filter><rect width="${w}" height="${h}" filter="url(#k)"/></svg>`;
+}
+/* Chamfered HUD tab outline. */
+function rvTabSVG() {
+    return `<svg xmlns="http://www.w3.org/2000/svg" width="144" height="26" viewBox="0 0 144 26"><path d="M8,1.5 H136 L142.5,8 V18 L136,24.5 H8 L1.5,18 V8 Z" fill="#0b0b0b" stroke="rgba(255,255,255,0.8)" stroke-width="1.2"/><path d="M8,4 H26 M118,22 H136" stroke="rgba(255,255,255,0.45)" stroke-width="1.2"/></svg>`;
+}
+/* Featured flag (age / retired) that sits on the photo frame's top edge. */
+function rvFlagSVG(color) {
+    return `<svg xmlns="http://www.w3.org/2000/svg" width="100" height="74" viewBox="0 0 100 74"><path d="M9,1.5 H91 L98.5,9 V65 L91,72.5 H9 L1.5,65 V9 Z" fill="#0b0b0b" stroke="${color}" stroke-width="2"/><path d="M10,5.5 H30 M70,68.5 H90" stroke="${color}" stroke-opacity="0.5" stroke-width="1.2"/></svg>`;
+}
+
+/* Donkey (original artwork): a big menacing head facing the viewer, in front of a body
+   standing in profile. Narrowed glowing eyes behind a bandit mask, sharp brow, ears flared
+   like horns, a faint smirk, shadowed lower face, ghost echoes of the same figure trailing
+   behind it (the "rotating" idea). 'mask' adds the bandit mask. Returned as an <img> data
+   URI. Every part is stroked first and filled second, so each outline is one clean
+   silhouette with no seams where parts overlap.
+   The SVG's coordinate space is card pixels offset by (270, 100), so the <img> sits at
+   left:270px; top:100px at 1:1. */
+/* Faceless suited figure, superimposed behind the identity block (Super Villain only).
+   Own <img> data-URI SVG (html2canvas-safe: no CSS vars, no filters). Glow = layered strokes + radial gradients.
+   viewBox 0 0 224 244; the bottom is hidden by the HUD panel. */
+function rvLurkerSVG(t) {
+    if (!t.silhouette) return '';
+    const A = t.accent;
+    const HEAD = "M112,30 C140,30 153,52 151,78 C150,104 134,122 112,124 C90,122 74,104 73,78 C71,52 84,30 112,30 Z";
+    const BODY = "M82,112 L72,130 C38,140 6,158 -2,194 L-2,246 L226,246 L226,194 C218,158 186,140 152,130 L142,112 C134,124 124,132 112,132 C100,132 90,124 82,112 Z";
+    const rim = [[10,.10],[6,.18],[3.5,.35]].map(([w,a]) =>
+        `<path d="${HEAD}" fill="none" stroke="${A}" stroke-opacity="${a}" stroke-width="${w}" stroke-linejoin="round"/><path d="${BODY}" fill="none" stroke="${A}" stroke-opacity="${a}" stroke-width="${w}" stroke-linejoin="round"/>`).join('');
+    const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 224 244" width="224" height="244">
+        <defs>
+            <radialGradient id="aura" cx=".5" cy=".42" r=".6"><stop offset="0" stop-color="${A}" stop-opacity=".42"/><stop offset=".55" stop-color="${A}" stop-opacity=".12"/><stop offset="1" stop-color="${A}" stop-opacity="0"/></radialGradient>
+            <radialGradient id="eye" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#ff2a2a" stop-opacity=".95"/><stop offset="1" stop-color="#ff2a2a" stop-opacity="0"/></radialGradient>
+            <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1"><stop offset=".7" stop-color="#030303" stop-opacity="1"/><stop offset="1" stop-color="#030303" stop-opacity="1"/></linearGradient>
+        </defs>
+        <ellipse cx="112" cy="124" rx="110" ry="116" fill="url(#aura)"/>
+        ${rim}
+        <path d="${BODY}" fill="#030303"/><path d="${HEAD}" fill="#030303"/>
+        <path d="M72,130 L112,206 L152,130" fill="none" stroke="${A}" stroke-opacity=".28" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M105,146 L112,156 L119,146 L115,206 L109,206 Z" fill="#240608" stroke="${A}" stroke-opacity=".35" stroke-width="1.2"/>
+        <circle cx="94" cy="80" r="13" fill="url(#eye)"/><circle cx="130" cy="80" r="13" fill="url(#eye)"/>
+        <path d="M84,76 L102,81 L97,84 L84,80 Z" fill="#ff3b3b"/><path d="M140,76 L122,81 L127,84 L140,80 Z" fill="#ff3b3b"/>
+    </svg>`;
+    return `<img class="rv-lurker" alt="" src="${rvURI(svg)}">`;
+}
+function rvSilhouetteSVG(t) {
+    if (!t.silhouette) return '';
+    /* Donkey traced from the approved template (viewBox 0 0 856 740).
+       Neon outline = layered strokes (html2canvas ignores CSS/SVG filters). */
+    const OUT = "M0,332 C110,330 200,352 290,346 C370,338 440,300 498,238 C520,225 540,215 548,205 C560,160 580,100 598,66 C606,98 612,150 614,184 C650,170 700,110 734,80 C742,120 728,180 716,222 C732,250 742,290 740,330 C744,370 752,400 752,430 C750,470 725,492 695,490 C672,486 658,468 652,440 C625,440 600,432 572,420 C560,450 545,480 525,520 C510,580 490,640 478,700";
+    const FILL = OUT + " L0,740 Z";
+    const MASK = "M404,276 C420,262 440,258 462,248 C440,244 430,230 418,214 C446,222 470,226 492,244 C560,272 650,272 722,268 C738,272 740,300 736,346 C690,350 640,364 590,366 C540,368 500,330 470,288 C450,282 425,284 404,276 Z";
+    const EYE1 = "M578,316 C590,302 630,300 644,318 C640,334 596,336 578,316 Z";
+    const EYE2 = "M696,306 C708,298 724,302 724,314 C714,324 698,322 696,306 Z";
+    const star = (cx, cy, r) => { const p = []; for (let i = 0; i < 10; i++) { const a = -Math.PI / 2 + i * Math.PI / 5, rr = i % 2 ? r * 0.42 : r; p.push((cx + rr * Math.cos(a)).toFixed(1) + ',' + (cy + rr * Math.sin(a)).toFixed(1)); } return `<polygon points="${p.join(' ')}" fill="rgba(170,25,35,.55)"/>`; };
+    const stars = [70, 190, 310, 430].map(x => star(x, 465, 24)).join('');
+    const g = [[30,.09],[20,.15],[12,.26],[7,.45]].map(([w,a]) =>
+        `<path d="${OUT}" fill="none" stroke="rgba(255,40,50,${a})" stroke-width="${w}" stroke-linejoin="round" stroke-linecap="round"/>`).join('');
+    const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 856 740" width="856" height="740">
+        <defs><linearGradient id="f" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8a1018" stop-opacity="0"/><stop offset=".4" stop-color="#8a1018" stop-opacity=".34"/><stop offset="1" stop-color="#a01420" stop-opacity=".5"/></linearGradient><radialGradient id="h" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#ff3040" stop-opacity=".30"/><stop offset="1" stop-color="#ff3040" stop-opacity="0"/></radialGradient></defs>
+        <ellipse cx="610" cy="330" rx="340" ry="320" fill="url(#h)"/>
+        <path d="${FILL}" fill="url(#f)"/>${stars}
+        <path d="M0,525 H512" stroke="rgba(255,60,70,.30)" stroke-width="5"/>
+        <path d="M540,352 C548,392 560,418 578,432" fill="none" stroke="rgba(255,90,95,.45)" stroke-width="3" stroke-linecap="round"/>
+        <path d="M652,440 C668,456 690,458 706,448" fill="none" stroke="rgba(255,90,95,.45)" stroke-width="3" stroke-linecap="round"/>${g}
+        <path d="${OUT}" fill="none" stroke="#ff6a6e" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+        <path d="${MASK}" fill="#050505" stroke="#000" stroke-width="3" stroke-linejoin="round"/>
+        <path d="${EYE1}" fill="#8a2a24"/><path d="${EYE2}" fill="#8a2a24"/></svg>`;
+    return `<img class="rv-silhouette" alt="" src="${rvURI(svg)}">`;
+}
+
+/* Grayscale the photo on a canvas. html2canvas ignores CSS `filter`, so a CSS
+   grayscale would show on screen but vanish from the exported image.
+   Resolves null if the photo is missing, or the original URL if the canvas is blocked. */
+function rvGrayscalePhoto(url) {
+    return new Promise(resolve => {
+        const img = new Image();
+        img.onload = () => {
+            try {
+                const c = document.createElement('canvas');
+                c.width = img.naturalWidth; c.height = img.naturalHeight;
+                const ctx = c.getContext('2d');
+                ctx.drawImage(img, 0, 0);
+                const d = ctx.getImageData(0, 0, c.width, c.height), p = d.data;
+                for (let i = 0; i < p.length; i += 4) {
+                    let g = 0.299 * p[i] + 0.587 * p[i + 1] + 0.114 * p[i + 2];
+                    g = Math.max(0, Math.min(255, (g - 128) * 1.12 + 128));   // slight contrast
+                    p[i] = p[i + 1] = p[i + 2] = g;
+                }
+                ctx.putImageData(d, 0, 0);
+                resolve(c.toDataURL('image/jpeg', 0.92));
+            } catch (e) { resolve(url); }
+        };
+        img.onerror = () => resolve(null);
+        img.src = url;
+    });
+}
+
+/* Shrink the name until it fits its column (e.g. "Sheila Cherfilus-Mccormick"). */
+/* Shrink a single-line element until it fits its box (never grows past maxPx). */
+function rvTextWidth(el) {                       // rendered text width in unscaled CSS px
+    const r = document.createRange(); r.selectNodeContents(el);
+    const scale = el.offsetWidth ? el.getBoundingClientRect().width / el.offsetWidth : 1;
+    return r.getBoundingClientRect().width / (scale || 1);
+}
+function rvFitText(el, maxW, maxPx, minPx) {
+    if (!el) return;
+    let size = maxPx;
+    el.style.fontSize = size + 'px';
+    while (rvTextWidth(el) > maxW && size > minPx) { size -= 1; el.style.fontSize = size + 'px'; }
+}
+function rvFitName(card) {
+    rvFitText(card.querySelector('.rv-title'), 556, 72, 28);
+    const nm = card.querySelector('.rv-name');
+    rvFitText(nm, 500, 68, 26);
+    const sp = card.querySelector('.rv-speck');           // keep the specks on the lettering only
+    if (nm && sp) { const w = Math.min(520, Math.ceil(rvTextWidth(nm)) + 6); sp.style.width = w + 'px'; sp.style.left = ((520 - w) / 2) + 'px'; sp.style.objectFit = 'cover'; }
+    rvFitText(card.querySelector('.rv-stamp-txt'), 256, 66, 20);
+}
+
+/* Builds the card HTML. Pure string builder (no DOM access) so it is easy to test. */
+function rvBuildCardHTML(member, photoSrc) {
+    const tier = rvCardTier(member.pattern);
+    const t = RV_CARD_THEMES[tier];
+    const tags = member.tags || [];
+    const seed = rvSeed(member.name);
+    const chamber = (member.chamber || 'house').toLowerCase().replace(/^./, c => c.toUpperCase());
+    const since = member.first_elected
+        ? `First elected: ${rvEsc(member.first_elected)}${member.years_in_congress ? ` <span class="o">•</span> <span class="o2">${rvEsc(member.years_in_congress)} yrs in Congress</span>` : ''}`
+        : '';
+    const ageFlag = tags.includes('over_70')
+        ? `<div class="rv-flag age"><img alt="" src="${rvURI(rvFlagSVG('#e0953f'))}"><span class="k">Age</span><span class="v">${rvEsc(member.age || '70+')}</span></div>` : '';
+    const retFlag = tags.includes('retired')
+        ? `<div class="rv-flag ret"><img alt="" src="${rvURI(rvFlagSVG('#8f98bb'))}"><span class="k">Status</span><span class="v">Retired</span></div>` : '';
+    const photo = photoSrc
+        ? `<div class="rv-photo" style="background-image:url('${photoSrc}')"></div>`
+        : `<div class="rv-photo rv-photo-empty">👤</div>`;
+
+    return `
+    <div class="rv-card" style="--accent:${t.accent};--mid:${t.mid};--glow:${t.glow};">
+        <div class="rv-bg"></div>
+        <img class="rv-smudge" alt="" src="${rvURI(rvSmudgeSVG(seed))}">
+        <div class="rv-title">Congressional Betrayal Record</div>
+
+        <div class="rv-frame">
+            <div class="rv-ph">${photo}<div class="rv-scan"></div></div>
+            <i class="rv-br tl"></i><i class="rv-br tr"></i><i class="rv-br bl"></i><i class="rv-br brr"></i>
+        </div>
+        ${ageFlag}${retFlag}
+        <div class="rv-stamp" style="color:${t.accent};border-color:${t.accent}">
+            <div class="rv-stamp-in" style="border-color:${t.accent}"></div>
+            <span class="rv-stamp-txt">${t.label}</span>
+            <img class="rv-erode" alt="" src="${rvURI(rvErodeSVG(seed, 300, 90))}">
+        </div>
+
+        <div class="rv-namebox">
+            <div class="rv-name">${rvEsc(member.name)}</div>
+            <!-- DISTRESSED NAME DISABLED (kept for later): re-add the rv-speck img built from rvSpeckSVG here -->
+        </div>
+        <div class="rv-meta">${chamber} • ${rvEsc(member.state)} • Democrat</div>
+        ${since ? `<div class="rv-since">${since}</div>` : ''}
+
+        <div class="rv-hud">
+            <i class="rv-br tl"></i><i class="rv-br tr"></i><i class="rv-br bl"></i><i class="rv-br brr"></i>
+            <div class="rv-tab"><img alt="" src="${rvURI(rvTabSVG())}"><span>Deciding Votes</span></div>
+            <div class="rv-hud-row">
+                <div class="rv-hud-cell"><div class="rv-num a">${rvNum(member.decisive_betrayals)}</div><div class="rv-lbl a">Voted Yes</div></div>
+                <div class="rv-hud-div"></div>
+                <div class="rv-hud-cell"><div class="rv-num y">${rvNum(member.decisive_absent)}</div><div class="rv-lbl y">Went Missing</div></div>
+            </div>
+            <div class="rv-hud-cap">On votes Dems could have blocked</div>
+            <div class="rv-hud-fine">Congresses 111, 116, 118-119 — the years Democrats had enough votes to block GOP legislation</div>
+        </div>
+
+        <div class="rv-stats">
+            <div class="rv-stat"><div class="rv-lbl">Skipped Work</div><div class="rv-num y">${rvNum(member.absent)}</div></div>
+            <div class="rv-stat"><div class="rv-lbl">Against Dem Bills</div><div class="rv-num b">${rvNum(member.voted_against_dems)}</div></div>
+        </div>
+        <div class="rv-foot">rotatingvillains.org</div>
+
+        <img class="rv-grain" alt="" src="${rvURI(rvGrainSVG(seed))}">
+        <div class="rv-vig"></div>
+    </div>`;
+}
+
+/* Renders into a container element. Returns the .rv-card element. */
+async function rvRenderCard(container, member) {
+    const photoUrl = member.bioguide_id ? `${RV_CARD_PHOTO_BASE}${encodeURIComponent(member.bioguide_id)}.jpg` : null;
+    const photoSrc = photoUrl ? await rvGrayscalePhoto(photoUrl) : null;
+    container.innerHTML = rvBuildCardHTML(member, photoSrc);
+    if (document.fonts && document.fonts.load) {
+        try { await Promise.all([document.fonts.load('60px "Big Shoulders Display"'), document.fonts.load('62px "Anton"'), document.fonts.load('700 40px "Oswald"'), document.fonts.load('600 16px "JetBrains Mono"')]); } catch (e) {}
+    }
+    const card = container.querySelector('.rv-card');
+    rvFitName(card);
+    return card;
+}
+/* ============== end RV CARD (portable) ============== */
+
+let _posterToken = 0;   // ignores a slow render if the user already opened another card
+
+/* Scale the fixed 600x750 card down on narrow screens (export is captured at full size, see copyPosterImage). */
+function rvScalePoster() {
+    const wrap = document.getElementById('posterContent');
+    const card = wrap && wrap.querySelector('.rv-card');
+    if (!card) return;
+    const avail = Math.min(600, (wrap.parentElement && wrap.parentElement.clientWidth) || 600);
+    const k = Math.min(1, avail / 600);
+    card.style.transformOrigin = 'top left';
+    card.style.transform = k < 1 ? `scale(${k})` : 'none';
+    wrap.style.width = (600 * k) + 'px';
+    wrap.style.height = (750 * k) + 'px';
+    wrap.style.margin = '0 auto';
+}
+window.addEventListener('resize', () => {
+    const m = document.getElementById('posterModal');
+    if (m && m.style.display === 'block') rvScalePoster();
+});
+
+async function showMemberPoster(memberName) {
+    if (!fullData) return;
+    const member = fullData.rotating_villains.find(v => v.name === memberName);
+    if (!member) return;
+
+    const token = ++_posterToken;
+    const container = document.getElementById('posterContent');
+    container.innerHTML = '';
+
+    // The modal must be visible before rendering so text-fitting can measure real widths.
+    document.getElementById('posterModal').style.display = 'block';
+    document.body.style.overflow = 'hidden';
+
+    await rvRenderCard(container, member);
+    if (token !== _posterToken) return;
+    rvScalePoster();
+
+    // Store for the copy buttons
+    window._currentPosterMember = member;
+    window._currentPosterTheme = RV_CARD_THEMES[rvCardTier(member.pattern)];
+    const db = document.getElementById('posterDonorBtn');
+    if (db) { db.textContent = '💰 TOP DONORS'; }
+}
+
+/* LEGACY card (v1) - retained, not called. */
+function showMemberPoster_legacy_v1(memberName) {
     if (!fullData) return;
     const member = fullData.rotating_villains.find(v => v.name === memberName);
     if (!member) return;
@@ -1738,7 +2280,15 @@ async function copyPosterImage() {
             scale: 2,
             useCORS: true,
             allowTaint: true,
-            logging: false
+            logging: false,
+            // Capture at the card's native 600x750 even if it is scaled down for a small screen
+            onclone: (doc) => {
+                const w = doc.getElementById('posterContent');
+                if (!w) return;
+                w.style.width = '600px'; w.style.height = '750px';
+                const c = w.querySelector('.rv-card');
+                if (c) c.style.transform = 'none';
+            }
         });
         canvas.toBlob(async (blob) => {
             try {
@@ -1769,7 +2319,7 @@ async function copyPosterImage() {
     <div style="background:#050505; border-top:1px solid #222; padding:30px 20px; margin-top:40px; text-align:center;">
         <div style="max-width:900px; margin:0 auto;">
             <div style="font-family:'Bebas Neue',sans-serif; color:#d4af37; font-size:1rem; margin-bottom:12px;">
-                ROTATING VILLAINS
+                Rotating Villains
             </div>
             <div style="font-family:'JetBrains Mono',monospace; font-size:0.78rem; color:#555; line-height:1.8; margin-bottom:16px;">
                 An independent political analysis project built on publicly available data.<br>
